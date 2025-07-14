@@ -557,10 +557,9 @@ html {
     animation: none !important;
 }
 
-/* Ultra-high specificity override for hero section opacity */
+/* Ultra-high specificity override for hero section opacity - except title */
 .hero-section.hero-section .hero-content,
 .hero-section.hero-section .hero-image,
-.hero-section.hero-section .hero-title,
 .hero-section.hero-section .hero-subtitle,
 .hero-section.hero-section .hero-description,
 .hero-section.hero-section .hero-badge,
@@ -579,13 +578,51 @@ html {
 .hero-section.hero-section .btn,
 .hero-section.hero-section span,
 .hero-section.hero-section p,
-.hero-section.hero-section h1,
 .hero-section.hero-section img {
     opacity: 1 !important;
     transform: translateY(0) !important;
     animation: none !important;
     transition: none !important;
     visibility: visible !important;
+}
+
+/* Hero title with typing animation */
+.hero-section.hero-section .hero-title {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    visibility: visible !important;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s ease-in-out forwards;
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* Typing cursor effect */
+.hero-section .hero-title::after {
+    content: '|';
+    color: var(--primary-color);
+    animation: blink 1s infinite;
+    font-weight: normal;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Remove cursor after typing completes */
+.hero-section .hero-title.typing-complete::after {
+    display: none;
 }
 
 .hero-section::before {
