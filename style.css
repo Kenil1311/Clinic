@@ -508,6 +508,11 @@ html {
     backdrop-filter: blur(10px);
 }
 
+/* Pink text color for specific phrases */
+.text-pink {
+    color: #ff69b4;
+}
+
 /* Hero Features List */
 .hero-features {
     margin: 2rem 0;
