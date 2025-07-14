@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Clinicia Clinic Management Software</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="features.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/attached_assets/clinicia_logo1_1752483203746.png" alt="Clinicia" height="40" class="clinicia-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    
+                    <!-- Features Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="/features" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu modern-dropdown">
+                            <li><a class="dropdown-item" href="#emr"><i class="fas fa-file-medical me-2"></i>EMR</a></li>
+                            <li><a class="dropdown-item" href="#prescription"><i class="fas fa-prescription me-2"></i>Prescription</a></li>
+                            <li><a class="dropdown-item" href="#appointment"><i class="fas fa-calendar-check me-2"></i>Appointment Scheduling</a></li>
+                            <li><a class="dropdown-item" href="#financial"><i class="fas fa-calculator me-2"></i>Financial</a></li>
+                            <li><a class="dropdown-item" href="#consent"><i class="fas fa-digital-tachograph me-2"></i>Digital Consent</a></li>
+                            <li><a class="dropdown-item" href="#expense"><i class="fas fa-receipt me-2"></i>Expense Management</a></li>
+                            <li><a class="dropdown-item" href="#inventory"><i class="fas fa-boxes me-2"></i>Inventory</a></li>
+                            <li><a class="dropdown-item" href="#images"><i class="fas fa-images me-2"></i>Images</a></li>
+                            <li><a class="dropdown-item" href="#communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a></li>
+                            <li><a class="dropdown-item" href="#users"><i class="fas fa-users-cog me-2"></i>Multi Users Role Based Access</a></li>
+                            <li><a class="dropdown-item" href="#membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a></li>
+                            <li><a class="dropdown-item" href="#social"><i class="fas fa-share-alt me-2"></i>Social Media Integration</a></li>
+                            <li><a class="dropdown-item" href="#analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a></li>
+                            <li><a class="dropdown-item" href="#dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Specialties</h6>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="#dental"><i class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="#dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="#gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="#physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="#ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="#ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="#diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="#ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="#cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="#oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="#nephrology"><i class="fas fa-kidneys me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="#paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="#veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="#psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="#nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="#orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="#urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Practice Size</h6>
+                                        <a class="dropdown-item" href="#solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
+                                        <a class="dropdown-item" href="#multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="#multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="#multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="#hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                        <a class="dropdown-item" href="#colleges"><i class="fas fa-graduation-cap me-2"></i>Dental Colleges</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    
+                    <!-- Support/Resources Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#support" data-bs-toggle="dropdown" aria-expanded="false">
+                            Support / Resources
+                        </a>
+                        <ul class="dropdown-menu modern-dropdown">
+                            <li><a class="dropdown-item" href="#faq"><i class="fas fa-question-circle me-2"></i>FAQ</a></li>
+                            <li><a class="dropdown-item" href="#knowledge"><i class="fas fa-book me-2"></i>Knowledge Base</a></li>
+                            <li><a class="dropdown-item" href="#tutorials"><i class="fas fa-play-circle me-2"></i>Tutorials & Video Demo</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="navbar-nav">
+                    <a href="#download" class="btn btn-outline-primary me-2">Download App</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Features -->
+    <section id="features-hero" class="features-hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <div class="hero-content">
+                        <h1 class="features-hero-title">
+                            <span class="text-primary">All-In-One</span> Clinic Management Software Features
+                        </h1>
+                        <p class="features-hero-subtitle">
+                            Built for Modern Clinics. Powered by Automation.<br>
+                            Clinicia is a smart, cloud-based clinic management solution trusted by doctors, clinics, and healthcare centers. Whether you're a solo practitioner or running a multi-speciality setup, Clinicia equips you with powerful features to simplify, streamline, and scale.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#core-features" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-arrow-down me-2"></i>Explore Features
+                            </a>
+                            <a href="#demo" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-calendar me-2"></i>Schedule a Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section id="core-features" class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Core Features</h2>
+                    <p class="section-subtitle">Explore our full suite of features, each designed to reduce manual tasks and elevate patient care.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- EMR Feature -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h4>EMR (Electronic Medical Records)</h4>
+                        <p>Digitize and organize all clinical data—notes, diagnoses, vitals, medical history, treatment plans, and more.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Complete patient history
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prescription Management -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-prescription"></i>
+                        </div>
+                        <h4>Prescription Management</h4>
+                        <p>Generate customized, digitally signed prescriptions with templates, drug libraries, and direct sharing via WhatsApp or Email.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Digital prescriptions
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment Scheduling -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h4>Appointment Scheduling</h4>
+                        <p>Automate scheduling, reminders, token management, and enable online bookings via Google, Social Media & Website.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Online booking system
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Consent Forms -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-digital-tachograph"></i>
+                        </div>
+                        <h4>Digital Consent Forms</h4>
+                        <p>Collect and store patient consent for treatments or procedures with secure, legally compliant digital forms.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Legally compliant
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expense Management -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-receipt"></i>
+                        </div>
+                        <h4>Expense Management</h4>
+                        <p>Track vendor bills, categorize expenses, upload scanned invoices, and monitor cashflow with detailed reports.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Cashflow monitoring
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inventory Management -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h4>Inventory Management</h4>
+                        <p>Manage centralized stock, department requests, PO generation, inwards/outwards, and low-stock alerts effortlessly.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Low-stock alerts
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patient Communication Suite -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Patient Communication Suite</h4>
+                        <p>Send automated appointment reminders, birthday greetings, prescription files, receipts, and follow-ups through WhatsApp or Email.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>WhatsApp & Email
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Multi-User & Role-Based Access -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h4>Multi-User & Role-Based Access</h4>
+                        <p>Allow multiple staff and doctors to access the system with real-time sync and customized role-based permissions.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Real-time sync
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Membership Plans -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h4>Membership Plans</h4>
+                        <p>Create and manage custom membership programs with exclusive discounts on treatments or entire bills.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Custom discounts
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Review Integration -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h4>Social Media Review Integration</h4>
+                        <p>Boost your Google & Facebook reviews automatically to attract more patients and build a trusted online presence.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Auto review boost
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics, MIS & Reports -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>Analytics, MIS & Reports</h4>
+                        <p>View branch, doctor, and department-level insights. Track finances, patient trends, and download reports in Excel or PDF.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Excel & PDF reports
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Lab Module -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h4>Dental Lab Module</h4>
+                        <p>Designed for dental clinics—create detailed lab orders, track trials, communicate with labs, and generate lab reports.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check text-primary me-2"></i>Lab communication
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Clinicia Section -->
+    <section id="why-choose" class="why-choose-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Why Clinics Choose Clinicia</h2>
+                    <p class="section-subtitle">Trusted by healthcare professionals worldwide</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Web, Android & iOS -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card h-100 text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h4>Accessible from Web, Android & iOS</h4>
+                        <p>Access your clinic data anytime, anywhere on any device</p>
+                    </div>
+                </div>
+
+                <!-- Data Privacy & Security -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100 text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>End-to-end Data Privacy & Role-Based Security</h4>
+                        <p>Your data is protected with enterprise-grade security</p>
+                    </div>
+                </div>
+
+                <!-- Real-time Sync -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card h-100 text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>Real-time Sync Across Devices</h4>
+                        <p>All your devices stay in perfect sync automatically</p>
+                    </div>
+                </div>
+
+                <!-- Cloud Backup -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card h-100 text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4>Cloud Backup & Anytime Access</h4>
+                        <p>Never lose your data with automatic cloud backups</p>
+                    </div>
+                </div>
+
+                <!-- Multilingual Support -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card h-100 text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Multilingual & Multi-Location Support</h4>
+                        <p>Supports multiple languages and locations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Ready to Streamline Your Clinic Operations?</h2>
+                    <p class="section-subtitle mb-4">Whether you're just starting or scaling fast, Clinicia adapts to your size, speciality, and pace.</p>
+                    <div class="hero-buttons">
+                        <a href="#trial" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-rocket me-2"></i>Start Free Trial
+                        </a>
+                        <a href="#demo" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-calendar me-2"></i>Book a Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="/attached_assets/clinicia_logo1_1752483203746.png" alt="Clinicia" height="50" class="mb-3">
+                    <p>Modern clinic management software trusted by healthcare professionals worldwide.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Product</h5>
+                    <ul class="footer-links">
+                        <li><a href="/features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#knowledge">Knowledge Base</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Connect</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Clinicia. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="features.js"></script>
+</body>
+</html>
