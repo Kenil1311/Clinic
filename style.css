@@ -1209,11 +1209,11 @@ html {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 20%, rgba(74, 144, 226, 0.04) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(74, 144, 226, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 40% 70%, rgba(255, 77, 77, 0.02) 0%, transparent 50%),
-        radial-gradient(circle at 60% 30%, rgba(74, 144, 226, 0.03) 0%, transparent 50%),
-        radial-gradient(circle at 10% 80%, rgba(74, 144, 226, 0.02) 0%, transparent 50%);
+        radial-gradient(circle at 20% 20%, rgba(255, 77, 77, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 77, 77, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 40% 70%, rgba(255, 77, 77, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 60% 30%, rgba(255, 77, 77, 0.02) 0%, transparent 50%),
+        radial-gradient(circle at 10% 80%, rgba(255, 77, 77, 0.03) 0%, transparent 50%);
     pointer-events: none;
     z-index: 1;
 }
@@ -1223,56 +1223,7 @@ html {
     z-index: 2;
 }
 
-/* Highlight Cards */
-.highlight-card {
-    background: var(--white);
-    border-radius: 12px;
-    padding: 2rem 1.5rem;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
 
-.highlight-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
-
-.highlight-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-color), #ff6b6b);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1rem;
-    font-size: 1.5rem;
-    color: var(--white);
-}
-
-.highlight-card:nth-child(2) .highlight-icon {
-    background: linear-gradient(135deg, var(--accent-color), #6ba8ff);
-}
-
-.highlight-card:nth-child(4) .highlight-icon {
-    background: linear-gradient(135deg, var(--accent-color), #6ba8ff);
-}
-
-.highlight-card h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--text-color);
-    margin-bottom: 0.5rem;
-}
-
-.highlight-card p {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: 0;
-}
 
 /* Core Features Visual */
 .core-features-visual {
@@ -1329,8 +1280,8 @@ html {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .circle-2 {
@@ -1342,8 +1293,8 @@ html {
 .circle-3 {
     bottom: 20px;
     right: 30%;
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .circle-4 {
@@ -1355,8 +1306,8 @@ html {
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .circle-6 {
@@ -1399,7 +1350,7 @@ html {
 
 .feature-list li:nth-child(2) i,
 .feature-list li:nth-child(4) i {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 /* Mobile Responsiveness for What is Clinicia Section */
@@ -1459,15 +1410,7 @@ html {
         font-size: 1.5rem;
     }
     
-    .highlight-card {
-        padding: 1.5rem 1rem;
-    }
-    
-    .highlight-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 1.2rem;
-    }
+
 }
 
 .what-is-section::after {
@@ -1479,8 +1422,8 @@ html {
     width: 800px;
     height: 800px;
     background: 
-        linear-gradient(45deg, transparent 40%, rgba(74, 144, 226, 0.02) 50%, transparent 60%),
-        linear-gradient(-45deg, transparent 40%, rgba(74, 144, 226, 0.015) 50%, transparent 60%);
+        linear-gradient(45deg, transparent 40%, rgba(255, 77, 77, 0.02) 50%, transparent 60%),
+        linear-gradient(-45deg, transparent 40%, rgba(255, 77, 77, 0.015) 50%, transparent 60%);
     border-radius: 50%;
     pointer-events: none;
     z-index: 1;
