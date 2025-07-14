@@ -1,0 +1,54 @@
+💡 All-In-One Clinic Management Software Features
+Built for Modern Clinics. Powered by Automation.
+Clinicia is a smart, cloud-based clinic management solution trusted by doctors, clinics, and healthcare centers. Whether you’re a solo practitioner or running a multi-speciality setup, Clinicia equips you with powerful features to simplify, streamline, and scale.
+Explore our full suite of features, each designed to reduce manual tasks and elevate patient care.
+
+🗂️ Core Features
+✅ EMR (Electronic Medical Records)
+Digitize and organize all clinical data—notes, diagnoses, vitals, medical history, treatment plans, and more.
+✅ Prescription Management
+Generate customized, digitally signed prescriptions with templates, drug libraries, and direct sharing via WhatsApp or Email.
+✅ Appointment Scheduling
+Automate scheduling, reminders, token management, and enable online bookings via Google, Social Media & Website.
+✅ Digital Consent Forms
+Collect and store patient consent for treatments or procedures with secure, legally compliant digital forms.
+✅ Expense Management
+Track vendor bills, categorize expenses, upload scanned invoices, and monitor cashflow with detailed reports.
+✅ Inventory Management
+Manage centralized stock, department requests, PO generation, inwards/outwards, and low-stock alerts effortlessly.
+✅ Patient Communication Suite
+Send automated appointment reminders, birthday greetings, prescription files, receipts, and follow-ups through WhatsApp or Email.
+✅ Multi-User & Role-Based Access
+Allow multiple staff and doctors to access the system with real-time sync and customized role-based permissions.
+✅ Membership Plans
+Create and manage custom membership programs with exclusive discounts on treatments or entire bills.
+✅ Social Media Review Integration
+Boost your Google & Facebook reviews automatically to attract more patients and build a trusted online presence.
+✅ Analytics, MIS & Reports
+View branch, doctor, and department-level insights. Track finances, patient trends, and download reports in Excel or PDF.
+✅ Dental Lab Module
+Designed for dental clinics—create detailed lab orders, track trials, communicate with labs, and generate lab reports.
+
+🚀 Why Clinics Choose Clinicia
+🖥️ Accessible from Web, Android & iOS
+
+
+🔐 End-to-end Data Privacy & Role-Based Security
+
+
+🔄 Real-time Sync Across Devices
+
+
+☁️ Cloud Backup & Anytime Access
+
+
+🌐 Multilingual & Multi-Location Support
+
+
+
+📈 Ready to Streamline Your Clinic Operations?
+Whether you're just starting or scaling fast, Clinicia adapts to your size, speciality, and pace.
+👉 [Start Free Trial]
+ 👉 [Book a Demo]
+
+this is my second page(feature)
