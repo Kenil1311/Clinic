@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinicia - Clinic Management Software</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://clinicia.com/app/website_assets/images/clinicia_logo1.png" alt="Clinicia" height="40">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-md me-2"></i>EMR System</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-calendar-alt me-2"></i>Appointments</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-dollar-sign me-2"></i>Billing</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-comments me-2"></i>Communication</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown">
+                            Solutions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><h6 class="dropdown-header">Specialties</h6></li>
+                            <li><a class="dropdown-item" href="#">General Practice</a></li>
+                            <li><a class="dropdown-item" href="#">Dental Clinics</a></li>
+                            <li><a class="dropdown-item" href="#">Pediatrics</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Practice Sizes</h6></li>
+                            <li><a class="dropdown-item" href="#">Solo Practice</a></li>
+                            <li><a class="dropdown-item" href="#">Multi-Location</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#support">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-primary me-2">Book a Demo</a>
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content fade-in-up">
+                        <h1 class="hero-title">Simplify Your Practice with Powerful Clinic Management Software</h1>
+                        <p class="hero-subtitle">Manage appointments, EMR, billing & more — from any device.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
+                            <a href="#" class="btn btn-outline-light btn-lg">Book a Demo</a>
+                        </div>
+                        
+                        <!-- Animated Stats -->
+                        <div class="hero-stats mt-5">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-target="20000">0</div>
+                                        <div class="stat-label">Clinics</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-target="99.9">0</div>
+                                        <div class="stat-label">% Uptime</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-target="4.9">0</div>
+                                        <div class="stat-label">⭐ Rating</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image fade-in-right">
+                        <div class="dashboard-mockup">
+                            <img src="attached_assets/Dashboard - Web_1752476091855.png" alt="Clinicia Dashboard" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Clinicia Section -->
+    <section class="why-clinicia-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Why Clinicia?</h2>
+                    <p class="section-subtitle">Trusted by healthcare professionals worldwide</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card animate-card">
+                        <div class="feature-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp Integration</h4>
+                        <p>Send appointment reminders, share prescriptions, and communicate with patients directly through WhatsApp.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card animate-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile-First Design</h4>
+                        <p>Access your clinic management system from anywhere with our responsive mobile application.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card animate-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>HIPAA Compliant</h4>
+                        <p>Your patient data is secure with enterprise-grade encryption and HIPAA compliance.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card animate-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Advanced Analytics</h4>
+                        <p>Get insights into your practice performance with detailed reports and analytics.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card animate-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4>Cloud-Based</h4>
+                        <p>No servers to maintain. Access your data securely from anywhere with internet connection.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card animate-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p>Our dedicated support team is available round the clock to help you with any queries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Complete Practice Management Solution</h2>
+                    <p class="section-subtitle">Everything you need to run your clinic efficiently</p>
+                </div>
+            </div>
+            
+            <!-- EMR Features -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="feature-category-title">Electronic Medical Records (EMR)</h3>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-file-medical feature-item-icon"></i>
+                        <h5>Digital Records</h5>
+                        <p>Maintain comprehensive digital patient records</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-prescription feature-item-icon"></i>
+                        <h5>E-Prescriptions</h5>
+                        <p>Generate and send prescriptions electronically</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-history feature-item-icon"></i>
+                        <h5>Medical History</h5>
+                        <p>Track patient medical history and treatments</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-flask feature-item-icon"></i>
+                        <h5>Lab Integration</h5>
+                        <p>Integrate with labs for seamless test results</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Finance Features -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="feature-category-title">Financial Management</h3>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-receipt feature-item-icon"></i>
+                        <h5>Billing & Invoicing</h5>
+                        <p>Automated billing and invoice generation</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-credit-card feature-item-icon"></i>
+                        <h5>Payment Processing</h5>
+                        <p>Accept payments online and in-clinic</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-file-invoice feature-item-icon"></i>
+                        <h5>Insurance Claims</h5>
+                        <p>Submit and track insurance claims easily</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-chart-pie feature-item-icon"></i>
+                        <h5>Financial Reports</h5>
+                        <p>Comprehensive financial reporting and analytics</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile App Showcase -->
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-6">
+                    <h3>Mobile App for On-the-Go Management</h3>
+                    <p class="lead">Manage your practice from anywhere with our intuitive mobile application. Access patient records, schedule appointments, and handle billing on the go.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check text-primary me-2"></i>Real-time patient data sync</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Push notifications for appointments</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Offline access to critical data</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Secure fingerprint authentication</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mobile-mockup">
+                        <div class="mobile-frame">
+                            <img src="attached_assets/Home Page - App_1752476091856.jpg" alt="Mobile App" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Communication Section -->
+    <section class="communication-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="communication-content slide-in-left">
+                        <h2>Streamlined Patient Communication</h2>
+                        <p class="lead">Keep your patients engaged and informed with automated communication tools.</p>
+                        
+                        <div class="communication-features">
+                            <div class="comm-feature">
+                                <i class="fas fa-bell text-primary me-3"></i>
+                                <div>
+                                    <h5>Automated Reminders</h5>
+                                    <p>Send appointment reminders via SMS, email, and WhatsApp automatically.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="comm-feature">
+                                <i class="fas fa-calendar-check text-primary me-3"></i>
+                                <div>
+                                    <h5>Online Booking</h5>
+                                    <p>Allow patients to book appointments online 24/7 through your website.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="comm-feature">
+                                <i class="fas fa-share-alt text-primary me-3"></i>
+                                <div>
+                                    <h5>Share Prescriptions</h5>
+                                    <p>Instantly share digital prescriptions and medical reports with patients.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="communication-image slide-in-right">
+                        <img src="attached_assets/Cropped  Dashboard - Web_1752476091855.png" alt="Communication Dashboard" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">What Our Doctors Say</h2>
+                    <p class="section-subtitle">Trusted by healthcare professionals worldwide</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <blockquote class="blockquote">
+                                            <p>"Clinicia has transformed how we manage our practice. The WhatsApp integration alone has saved us hours every day. Our patients love the convenience of online booking."</p>
+                                        </blockquote>
+                                        <div class="testimonial-author">
+                                            <h5>Dr. Sarah Johnson</h5>
+                                            <p class="text-muted">Family Practice, New York</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <blockquote class="blockquote">
+                                            <p>"The mobile app is incredibly intuitive. I can access patient records and manage appointments even when I'm not in the clinic. The support team is also fantastic."</p>
+                                        </blockquote>
+                                        <div class="testimonial-author">
+                                            <h5>Dr. Michael Chen</h5>
+                                            <p class="text-muted">Dental Clinic, California</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-content">
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <blockquote class="blockquote">
+                                            <p>"Switching to Clinicia was the best decision for our multi-location practice. The cloud-based system keeps everything synchronized perfectly."</p>
+                                        </blockquote>
+                                        <div class="testimonial-author">
+                                            <h5>Dr. Emily Rodriguez</h5>
+                                            <p class="text-muted">Pediatrics Group, Texas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Start your free trial today — no credit card required.</h2>
+                        <p class="cta-subtitle">Join thousands of healthcare professionals who trust Clinicia</p>
+                        
+                        <div class="cta-buttons">
+                            <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
+                            <a href="#" class="btn btn-outline-light btn-lg">See Pricing</a>
+                        </div>
+                        
+                        <div class="cta-features mt-4">
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 col-6">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span>14-day free trial</span>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span>No setup fees</span>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span>Cancel anytime</span>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span>24/7 support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <img src="https://clinicia.com/app/website_assets/images/clinicia_logo1.png" alt="Clinicia" height="40" class="mb-3" style="filter: brightness(0) invert(1);">
+                    <p>Simplifying healthcare management with powerful, intuitive software solutions.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">EMR System</a></li>
+                        <li><a href="#" class="text-light">Appointments</a></li>
+                        <li><a href="#" class="text-light">Billing</a></li>
+                        <li><a href="#" class="text-light">Reports</a></li>
+                        <li><a href="#" class="text-light">Mobile App</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Solutions</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">General Practice</a></li>
+                        <li><a href="#" class="text-light">Dental Clinics</a></li>
+                        <li><a href="#" class="text-light">Pediatrics</a></li>
+                        <li><a href="#" class="text-light">Multi-Location</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Careers</a></li>
+                        <li><a href="#" class="text-light">Blog</a></li>
+                        <li><a href="#" class="text-light">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            contact@clinicia.com
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            123 Healthcare St, Medical City, MC 12345
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Clinicia. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3">Privacy Policy</a>
+                    <a href="#" class="text-light me-3">Terms of Service</a>
+                    <a href="#" class="text-light">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
