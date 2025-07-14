@@ -309,8 +309,8 @@ window.addEventListener('scroll', throttle(function() {
 }, 16)); // ~60fps
 
 // Add CSS classes for animations
-const style = document.createElement('style');
-style.textContent = `
+const featuresStyle = document.createElement('style');
+featuresStyle.textContent = `
     .section-visible {
         opacity: 1;
         transform: translateY(0);
@@ -351,4 +351,4 @@ style.textContent = `
         animation: fadeInUp 0.6s ease-out;
     }
 `;
-document.head.appendChild(style);
+document.head.appendChild(featuresStyle);
