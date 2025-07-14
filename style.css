@@ -3,13 +3,15 @@
 :root {
     --primary-color: #ff4d4d;
     --accent-color: #2D6CDF;
-    --text-color: #343a40;
+    --text-color: #2c3e50;
     --light-gray: #f8f9fa;
     --dark-gray: #6c757d;
     --white: #ffffff;
     --success-color: #28a745;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
+    --border-color: #e9ecef;
+    --section-bg: #fafbfc;
 }
 
 * {
@@ -23,6 +25,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     overflow-x: hidden;
+    background-color: var(--white);
 }
 
 /* Smooth Scrolling */
@@ -89,7 +92,7 @@ html {
 /* Hero Section */
 .hero-section {
     position: relative;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #e63946 50%, var(--accent-color) 100%);
+    background: var(--primary-color);
     color: white;
     overflow: hidden;
     padding-top: 80px;
@@ -190,8 +193,10 @@ html {
 
 /* Why Clinicia Section */
 .why-clinicia-section {
-    padding: 5rem 0;
-    background: linear-gradient(45deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 6rem 0;
+    background: var(--section-bg);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .feature-card {
@@ -213,7 +218,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    background: var(--primary-color);
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 0;
@@ -237,17 +242,20 @@ html {
 .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    background: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
 }
 
 .feature-card:hover .feature-icon {
     transform: scale(1.1) rotate(5deg);
+    background: var(--accent-color);
+    box-shadow: var(--shadow-hover);
 }
 
 .feature-icon i {
@@ -436,7 +444,7 @@ html {
 
 /* Final CTA Section */
 .final-cta-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    background: var(--accent-color);
     color: white;
     padding: 5rem 0;
     position: relative;
@@ -590,6 +598,67 @@ html {
 
 .animate-card:nth-child(6) {
     animation-delay: 0.5s;
+}
+
+/* Enhanced Title Styling */
+.enhanced-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.enhanced-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.enhanced-subtitle {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark-gray);
+}
+
+/* Better section spacing and styling */
+.features-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.features-section .bg-light {
+    background: white !important;
+}
+
+/* Improved feature cards */
+.feature-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+/* Remove gradient background from feature cards hover */
+.feature-card::before {
+    display: none;
 }
 
 /* Responsive Design */
