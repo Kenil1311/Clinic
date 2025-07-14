@@ -664,17 +664,11 @@ document.addEventListener('DOMContentLoaded', function() {
             el.style.visibility = 'visible';
         });
         
-        // Allow hero title to have typing animation
+        // Allow hero title to have slide-in animation
         const heroTitle = heroSection.querySelector('.hero-title');
         if (heroTitle) {
             heroTitle.style.opacity = '1';
             heroTitle.style.visibility = 'visible';
-            // Remove the cursor after animation completes
-            setTimeout(() => {
-                heroTitle.style.animation = 'none';
-                heroTitle.style.width = '100%';
-                heroTitle.classList.add('typing-complete');
-            }, 2500);
         }
     }
     

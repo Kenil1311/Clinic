@@ -586,43 +586,218 @@ html {
     visibility: visible !important;
 }
 
-/* Hero title with typing animation */
+/* Hero title with slide-in animation */
 .hero-section.hero-section .hero-title {
     opacity: 1 !important;
-    transform: translateY(0) !important;
     visibility: visible !important;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typewriter 2s ease-in-out forwards;
+    animation: slideInFromLeft 0.8s ease-out forwards;
 }
 
-@keyframes typewriter {
+@keyframes slideInFromLeft {
     0% {
-        width: 0;
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Hero subtitle with delayed slide-in */
+.hero-section.hero-section .hero-subtitle {
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation: slideInFromLeft 0.8s ease-out 0.2s both;
+}
+
+/* Hero description with delayed slide-in */
+.hero-section.hero-section .hero-description {
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation: slideInFromLeft 0.8s ease-out 0.4s both;
+}
+
+/* Hero badge with bounce animation */
+.hero-section.hero-section .hero-badge {
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation: bounceIn 0.8s ease-out 0.1s both;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    70% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hero buttons with staggered fade-in */
+.hero-section.hero-section .hero-buttons {
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Dashboard with 3D rotation and slide-in */
+.hero-section.hero-section .dashboard-mockup {
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation: slideInFromRight 1s ease-out 0.3s both;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100px) perspective(1000px) rotateY(-15deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) perspective(1000px) rotateY(-5deg);
+        opacity: 1;
+    }
+}
+
+/* Statistics with staggered pop-in */
+.hero-section.hero-section .compact-stat:nth-child(1) {
+    animation: popIn 0.6s ease-out 0.8s both;
+}
+
+.hero-section.hero-section .compact-stat:nth-child(2) {
+    animation: popIn 0.6s ease-out 1s both;
+}
+
+.hero-section.hero-section .compact-stat:nth-child(3) {
+    animation: popIn 0.6s ease-out 1.2s both;
+}
+
+.hero-section.hero-section .compact-stat:nth-child(4) {
+    animation: popIn 0.6s ease-out 1.4s both;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    80% {
+        transform: scale(1.1);
         opacity: 1;
     }
     100% {
-        width: 100%;
+        transform: scale(1);
         opacity: 1;
     }
 }
 
-/* Typing cursor effect */
-.hero-section .hero-title::after {
-    content: '|';
-    color: var(--primary-color);
-    animation: blink 1s infinite;
-    font-weight: normal;
+/* Enhanced button animations */
+.hero-section .btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(0);
 }
 
-@keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+.hero-section .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
 }
 
-/* Remove cursor after typing completes */
-.hero-section .hero-title.typing-complete::after {
-    display: none;
+.hero-section .btn:hover::before {
+    left: 100%;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(74, 144, 226, 0.3);
+}
+
+.hero-section .btn:active {
+    transform: translateY(-1px);
+}
+
+/* Dashboard hover effects */
+.hero-section .dashboard-mockup:hover {
+    transform: translateX(0) perspective(1000px) rotateY(0deg) scale(1.02);
+    transition: all 0.5s ease;
+}
+
+.hero-section .dashboard-mockup:hover .dashboard-screen {
+    filter: brightness(1.1);
+}
+
+/* Statistics hover effects */
+.hero-section .compact-stat {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.hero-section .compact-stat:hover {
+    transform: scale(1.1);
+}
+
+.hero-section .compact-stat:hover .stat-number {
+    color: var(--accent-color);
+}
+
+/* Hero badge pulse animation */
+.hero-section .hero-badge {
+    position: relative;
+}
+
+.hero-section .hero-badge::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    z-index: -1;
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
 }
 
 .hero-section::before {
@@ -1193,12 +1368,35 @@ html {
     position: absolute;
     border-radius: 50%;
     background: rgba(255, 77, 77, 0.15);
-    animation: floatShape 12s ease-in-out infinite;
+    animation: advancedFloatShape 10s ease-in-out infinite;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(255, 77, 77, 0.08);
     backdrop-filter: blur(10px);
+    opacity: 0;
+    animation-fill-mode: both;
+}
+
+@keyframes advancedFloatShape {
+    0% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.1) rotate(180deg);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(1) rotate(360deg);
+        opacity: 0;
+    }
 }
 
 .floating-shape.shape-1 {
