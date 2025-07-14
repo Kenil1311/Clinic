@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initParallaxEffects();
     initFormAnimations();
     initCounterAnimations();
-    initTypewriterEffect();
+
     initFloatingElements();
     initMobileMenu();
     initTabSwitching();
@@ -262,40 +262,7 @@ function initDropdownEnhancements() {
     });
 }
 
-// Typewriter effect for hero title
-function initTypewriterEffect() {
-    const heroTitle = document.querySelector('.hero-title');
-    
-    if (!heroTitle) return;
-    
-    const text = heroTitle.innerHTML;
-    heroTitle.innerHTML = '';
-    heroTitle.style.opacity = '1';
-    
-    let index = 0;
-    const typeSpeed = 50;
-    
-    function typeWriter() {
-        if (index < text.length) {
-            if (text.charAt(index) === '<') {
-                // Handle HTML tags
-                const closingTag = text.indexOf('>', index);
-                heroTitle.innerHTML += text.substring(index, closingTag + 1);
-                index = closingTag + 1;
-            } else {
-                heroTitle.innerHTML += text.charAt(index);
-                index++;
-            }
-            setTimeout(typeWriter, typeSpeed);
-        } else {
-            // Add cursor blink effect
-            heroTitle.classList.add('typing-complete');
-        }
-    }
-    
-    // Start typing effect after a delay
-    setTimeout(typeWriter, 500);
-}
+
 
 // Enhanced floating elements
 function initFloatingElements() {
