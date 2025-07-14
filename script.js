@@ -508,8 +508,8 @@ window.addEventListener('load', function() {
 });
 
 // Add CSS classes for animations
-const style = document.createElement('style');
-style.textContent = `
+const animationStyle = document.createElement('style');
+animationStyle.textContent = `
     .animate-in {
         opacity: 1 !important;
         transform: translateY(0) !important;
@@ -540,7 +540,7 @@ style.textContent = `
         animation-play-state: running !important;
     }
 `;
-document.head.appendChild(style);
+document.head.appendChild(animationStyle);
 
 // Solution Cards Functionality
 function initSolutionCards() {
