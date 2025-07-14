@@ -189,18 +189,31 @@
 
 /* Features Section */
 .features-section {
-    background: var(--background);
+    background: #ffffff;
     position: relative;
     padding: 80px 0;
 }
 
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
 .features-section .feature-card {
-    background: var(--surface);
-    border-radius: var(--border-radius);
+    background: #ffffff;
+    border-radius: 12px;
     padding: 2.5rem;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -224,7 +237,7 @@
 
 .features-section .feature-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-color: #ff4d4d;
 }
 
@@ -237,7 +250,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
 
 .features-section .feature-icon i {
@@ -252,13 +265,13 @@
 .features-section .feature-card h4 {
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--text-color);
+    color: #333;
     margin-bottom: 1rem;
     line-height: 1.3;
 }
 
 .features-section .feature-card p {
-    color: var(--text-light);
+    color: #666;
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
@@ -269,7 +282,7 @@
     align-items: center;
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--text-color);
+    color: #333;
     padding: 0.5rem 1rem;
     background: rgba(255, 77, 77, 0.1);
     border-radius: 25px;
@@ -278,8 +291,9 @@
 
 /* Why Choose Section */
 .why-choose-section {
-    background: var(--surface);
+    background: #f8f9fa;
     position: relative;
+    padding: 80px 0;
 }
 
 .why-choose-section::before {
@@ -301,14 +315,71 @@
 }
 
 .why-choose-section .feature-card {
-    background: var(--background);
-    border-radius: var(--border-radius);
+    background: #ffffff;
+    border-radius: 12px;
     padding: 2.5rem;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
     position: relative;
     overflow: hidden;
+    height: 100%;
+}
+
+.why-choose-section .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #ff4d4d;
+}
+
+.why-choose-section .feature-card .feature-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.why-choose-section .feature-card .feature-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.why-choose-section .feature-card h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.why-choose-section .feature-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-section .section-title {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
 }
 
 .why-choose-section .feature-card:hover {
