@@ -346,6 +346,51 @@ function initMobileMenu() {
             }
         }
     });
+
+    // Enhanced mobile dropdown handling
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        
+        if (toggle && menu) {
+            toggle.addEventListener('click', function(e) {
+                if (window.innerWidth <= 991) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    // Close other dropdowns in mobile
+                    dropdowns.forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            const otherMenu = otherDropdown.querySelector('.dropdown-menu');
+                            const otherToggle = otherDropdown.querySelector('.dropdown-toggle');
+                            if (otherMenu && otherToggle) {
+                                otherMenu.classList.remove('show');
+                                otherToggle.setAttribute('aria-expanded', 'false');
+                            }
+                        }
+                    });
+                    
+                    // Toggle current dropdown
+                    const isOpen = menu.classList.contains('show');
+                    if (isOpen) {
+                        menu.classList.remove('show');
+                        toggle.setAttribute('aria-expanded', 'false');
+                    } else {
+                        menu.classList.add('show');
+                        toggle.setAttribute('aria-expanded', 'true');
+                    }
+                }
+            });
+        }
+    });
+
+    // Close mobile menu when window resizes to desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 991 && navbarCollapse.classList.contains('show')) {
+            navbarToggler.click();
+        }
+    });
 }
 
 // Tab switching animations

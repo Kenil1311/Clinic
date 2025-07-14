@@ -178,7 +178,7 @@ html {
 }
 
 .mega-menu {
-    min-width: 90vw;
+    min-width: 600px;
     max-width: 800px;
     padding: 1.5rem;
     left: 50%;
@@ -193,8 +193,8 @@ html {
 }
 
 .mega-menu .dropdown-item {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
     margin-bottom: 0.2rem;
     border-radius: var(--border-radius-sm);
     white-space: nowrap;
@@ -229,6 +229,7 @@ html {
         background: var(--surface);
         box-shadow: inset 0 1px 0 rgba(255, 77, 77, 0.1);
         overflow-x: hidden;
+        border-radius: 0;
     }
     
     .mega-menu {
@@ -239,6 +240,7 @@ html {
         left: auto;
         margin-left: 0;
         margin-right: 0;
+        border-radius: 0;
     }
     
     .mega-menu .container {
@@ -251,12 +253,14 @@ html {
     
     .mega-menu .col-md-6 {
         padding: 0 0.5rem;
+        margin-bottom: 1rem;
     }
     
     .dropdown-item {
         padding: 0.75rem 1.5rem;
         font-size: 0.9rem;
         white-space: normal;
+        border-radius: 0;
     }
     
     .dropdown-item:hover {
@@ -268,18 +272,51 @@ html {
         padding: 0.75rem 1.5rem 0.5rem;
         font-size: 0.85rem;
     }
+    
+    .navbar-nav .nav-link {
+        margin: 0;
+        padding: 0.75rem 1rem;
+        border-radius: 0;
+    }
+    
+    /* Mobile dropdown animations */
+    .dropdown-menu.show {
+        animation: slideDown 0.3s ease-out;
+    }
+    
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Mobile navbar collapse animation */
+    .navbar-collapse.animating {
+        transition: all 0.3s ease-in-out;
+    }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+    .mega-menu {
+        padding: 0.75rem;
+    }
+    
     .mega-menu .col-md-6 {
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0;
+        margin-bottom: 1.5rem;
     }
     
     .mega-menu .col-6 {
         flex: 0 0 100%;
         max-width: 100%;
+        padding: 0;
     }
     
     .dropdown-item {
@@ -289,6 +326,26 @@ html {
     
     .dropdown-item:hover {
         padding-left: 1.25rem;
+    }
+    
+    .dropdown-header {
+        font-size: 0.9rem;
+        padding: 0.75rem 1rem 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .mega-menu {
+        padding: 0.5rem;
+    }
+    
+    .dropdown-item {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .dropdown-item:hover {
+        padding-left: 1rem;
     }
 }
 
