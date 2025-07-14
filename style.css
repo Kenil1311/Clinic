@@ -1672,6 +1672,222 @@ html {
     .why-icon {
         margin: 0 auto;
     }
+}
+
+/* Smart Features Section */
+.smart-features-section {
+    background: white;
+}
+
+.smart-feature-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 77, 77, 0.1);
+    height: 100%;
+    text-align: center;
+}
+
+.smart-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-header {
+    margin-bottom: 1rem;
+}
+
+.feature-header i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-header h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+.smart-feature-card p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Solutions Section */
+.solutions-section {
+    background: var(--surface-alt) !important;
+}
+
+.solution-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 77, 77, 0.1);
+    height: 100%;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.solution-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.solution-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.solution-item {
+    background: rgba(255, 77, 77, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius-sm);
+    color: var(--text-color);
+    font-weight: 600;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Getting Started Section */
+.getting-started-section {
+    background: white;
+}
+
+.getting-started-features {
+    margin-bottom: 3rem;
+}
+
+.getting-started-item {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.getting-started-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.getting-started-item h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Need Help Section */
+.need-help-section {
+    background: var(--surface-alt) !important;
+}
+
+/* Mobile Responsive Updates */
+@media (max-width: 768px) {
+    .smart-feature-card {
+        padding: 1.5rem;
+    }
+    
+    .feature-header i {
+        font-size: 2rem;
+    }
+    
+    .feature-header h4 {
+        font-size: 1.1rem;
+    }
+    
+    .solution-card {
+        padding: 2rem;
+    }
+    
+    .getting-started-item {
+        padding: 1rem;
+    }
+    
+    .getting-started-item i {
+        font-size: 2.5rem;
+    }
+}
+
+/* Patient Engagement Section */
+.patient-engagement-section {
+    background: white;
+}
+
+.engagement-features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.engagement-feature {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 77, 77, 0.05);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.engagement-feature:hover {
+    transform: translateX(5px);
+    background: rgba(255, 77, 77, 0.08);
+}
+
+.engagement-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.engagement-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.engagement-content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.engagement-image {
+    text-align: center;
+}
+
+/* Mobile responsive for Patient Engagement */
+@media (max-width: 768px) {
+    .engagement-feature {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.25rem;
+    }
+    
+    .engagement-content h4 {
+        font-size: 1.1rem;
+    }
     
     .hero-section {
         padding: 100px 0 60px 0;
