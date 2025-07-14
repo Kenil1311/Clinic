@@ -493,7 +493,7 @@ html {
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
-    background: #ffffff;
+    background: #fef7f7;
     position: relative;
     overflow: hidden;
     padding-top: 100px;
@@ -503,7 +503,103 @@ html {
 
 /* Clean hero section - no opacity overrides */
 
-/* Clean hero section - no background effects */
+/* Medical animated elements */
+.medical-element {
+    position: absolute;
+    opacity: 0.4;
+    animation: floatMedical 8s ease-in-out infinite;
+    pointer-events: none;
+    color: #ff4d4d;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.medical-element:nth-child(1) {
+    top: 15%;
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.medical-element:nth-child(2) {
+    top: 25%;
+    right: 12%;
+    animation-delay: -2s;
+}
+
+.medical-element:nth-child(3) {
+    bottom: 30%;
+    left: 15%;
+    animation-delay: -4s;
+}
+
+.medical-element:nth-child(4) {
+    bottom: 20%;
+    right: 8%;
+    animation-delay: -6s;
+}
+
+.medical-element:nth-child(5) {
+    top: 45%;
+    left: 5%;
+    animation-delay: -1s;
+}
+
+.medical-element:nth-child(6) {
+    top: 60%;
+    right: 15%;
+    animation-delay: -3s;
+}
+
+@keyframes floatMedical {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.4;
+    }
+    25% {
+        transform: translateY(-15px) rotate(2deg);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-10px) rotate(-1deg);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateY(-20px) rotate(1deg);
+        opacity: 0.3;
+    }
+}
+
+/* Ensure text visibility on light pink background */
+.hero-title {
+    color: #2c3e50 !important;
+    font-weight: 800;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+    color: #34495e !important;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.hero-description {
+    color: #5a6c7d !important;
+    font-weight: 500;
+}
+
+.hero-badge {
+    background: rgba(255, 255, 255, 0.9);
+    color: #ff4d4d !important;
+    border: 1px solid rgba(255, 77, 77, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Mobile responsiveness for medical elements */
+@media (max-width: 768px) {
+    .medical-element {
+        display: none;
+    }
+}
 
 .hero-content {
     padding: 2rem 0;
