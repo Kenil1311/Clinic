@@ -493,11 +493,7 @@ html {
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(135deg, 
-        #fff5f5 0%, 
-        #ffffff 30%, 
-        #ffffff 60%, 
-        #fff8f8 100%);
+    background: #ffffff;
     position: relative;
     overflow: hidden;
     padding-top: 100px;
@@ -505,108 +501,9 @@ html {
     align-items: center;
 }
 
-/* Ensure hero section content is always visible */
-.hero-section *,
-.hero-section .hero-title,
-.hero-section .hero-subtitle,
-.hero-section .hero-description,
-.hero-section .hero-badge,
-.hero-section .hero-buttons,
-.hero-section .feature-item,
-.hero-section .dashboard-mockup,
-.hero-section .dashboard-screen,
-.hero-section .hero-trust-indicators,
-.hero-section .hero-stats-compact,
-.hero-section .hero-content,
-.hero-section .hero-image,
-.hero-section .dashboard-showcase,
-.hero-section .dashboard-frame,
-.hero-section .compact-stat,
-.hero-section .stat-number,
-.hero-section .stat-label {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-    animation: none !important;
-    transition: none !important;
-    visibility: visible !important;
-}
+/* Clean hero section - no opacity overrides */
 
-/* Override any section animations for hero */
-.hero-section.section-visible {
-    opacity: 1 !important;
-}
-
-/* Override any animate-in effects for hero */
-.hero-section .animate-in {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-/* Disable all AOS animations in hero section */
-.hero-section [data-aos] {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-    animation: none !important;
-    transition: none !important;
-}
-
-/* Disable any fade effects */
-.hero-section .aos-animate {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-    animation: none !important;
-}
-
-/* Ultra-high specificity override for hero section opacity - except title */
-.hero-section.hero-section .hero-content,
-.hero-section.hero-section .hero-image,
-.hero-section.hero-section .hero-subtitle,
-.hero-section.hero-section .hero-description,
-.hero-section.hero-section .hero-badge,
-.hero-section.hero-section .hero-buttons,
-.hero-section.hero-section .dashboard-mockup,
-.hero-section.hero-section .dashboard-screen,
-.hero-section.hero-section .hero-stats-compact,
-.hero-section.hero-section .compact-stat,
-.hero-section.hero-section .stat-number,
-.hero-section.hero-section .stat-label,
-.hero-section.hero-section .dashboard-showcase,
-.hero-section.hero-section .dashboard-frame,
-.hero-section.hero-section .dashboard-header,
-.hero-section.hero-section .dashboard-title,
-.hero-section.hero-section .dashboard-controls,
-.hero-section.hero-section .btn,
-.hero-section.hero-section span,
-.hero-section.hero-section p,
-.hero-section.hero-section img {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-    animation: none !important;
-    transition: none !important;
-    visibility: visible !important;
-}
-
-/* Hero title with full opacity */
-.hero-section.hero-section .hero-title {
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: translateY(0) !important;
-    animation: none !important;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 20% 20%, rgba(255, 77, 77, 0.06) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(255, 77, 77, 0.04) 0%, transparent 50%),
-                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
-    pointer-events: none;
-    z-index: 1;
-}
+/* Clean hero section - no background effects */
 
 .hero-content {
     padding: 2rem 0;
@@ -620,7 +517,6 @@ html {
     line-height: 1.2;
     margin-bottom: 1.5rem;
     color: var(--text-color);
-    opacity: 1;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -630,7 +526,6 @@ html {
     line-height: 1.5;
     margin-bottom: 1.5rem;
     color: var(--text-color);
-    opacity: 1;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
@@ -640,7 +535,6 @@ html {
     line-height: 1.6;
     margin-bottom: 2.5rem;
     color: var(--text-light);
-    opacity: 1;
 }
 
 .hero-buttons {
@@ -650,7 +544,6 @@ html {
     margin-bottom: 3rem;
     justify-content: center;
     align-items: center;
-    opacity: 1;
 }
 
 /* Hero Badge */
@@ -666,7 +559,6 @@ html {
     margin-bottom: 1.5rem;
     border: 1px solid rgba(255, 77, 77, 0.2);
     backdrop-filter: blur(10px);
-    opacity: 1;
 }
 
 /* Red text color for specific phrases */

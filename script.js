@@ -401,13 +401,7 @@ function initScrollAnimations() {
         staggerObserver.observe(card);
     });
     
-    // Immediately show hero section cards
-    const heroCards = document.querySelectorAll('.hero-section .col-lg-4, .hero-section .col-lg-3, .hero-section .col-md-6');
-    heroCards.forEach(card => {
-        card.classList.add('animate-in');
-        card.style.opacity = '1';
-        card.style.transform = 'translateY(0)';
-    });
+    // Standard card initialization
     
     // Fade-in animations for sections
     const sections = document.querySelectorAll('section:not(.hero-section)');
@@ -424,20 +418,7 @@ function initScrollAnimations() {
         sectionObserver.observe(section);
     });
     
-    // Immediately show hero section content
-    const heroSection = document.querySelector('.hero-section');
-    if (heroSection) {
-        heroSection.classList.add('section-visible');
-        
-        // Force all hero elements to be visible immediately
-        const heroElements = heroSection.querySelectorAll('*');
-        heroElements.forEach(el => {
-            el.style.opacity = '1';
-            el.style.transform = 'translateY(0)';
-            el.style.animation = 'none';
-            el.style.transition = 'none';
-        });
-    }
+    // Standard hero initialization
 }
 
 // Button hover effects
@@ -648,11 +629,7 @@ function initDropdownEnhancements() {
 
 // Initialize solution cards when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
-    // Immediately show hero section content
-    const heroSection = document.querySelector('.hero-section');
-    if (heroSection) {
-        heroSection.classList.add('section-visible');
-    }
+    // Standard initialization - no opacity overrides
     
     initSolutionCards();
     initDropdownEnhancements();
