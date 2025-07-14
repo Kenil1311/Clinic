@@ -157,7 +157,7 @@ function initFormAnimations() {
 
 // Counter animations for statistics
 function initCounterAnimations() {
-    const counters = document.querySelectorAll('.counter');
+    const counters = document.querySelectorAll('.hero-stat-inline-number.counter');
     let counterAnimated = false;
     
     const animateCounters = () => {
@@ -206,6 +206,60 @@ function initCounterAnimations() {
     if (heroSection) {
         heroObserver.observe(heroSection);
     }
+}
+
+// Enhanced dropdown functionality
+function initDropdownEnhancements() {
+    // Add smooth dropdown animations
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        
+        if (toggle && menu) {
+            toggle.addEventListener('click', (e) => {
+                // Close other open dropdowns
+                dropdowns.forEach(otherDropdown => {
+                    if (otherDropdown !== dropdown) {
+                        const otherMenu = otherDropdown.querySelector('.dropdown-menu');
+                        const otherToggle = otherDropdown.querySelector('.dropdown-toggle');
+                        if (otherMenu && otherToggle) {
+                            otherMenu.classList.remove('show');
+                            otherToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                });
+            });
+            
+            // Add hover effects for desktop
+            if (window.innerWidth > 991) {
+                dropdown.addEventListener('mouseenter', () => {
+                    menu.classList.add('show');
+                    toggle.setAttribute('aria-expanded', 'true');
+                });
+                
+                dropdown.addEventListener('mouseleave', () => {
+                    menu.classList.remove('show');
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+            }
+        }
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            dropdowns.forEach(dropdown => {
+                const menu = dropdown.querySelector('.dropdown-menu');
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                if (menu && toggle) {
+                    menu.classList.remove('show');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    });
 }
 
 // Typewriter effect for hero title
@@ -503,9 +557,64 @@ function initSolutionCards() {
     });
 }
 
+// Enhanced dropdown functionality
+function initDropdownEnhancements() {
+    // Add smooth dropdown animations
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        
+        if (toggle && menu) {
+            toggle.addEventListener('click', (e) => {
+                // Close other open dropdowns
+                dropdowns.forEach(otherDropdown => {
+                    if (otherDropdown !== dropdown) {
+                        const otherMenu = otherDropdown.querySelector('.dropdown-menu');
+                        const otherToggle = otherDropdown.querySelector('.dropdown-toggle');
+                        if (otherMenu && otherToggle) {
+                            otherMenu.classList.remove('show');
+                            otherToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                });
+            });
+            
+            // Add hover effects for desktop
+            if (window.innerWidth > 991) {
+                dropdown.addEventListener('mouseenter', () => {
+                    menu.classList.add('show');
+                    toggle.setAttribute('aria-expanded', 'true');
+                });
+                
+                dropdown.addEventListener('mouseleave', () => {
+                    menu.classList.remove('show');
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+            }
+        }
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            dropdowns.forEach(dropdown => {
+                const menu = dropdown.querySelector('.dropdown-menu');
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                if (menu && toggle) {
+                    menu.classList.remove('show');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    });
+}
+
 // Initialize solution cards when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
     initSolutionCards();
+    initDropdownEnhancements();
 });
 
 // Performance monitoring
