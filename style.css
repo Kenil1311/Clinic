@@ -471,6 +471,7 @@ html {
     margin-bottom: 1.5rem;
     color: var(--text-color);
     opacity: 1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-subtitle {
@@ -479,6 +480,7 @@ html {
     line-height: 1.5;
     margin-bottom: 1.5rem;
     color: var(--text-color);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .hero-description {
@@ -1000,12 +1002,12 @@ html {
 .floating-shape {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255, 77, 77, 0.08);
-    animation: floatShape 8s ease-in-out infinite;
+    background: rgba(255, 77, 77, 0.04);
+    animation: floatShape 12s ease-in-out infinite;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 77, 77, 0.15);
+    border: 1px solid rgba(255, 77, 77, 0.08);
     backdrop-filter: blur(10px);
 }
 
@@ -1019,7 +1021,7 @@ html {
 
 .floating-shape.shape-1 i {
     font-size: 1.5rem;
-    color: rgba(255, 77, 77, 0.25);
+    color: rgba(255, 77, 77, 0.15);
 }
 
 .floating-shape.shape-2 {
@@ -1032,7 +1034,7 @@ html {
 
 .floating-shape.shape-2 i {
     font-size: 1.3rem;
-    color: rgba(255, 77, 77, 0.25);
+    color: rgba(255, 77, 77, 0.15);
 }
 
 .floating-shape.shape-3 {
@@ -1045,7 +1047,7 @@ html {
 
 .floating-shape.shape-3 i {
     font-size: 1.4rem;
-    color: rgba(74, 144, 226, 0.25);
+    color: rgba(74, 144, 226, 0.15);
 }
 
 .floating-shape.shape-4 {
@@ -1058,7 +1060,7 @@ html {
 
 .floating-shape.shape-4 i {
     font-size: 1.2rem;
-    color: rgba(255, 77, 77, 0.25);
+    color: rgba(255, 77, 77, 0.15);
 }
 
 .floating-shape.shape-5 {
@@ -1071,7 +1073,7 @@ html {
 
 .floating-shape.shape-5 i {
     font-size: 1.6rem;
-    color: rgba(74, 144, 226, 0.25);
+    color: rgba(74, 144, 226, 0.15);
 }
 
 .floating-shape.shape-6 {
@@ -1084,7 +1086,7 @@ html {
 
 .floating-shape.shape-6 i {
     font-size: 1.7rem;
-    color: rgba(255, 77, 77, 0.25);
+    color: rgba(255, 77, 77, 0.15);
 }
 
 .floating-shape.shape-7 {
@@ -1097,7 +1099,7 @@ html {
 
 .floating-shape.shape-7 i {
     font-size: 1.4rem;
-    color: rgba(255, 77, 77, 0.2);
+    color: rgba(255, 77, 77, 0.12);
 }
 
 .floating-shape.shape-8 {
@@ -1110,7 +1112,7 @@ html {
 
 .floating-shape.shape-8 i {
     font-size: 1.3rem;
-    color: rgba(74, 144, 226, 0.2);
+    color: rgba(74, 144, 226, 0.12);
 }
 
 /* Mobile adjustments for floating shapes */
@@ -1176,6 +1178,14 @@ html {
     align-items: center;
     justify-content: center;
     margin: 0 auto 2rem;
+}
+
+.what-is-section .section-icon {
+    background: rgba(74, 144, 226, 0.1);
+}
+
+.what-is-section .section-icon i {
+    color: var(--accent-color);
 }
 
 .section-icon i {
@@ -1345,6 +1355,10 @@ html {
     font-size: 2rem;
     color: var(--primary-color);
     transition: var(--transition);
+}
+
+.smart-feature-card-new:nth-child(4n) .feature-icon-large i {
+    color: var(--accent-color);
 }
 
 .smart-feature-card-new:hover .feature-icon-large {
@@ -1518,6 +1532,10 @@ html {
     transition: var(--transition);
 }
 
+.solution-card:nth-child(2n) .solution-icon i {
+    color: var(--accent-color);
+}
+
 .solution-card.active .solution-icon i,
 .solution-card:hover .solution-icon i {
     color: white;
@@ -1607,6 +1625,10 @@ html {
     color: var(--primary-color);
     margin-top: 0.25rem;
     flex-shrink: 0;
+}
+
+.feature-item:nth-child(3n) i {
+    color: var(--accent-color);
 }
 
 .feature-item h5 {
