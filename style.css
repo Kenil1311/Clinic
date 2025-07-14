@@ -494,10 +494,10 @@ html {
 .hero-section {
     min-height: 100vh;
     background: linear-gradient(135deg, 
-        rgba(255, 77, 77, 0.08) 0%, 
-        rgba(255, 255, 255, 0.95) 30%, 
-        rgba(255, 255, 255, 1) 60%, 
-        rgba(255, 77, 77, 0.04) 100%);
+        #fff5f5 0%, 
+        #ffffff 30%, 
+        #ffffff 60%, 
+        #fff8f8 100%);
     position: relative;
     overflow: hidden;
     padding-top: 100px;
