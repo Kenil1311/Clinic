@@ -473,6 +473,38 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+// Solution Cards Functionality
+function initSolutionCards() {
+    const solutionCards = document.querySelectorAll('.solution-card');
+    const solutionDetails = document.querySelectorAll('.solution-detail');
+    
+    if (solutionCards.length === 0) return;
+    
+    solutionCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            
+            // Remove active class from all cards
+            solutionCards.forEach(c => c.classList.remove('active'));
+            // Add active class to clicked card
+            this.classList.add('active');
+            
+            // Hide all solution details
+            solutionDetails.forEach(detail => detail.classList.remove('active'));
+            // Show target solution detail
+            const targetDetail = document.getElementById(target);
+            if (targetDetail) {
+                targetDetail.classList.add('active');
+            }
+        });
+    });
+}
+
+// Initialize solution cards when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    initSolutionCards();
+});
+
 // Performance monitoring
 console.log('Clinicia Landing Page JavaScript loaded successfully');
 
