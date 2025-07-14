@@ -1,0 +1,128 @@
+Build a visually stunning, responsive landing page for a SaaS product called Clinicia, using:
+
+HTML5
+
+CSS3
+
+Bootstrap 5
+
+JavaScript (for animation / stat counters)
+
+🎯 Requirements:
+✅ Stylish Hero section with:
+
+H1: “Simplify Your Practice with Powerful Clinic Management Software”
+
+Subheading: “Manage appointments, EMR, billing & more — from any device.”
+
+Buttons: [Start Free Trial] and [Book a Demo]
+
+✅ Show animated stats (e.g. “20,000+ Clinics”, “99.9% Uptime”, “4.9⭐ Rating”)
+
+✅ Add one relevant Clinicia dashboard screenshot (e.g. Dashboard - Web.png)
+
+✅ Add background pattern or light image overlay for depth
+
+✅ Navbar with dropdowns:
+
+Features
+
+Solutions (Specialties + Practice Sizes)
+
+Pricing
+
+Support
+
+Contact
+
+About Us
+
+✅ Section: Why Clinicia
+
+Grid layout with animated cards
+
+Each card includes:
+
+Icon
+
+Title (e.g. "WhatsApp Integration")
+
+Short description
+
+Smooth hover effect, border animation, and shadow
+
+✅ Section: Features
+
+Use responsive card layout with icons
+
+Group features by categories (EMR, Finance, Communication, Inventory, etc.)
+
+Below this grid, display mobile app UI image (Home Page - App.jpg) inside a mobile-style frame
+
+✅ Section: Patient Communication
+
+Text on left, image (e.g. Cropped Dashboard - Web.png) on right
+
+Features: auto reminders, online booking, share prescriptions
+
+Subtle scroll animation on image (slide-in or fade-in)
+
+✅ Section: Testimonials
+
+Bootstrap carousel with:
+
+Quote
+
+Doctor name + location
+
+Star rating
+
+✅ Final CTA:
+
+“Start your free trial today — no credit card required.”
+
+Buttons: [Start Free Trial], [See Pricing]
+
+✅ Footer:
+
+All nav links, social icons, contact info
+
+🎨 Branding & Theme:
+Logo: https://clinicia.com/app/website_assets/images/clinicia_logo1.png
+
+Primary Color: #ff4d4d (Clinicia pink)
+
+Accent Color: #2D6CDF (blue)
+
+Text Color: #343a40
+
+Use Bootstrap’s spacing & typography utilities
+
+Add background gradients or soft dividers for depth
+
+📸 Image Display:
+Dashboard - Web.png: in Hero or Features section
+
+Home Page - App.jpg: in Features or App section
+
+Cropped Dashboard - Web.png: in Communication section
+
+Use Bootstrap’s grid or flex to arrange them inside mockup-style containers
+
+🎯 Animations:
+Animate counters in Hero stats using JavaScript
+
+Hover & entry animation for cards (CSS or JS)
+
+Smooth scroll-to-view animations (e.g. fade-in or slide)
+
+📁 Output Files:
+index.html
+
+style.css (custom styles + animations)
+
+script.js (counter animation, scroll effects)
+
+Bootstrap via CDN
+
+Dummy placeholder images if necessary
