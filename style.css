@@ -1003,81 +1003,94 @@ html {
 }
 
 .floating-shape.shape-1 {
-    width: 120px;
-    height: 120px;
-    top: 15%;
-    right: 8%;
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    right: 5%;
     animation-delay: 0s;
 }
 
 .floating-shape.shape-1 i {
-    font-size: 2.5rem;
-    color: rgba(255, 77, 77, 0.3);
+    font-size: 1.5rem;
+    color: rgba(255, 77, 77, 0.25);
 }
 
 .floating-shape.shape-2 {
-    width: 90px;
-    height: 90px;
-    top: 65%;
-    left: 8%;
+    width: 50px;
+    height: 50px;
+    top: 80%;
+    right: 15%;
     animation-delay: 2s;
 }
 
 .floating-shape.shape-2 i {
-    font-size: 2rem;
-    color: rgba(255, 77, 77, 0.3);
+    font-size: 1.3rem;
+    color: rgba(255, 77, 77, 0.25);
 }
 
 .floating-shape.shape-3 {
-    width: 100px;
-    height: 100px;
-    bottom: 20%;
-    right: 30%;
+    width: 55px;
+    height: 55px;
+    bottom: 15%;
+    right: 35%;
     animation-delay: 4s;
 }
 
 .floating-shape.shape-3 i {
-    font-size: 2.2rem;
-    color: rgba(255, 77, 77, 0.3);
+    font-size: 1.4rem;
+    color: rgba(255, 77, 77, 0.25);
 }
 
 .floating-shape.shape-4 {
-    width: 80px;
-    height: 80px;
-    top: 45%;
-    right: 25%;
+    width: 45px;
+    height: 45px;
+    top: 50%;
+    right: 30%;
     animation-delay: 1s;
 }
 
 .floating-shape.shape-4 i {
-    font-size: 1.8rem;
-    color: rgba(255, 77, 77, 0.3);
+    font-size: 1.2rem;
+    color: rgba(255, 77, 77, 0.25);
 }
 
 .floating-shape.shape-5 {
-    width: 110px;
-    height: 110px;
-    top: 30%;
-    left: 12%;
+    width: 65px;
+    height: 65px;
+    top: 40%;
+    right: 10%;
     animation-delay: 3s;
 }
 
 .floating-shape.shape-5 i {
-    font-size: 2.3rem;
-    color: rgba(255, 77, 77, 0.3);
+    font-size: 1.6rem;
+    color: rgba(255, 77, 77, 0.25);
 }
 
 .floating-shape.shape-6 {
-    width: 95px;
-    height: 95px;
+    width: 70px;
+    height: 70px;
     top: 10%;
-    left: 35%;
+    right: 20%;
     animation-delay: 5s;
 }
 
 .floating-shape.shape-6 i {
-    font-size: 2.1rem;
-    color: rgba(255, 77, 77, 0.3);
+    font-size: 1.7rem;
+    color: rgba(255, 77, 77, 0.25);
+}
+
+/* Mobile adjustments for floating shapes */
+@media (max-width: 768px) {
+    .floating-shape {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .floating-shape {
+        transform: scale(0.8);
+    }
 }
 
 @keyframes float {
