@@ -493,11 +493,7 @@ html {
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(135deg, 
-        rgba(255, 77, 77, 0.08) 0%, 
-        rgba(255, 255, 255, 0.95) 30%, 
-        rgba(255, 255, 255, 1) 60%, 
-        rgba(255, 77, 77, 0.04) 100%);
+    background: #ffffff;
     position: relative;
     overflow: hidden;
     padding-top: 100px;
@@ -726,7 +722,7 @@ html {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background: rgba(255, 255, 255, 0.2);
     transition: left 0.5s ease;
 }
 
@@ -780,7 +776,7 @@ html {
     right: -2px;
     bottom: -2px;
     border-radius: 50px;
-    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    background: var(--primary-color);
     z-index: -1;
     animation: badgePulse 2s ease-in-out infinite;
 }
