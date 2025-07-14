@@ -1196,7 +1196,7 @@ html {
 /* What is Clinicia Section */
 .what-is-section {
     padding: 6rem 0;
-    background: var(--surface);
+    background: #f8f9fa;
     position: relative;
     overflow: hidden;
 }
