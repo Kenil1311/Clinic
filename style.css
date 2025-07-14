@@ -1197,6 +1197,46 @@ html {
 .what-is-section {
     padding: 6rem 0;
     background: var(--surface);
+    position: relative;
+    overflow: hidden;
+}
+
+.what-is-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(74, 144, 226, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(74, 144, 226, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 40% 70%, rgba(255, 77, 77, 0.02) 0%, transparent 50%),
+        radial-gradient(circle at 60% 30%, rgba(74, 144, 226, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 10% 80%, rgba(74, 144, 226, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.what-is-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.what-is-section::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: 
+        linear-gradient(45deg, transparent 40%, rgba(74, 144, 226, 0.02) 50%, transparent 60%),
+        linear-gradient(-45deg, transparent 40%, rgba(74, 144, 226, 0.015) 50%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
 }
 
 /* Why Choose Section */
