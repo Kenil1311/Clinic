@@ -541,6 +541,7 @@ html {
     line-height: 1.5;
     margin-bottom: 1.5rem;
     color: var(--text-color);
+    opacity: 1;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
@@ -550,6 +551,7 @@ html {
     line-height: 1.6;
     margin-bottom: 2.5rem;
     color: var(--text-light);
+    opacity: 1;
 }
 
 .hero-buttons {
@@ -559,6 +561,7 @@ html {
     margin-bottom: 3rem;
     justify-content: center;
     align-items: center;
+    opacity: 1;
 }
 
 /* Hero Badge */
@@ -574,6 +577,7 @@ html {
     margin-bottom: 1.5rem;
     border: 1px solid rgba(255, 77, 77, 0.2);
     backdrop-filter: blur(10px);
+    opacity: 1;
 }
 
 /* Red text color for specific phrases */
@@ -593,6 +597,7 @@ html {
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-color);
+    opacity: 1;
 }
 
 .feature-item i {
@@ -862,6 +867,7 @@ html {
     position: relative;
     transform: perspective(1000px) rotateY(-5deg);
     transition: var(--transition);
+    opacity: 1;
 }
 
 .dashboard-mockup:hover {
@@ -935,6 +941,7 @@ html {
     display: block;
     border-radius: 0 0 12px 12px;
     transition: var(--transition);
+    opacity: 1;
 }
 
 .dashboard-mockup:hover .dashboard-screen {
