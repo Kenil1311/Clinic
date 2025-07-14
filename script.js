@@ -654,8 +654,8 @@ document.addEventListener('DOMContentLoaded', function() {
         heroSection.style.opacity = '1';
         heroSection.style.transform = 'translateY(0)';
         
-        // Force all hero elements to be visible immediately
-        const heroElements = heroSection.querySelectorAll('*');
+        // Force all hero elements to be visible immediately (except title for animation)
+        const heroElements = heroSection.querySelectorAll('*:not(.hero-title)');
         heroElements.forEach(el => {
             el.style.opacity = '1';
             el.style.transform = 'translateY(0)';
@@ -663,6 +663,19 @@ document.addEventListener('DOMContentLoaded', function() {
             el.style.transition = 'none';
             el.style.visibility = 'visible';
         });
+        
+        // Allow hero title to have typing animation
+        const heroTitle = heroSection.querySelector('.hero-title');
+        if (heroTitle) {
+            heroTitle.style.opacity = '1';
+            heroTitle.style.visibility = 'visible';
+            // Remove the cursor after animation completes
+            setTimeout(() => {
+                heroTitle.style.animation = 'none';
+                heroTitle.style.width = '100%';
+                heroTitle.classList.add('typing-complete');
+            }, 2500);
+        }
     }
     
     initSolutionCards();
