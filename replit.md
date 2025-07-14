@@ -120,6 +120,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Added cubic-bezier easing for more natural transitions and will-change for better performance
 ✓ Added subtle glow effect to hero title text with layered red text-shadow for enhanced visual appeal
 ✓ Removed glow effect from hero title text, returned to simple shadow for clean appearance
+✓ Aligned hero buttons to the left side instead of center for better layout consistency
 
 ## User Preferences
 
