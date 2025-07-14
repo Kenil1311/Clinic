@@ -516,7 +516,14 @@ html {
 .hero-section .dashboard-mockup,
 .hero-section .dashboard-screen,
 .hero-section .hero-trust-indicators,
-.hero-section .hero-stats-compact {
+.hero-section .hero-stats-compact,
+.hero-section .hero-content,
+.hero-section .hero-image,
+.hero-section .dashboard-showcase,
+.hero-section .dashboard-frame,
+.hero-section .compact-stat,
+.hero-section .stat-number,
+.hero-section .stat-label {
     opacity: 1 !important;
     transform: translateY(0) !important;
     animation: none !important;
@@ -533,6 +540,52 @@ html {
 .hero-section .animate-in {
     opacity: 1 !important;
     transform: translateY(0) !important;
+}
+
+/* Disable all AOS animations in hero section */
+.hero-section [data-aos] {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Disable any fade effects */
+.hero-section .aos-animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    animation: none !important;
+}
+
+/* Ultra-high specificity override for hero section opacity */
+.hero-section.hero-section .hero-content,
+.hero-section.hero-section .hero-image,
+.hero-section.hero-section .hero-title,
+.hero-section.hero-section .hero-subtitle,
+.hero-section.hero-section .hero-description,
+.hero-section.hero-section .hero-badge,
+.hero-section.hero-section .hero-buttons,
+.hero-section.hero-section .dashboard-mockup,
+.hero-section.hero-section .dashboard-screen,
+.hero-section.hero-section .hero-stats-compact,
+.hero-section.hero-section .compact-stat,
+.hero-section.hero-section .stat-number,
+.hero-section.hero-section .stat-label,
+.hero-section.hero-section .dashboard-showcase,
+.hero-section.hero-section .dashboard-frame,
+.hero-section.hero-section .dashboard-header,
+.hero-section.hero-section .dashboard-title,
+.hero-section.hero-section .dashboard-controls,
+.hero-section.hero-section .btn,
+.hero-section.hero-section span,
+.hero-section.hero-section p,
+.hero-section.hero-section h1,
+.hero-section.hero-section img {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    animation: none !important;
+    transition: none !important;
+    visibility: visible !important;
 }
 
 .hero-section::before {

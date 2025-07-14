@@ -428,6 +428,15 @@ function initScrollAnimations() {
     const heroSection = document.querySelector('.hero-section');
     if (heroSection) {
         heroSection.classList.add('section-visible');
+        
+        // Force all hero elements to be visible immediately
+        const heroElements = heroSection.querySelectorAll('*');
+        heroElements.forEach(el => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+            el.style.animation = 'none';
+            el.style.transition = 'none';
+        });
     }
 }
 
@@ -639,6 +648,23 @@ function initDropdownEnhancements() {
 
 // Initialize solution cards when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
+    // Force hero section to be visible immediately on page load
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+        heroSection.style.opacity = '1';
+        heroSection.style.transform = 'translateY(0)';
+        
+        // Force all hero elements to be visible immediately
+        const heroElements = heroSection.querySelectorAll('*');
+        heroElements.forEach(el => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+            el.style.animation = 'none';
+            el.style.transition = 'none';
+            el.style.visibility = 'visible';
+        });
+    }
+    
     initSolutionCards();
     initDropdownEnhancements();
 });
