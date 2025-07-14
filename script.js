@@ -384,8 +384,8 @@ function initTabSwitching() {
 
 // Advanced scroll animations
 function initScrollAnimations() {
-    // Stagger animations for card grids
-    const cardGroups = document.querySelectorAll('.row .col-lg-4, .row .col-lg-3, .row .col-md-6');
+    // Stagger animations for card grids (except hero section)
+    const cardGroups = document.querySelectorAll('.row .col-lg-4:not(.hero-section *), .row .col-lg-3:not(.hero-section *), .row .col-md-6:not(.hero-section *)');
     
     const staggerObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
@@ -401,8 +401,16 @@ function initScrollAnimations() {
         staggerObserver.observe(card);
     });
     
+    // Immediately show hero section cards
+    const heroCards = document.querySelectorAll('.hero-section .col-lg-4, .hero-section .col-lg-3, .hero-section .col-md-6');
+    heroCards.forEach(card => {
+        card.classList.add('animate-in');
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+    });
+    
     // Fade-in animations for sections
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll('section:not(.hero-section)');
     
     const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -415,6 +423,12 @@ function initScrollAnimations() {
     sections.forEach(section => {
         sectionObserver.observe(section);
     });
+    
+    // Immediately show hero section content
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+        heroSection.classList.add('section-visible');
+    }
 }
 
 // Button hover effects

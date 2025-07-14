@@ -505,6 +505,36 @@ html {
     align-items: center;
 }
 
+/* Ensure hero section content is always visible */
+.hero-section *,
+.hero-section .hero-title,
+.hero-section .hero-subtitle,
+.hero-section .hero-description,
+.hero-section .hero-badge,
+.hero-section .hero-buttons,
+.hero-section .feature-item,
+.hero-section .dashboard-mockup,
+.hero-section .dashboard-screen,
+.hero-section .hero-trust-indicators,
+.hero-section .hero-stats-compact {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    animation: none !important;
+    transition: none !important;
+    visibility: visible !important;
+}
+
+/* Override any section animations for hero */
+.hero-section.section-visible {
+    opacity: 1 !important;
+}
+
+/* Override any animate-in effects for hero */
+.hero-section .animate-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
 .hero-section::before {
     content: '';
     position: absolute;
