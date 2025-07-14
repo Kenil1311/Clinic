@@ -193,18 +193,18 @@ function initCounterAnimations() {
         counterAnimated = true;
     };
     
-    // Trigger animation when stats section is visible
-    const statsObserver = new IntersectionObserver((entries) => {
+    // Trigger animation when hero section is visible
+    const heroObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                setTimeout(animateCounters, 500); // Delay for better effect
+                setTimeout(animateCounters, 1500); // Delay for better effect after hero loads
             }
         });
     }, { threshold: 0.3 });
     
-    const statsSection = document.querySelector('.stats-section');
-    if (statsSection) {
-        statsObserver.observe(statsSection);
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+        heroObserver.observe(heroSection);
     }
 }
 
