@@ -116,6 +116,8 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Repositioned elements with fewer on left side (2) and more on right side (6) for better balance
 ✓ Made medical elements more subtle with smaller size (1.2rem), lighter color (#ffb3b3), and reduced opacity (0.25)
 ✓ Reduced animation intensity with gentler movements and slower timing for less distraction
+✓ Enhanced medical elements with better visual effects, smoother animations, and improved timing
+✓ Added cubic-bezier easing for more natural transitions and will-change for better performance
 
 ## User Preferences
 

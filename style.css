@@ -503,97 +503,103 @@ html {
 
 /* Clean hero section - no opacity overrides */
 
-/* Subtle Medical animated elements */
+/* Enhanced Subtle Medical animated elements */
 .medical-element {
     position: absolute;
-    opacity: 0.25;
-    animation: floatMedical 8s ease-in-out infinite;
+    opacity: 0.3;
+    animation: floatMedical 10s ease-in-out infinite;
     pointer-events: none;
-    color: #ffb3b3;
-    font-size: 1.2rem;
+    color: #ff9999;
+    font-size: 1.3rem;
     z-index: 2;
-    transition: all 0.3s ease;
-    filter: drop-shadow(0 1px 3px rgba(255, 77, 77, 0.15));
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 2px 6px rgba(255, 77, 77, 0.2));
+    will-change: transform, opacity;
 }
 
 .medical-element:hover {
-    transform: scale(1.05) !important;
-    opacity: 0.4 !important;
+    transform: scale(1.1) !important;
+    opacity: 0.5 !important;
     animation-play-state: paused;
+    filter: drop-shadow(0 3px 10px rgba(255, 77, 77, 0.3));
 }
 
 .medical-element:nth-child(1) {
     top: 15%;
     left: 8%;
     animation-delay: 0s;
-    animation-duration: 5s;
+    animation-duration: 9s;
 }
 
 .medical-element:nth-child(2) {
     top: 12%;
     right: 10%;
-    animation-delay: -1.5s;
-    animation-duration: 7s;
+    animation-delay: -2s;
+    animation-duration: 11s;
 }
 
 .medical-element:nth-child(3) {
     bottom: 30%;
     left: 12%;
-    animation-delay: -3s;
-    animation-duration: 6s;
+    animation-delay: -4s;
+    animation-duration: 10s;
 }
 
 .medical-element:nth-child(4) {
     bottom: 15%;
     right: 8%;
-    animation-delay: -4.5s;
-    animation-duration: 8s;
+    animation-delay: -6s;
+    animation-duration: 12s;
 }
 
 .medical-element:nth-child(5) {
     top: 25%;
     right: 18%;
-    animation-delay: -2s;
-    animation-duration: 5.5s;
+    animation-delay: -3s;
+    animation-duration: 8s;
 }
 
 .medical-element:nth-child(6) {
     top: 45%;
     right: 12%;
-    animation-delay: -3.5s;
-    animation-duration: 6.5s;
+    animation-delay: -5s;
+    animation-duration: 9.5s;
 }
 
 .medical-element:nth-child(7) {
     top: 65%;
     right: 20%;
-    animation-delay: -5s;
-    animation-duration: 7.5s;
+    animation-delay: -7s;
+    animation-duration: 11.5s;
 }
 
 .medical-element:nth-child(8) {
     bottom: 35%;
     right: 25%;
-    animation-delay: -2.5s;
-    animation-duration: 5.8s;
+    animation-delay: -3.5s;
+    animation-duration: 10.5s;
 }
 
 @keyframes floatMedical {
     0%, 100% {
         transform: translateY(0px) rotate(0deg) scale(1);
-        opacity: 0.25;
-    }
-    25% {
-        transform: translateY(-10px) rotate(2deg) scale(1.02);
-        opacity: 0.2;
-    }
-    50% {
-        transform: translateY(-15px) rotate(-1deg) scale(0.98);
         opacity: 0.3;
     }
-    75% {
-        transform: translateY(-8px) rotate(3deg) scale(1.01);
-        opacity: 0.22;
+    20% {
+        transform: translateY(-12px) rotate(3deg) scale(1.03);
+        opacity: 0.25;
+    }
+    40% {
+        transform: translateY(-20px) rotate(-2deg) scale(0.97);
+        opacity: 0.35;
+    }
+    60% {
+        transform: translateY(-16px) rotate(4deg) scale(1.02);
+        opacity: 0.28;
+    }
+    80% {
+        transform: translateY(-8px) rotate(-1deg) scale(1.01);
+        opacity: 0.32;
     }
 }
 
@@ -609,32 +615,32 @@ html {
 @keyframes pulseMedical {
     0%, 100% {
         transform: scale(1) rotate(0deg);
-        opacity: 0.25;
-        filter: drop-shadow(0 1px 3px rgba(255, 77, 77, 0.15));
+        opacity: 0.3;
+        filter: drop-shadow(0 2px 6px rgba(255, 77, 77, 0.2));
     }
     50% {
-        transform: scale(1.08) rotate(2deg);
-        opacity: 0.35;
-        filter: drop-shadow(0 2px 6px rgba(255, 77, 77, 0.2));
+        transform: scale(1.12) rotate(3deg);
+        opacity: 0.45;
+        filter: drop-shadow(0 4px 12px rgba(255, 77, 77, 0.3));
     }
 }
 
 @keyframes bounceMedical {
     0%, 100% {
         transform: translateY(0px) rotate(0deg);
-        opacity: 0.25;
+        opacity: 0.3;
     }
     25% {
-        transform: translateY(-12px) rotate(3deg);
-        opacity: 0.2;
+        transform: translateY(-15px) rotate(4deg);
+        opacity: 0.25;
     }
     50% {
-        transform: translateY(-18px) rotate(-2deg);
-        opacity: 0.35;
+        transform: translateY(-22px) rotate(-3deg);
+        opacity: 0.4;
     }
     75% {
-        transform: translateY(-8px) rotate(4deg);
-        opacity: 0.22;
+        transform: translateY(-10px) rotate(5deg);
+        opacity: 0.28;
     }
 }
 
@@ -679,42 +685,42 @@ html {
 @keyframes swingMedical {
     0%, 100% {
         transform: rotate(0deg) translateY(0px);
-        opacity: 0.25;
+        opacity: 0.3;
     }
     25% {
-        transform: rotate(6deg) translateY(-5px);
-        opacity: 0.2;
+        transform: rotate(8deg) translateY(-8px);
+        opacity: 0.25;
     }
     50% {
-        transform: rotate(-4deg) translateY(-8px);
-        opacity: 0.35;
+        transform: rotate(-6deg) translateY(-12px);
+        opacity: 0.4;
     }
     75% {
-        transform: rotate(8deg) translateY(-6px);
-        opacity: 0.22;
+        transform: rotate(10deg) translateY(-9px);
+        opacity: 0.28;
     }
 }
 
 @keyframes rotateMedical {
     0% {
         transform: rotate(0deg) scale(1);
-        opacity: 0.25;
-    }
-    25% {
-        transform: rotate(90deg) scale(1.03);
-        opacity: 0.2;
-    }
-    50% {
-        transform: rotate(180deg) scale(0.98);
         opacity: 0.3;
     }
+    25% {
+        transform: rotate(90deg) scale(1.05);
+        opacity: 0.25;
+    }
+    50% {
+        transform: rotate(180deg) scale(0.95);
+        opacity: 0.35;
+    }
     75% {
-        transform: rotate(270deg) scale(1.02);
-        opacity: 0.22;
+        transform: rotate(270deg) scale(1.03);
+        opacity: 0.28;
     }
     100% {
         transform: rotate(360deg) scale(1);
-        opacity: 0.25;
+        opacity: 0.3;
     }
 }
 
