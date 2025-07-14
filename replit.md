@@ -52,6 +52,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Added 6 floating medical icons with smooth animations and proper positioning
 ✓ Made floating icons smaller and repositioned them to avoid interfering with left side content
 ✓ Added mobile responsiveness to hide floating icons on mobile devices
+✓ Added 2 additional floating medical icons on the left side (shield-alt and notes-medical) positioned carefully to avoid text interference
 
 ## User Preferences
 
