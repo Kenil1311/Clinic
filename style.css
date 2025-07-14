@@ -2960,6 +2960,13 @@ html {
     .modern-navbar {
         padding: 0.5rem 0;
         background: rgba(255, 255, 255, 0.98);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1050;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     
     .navbar-brand .clinicia-logo {
@@ -2973,6 +2980,8 @@ html {
         background: rgba(255, 77, 77, 0.1);
         border-radius: 8px;
         color: var(--primary-color);
+        position: relative;
+        z-index: 1051;
     }
     
     .navbar-toggler:focus {
@@ -3022,7 +3031,7 @@ html {
     /* Hero section mobile improvements */
     .hero-section {
         min-height: auto;
-        padding: 100px 0 40px;
+        padding: 120px 0 40px;
         display: block;
     }
     
@@ -3432,8 +3441,20 @@ html {
 }
 
 @media (max-width: 576px) {
+    .modern-navbar {
+        padding: 0.4rem 0;
+        background: rgba(255, 255, 255, 0.98);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1050;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
     .hero-section {
-        padding: 90px 0 30px;
+        padding: 110px 0 30px;
     }
     
     .hero-section .container {
