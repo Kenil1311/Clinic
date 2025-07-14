@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFeaturesAnimations();
     initFeaturesMobileMenu();
     initFeaturesParallax();
+    initFeaturesScrollAnimations();
     
     console.log('Clinicia Features Page JavaScript loaded successfully');
 });
