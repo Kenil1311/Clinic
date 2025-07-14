@@ -1209,12 +1209,12 @@ html {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 15% 15%, rgba(255, 77, 77, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 85% 85%, rgba(255, 77, 77, 0.06) 0%, transparent 40%),
-        radial-gradient(circle at 35% 75%, rgba(255, 77, 77, 0.04) 0%, transparent 40%),
-        radial-gradient(circle at 65% 25%, rgba(255, 77, 77, 0.05) 0%, transparent 40%),
-        radial-gradient(circle at 5% 85%, rgba(255, 77, 77, 0.03) 0%, transparent 40%),
-        radial-gradient(circle at 95% 15%, rgba(255, 77, 77, 0.04) 0%, transparent 40%);
+        radial-gradient(circle at 15% 15%, rgba(74, 144, 226, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(74, 144, 226, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 35% 75%, rgba(74, 144, 226, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 65% 25%, rgba(74, 144, 226, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 5% 85%, rgba(74, 144, 226, 0.03) 0%, transparent 40%),
+        radial-gradient(circle at 95% 15%, rgba(74, 144, 226, 0.04) 0%, transparent 40%);
     pointer-events: none;
     z-index: 1;
 }
@@ -1238,7 +1238,7 @@ html {
     transform: translate(-50%, -50%);
     width: 80px;
     height: 80px;
-    background: radial-gradient(circle, rgba(255, 77, 77, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 0%, transparent 70%);
     border-radius: 50%;
     z-index: -1;
     animation: pulse 3s ease-in-out infinite;
@@ -1252,7 +1252,7 @@ html {
 /* Add subtle pattern overlay */
 .what-is-section {
     background-image: 
-        radial-gradient(circle at 1px 1px, rgba(255, 77, 77, 0.1) 1px, transparent 0);
+        radial-gradient(circle at 1px 1px, rgba(74, 144, 226, 0.1) 1px, transparent 0);
     background-size: 50px 50px;
     background-position: 0 0, 25px 25px;
 }
@@ -1314,8 +1314,8 @@ html {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .circle-2 {
@@ -1327,8 +1327,8 @@ html {
 .circle-3 {
     bottom: 20px;
     right: 30%;
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .circle-4 {
@@ -1340,8 +1340,8 @@ html {
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .circle-6 {
@@ -1384,7 +1384,7 @@ html {
 
 .feature-list li:nth-child(2) i,
 .feature-list li:nth-child(4) i {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 /* Mobile Responsiveness for What is Clinicia Section */
@@ -1456,9 +1456,9 @@ html {
     width: 900px;
     height: 900px;
     background: 
-        linear-gradient(45deg, transparent 35%, rgba(255, 77, 77, 0.03) 50%, transparent 65%),
-        linear-gradient(-45deg, transparent 35%, rgba(255, 77, 77, 0.025) 50%, transparent 65%),
-        linear-gradient(135deg, transparent 35%, rgba(255, 77, 77, 0.02) 50%, transparent 65%);
+        linear-gradient(45deg, transparent 35%, rgba(74, 144, 226, 0.03) 50%, transparent 65%),
+        linear-gradient(-45deg, transparent 35%, rgba(74, 144, 226, 0.025) 50%, transparent 65%),
+        linear-gradient(135deg, transparent 35%, rgba(74, 144, 226, 0.02) 50%, transparent 65%);
     border-radius: 50%;
     pointer-events: none;
     z-index: 1;
