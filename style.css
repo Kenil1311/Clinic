@@ -703,6 +703,99 @@ html {
         0 0 0 2px rgba(255, 255, 255, 0.15);
 }
 
+/* Dashboard Showcase */
+.dashboard-showcase {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 2;
+}
+
+.dashboard-mockup {
+    position: relative;
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: var(--transition);
+}
+
+.dashboard-mockup:hover {
+    transform: perspective(1000px) rotateY(-2deg) scale(1.02);
+}
+
+.dashboard-frame {
+    background: linear-gradient(145deg, #f8f9fa, #ffffff);
+    border-radius: 12px;
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.25),
+        0 12px 24px rgba(0, 0, 0, 0.15),
+        inset 0 1px 2px rgba(255, 255, 255, 0.8);
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+}
+
+.dashboard-header {
+    height: 40px;
+    background: linear-gradient(145deg, #e9ecef, #f8f9fa);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.dashboard-controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.dashboard-controls .control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dashboard-controls .control.close {
+    background: #ff5f57;
+    border: 1px solid #e33e41;
+}
+
+.dashboard-controls .control.minimize {
+    background: #ffbd2e;
+    border: 1px solid #dea123;
+}
+
+.dashboard-controls .control.maximize {
+    background: #28ca42;
+    border: 1px solid #1aad29;
+}
+
+.dashboard-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+.dashboard-screen {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0 0 12px 12px;
+    transition: var(--transition);
+}
+
+.dashboard-mockup:hover .dashboard-screen {
+    transform: scale(1.01);
+}
+
 /* Inline Hero Statistics */
 .hero-stats-inline {
     padding-top: 2rem;
@@ -2072,6 +2165,27 @@ html {
         overflow: hidden;
     }
     
+    .dashboard-showcase {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.8);
+        margin: 0 auto;
+        max-height: 350px;
+        overflow: hidden;
+    }
+    
+    .dashboard-mockup {
+        transform: perspective(1000px) rotateY(0deg);
+        max-width: 100%;
+    }
+    
+    .dashboard-frame {
+        max-width: 100%;
+        width: 100%;
+    }
+    
     .devices-showcase {
         max-width: 100%;
         display: flex;
@@ -2248,6 +2362,15 @@ html {
     
     .hero-image {
         max-height: 300px;
+    }
+    
+    .dashboard-showcase {
+        transform: scale(0.7);
+        max-height: 280px;
+    }
+    
+    .dashboard-mockup {
+        transform: perspective(1000px) rotateY(0deg);
     }
     
     .devices-showcase {
