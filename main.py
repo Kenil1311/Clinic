@@ -19,6 +19,54 @@ def emr():
 def prescription():
     return send_file('prescription.html')
 
+@app.route('/appointment')
+def appointment():
+    return send_file('appointment.html')
+
+@app.route('/financial')
+def financial():
+    return send_file('financial.html')
+
+@app.route('/consent')
+def consent():
+    return send_file('consent.html')
+
+@app.route('/expense')
+def expense():
+    return send_file('expense.html')
+
+@app.route('/inventory')
+def inventory():
+    return send_file('inventory.html')
+
+@app.route('/communication')
+def communication():
+    return send_file('communication.html')
+
+@app.route('/users')
+def users():
+    return send_file('users.html')
+
+@app.route('/membership')
+def membership():
+    return send_file('membership.html')
+
+@app.route('/social')
+def social():
+    return send_file('social.html')
+
+@app.route('/analytics')
+def analytics():
+    return send_file('analytics.html')
+
+@app.route('/dental-lab')
+def dental_lab():
+    return send_file('dental-lab.html')
+
+@app.route('/images')
+def images():
+    return send_file('images.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):
