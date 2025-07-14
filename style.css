@@ -5,6 +5,9 @@
     --primary-dark: #e63946;
     --primary-light: #ff6b6b;
     --secondary-color: #2d3436;
+    --accent-color: #4a90e2;
+    --accent-light: #6ba3e8;
+    --accent-dark: #357abd;
     --text-color: #2d3436;
     --text-light: #636e72;
     --text-muted: #95a5a6;
@@ -896,6 +899,10 @@ html {
     margin-bottom: 0.25rem;
 }
 
+.compact-stat:nth-child(2n) .stat-number {
+    color: var(--accent-color);
+}
+
 .compact-stat .stat-label {
     font-size: 0.8rem;
     font-weight: 500;
@@ -1038,7 +1045,7 @@ html {
 
 .floating-shape.shape-3 i {
     font-size: 1.4rem;
-    color: rgba(255, 77, 77, 0.25);
+    color: rgba(74, 144, 226, 0.25);
 }
 
 .floating-shape.shape-4 {
@@ -1064,7 +1071,7 @@ html {
 
 .floating-shape.shape-5 i {
     font-size: 1.6rem;
-    color: rgba(255, 77, 77, 0.25);
+    color: rgba(74, 144, 226, 0.25);
 }
 
 .floating-shape.shape-6 {
@@ -1103,7 +1110,7 @@ html {
 
 .floating-shape.shape-8 i {
     font-size: 1.3rem;
-    color: rgba(255, 77, 77, 0.2);
+    color: rgba(74, 144, 226, 0.2);
 }
 
 /* Mobile adjustments for floating shapes */
@@ -1232,6 +1239,14 @@ html {
     transition: var(--transition);
 }
 
+.feature-card:nth-child(3n) .feature-icon {
+    background: rgba(74, 144, 226, 0.1);
+}
+
+.feature-card:nth-child(3n) .feature-icon i {
+    color: var(--accent-color);
+}
+
 .feature-card .feature-icon i {
     font-size: 1.75rem;
     color: var(--primary-color);
@@ -1240,6 +1255,10 @@ html {
 .feature-card:hover .feature-icon {
     background: var(--primary-color);
     transform: scale(1.1);
+}
+
+.feature-card:nth-child(3n):hover .feature-icon {
+    background: var(--accent-color);
 }
 
 .feature-card:hover .feature-icon i {

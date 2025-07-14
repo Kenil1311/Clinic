@@ -53,6 +53,8 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Made floating icons smaller and repositioned them to avoid interfering with left side content
 ✓ Added mobile responsiveness to hide floating icons on mobile devices
 ✓ Added 2 additional floating medical icons on the left side (shield-alt and notes-medical) positioned carefully to avoid text interference
+✓ Added subtle blue accent color (#4a90e2) as third color to complement the red theme
+✓ Applied accent color to alternating statistics numbers, some floating icons, and feature cards for visual variety
 
 ## User Preferences
 
