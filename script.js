@@ -11,15 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Navbar scroll effect
 function initNavbarScroll() {
-    const navbar = document.querySelector('.custom-navbar');
+    const navbar = document.querySelector('.modern-navbar');
     
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
 }
 
 // Scroll progress bar
@@ -400,3 +402,13 @@ function showPreloader() {
 
 // Uncomment to enable preloader
 // document.addEventListener('DOMContentLoaded', showPreloader);
+
+// Fix JavaScript error with invalid selectors
+document.addEventListener('DOMContentLoaded', function() {
+    const invalidLinks = document.querySelectorAll('a[href="#"], a:not([href])');
+    invalidLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+        });
+    });
+});
