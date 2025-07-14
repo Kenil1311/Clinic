@@ -232,21 +232,111 @@ html {
     text-align: center;
 }
 
-.dashboard-mockup {
+.devices-showcase {
     position: relative;
     display: inline-block;
     max-width: 100%;
 }
 
-.dashboard-mockup img {
+.mobile-mockup {
+    position: absolute;
+    top: 10%;
+    right: -20%;
+    z-index: 2;
+    transform: scale(0.8);
+}
+
+.mobile-frame {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    background: #2d3436;
+    border-radius: 25px;
+    padding: 20px 15px;
+    box-shadow: var(--shadow-lg);
+    animation: float 3s ease-in-out infinite;
+}
+
+.mobile-frame::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background: #636e72;
+    border-radius: 2px;
+}
+
+.mobile-frame::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid #636e72;
+    border-radius: 50%;
+}
+
+.mobile-screen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.desktop-mockup {
+    position: relative;
+    z-index: 1;
+}
+
+.desktop-frame {
+    position: relative;
+    background: #2d3436;
     border-radius: var(--border-radius);
+    padding: 20px;
     box-shadow: var(--shadow-lg);
     transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
     transition: var(--transition);
 }
 
-.dashboard-mockup:hover img {
+.desktop-frame::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background: #636e72;
+    border-radius: 2px;
+}
+
+.desktop-frame::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 40%;
+    right: 40%;
+    height: 15px;
+    background: #636e72;
+    border-radius: 0 0 10px 10px;
+}
+
+.desktop-screen {
+    width: 100%;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition);
+}
+
+.devices-showcase:hover .desktop-frame {
     transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+}
+
+.devices-showcase:hover .mobile-frame {
+    transform: scale(0.85) rotateY(5deg);
 }
 
 .floating-elements {
@@ -740,33 +830,102 @@ html {
 
 .engagement-image {
     position: relative;
+    text-align: center;
 }
 
-.engagement-image img {
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-md);
+.phone-mockup {
+    position: relative;
+    display: inline-block;
 }
 
-.floating-notification {
+.phone-frame {
+    position: relative;
+    width: 250px;
+    height: 500px;
+    background: #2d3436;
+    border-radius: 30px;
+    padding: 25px 20px;
+    box-shadow: var(--shadow-lg);
+    margin: 0 auto;
+}
+
+.phone-frame::before {
+    content: '';
     position: absolute;
-    top: 20%;
-    right: -10%;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background: #636e72;
+    border-radius: 3px;
+}
+
+.phone-frame::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    border: 3px solid #636e72;
+    border-radius: 50%;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.whatsapp-notifications {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.notification {
+    position: absolute;
     background: white;
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1rem;
     border-radius: var(--border-radius-sm);
     box-shadow: var(--shadow-md);
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
+    font-size: 0.9rem;
     animation: float 3s ease-in-out infinite;
+    max-width: 200px;
 }
 
-.floating-notification i {
+.notification-1 {
+    top: 15%;
+    right: -25%;
+    animation-delay: 0s;
+}
+
+.notification-2 {
+    bottom: 20%;
+    left: -30%;
+    animation-delay: 1.5s;
+}
+
+.notification i.fab.fa-whatsapp {
     color: #25d366;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 
-.floating-notification span {
+.notification i.fas.fa-calendar {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.notification span {
     font-weight: 600;
     color: var(--text-color);
 }
@@ -1065,6 +1224,33 @@ html {
     .floating-card.card-1,
     .floating-card.card-2,
     .floating-card.card-3 {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+    }
+    
+    .mobile-mockup {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: scale(0.7);
+        margin-bottom: 2rem;
+    }
+    
+    .desktop-mockup {
+        transform: scale(0.9);
+    }
+    
+    .notification {
+        position: relative;
+        margin: 1rem 0;
+        max-width: 100%;
+    }
+    
+    .notification-1,
+    .notification-2 {
         position: relative;
         top: auto;
         left: auto;
