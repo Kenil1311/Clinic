@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinicia - Clinic Management Software</title>
+    <title>Clinicia - All-in-One Clinic Management Software</title>
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,714 +11,472 @@
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg modern-navbar">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="javascript:void(0)">
-                <img src="https://clinicia.in/landing/assets/imgs/logo/Clinicia-AI-logo-dark.svg" alt="Clinicia" height="45">
+            <a class="navbar-brand" href="#home">
+                <span class="logo-text">Clinicia</span>
             </a>
             
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="fas fa-bars"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Solutions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
                 </ul>
                 
                 <div class="navbar-nav">
-                    <a href="javascript:void(0)" class="btn btn-outline-secondary me-3">Login</a>
-                    <a href="javascript:void(0)" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#download" class="btn btn-outline-primary me-2">Download App</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section-modern">
+    <section id="home" class="hero-section">
         <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6 col-md-12">
-                    <div class="hero-content-modern">
-                        <div class="hero-badge">
-                            <i class="fas fa-stethoscope"></i>
-                            <span>Healthcare Management Platform</span>
-                        </div>
-                        
-                        <h1 class="hero-title-modern">
-                            All-in-One <span class="text-primary">Clinic Management Software</span> for Modern Healthcare
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            All-in-One Clinic Management Software for 
+                            <span class="text-primary">Modern Healthcare</span>
                         </h1>
-                        
-                        <p class="hero-description">
+                        <h2 class="hero-subtitle">
                             Streamline Your Practice, Enhance Patient Care, and Grow with Confidence — Anytime, Anywhere
-                        </p>
-                        
-                        <div class="hero-stats">
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="stat-card">
-                                        <h3>20K+</h3>
-                                        <p>Clinics & Doctors</p>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="stat-card">
-                                        <h3>99.9%</h3>
-                                        <p>Uptime</p>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="stat-card">
-                                        <h3>4.9★</h3>
-                                        <p>User Rating</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="hero-cta">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-lg">Start Free Trial</a>
-                            <a href="javascript:void(0)" class="btn btn-outline-dark btn-lg">Schedule a Demo</a>
-                        </div>
-                        
-                        <div class="hero-trust">
-                            <p class="trust-text">Trusted by healthcare professionals worldwide</p>
-                            <div class="trust-features">
-                                <span><i class="fas fa-shield-alt"></i> HIPAA Compliant</span>
-                                <span><i class="fas fa-cloud"></i> Cloud-Based</span>
-                                <span><i class="fas fa-headset"></i> 24/7 Support</span>
-                            </div>
+                        </h2>
+                        <div class="hero-buttons">
+                            <a href="#trial" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i>Start Free Trial
+                            </a>
+                            <a href="#demo" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-calendar me-2"></i>Schedule a Demo
+                            </a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-6 col-md-12">
-                    <div class="hero-visual">
-                        <div class="dashboard-preview">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <div class="dashboard-mockup">
                             <img src="attached_assets/Dashboard - Web_1752476091855.png" alt="Clinicia Dashboard" class="img-fluid">
-                        </div>
-                        <div class="floating-elements">
-                            <div class="floating-card card-1">
-                                <i class="fas fa-calendar-check"></i>
-                                <span>Appointments</span>
-                            </div>
-                            <div class="floating-card card-2">
-                                <i class="fas fa-user-md"></i>
-                                <span>Patient Records</span>
-                            </div>
-                            <div class="floating-card card-3">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Analytics</span>
+                            <div class="floating-elements">
+                                <div class="floating-card card-1">
+                                    <i class="fas fa-user-md"></i>
+                                    <span>20,000+ Doctors</span>
+                                </div>
+                                <div class="floating-card card-2">
+                                    <i class="fas fa-hospital"></i>
+                                    <span>5,000+ Clinics</span>
+                                </div>
+                                <div class="floating-card card-3">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>99.9% Uptime</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Why Clinicia Section -->
-    <section class="why-clinicia-section py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Why Clinicia?</h2>
-                    <p class="section-subtitle">Trusted by healthcare professionals worldwide</p>
-                </div>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card animate-card">
-                        <div class="feature-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <h4>WhatsApp Integration</h4>
-                        <p>Send appointment reminders, share prescriptions, and communicate with patients directly through WhatsApp.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card animate-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h4>Mobile-First Design</h4>
-                        <p>Access your clinic management system from anywhere with our responsive mobile application.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card animate-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h4>HIPAA Compliant</h4>
-                        <p>Your patient data is secure with enterprise-grade encryption and HIPAA compliance.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card animate-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h4>Advanced Analytics</h4>
-                        <p>Get insights into your practice performance with detailed reports and analytics.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card animate-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h4>Cloud-Based</h4>
-                        <p>No servers to maintain. Access your data securely from anywhere with internet connection.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-card animate-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h4>24/7 Support</h4>
-                        <p>Our dedicated support team is available round the clock to help you with any queries.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title enhanced-title">Smart Features That Power Your Practice</h2>
-                    <p class="section-subtitle enhanced-subtitle">Discover the comprehensive tools that make Clinicia the perfect choice for modern healthcare providers</p>
-                </div>
-            </div>
-            
-            <!-- Feature Grid -->
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-feature-card">
-                        <div class="feature-header">
-                            <div class="feature-icon-modern">
-                                <i class="fas fa-notes-medical"></i>
-                            </div>
-                            <h4>EMR & Clinical Notes</h4>
-                        </div>
-                        <p>Capture vitals, diagnosis, treatment plans with comprehensive digital records</p>
-                        <ul class="feature-list">
-                            <li>Digital patient records</li>
-                            <li>Treatment plans</li>
-                            <li>Medical history tracking</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-feature-card">
-                        <div class="feature-header">
-                            <div class="feature-icon-modern">
-                                <i class="fas fa-calendar-check"></i>
-                            </div>
-                            <h4>Appointment Scheduling</h4>
-                        </div>
-                        <p>Send reminders, manage queue & tokens with smart scheduling system</p>
-                        <ul class="feature-list">
-                            <li>Automated reminders</li>
-                            <li>Queue management</li>
-                            <li>Token system</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-feature-card">
-                        <div class="feature-header">
-                            <div class="feature-icon-modern">
-                                <i class="fas fa-prescription-bottle-alt"></i>
-                            </div>
-                            <h4>Prescription Management</h4>
-                        </div>
-                        <p>Preloaded medications database with digital signature capabilities</p>
-                        <ul class="feature-list">
-                            <li>Preloaded medications</li>
-                            <li>Digital signatures</li>
-                            <li>Dosage management</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-feature-card">
-                        <div class="feature-header">
-                            <div class="feature-icon-modern">
-                                <i class="fas fa-file-invoice-dollar"></i>
-                            </div>
-                            <h4>Billing & Invoicing</h4>
-                        </div>
-                        <p>Create branded bills and track payments with automated invoicing</p>
-                        <ul class="feature-list">
-                            <li>Branded invoices</li>
-                            <li>Payment tracking</li>
-                            <li>Multiple payment methods</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-feature-card">
-                        <div class="feature-header">
-                            <div class="feature-icon-modern">
-                                <i class="fas fa-boxes"></i>
-                            </div>
-                            <h4>Inventory & Expense</h4>
-                        </div>
-                        <p>Manage stock flow & supplier purchases with comprehensive tracking</p>
-                        <ul class="feature-list">
-                            <li>Stock management</li>
-                            <li>Supplier tracking</li>
-                            <li>Expense monitoring</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="modern-feature-card">
-                        <div class="feature-header">
-                            <div class="feature-icon-modern">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h4>Reports & Analytics</h4>
-                        </div>
-                        <p>Analyze revenue, trends, and growth with detailed reporting</p>
-                        <ul class="feature-list">
-                            <li>Revenue analysis</li>
-                            <li>Growth trends</li>
-                            <li>Custom reports</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="javascript:void(0)" class="btn btn-primary btn-lg">Explore All Features</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Patient Engagement Section -->
-    <section class="patient-engagement-section py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="engagement-content">
-                        <div class="section-badge">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Mobile Experience</span>
-                        </div>
-                        <h2 class="section-title">📲 Patient Engagement, Reinvented</h2>
-                        <p class="section-subtitle">Connect with your patients like never before with modern communication tools designed for today's digital world</p>
-                        
-                        <div class="engagement-features">
-                            <div class="engagement-feature">
-                                <div class="feature-icon-small">
-                                    <i class="fab fa-whatsapp"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h5>Send appointment confirmations on WhatsApp</h5>
-                                    <p>Instant notifications that patients actually read and respond to</p>
-                                </div>
-                            </div>
-                            
-                            <div class="engagement-feature">
-                                <div class="feature-icon-small">
-                                    <i class="fas fa-share-alt"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h5>Share prescriptions, reports, invoices in a click</h5>
-                                    <p>Digital delivery that's faster and more convenient than paper</p>
-                                </div>
-                            </div>
-                            
-                            <div class="engagement-feature">
-                                <div class="feature-icon-small">
-                                    <i class="fas fa-robot"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h5>Automate follow-ups, birthday wishes, and routine checkup reminders</h5>
-                                    <p>Personalized care that shows you remember your patients</p>
-                                </div>
-                            </div>
-                            
-                            <div class="engagement-feature">
-                                <div class="feature-icon-small">
-                                    <i class="fas fa-calendar-alt"></i>
-                                </div>
-                                <div class="feature-content">
-                                    <h5>Seamless online booking via your website or Google Business Profile</h5>
-                                    <p>Let patients book appointments 24/7 without calling your office</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <div class="mobile-showcase">
-                        <div class="mobile-device">
-                            <div class="mobile-frame">
-                                <div class="mobile-screen">
-                                    <img src="attached_assets/targeted_element_1752478012502.png" alt="Clinicia Mobile Dashboard" class="img-fluid">
-                                </div>
-                                <div class="mobile-reflection"></div>
-                            </div>
-                            <div class="mobile-shadow"></div>
-                        </div>
-                        
-                        <div class="mobile-features">
-                            <div class="feature-bubble bubble-1">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span>Mobile Dashboard</span>
-                            </div>
-                            <div class="feature-bubble bubble-2">
-                                <i class="fas fa-chart-bar"></i>
-                                <span>Real-time Analytics</span>
-                            </div>
-                            <div class="feature-bubble bubble-3">
-                                <i class="fas fa-bell"></i>
-                                <span>Push Notifications</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
+        <!-- Animated Background Elements -->
+        <div class="hero-bg-elements">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
         </div>
     </section>
 
     <!-- What is Clinicia Section -->
-    <section class="what-is-clinicia-section py-5">
+    <section id="about" class="what-is-section py-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="what-is-content">
-                        <div class="section-badge">
-                            <i class="fas fa-stethoscope"></i>
-                            <span>About Clinicia</span>
-                        </div>
-                        <h2 class="section-title">🩺 What is Clinicia?</h2>
-                        <p class="section-description">
-                            Clinicia is a powerful yet intuitive cloud-based practice management platform built specifically for doctors, clinics, and healthcare institutions. Whether you're a solo practitioner or managing a multi-speciality, multi-branch clinic, Clinicia simplifies your operations — from appointments and EMR to billing, inventory, and patient communication.
-                        </p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="section-icon">
+                        <i class="fas fa-stethoscope"></i>
                     </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <div class="clinicia-visual">
-                        <div class="feature-grid">
-                            <div class="feature-item">
-                                <i class="fas fa-calendar-alt"></i>
-                                <span>Appointments</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-file-medical"></i>
-                                <span>EMR</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-dollar-sign"></i>
-                                <span>Billing</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-boxes"></i>
-                                <span>Inventory</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-comments"></i>
-                                <span>Communication</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Analytics</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="section-title">What is Clinicia?</h2>
+                    <p class="section-description">
+                        Clinicia is a comprehensive cloud-based clinic management platform that revolutionizes healthcare delivery. 
+                        Our integrated solution combines Electronic Medical Records (EMR), advanced billing systems, intelligent 
+                        inventory management, and seamless patient communication tools to help healthcare providers focus on what 
+                        matters most - delivering exceptional patient care.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Clinicia Section -->
-    <section class="why-clinicia-enhanced py-5 bg-light">
+    <section id="why-choose" class="why-choose-section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">🚀 Why Choose Clinicia?</h2>
-                    <p class="section-subtitle">Trusted by healthcare professionals worldwide</p>
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Why Choose Clinicia?</h2>
+                    <p class="section-subtitle">Join thousands of healthcare professionals who trust Clinicia</p>
                 </div>
             </div>
-            
             <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="why-card animate-card">
-                        <div class="why-icon">
-                            <i class="fas fa-users"></i>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
                         </div>
-                        <div class="why-content">
-                            <h4>✅ Trusted by 20,000+ Clinics & Doctors</h4>
-                            <p>Join thousands of healthcare professionals who trust Clinicia for their daily practice management needs.</p>
-                        </div>
+                        <h4>Trusted by 20,000+ Clinics & Doctors</h4>
+                        <p>Join the largest network of healthcare professionals using modern clinic management solutions.</p>
                     </div>
                 </div>
-                
-                <div class="col-lg-6">
-                    <div class="why-card animate-card">
-                        <div class="why-icon">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
                             <i class="fas fa-cloud"></i>
                         </div>
-                        <div class="why-content">
-                            <h4>✅ Secure Cloud-Based Access – Anytime, Anywhere</h4>
-                            <p>Access your practice data securely from any device, anywhere in the world with our robust cloud infrastructure.</p>
-                        </div>
+                        <h4>Cloud Access Anytime, Anywhere</h4>
+                        <p>Access your clinic data securely from any device, anywhere in the world with 99.9% uptime guarantee.</p>
                     </div>
                 </div>
-                
-                <div class="col-lg-6">
-                    <div class="why-card animate-card">
-                        <div class="why-icon">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
-                        <div class="why-content">
-                            <h4>✅ WhatsApp-Integrated Patient Communication</h4>
-                            <p>Send appointment confirmations, prescriptions, and reminders directly through WhatsApp for better patient engagement.</p>
-                        </div>
+                        <h4>WhatsApp-Integrated Communication</h4>
+                        <p>Send appointment reminders, reports, and communicate with patients directly through WhatsApp.</p>
                     </div>
                 </div>
-                
-                <div class="col-lg-6">
-                    <div class="why-card animate-card">
-                        <div class="why-icon">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <div class="why-content">
-                            <h4>✅ Works on Web, Android & iOS</h4>
-                            <p>Complete cross-platform compatibility ensures you can manage your practice from any device, anywhere.</p>
-                        </div>
+                        <h4>Cross-Platform: Web, Android, iOS</h4>
+                        <p>Native apps for all platforms ensure you're always connected to your practice management.</p>
                     </div>
                 </div>
-                
-                <div class="col-lg-12">
-                    <div class="why-card why-card-highlight animate-card">
-                        <div class="why-icon">
-                            <i class="fas fa-hospital"></i>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hospital-wide"></i>
                         </div>
-                        <div class="why-content">
-                            <h4>✅ Designed for All Specialties & Clinic Sizes</h4>
-                            <p>From solo practitioners to multi-specialty hospitals, Clinicia adapts to your unique workflow and requirements. Supports all medical specialties with customizable features.</p>
-                        </div>
+                        <h4>Works for All Specialties & Sizes</h4>
+                        <p>From solo practitioners to multi-specialty hospitals, Clinicia adapts to your needs.</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="javascript:void(0)" class="btn btn-primary btn-lg">Explore All Features ➝</a>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>24/7 Dedicated Support</h4>
+                        <p>Our expert support team is always ready to help you maximize your clinic's potential.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Smart Features Section -->
-    <section class="smart-features-section py-5">
+    <!-- Smart Features Grid -->
+    <section id="features" class="features-section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">🧠 Smart Features That Power Your Practice</h2>
-                    <p class="section-subtitle">Everything you need to run your clinic efficiently</p>
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Smart Features That Transform Healthcare</h2>
+                    <p class="section-subtitle">Comprehensive tools designed for modern healthcare delivery</p>
                 </div>
             </div>
-            
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="smart-feature-card">
-                        <div class="feature-header">
-                            <i class="fas fa-user-md"></i>
-                            <h4>🩺 EMR & Clinical Notes</h4>
+                        <div class="feature-icon">
+                            <i class="fas fa-file-medical"></i>
                         </div>
-                        <p>Capture vitals, diagnosis, treatment plans</p>
+                        <h4>EMR & Clinical Notes</h4>
+                        <p>Digital patient records with smart templates, voice dictation, and secure data management.</p>
+                        <div class="feature-image">
+                            <img src="attached_assets/Home Page - App_1752476091856.jpg" alt="EMR Interface" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="smart-feature-card">
-                        <div class="feature-header">
-                            <i class="fas fa-calendar-alt"></i>
-                            <h4>📅 Appointment Scheduling</h4>
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
                         </div>
-                        <p>Send reminders, manage queue & tokens</p>
+                        <h4>Appointment Scheduling</h4>
+                        <p>Intelligent scheduling system with automated reminders and online booking capabilities.</p>
+                        <div class="feature-image">
+                            <img src="attached_assets/Dashboard - Web_1752476091855.png" alt="Scheduling Interface" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="smart-feature-card">
-                        <div class="feature-header">
-                            <i class="fas fa-pills"></i>
-                            <h4>💊 Prescription Management</h4>
+                        <div class="feature-icon">
+                            <i class="fas fa-prescription-bottle-alt"></i>
                         </div>
-                        <p>Preloaded meds, digital signature</p>
+                        <h4>Prescription Management</h4>
+                        <p>Digital prescriptions with drug interaction checks and pharmacy integration.</p>
+                        <div class="feature-image">
+                            <img src="attached_assets/Home Page - App_1752476091856.jpg" alt="Prescription Interface" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="smart-feature-card">
-                        <div class="feature-header">
-                            <i class="fas fa-dollar-sign"></i>
-                            <h4>💰 Billing & Invoicing</h4>
+                        <div class="feature-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
                         </div>
-                        <p>Create branded bills, track payments</p>
+                        <h4>Billing & Invoicing</h4>
+                        <p>Automated billing with insurance processing and financial reporting capabilities.</p>
+                        <div class="feature-image">
+                            <img src="attached_assets/Dashboard - Web_1752476091855.png" alt="Billing Interface" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                     <div class="smart-feature-card">
-                        <div class="feature-header">
+                        <div class="feature-icon">
                             <i class="fas fa-boxes"></i>
-                            <h4>📦 Inventory & Expense Management</h4>
                         </div>
-                        <p>Manage stock flow & supplier purchases</p>
+                        <h4>Inventory & Expense</h4>
+                        <p>Smart inventory management with automated reorders and expense tracking.</p>
+                        <div class="feature-image">
+                            <img src="attached_assets/Home Page - App_1752476091856.jpg" alt="Inventory Interface" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                     <div class="smart-feature-card">
-                        <div class="feature-header">
-                            <i class="fas fa-chart-line"></i>
-                            <h4>📈 Reports & Analytics</h4>
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
                         </div>
-                        <p>Analyze revenue, trends, and growth</p>
+                        <h4>Reports & Analytics</h4>
+                        <p>Comprehensive analytics with customizable dashboards and business intelligence.</p>
+                        <div class="feature-image">
+                            <img src="attached_assets/Dashboard - Web_1752476091855.png" alt="Analytics Interface" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="javascript:void(0)" class="btn btn-primary btn-lg">Explore All Features ➝</a>
             </div>
         </div>
     </section>
 
     <!-- Solutions Section -->
-    <section class="solutions-section py-5 bg-light">
+    <section id="solutions" class="solutions-section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">🧩 Solutions Built for Every Type of Practice</h2>
-                    <p class="section-subtitle">From solo practitioners to multi-branch chains</p>
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Solutions for Every Practice</h2>
+                    <p class="section-subtitle">Tailored solutions for different practice sizes and specialties</p>
                 </div>
             </div>
             
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="solution-card">
-                        <h3>👨‍⚕️ By Size</h3>
-                        <div class="solution-list">
-                            <div class="solution-item">Solo Doctor</div>
-                            <div class="solution-item">Small or Multi-Speciality Clinic</div>
-                            <div class="solution-item">Multi-Branch Chain</div>
+            <!-- Practice Size Tabs -->
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center mb-5" id="solutionTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="solo-tab" data-bs-toggle="pill" data-bs-target="#solo" type="button">
+                                <i class="fas fa-user-md me-2"></i>Solo Practice
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="multi-specialty-tab" data-bs-toggle="pill" data-bs-target="#multi-specialty" type="button">
+                                <i class="fas fa-hospital me-2"></i>Multi-Specialty
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="multi-branch-tab" data-bs-toggle="pill" data-bs-target="#multi-branch" type="button">
+                                <i class="fas fa-sitemap me-2"></i>Multi-Branch
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="solutionTabContent">
+                        <div class="tab-pane fade show active" id="solo" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-lg-6" data-aos="fade-right">
+                                    <div class="solution-content">
+                                        <h3>Perfect for Solo Practitioners</h3>
+                                        <p>Streamlined features designed for individual healthcare providers who want to digitize their practice without complexity.</p>
+                                        <ul class="solution-features">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Simple patient management</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Quick appointment booking</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Digital prescriptions</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Basic billing & invoicing</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" data-aos="fade-left">
+                                    <div class="solution-image">
+                                        <img src="attached_assets/Home Page - App_1752476091856.jpg" alt="Solo Practice Solution" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <div class="solution-card">
-                        <h3>🏥 By Speciality</h3>
-                        <div class="solution-list">
-                            <div class="solution-item">Dentist, Dermatologist, Gynecologist</div>
-                            <div class="solution-item">Pediatrician, Urologist, ENT, more…</div>
-                            <div class="solution-item">Mental Health, Ayurveda, General Practice</div>
+                        <div class="tab-pane fade" id="multi-specialty" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-lg-6" data-aos="fade-right">
+                                    <div class="solution-content">
+                                        <h3>Multi-Specialty Clinic Management</h3>
+                                        <p>Comprehensive solutions for clinics with multiple departments and specialties under one roof.</p>
+                                        <ul class="solution-features">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Department-wise management</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Specialist scheduling</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Inter-department referrals</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Consolidated reporting</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" data-aos="fade-left">
+                                    <div class="solution-image">
+                                        <img src="attached_assets/Dashboard - Web_1752476091855.png" alt="Multi-Specialty Solution" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="multi-branch" role="tabpanel">
+                            <div class="row g-4">
+                                <div class="col-lg-6" data-aos="fade-right">
+                                    <div class="solution-content">
+                                        <h3>Multi-Branch Healthcare Networks</h3>
+                                        <p>Enterprise-grade solutions for healthcare networks with multiple locations and centralized management.</p>
+                                        <ul class="solution-features">
+                                            <li><i class="fas fa-check text-primary me-2"></i>Centralized administration</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Branch-wise analytics</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Resource sharing</li>
+                                            <li><i class="fas fa-check text-primary me-2"></i>Unified patient records</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" data-aos="fade-left">
+                                    <div class="solution-image">
+                                        <img src="attached_assets/Dashboard - Web_1752476091855.png" alt="Multi-Branch Solution" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="text-center mt-5">
-                <a href="javascript:void(0)" class="btn btn-primary btn-lg">Explore Solutions ➝</a>
+            <!-- Specialties Grid -->
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-4">
+                    <h3>Specialized Solutions</h3>
+                    <p>Tailored features for different medical specialties</p>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="specialty-card">
+                        <i class="fas fa-tooth"></i>
+                        <span>Dental</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="specialty-card">
+                        <i class="fas fa-eye"></i>
+                        <span>Ophthalmology</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="specialty-card">
+                        <i class="fas fa-venus"></i>
+                        <span>Gynecology</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="specialty-card">
+                        <i class="fas fa-deaf"></i>
+                        <span>ENT</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="specialty-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Cardiology</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="specialty-card">
+                        <i class="fas fa-plus"></i>
+                        <span>More</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Patient Engagement Section -->
-    <section class="patient-engagement-section py-5">
+    <section id="patient-engagement" class="patient-engagement-section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">📲 Patient Engagement, Reinvented</h2>
-                    <p class="section-subtitle">Transform how you communicate with patients using modern technology</p>
-                </div>
-            </div>
-            
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="engagement-features">
-                        <div class="engagement-feature">
-                            <div class="engagement-icon">
-                                <i class="fab fa-whatsapp"></i>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="engagement-content">
+                        <h2 class="section-title">Enhanced Patient Engagement</h2>
+                        <p class="section-description">
+                            Transform patient communication and engagement with our integrated digital tools
+                        </p>
+                        <div class="engagement-features">
+                            <div class="engagement-feature">
+                                <div class="feature-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>WhatsApp Integration</h4>
+                                    <p>Send appointment reminders, lab reports, and health tips directly to patients' WhatsApp.</p>
+                                </div>
                             </div>
-                            <div class="engagement-content">
-                                <h4>Send appointment confirmations on WhatsApp</h4>
+                            <div class="engagement-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Online Booking via Google</h4>
+                                    <p>Patients can book appointments directly through Google search and Google My Business.</p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="engagement-feature">
-                            <div class="engagement-icon">
-                                <i class="fas fa-share-alt"></i>
-                            </div>
-                            <div class="engagement-content">
-                                <h4>Share prescriptions, reports, invoices in a click</h4>
-                            </div>
-                        </div>
-                        
-                        <div class="engagement-feature">
-                            <div class="engagement-icon">
-                                <i class="fas fa-bell"></i>
-                            </div>
-                            <div class="engagement-content">
-                                <h4>Automate follow-ups, birthday wishes, and routine checkup reminders</h4>
-                            </div>
-                        </div>
-                        
-                        <div class="engagement-feature">
-                            <div class="engagement-icon">
-                                <i class="fas fa-calendar-check"></i>
-                            </div>
-                            <div class="engagement-content">
-                                <h4>Seamless online booking via your website or Google Business Profile</h4>
+                            <div class="engagement-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Automation & Reminders</h4>
+                                    <p>Automated follow-ups, medication reminders, and appointment confirmations.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-6">
-                    <div class="engagement-image slide-in-right">
-                        <img src="attached_assets/Cropped  Dashboard - Web_1752476091855.png" alt="Patient Engagement Dashboard" class="img-fluid rounded shadow">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="engagement-image">
+                        <img src="attached_assets/Home Page - App_1752476091856.jpg" alt="Patient Engagement" class="img-fluid">
+                        <div class="floating-notification">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Appointment reminder sent!</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -726,38 +484,40 @@
     </section>
 
     <!-- Privacy & Compliance Section -->
-    <section class="privacy-section py-5">
+    <section id="privacy" class="privacy-section py-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="privacy-visual">
-                        <div class="security-badge">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="privacy-content">
+                        <div class="section-icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <div class="privacy-content">
-                        <h2 class="section-title">🛡️ Built with Privacy & Compliance in Mind</h2>
-                        <p class="privacy-description">Your data is encrypted, secure, and backed up — always. Access controls ensure patient privacy and internal data safety.</p>
-                        
-                        <div class="security-features">
-                            <div class="security-item">
-                                <i class="fas fa-lock"></i>
-                                <span>End-to-end encryption</span>
+                        <h2 class="section-title">Privacy & Compliance First</h2>
+                        <p class="section-description">
+                            Your data security is our top priority. Clinicia is built with enterprise-grade security 
+                            measures and complies with all healthcare data protection regulations.
+                        </p>
+                        <div class="row g-4 mt-4">
+                            <div class="col-md-4">
+                                <div class="security-feature">
+                                    <i class="fas fa-lock"></i>
+                                    <h4>End-to-End Encryption</h4>
+                                    <p>All data encrypted in transit and at rest</p>
+                                </div>
                             </div>
-                            <div class="security-item">
-                                <i class="fas fa-database"></i>
-                                <span>Automated backups</span>
+                            <div class="col-md-4">
+                                <div class="security-feature">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <h4>Automated Backups</h4>
+                                    <p>Multiple daily backups with instant recovery</p>
+                                </div>
                             </div>
-                            <div class="security-item">
-                                <i class="fas fa-user-shield"></i>
-                                <span>Role-based access controls</span>
-                            </div>
-                            <div class="security-item">
-                                <i class="fas fa-certificate"></i>
-                                <span>HIPAA compliant</span>
+                            <div class="col-md-4">
+                                <div class="security-feature">
+                                    <i class="fas fa-user-shield"></i>
+                                    <h4>Access Controls</h4>
+                                    <p>Role-based permissions and audit trails</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -766,134 +526,126 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section py-5 bg-light">
+    <!-- Testimonials Carousel -->
+    <section id="testimonials" class="testimonials-section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">💬 What Our Doctors Say</h2>
-                    <p class="section-subtitle">Trusted by healthcare professionals worldwide</p>
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">What Our Doctors Say</h2>
+                    <p class="section-subtitle">Hear from healthcare professionals who transformed their practice with Clinicia</p>
                 </div>
             </div>
-            
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-12">
                     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="testimonial-item">
-                                    <div class="testimonial-content">
-                                        <div class="stars mb-3">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <blockquote class="blockquote">
-                                            <p>"Clinicia has transformed our clinic. From OPD to billing to lab reports — everything runs like clockwork."</p>
-                                        </blockquote>
-                                        <div class="testimonial-author">
-                                            <h5>Dr. Neha Sharma</h5>
-                                            <p class="text-muted">Pediatrician, Ahmedabad</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <div class="testimonial-item">
-                                    <div class="testimonial-content">
-                                        <div class="stars mb-3">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <blockquote class="blockquote">
-                                            <p>"The WhatsApp integration is a game-changer. Patients love the reminders and e-prescriptions."</p>
-                                        </blockquote>
-                                        <div class="testimonial-author">
-                                            <h5>Dr. Anil Mehta</h5>
-                                            <p class="text-muted">Urologist, Mumbai</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <div class="testimonial-card">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                "Clinicia has completely transformed how I manage my practice. The WhatsApp integration 
+                                                alone has improved patient communication by 300%. I can now focus more on patient care 
+                                                rather than administrative tasks."
+                                            </p>
+                                            <div class="testimonial-author">
+                                                <div class="author-info">
+                                                    <h5>Dr. Sarah Patel</h5>
+                                                    <span>Cardiologist, Mumbai</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="carousel-item">
-                                <div class="testimonial-item">
-                                    <div class="testimonial-content">
-                                        <div class="stars mb-3">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                        <blockquote class="blockquote">
-                                            <p>"Switching to Clinicia was the best decision for our multi-location practice. The cloud-based system keeps everything synchronized perfectly."</p>
-                                        </blockquote>
-                                        <div class="testimonial-author">
-                                            <h5>Dr. Emily Rodriguez</h5>
-                                            <p class="text-muted">Pediatrics Group, Texas</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <div class="testimonial-card">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="testimonial-text">
+                                                "As a multi-specialty clinic owner, managing different departments was a nightmare. 
+                                                Clinicia's unified platform has streamlined everything from appointments to billing. 
+                                                Our efficiency has increased by 40%."
+                                            </p>
+                                            <div class="testimonial-author">
+                                                <div class="author-info">
+                                                    <h5>Dr. Rajesh Kumar</h5>
+                                                    <span>Multi-Specialty Clinic Owner, Delhi</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
                         <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
+                            <i class="fas fa-chevron-left"></i>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
+                            <i class="fas fa-chevron-right"></i>
                         </button>
                     </div>
                 </div>
             </div>
-            
-            <div class="text-center mt-4">
-                <a href="javascript:void(0)" class="btn btn-outline-primary btn-lg">See More Testimonials ➝</a>
-            </div>
         </div>
     </section>
 
-    <!-- Getting Started Section -->
-    <section class="getting-started-section py-5">
+    <!-- Getting Started CTA Section -->
+    <section id="getting-started" class="cta-section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
                     <div class="cta-content">
-                        <h2 class="section-title">🌟 Getting Started is Easy</h2>
-                        
-                        <div class="getting-started-features">
-                            <div class="row g-4 mb-5">
-                                <div class="col-lg-4">
-                                    <div class="getting-started-item">
+                        <h2 class="section-title text-white">Ready to Transform Your Practice?</h2>
+                        <p class="section-description text-white">
+                            Join thousands of healthcare professionals who have revolutionized their practice with Clinicia
+                        </p>
+                        <div class="cta-features">
+                            <div class="row g-4 text-white">
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
                                         <i class="fas fa-credit-card"></i>
-                                        <h4>✅ No Credit Card Required</h4>
+                                        <h4>No Credit Card Required</h4>
+                                        <p>Start your free trial instantly</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="getting-started-item">
-                                        <i class="fas fa-rocket"></i>
-                                        <h4>✅ Instant Setup</h4>
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-bolt"></i>
+                                        <h4>Instant Setup</h4>
+                                        <p>Get started in under 5 minutes</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="getting-started-item">
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
                                         <i class="fas fa-headset"></i>
-                                        <h4>✅ Dedicated Support</h4>
+                                        <h4>Dedicated Support</h4>
+                                        <p>24/7 expert assistance</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="cta-buttons">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
-                            <a href="javascript:void(0)" class="btn btn-outline-primary btn-lg">Schedule a Demo</a>
+                            <a href="#trial" class="btn btn-light btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i>Start Free Trial
+                            </a>
+                            <a href="#demo" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-calendar me-2"></i>Schedule a Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -901,101 +653,96 @@
         </div>
     </section>
 
-    <!-- Need Help Section -->
-    <section class="need-help-section py-5 bg-light">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="section-title">📞 Need Help? Let's Talk</h2>
-                    <p class="section-subtitle">Have questions or need a personalized walkthrough?</p>
-                    <a href="javascript:void(0)" class="btn btn-primary btn-lg">Contact Us ➝</a>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-description">
+                        Have questions? Our team is here to help you get started with Clinicia
+                    </p>
+                    <a href="#contact-form" class="btn btn-primary btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Contact Us
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-light py-5">
+    <footer class="footer-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <img src="https://clinicia.com/app/website_assets/images/clinicia_logo1.png" alt="Clinicia" height="40" class="mb-3" style="filter: brightness(0) invert(1);">
-                    <p>Simplifying healthcare management with powerful, intuitive software solutions.</p>
-                    <div class="social-links">
-                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <h3>Clinicia</h3>
+                        <p>Transforming healthcare delivery with modern clinic management solutions.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Features</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light">EMR System</a></li>
-                        <li><a href="#" class="text-light">Appointments</a></li>
-                        <li><a href="#" class="text-light">Billing</a></li>
-                        <li><a href="#" class="text-light">Reports</a></li>
-                        <li><a href="#" class="text-light">Mobile App</a></li>
-                    </ul>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Solutions</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light">General Practice</a></li>
-                        <li><a href="#" class="text-light">Dental Clinics</a></li>
-                        <li><a href="#" class="text-light">Pediatrics</a></li>
-                        <li><a href="#" class="text-light">Multi-Location</a></li>
-                    </ul>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Book Demo</a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Company</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light">About Us</a></li>
-                        <li><a href="#" class="text-light">Careers</a></li>
-                        <li><a href="#" class="text-light">Blog</a></li>
-                        <li><a href="#" class="text-light">Press</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Contact Info</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <i class="fas fa-phone me-2"></i>
-                            +1 (555) 123-4567
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-envelope me-2"></i>
-                            contact@clinicia.com
-                        </li>
-                        <li class="mb-2">
-                            <i class="fas fa-map-marker-alt me-2"></i>
-                            123 Healthcare St, Medical City, MC 12345
-                        </li>
-                    </ul>
+                <div class="col-lg-4">
+                    <div class="footer-download">
+                        <h5>Download Our App</h5>
+                        <div class="app-buttons">
+                            <a href="#" class="app-button">
+                                <i class="fab fa-google-play"></i>
+                                <div>
+                                    <span>Get it on</span>
+                                    <strong>Google Play</strong>
+                                </div>
+                            </a>
+                            <a href="#" class="app-button">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <span>Download on the</span>
+                                    <strong>App Store</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <hr class="my-4">
-            
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2025 Clinicia. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-light me-3">Privacy Policy</a>
-                    <a href="#" class="text-light me-3">Terms of Service</a>
-                    <a href="#" class="text-light">Security</a>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 Clinicia. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JavaScript -->
+    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
