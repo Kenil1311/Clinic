@@ -491,6 +491,40 @@
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    /* General mobile container fixes */
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .container-fluid {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+    
+    .col, .col-md-6, .col-lg-6, .col-sm-12, [class*="col-"] {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    section {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+    }
+    
     .feature-hero-section {
         padding: 6rem 0 3rem;
         text-align: center;
@@ -674,6 +708,27 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    /* Mobile container overrides */
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+    
+    .col, .col-md-6, .col-lg-6, .col-sm-12, [class*="col-"] {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
     /* General mobile centering */
     h1, h2, h3, h4, h5, h6 {
         text-align: center;
