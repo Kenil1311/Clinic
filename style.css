@@ -106,6 +106,8 @@ html {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
     min-width: 280px;
+    max-width: 95vw;
+    overflow-x: hidden;
 }
 
 .modern-dropdown {
@@ -158,24 +160,36 @@ html {
 }
 
 .mega-menu {
-    min-width: 600px;
-    padding: 2rem;
+    min-width: 90vw;
+    max-width: 800px;
+    padding: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mega-menu .container {
+    max-width: 100%;
+    padding: 0;
 }
 
 .mega-menu .dropdown-item {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    margin-bottom: 0.25rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
     border-radius: var(--border-radius-sm);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .mega-menu .dropdown-header {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 0.75rem;
-    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
 }
 
 /* Dropdown Toggle Arrow */
@@ -196,22 +210,67 @@ html {
         margin-top: 0;
         background: var(--surface);
         box-shadow: inset 0 1px 0 rgba(255, 77, 77, 0.1);
+        overflow-x: hidden;
     }
     
     .mega-menu {
         min-width: auto;
+        width: 100%;
         padding: 1rem;
         transform: none;
         left: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .mega-menu .container {
+        padding: 0;
+    }
+    
+    .mega-menu .row {
+        margin: 0;
+    }
+    
+    .mega-menu .col-md-6 {
+        padding: 0 0.5rem;
     }
     
     .dropdown-item {
-        padding: 0.75rem 2rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+        white-space: normal;
     }
     
     .dropdown-item:hover {
         transform: none;
-        padding-left: 2.5rem;
+        padding-left: 2rem;
+    }
+    
+    .dropdown-header {
+        padding: 0.75rem 1.5rem 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .mega-menu .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .mega-menu .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .dropdown-item {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .dropdown-item:hover {
+        padding-left: 1.25rem;
     }
 }
 
@@ -2111,5 +2170,397 @@ html {
     .feature-card,
     .smart-feature-card {
         margin-bottom: 2rem;
+    }
+}
+
+/* Specialized Solutions Section */
+.specialized-solutions-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, rgba(255, 77, 77, 0.02) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.specialized-solutions-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23ff4d4d" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    z-index: 1;
+}
+
+.specialized-solutions-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Specialty Cards */
+.specialty-card {
+    background: white;
+    border-radius: var(--border-radius-sm);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.specialty-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+    transform: scaleX(0);
+    transition: var(--transition);
+}
+
+.specialty-card:hover::before {
+    transform: scaleX(1);
+}
+
+.specialty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.specialty-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgba(255, 77, 77, 0.1), rgba(255, 77, 77, 0.05));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: var(--transition);
+}
+
+.specialty-card:hover .specialty-icon {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    transform: scale(1.1);
+}
+
+.specialty-icon i {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.specialty-card:hover .specialty-icon i {
+    color: white;
+}
+
+.specialty-card h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.specialty-card p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.specialty-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specialty-features li {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    padding: 0.2rem 0;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.specialty-features li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* More Specialty Card */
+.more-specialty {
+    background: linear-gradient(135deg, rgba(255, 77, 77, 0.05), rgba(255, 77, 77, 0.02));
+    border: 2px dashed var(--primary-color);
+}
+
+.more-specialty .specialty-icon {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+}
+
+.more-specialty .specialty-icon i {
+    color: white;
+}
+
+.more-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.more-list span {
+    font-size: 0.7rem;
+    color: var(--text-light);
+    padding: 0.1rem 0.4rem;
+    background: rgba(255, 77, 77, 0.08);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Practice Size Cards */
+.practice-size-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.practice-size-subtitle {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.practice-size-card {
+    background: white;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: var(--transition);
+    height: 100%;
+    position: relative;
+}
+
+.practice-size-card.featured {
+    border: 2px solid var(--primary-color);
+    box-shadow: var(--shadow-md);
+}
+
+.practice-size-card.featured::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-bottom-left-radius: var(--border-radius-sm);
+}
+
+.practice-size-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.card-header {
+    padding: 1.5rem 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.practice-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: var(--transition);
+}
+
+.practice-size-card:hover .practice-icon {
+    transform: scale(1.1);
+}
+
+.practice-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-header h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.card-header p {
+    color: var(--text-light);
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.card-features {
+    padding: 1rem 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--surface);
+}
+
+.feature-tag {
+    background: rgba(255, 77, 77, 0.1);
+    color: var(--primary-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.card-details {
+    padding: 1.2rem 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item i {
+    width: 20px;
+    color: var(--primary-color);
+    margin-right: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.detail-item span {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.card-footer {
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    background: var(--surface);
+}
+
+.card-footer .btn {
+    margin-bottom: 0.8rem;
+    width: 100%;
+}
+
+.pricing {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+/* Mobile Responsive for Specialized Solutions */
+@media (max-width: 768px) {
+    .specialty-card {
+        padding: 1.2rem 0.8rem;
+    }
+    
+    .specialty-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .specialty-icon i {
+        font-size: 1rem;
+    }
+    
+    .specialty-card h5 {
+        font-size: 1rem;
+    }
+    
+    .specialty-card p {
+        font-size: 0.8rem;
+    }
+    
+    .specialty-features li {
+        font-size: 0.7rem;
+    }
+    
+    .practice-size-title {
+        font-size: 1.5rem;
+    }
+    
+    .card-header {
+        padding: 1.2rem 1rem 0.8rem;
+    }
+    
+    .card-features {
+        padding: 0.8rem 1rem;
+    }
+    
+    .card-details {
+        padding: 1rem;
+    }
+    
+    .card-footer {
+        padding: 1rem;
+    }
+    
+    .practice-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .practice-icon i {
+        font-size: 1.2rem;
+    }
+    
+    .card-header h4 {
+        font-size: 1.1rem;
+    }
+    
+    .detail-item span {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-xl-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .specialty-card {
+        padding: 1rem 0.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .specialty-features li {
+        font-size: 0.65rem;
+    }
+    
+    .more-list span {
+        font-size: 0.65rem;
+    }
+    
+    .practice-size-card {
+        margin-bottom: 1.5rem;
     }
 }
