@@ -80,6 +80,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Updated features page floating elements to use blue accent color (#4a90e2) theme consistently
 ✓ Reduced features page floating element sizes by ~50% and increased animation duration to 12s
 ✓ Reverted home page floating elements back to original state per user request
+✓ Removed "Explore Features" and "Schedule a Demo" buttons from features page hero section
 
 ## User Preferences
 
