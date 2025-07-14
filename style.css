@@ -2038,6 +2038,7 @@ html {
     
     .hero-section .row {
         flex-direction: column-reverse;
+        gap: 2rem;
     }
     
     .hero-title {
@@ -2056,7 +2057,7 @@ html {
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     
     .hero-buttons .btn {
@@ -2065,16 +2066,23 @@ html {
     }
     
     .hero-image {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         text-align: center;
+        max-height: 400px;
+        overflow: hidden;
     }
     
     .devices-showcase {
         max-width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        gap: 2rem;
+        justify-content: center;
+        gap: 1rem;
+        transform: scale(0.8);
+        margin: 0 auto;
+        max-height: 350px;
+        overflow: hidden;
     }
     
     .section-title {
@@ -2117,24 +2125,25 @@ html {
         position: relative;
         top: auto;
         right: auto;
-        transform: scale(0.6);
-        margin: 0 auto;
+        transform: scale(0.7);
+        margin: 0;
         order: 1;
     }
     
     .desktop-mockup {
-        transform: scale(0.7);
-        margin: 0 auto;
+        transform: scale(0.6);
+        margin: 0;
         order: 2;
     }
     
     .desktop-frame {
         transform: none;
         max-width: 100%;
+        height: auto;
     }
     
     .phone-mockup {
-        transform: scale(0.8);
+        transform: scale(0.7);
     }
     
     .feature-grid {
@@ -2237,16 +2246,25 @@ html {
         font-size: 1.75rem;
     }
     
-    .mobile-mockup {
-        transform: scale(0.5);
-    }
-    
-    .desktop-mockup {
-        transform: scale(0.6);
+    .hero-image {
+        max-height: 300px;
     }
     
     .devices-showcase {
-        gap: 1rem;
+        gap: 0.5rem;
+        transform: scale(0.7);
+        flex-direction: column;
+        max-height: 280px;
+    }
+    
+    .mobile-mockup {
+        transform: scale(0.6);
+        order: 1;
+    }
+    
+    .desktop-mockup {
+        transform: scale(0.5);
+        order: 2;
     }
     
     .feature-card,
