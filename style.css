@@ -1002,117 +1002,117 @@ html {
 .floating-shape {
     position: absolute;
     border-radius: 50%;
-    background: rgba(74, 144, 226, 0.02);
-    animation: floatShape 18s ease-in-out infinite;
+    background: rgba(255, 77, 77, 0.15);
+    animation: floatShape 12s ease-in-out infinite;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(74, 144, 226, 0.04);
+    border: 1px solid rgba(255, 77, 77, 0.08);
     backdrop-filter: blur(10px);
 }
 
 .floating-shape.shape-1 {
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
     top: 20%;
     right: 5%;
     animation-delay: 0s;
 }
 
 .floating-shape.shape-1 i {
-    font-size: 0.9rem;
-    color: rgba(74, 144, 226, 0.08);
+    font-size: 1.5rem;
+    color: rgba(255, 77, 77, 0.15);
 }
 
 .floating-shape.shape-2 {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     top: 80%;
     right: 15%;
     animation-delay: 2s;
 }
 
 .floating-shape.shape-2 i {
-    font-size: 0.8rem;
-    color: rgba(74, 144, 226, 0.08);
+    font-size: 1.3rem;
+    color: rgba(255, 77, 77, 0.15);
 }
 
 .floating-shape.shape-3 {
-    width: 32px;
-    height: 32px;
+    width: 55px;
+    height: 55px;
     bottom: 15%;
     right: 35%;
     animation-delay: 4s;
 }
 
 .floating-shape.shape-3 i {
-    font-size: 0.85rem;
-    color: rgba(74, 144, 226, 0.08);
+    font-size: 1.4rem;
+    color: rgba(74, 144, 226, 0.15);
 }
 
 .floating-shape.shape-4 {
-    width: 28px;
-    height: 28px;
+    width: 45px;
+    height: 45px;
     top: 50%;
     right: 30%;
     animation-delay: 1s;
 }
 
 .floating-shape.shape-4 i {
-    font-size: 0.75rem;
-    color: rgba(74, 144, 226, 0.08);
+    font-size: 1.2rem;
+    color: rgba(255, 77, 77, 0.15);
 }
 
 .floating-shape.shape-5 {
-    width: 38px;
-    height: 38px;
+    width: 65px;
+    height: 65px;
     top: 40%;
     right: 10%;
     animation-delay: 3s;
 }
 
 .floating-shape.shape-5 i {
-    font-size: 0.95rem;
-    color: rgba(74, 144, 226, 0.08);
+    font-size: 1.6rem;
+    color: rgba(74, 144, 226, 0.15);
 }
 
 .floating-shape.shape-6 {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     top: 10%;
     right: 20%;
     animation-delay: 5s;
 }
 
 .floating-shape.shape-6 i {
-    font-size: 1rem;
-    color: rgba(74, 144, 226, 0.08);
+    font-size: 1.7rem;
+    color: rgba(255, 77, 77, 0.15);
 }
 
 .floating-shape.shape-7 {
-    width: 32px;
-    height: 32px;
+    width: 55px;
+    height: 55px;
     top: 25%;
     left: 8%;
     animation-delay: 6s;
 }
 
 .floating-shape.shape-7 i {
-    font-size: 0.85rem;
-    color: rgba(74, 144, 226, 0.08);
+    font-size: 1.4rem;
+    color: rgba(255, 77, 77, 0.12);
 }
 
 .floating-shape.shape-8 {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     top: 70%;
     left: 15%;
     animation-delay: 7s;
 }
 
 .floating-shape.shape-8 i {
-    font-size: 0.8rem;
-    color: rgba(74, 144, 226, 0.08);
+    font-size: 1.3rem;
+    color: rgba(74, 144, 226, 0.12);
 }
 
 /* Mobile adjustments for floating shapes */

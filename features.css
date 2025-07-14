@@ -205,22 +205,22 @@ body {
 
 .floating-element {
     position: absolute;
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255, 77, 77, 0.1), rgba(255, 77, 77, 0.15));
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.04), rgba(74, 144, 226, 0.08));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: float 6s ease-in-out infinite;
-    border: 1px solid rgba(255, 77, 77, 0.2);
+    animation: float 12s ease-in-out infinite;
+    border: 1px solid rgba(74, 144, 226, 0.1);
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(255, 77, 77, 0.1);
+    box-shadow: 0 8px 32px rgba(74, 144, 226, 0.05);
 }
 
 .floating-element i {
-    font-size: 2rem;
-    color: var(--primary-color);
+    font-size: 1rem;
+    color: rgba(74, 144, 226, 0.15);
 }
 
 .element-1 { 
