@@ -85,6 +85,8 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Removed blue colors from "What is Clinicia?" section background, keeping only red theme colors
 ✓ Changed "What is Clinicia?" section background to clean #f8f9fa color as requested
 ✓ Removed all red color effects and animations from "What is Clinicia?" section for completely clean background
+✓ Converted Features dropdown from single scrolling column to two-column mega menu layout
+✓ Organized features into "Core Features" and "Advanced Features" sections for better navigation
 
 ## User Preferences
 
