@@ -467,10 +467,19 @@ html {
     line-height: 1.2;
     margin-bottom: 1.5rem;
     color: var(--text-color);
+    opacity: 1;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.hero-description {
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 2.5rem;
@@ -859,73 +868,35 @@ html {
     transform: scale(1.01);
 }
 
-/* Hero Stats Right Side */
-.hero-stats-right {
-    margin-top: 3rem;
-    padding: 2rem 0;
-}
-
-.hero-stats-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-color);
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.stat-item {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(255, 77, 77, 0.1);
-    border-radius: 16px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: var(--transition);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-.stat-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    border-color: rgba(255, 77, 77, 0.2);
-}
-
-.stat-icon {
-    background: linear-gradient(135deg, rgba(255, 77, 77, 0.1), rgba(255, 77, 77, 0.05));
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+/* Hero Stats Compact */
+.hero-stats-compact {
     display: flex;
-    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
     justify-content: center;
-    margin: 0 auto 1rem;
-    border: 2px solid rgba(255, 77, 77, 0.2);
+    flex-wrap: wrap;
 }
 
-.stat-icon i {
+.compact-stat {
+    text-align: center;
+    min-width: 80px;
+}
+
+.compact-stat .stat-number {
     font-size: 1.5rem;
-    color: var(--primary-color);
-}
-
-.stat-number {
-    font-size: 2rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    display: block;
+    margin-bottom: 0.25rem;
 }
 
-.stat-label {
-    font-size: 0.9rem;
+.compact-stat .stat-label {
+    font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-light);
-    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Inline Hero Statistics */
@@ -2270,10 +2241,17 @@ html {
         font-size: 2.5rem;
         text-align: center;
         margin-bottom: 1rem;
+        opacity: 1;
     }
     
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
         text-align: center;
         margin-bottom: 2rem;
     }
