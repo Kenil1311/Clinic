@@ -113,8 +113,8 @@ html {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-    color: var(--primary-color);
-    background: rgba(255, 77, 77, 0.1);
+    color: var(--accent-color);
+    background: rgba(74, 144, 226, 0.1);
 }
 
 /* Modern Dropdown Styles */
@@ -374,8 +374,8 @@ html {
 
 /* Buttons */
 .btn-primary {
-    background: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    background: var(--accent-color);
+    border: 2px solid var(--accent-color);
     color: white;
     font-weight: 600;
     padding: 0.75rem 2rem;
@@ -384,22 +384,22 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 20px rgba(74, 144, 226, 0.12);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background: var(--primary-dark);
-    border-color: var(--primary-dark);
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 8px 40px rgba(74, 144, 226, 0.15);
     color: white;
 }
 
 .btn-outline-primary {
     background: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
     font-weight: 600;
     padding: 0.75rem 2rem;
     border-radius: var(--border-radius-sm);
@@ -411,11 +411,11 @@ html {
 
 .btn-outline-primary:hover,
 .btn-outline-primary:focus {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
     color: white;
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 20px rgba(74, 144, 226, 0.12);
 }
 
 .btn-light {
@@ -457,9 +457,32 @@ html {
 .btn-outline-light:focus {
     background: white;
     border-color: white;
-    color: var(--primary-color);
+    color: var(--accent-color);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    color: white;
 }
 
 .btn-lg {
@@ -516,6 +539,8 @@ html {
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Hero Badge */
@@ -2546,7 +2571,7 @@ html {
 }
 
 .footer-links ul li a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .footer-download h5 {
