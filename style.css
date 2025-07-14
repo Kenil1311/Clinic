@@ -81,6 +81,24 @@ html {
     text-decoration: none;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.clinicia-logo {
+    height: 40px;
+    width: auto;
+    transition: var(--transition);
+    filter: brightness(1);
+}
+
+.navbar-brand:hover .clinicia-logo {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+}
+
 .navbar-nav .nav-link {
     font-weight: 500;
     color: var(--text-color);
@@ -1832,6 +1850,13 @@ html {
     font-weight: 800;
     color: var(--primary-color);
     margin-bottom: 1rem;
+}
+
+.footer-logo {
+    height: 50px;
+    width: auto;
+    filter: brightness(1);
+    transition: var(--transition);
 }
 
 .footer-brand p {
