@@ -54,9 +54,9 @@ body {
 }
 
 .btn-primary {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
-    color: white;
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: white !important;
     font-weight: 600;
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
@@ -64,8 +64,9 @@ body {
 }
 
 .btn-primary:hover {
-    background: #e60000;
-    border-color: #e60000;
+    background: #e60000 !important;
+    border-color: #e60000 !important;
+    color: white !important;
 }
 
 .btn-outline-primary {
@@ -84,14 +85,14 @@ body {
 }
 
 /* Hero Section */
-.features-hero {
+.features-hero-section {
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     padding: 140px 0 100px;
     position: relative;
     overflow: hidden;
 }
 
-.features-hero::before {
+.features-hero-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -104,12 +105,12 @@ body {
     z-index: 1;
 }
 
-.features-hero .container {
+.features-hero-section .container {
     position: relative;
     z-index: 2;
 }
 
-.features-hero-badge {
+.hero-badge {
     background: rgba(255, 77, 77, 0.1);
     color: var(--primary-color);
     padding: 0.5rem 1rem;
@@ -119,6 +120,17 @@ body {
     display: inline-block;
     margin-bottom: 1.5rem;
     animation: float 3s ease-in-out infinite;
+}
+
+.text-red {
+    color: var(--primary-color);
+}
+
+.features-hero-description {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
 @keyframes float {
@@ -147,14 +159,37 @@ body {
     margin-bottom: 2rem;
 }
 
+.hero-floating-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
 .floating-element {
     position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 77, 77, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     animation: float 6s ease-in-out infinite;
 }
 
-.floating-element:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
-.floating-element:nth-child(2) { top: 30%; right: 15%; animation-delay: 2s; }
-.floating-element:nth-child(3) { bottom: 30%; left: 20%; animation-delay: 4s; }
+.floating-element i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.element-1 { top: 20%; left: 10%; animation-delay: 0s; }
+.element-2 { top: 30%; right: 15%; animation-delay: 2s; }
+.element-3 { bottom: 30%; left: 20%; animation-delay: 4s; }
+.element-4 { top: 60%; right: 10%; animation-delay: 3s; }
 
 /* Features Section */
 .features-section {
@@ -177,7 +212,7 @@ body {
 }
 
 .features-section .feature-card {
-    background: #ffffff;
+    background: #ffffff !important;
     border-radius: 12px;
     padding: 2.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -186,6 +221,9 @@ body {
     position: relative;
     overflow: hidden;
     height: 100%;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .features-section .feature-card::before {
@@ -284,7 +322,7 @@ body {
 }
 
 .why-choose-section .feature-card {
-    background: #ffffff;
+    background: #ffffff !important;
     border-radius: 12px;
     padding: 2.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -293,6 +331,9 @@ body {
     position: relative;
     overflow: hidden;
     height: 100%;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .why-choose-section .feature-card:hover {
@@ -508,14 +549,16 @@ body {
 
 /* Animation Enhancements */
 .feature-card {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1 !important;
+    transform: translateY(0) !important;
     transition: all 0.6s ease;
+    display: block !important;
+    visibility: visible !important;
 }
 
 .feature-card.aos-animate {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 /* Hover Effects */
