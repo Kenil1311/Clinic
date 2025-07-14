@@ -181,8 +181,8 @@ html {
 }
 
 .mega-menu {
-    min-width: 600px;
-    max-width: 800px;
+    min-width: 700px;
+    max-width: 900px;
     padding: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
@@ -200,9 +200,10 @@ html {
     font-size: 0.9rem;
     margin-bottom: 0.2rem;
     border-radius: var(--border-radius-sm);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
 }
 
 .mega-menu .dropdown-header {
@@ -215,8 +216,8 @@ html {
 
 /* Features Menu Specific Styling */
 .features-menu {
-    min-width: 500px;
-    max-width: 650px;
+    min-width: 600px;
+    max-width: 750px;
 }
 
 .features-menu .dropdown-item {
@@ -225,6 +226,9 @@ html {
     margin-bottom: 0.3rem;
     border-radius: var(--border-radius-sm);
     transition: all 0.3s ease;
+    white-space: normal;
+    overflow: visible;
+    line-height: 1.4;
 }
 
 .features-menu .dropdown-item:hover {
@@ -3251,198 +3255,7 @@ html {
     }
 }
 
-/* Specialized Solutions Section */
-.specialized-solutions-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, rgba(255, 77, 77, 0.02) 100%);
-    position: relative;
-    overflow: hidden;
-}
 
-.specialized-solutions-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23ff4d4d" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
-    z-index: 1;
-}
-
-.specialized-solutions-section .container {
-    position: relative;
-    z-index: 2;
-}
-
-/* Specialty Cards */
-.specialty-card {
-    background: white;
-    border-radius: var(--border-radius-sm);
-    padding: 1.5rem 1rem;
-    text-align: center;
-    transition: var(--transition);
-    border: 1px solid var(--border-color);
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-}
-
-.specialty-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
-    transform: scaleX(0);
-    transition: var(--transition);
-}
-
-.specialty-card:hover::before {
-    transform: scaleX(1);
-}
-
-.specialty-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-color);
-}
-
-.specialty-icon {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, rgba(255, 77, 77, 0.1), rgba(255, 77, 77, 0.05));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1rem;
-    transition: var(--transition);
-}
-
-.specialty-card:hover .specialty-icon {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    transform: scale(1.1);
-}
-
-.specialty-icon i {
-    font-size: 1.25rem;
-    color: var(--primary-color);
-    transition: var(--transition);
-}
-
-.specialty-card:hover .specialty-icon i {
-    color: white;
-}
-
-.specialty-card h5 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-}
-
-.specialty-card p {
-    font-size: 0.85rem;
-    color: var(--text-light);
-    margin-bottom: 1rem;
-    line-height: 1.4;
-}
-
-.specialty-features {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.specialty-features li {
-    font-size: 0.75rem;
-    color: var(--text-light);
-    padding: 0.2rem 0;
-    position: relative;
-    padding-left: 1rem;
-}
-
-.specialty-features li::before {
-    content: '•';
-    color: var(--primary-color);
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-}
-
-/* More Specialty Card */
-.more-specialty {
-    background: linear-gradient(135deg, rgba(255, 77, 77, 0.05), rgba(255, 77, 77, 0.02));
-    border: 2px dashed var(--primary-color);
-}
-
-.more-specialty .specialty-icon {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-}
-
-.more-specialty .specialty-icon i {
-    color: white;
-}
-
-.more-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-}
-
-.more-list span {
-    font-size: 0.7rem;
-    color: var(--text-light);
-    padding: 0.1rem 0.4rem;
-    background: rgba(255, 77, 77, 0.08);
-    border-radius: 10px;
-    display: inline-block;
-}
-
-/* Practice Size Cards */
-.practice-size-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--text-color);
-    margin-bottom: 1rem;
-}
-
-.practice-size-subtitle {
-    font-size: 1rem;
-    color: var(--text-light);
-    margin-bottom: 2rem;
-}
-
-.practice-size-card {
-    background: white;
-    border-radius: var(--border-radius-sm);
-    border: 1px solid var(--border-color);
-    overflow: hidden;
-    transition: var(--transition);
-    height: 100%;
-    position: relative;
-}
-
-.practice-size-card.featured {
-    border: 2px solid var(--primary-color);
-    box-shadow: var(--shadow-md);
-}
-
-.practice-size-card.featured::before {
-    content: 'Most Popular';
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--primary-color);
-    color: white;
-    padding: 0.4rem 0.8rem;
-    font-size: 0.7rem;
-    font-weight: 600;
-    border-bottom-left-radius: var(--border-radius-sm);
-}
 
 .practice-size-card:hover {
     transform: translateY(-5px);
