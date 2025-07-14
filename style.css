@@ -1496,7 +1496,7 @@ html {
 
 /* Privacy & Compliance Section */
 .privacy-section {
-    background: white !important;
+    background: var(--surface-alt) !important;
 }
 
 .privacy-visual {
