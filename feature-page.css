@@ -491,6 +491,30 @@
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    .feature-hero-section {
+        padding: 6rem 0 3rem;
+        text-align: center;
+    }
+    
+    .feature-hero-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .feature-hero-subtitle {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .feature-hero-description {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .feature-badge {
+        margin: 0 auto 1.5rem;
+    }
+    
     .security-features {
         grid-template-columns: 1fr;
     }
@@ -505,10 +529,12 @@
     
     .security-content h2 {
         font-size: 2.2rem;
+        text-align: center;
     }
     
     .security-item {
         padding: 2rem;
+        text-align: center;
     }
     
     .security-item i {
@@ -648,16 +674,28 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    /* General mobile centering */
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+    
+    .section-title {
+        text-align: center;
+    }
+    
     .feature-hero-title {
         font-size: 2.2rem;
+        text-align: center;
     }
     
     .feature-hero-subtitle {
         font-size: 1.1rem;
+        text-align: center;
     }
     
     .feature-hero-description {
         font-size: 1rem;
+        text-align: center;
     }
     
     .feature-hero-actions {
