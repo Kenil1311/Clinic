@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Prescription Software for Doctors & Clinics | Clinicia</title>
+    <meta name="description" content="Create, manage, and send digital prescriptions with Clinicia's advanced prescription software. Streamline medication management with customizable templates and drug interactions.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <link href="features.css" rel="stylesheet">
+    <link href="feature-page.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/attached_assets/clinicia_logo1_1752483203746.png" alt="Clinicia" height="40" class="clinicia-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    
+                    <!-- Features Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle active" href="/features" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu mega-menu features-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Core Features</h6>
+                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-medical me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-prescription me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar-check me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="/consent"><i class="fas fa-digital-tachograph me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Advanced Features</h6>
+                                        <a class="dropdown-item" href="/images"><i class="fas fa-images me-2"></i>Images</a>
+                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="/users"><i class="fas fa-users-cog me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="/social"><i class="fas fa-share-alt me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Specialties</h6>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="#dental"><i class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="#dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="#gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="#physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="#ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="#ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="#diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="#ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="#cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="#oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="#nephrology"><i class="fas fa-kidneys me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="#paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="#veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="#psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="#nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="#orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="#urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Practice Size</h6>
+                                        <a class="dropdown-item" href="#solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
+                                        <a class="dropdown-item" href="#multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="#multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="#multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="#hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="navbar-actions">
+                    <a href="#" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Feature Hero Section -->
+    <section class="feature-hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="feature-hero-content">
+                        <div class="feature-badge">
+                            <i class="fas fa-prescription me-2"></i>
+                            Core Feature
+                        </div>
+                        <h1 class="feature-hero-title">Digital Prescription</h1>
+                        <p class="feature-hero-subtitle">Smart Medication Management</p>
+                        <p class="feature-hero-description">
+                            Create, manage, and send digital prescriptions with Clinicia's advanced prescription software. Streamline medication management with customizable templates, drug interaction alerts, and seamless integration with your clinic workflow.
+                        </p>
+                        <div class="feature-hero-actions">
+                            <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
+                            <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-hero-image">
+                        <div class="feature-mockup">
+                            <i class="fas fa-prescription"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Capabilities Section -->
+    <section class="feature-capabilities-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">What Clinicia Prescription Offers</h2>
+                    <p class="section-subtitle">Comprehensive prescription management tools designed for modern healthcare</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h4>Digital Prescription Creation</h4>
+                        <p>Create professional digital prescriptions with customizable templates, dosage calculators, and medication databases.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Drug Interaction Alerts</h4>
+                        <p>Get real-time alerts for drug interactions, allergies, and contraindications to ensure patient safety.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-template"></i>
+                        </div>
+                        <h4>Custom Templates</h4>
+                        <p>Create and save prescription templates for common treatments and specialty-specific medications.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h4>Multi-Channel Delivery</h4>
+                        <p>Send prescriptions via email, SMS, WhatsApp, or print directly from the system.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h4>Medication History</h4>
+                        <p>Access complete medication history for better treatment decisions and continuity of care.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile Access</h4>
+                        <p>Create and manage prescriptions on-the-go with mobile-responsive design and offline capabilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Accessibility Section -->
+    <section class="feature-security-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="security-content">
+                        <h2>Secure & Compliant</h2>
+                        <div class="security-features">
+                            <div class="security-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>HIPAA-compliant prescription management</span>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Digital signatures for authenticity</span>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-database"></i>
+                                <span>Comprehensive drug database</span>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Real-time pharmacy integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="security-visual">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="feature-benefits-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Benefits of Digital Prescriptions</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4>Faster Prescribing</h4>
+                        <p>Reduce prescription time by 50% with smart templates and auto-fill features</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <h4>Reduce Errors</h4>
+                        <p>Minimize medication errors with drug interaction alerts and dosage validation</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Better Patient Care</h4>
+                        <p>Improve patient compliance with clear digital prescriptions and medication reminders</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Track Compliance</h4>
+                        <p>Monitor prescription adherence and track patient medication history</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="feature-cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>Transform Your Prescription Process</h2>
+                    <p>Experience the power of digital prescription management.</p>
+                    <p>Start your free trial or book a demo to see how Clinicia modernizes your practice.</p>
+                    <div class="cta-actions">
+                        <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
+                        <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="/attached_assets/clinicia_logo1_1752483203746.png" alt="Clinicia" height="40" class="mb-3">
+                        <p>Transforming healthcare through intelligent digital solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <h5>Features</h5>
+                            <ul class="footer-links">
+                                <li><a href="/emr">EMR</a></li>
+                                <li><a href="/prescription">Prescription</a></li>
+                                <li><a href="/appointment">Appointments</a></li>
+                                <li><a href="/financial">Financial</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h5>Solutions</h5>
+                            <ul class="footer-links">
+                                <li><a href="#dental">Dental</a></li>
+                                <li><a href="#dermatology">Dermatology</a></li>
+                                <li><a href="#gynaecology">Gynaecology</a></li>
+                                <li><a href="#cardiology">Cardiology</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h5>Support</h5>
+                            <ul class="footer-links">
+                                <li><a href="#help">Help Center</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#training">Training</a></li>
+                                <li><a href="#resources">Resources</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h5>Company</h5>
+                            <ul class="footer-links">
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#careers">Careers</a></li>
+                                <li><a href="#privacy">Privacy</a></li>
+                                <li><a href="#terms">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Clinicia. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="features.js"></script>
+</body>
+</html>
