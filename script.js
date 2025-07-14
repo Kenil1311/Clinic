@@ -157,51 +157,54 @@ function initFormAnimations() {
 
 // Counter animations for statistics
 function initCounterAnimations() {
-    const counters = document.querySelectorAll('.floating-card span');
+    const counters = document.querySelectorAll('.counter');
     let counterAnimated = false;
     
     const animateCounters = () => {
         if (counterAnimated) return;
         
         counters.forEach(counter => {
-            const text = counter.textContent;
-            const matches = text.match(/(\d+(?:,\d+)*)/);
+            const target = parseInt(counter.getAttribute('data-count'));
+            let current = 0;
+            const increment = target / 60; // 60 frames for smooth animation
             
-            if (matches) {
-                const target = parseInt(matches[1].replace(/,/g, ''));
-                const suffix = text.replace(matches[1], '').trim();
-                let current = 0;
-                const increment = target / 60; // 60 frames for smooth animation
+            const timer = setInterval(() => {
+                current += increment;
                 
-                const timer = setInterval(() => {
-                    current += increment;
-                    
-                    if (current >= target) {
-                        current = target;
-                        clearInterval(timer);
-                    }
-                    
-                    const formattedNumber = Math.floor(current).toLocaleString();
-                    counter.textContent = `${formattedNumber}${suffix}`;
-                }, 16); // ~60fps
-            }
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                
+                // Format numbers appropriately
+                let displayValue;
+                if (target >= 1000000) {
+                    displayValue = (Math.floor(current / 100000) / 10) + 'M+';
+                } else if (target >= 1000) {
+                    displayValue = Math.floor(current).toLocaleString() + '+';
+                } else {
+                    displayValue = Math.floor(current);
+                }
+                
+                counter.textContent = displayValue;
+            }, 16); // ~60fps
         });
         
         counterAnimated = true;
     };
     
-    // Trigger animation when hero section is visible
-    const heroObserver = new IntersectionObserver((entries) => {
+    // Trigger animation when stats section is visible
+    const statsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                setTimeout(animateCounters, 1000); // Delay for better effect
+                setTimeout(animateCounters, 500); // Delay for better effect
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
     
-    const heroSection = document.querySelector('.hero-section');
-    if (heroSection) {
-        heroObserver.observe(heroSection);
+    const statsSection = document.querySelector('.stats-section');
+    if (statsSection) {
+        statsObserver.observe(statsSection);
     }
 }
 
