@@ -118,6 +118,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Reduced animation intensity with gentler movements and slower timing for less distraction
 ✓ Enhanced medical elements with better visual effects, smoother animations, and improved timing
 ✓ Added cubic-bezier easing for more natural transitions and will-change for better performance
+✓ Added subtle glow effect to hero title text with layered red text-shadow for enhanced visual appeal
 
 ## User Preferences
 
