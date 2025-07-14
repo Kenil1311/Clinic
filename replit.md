@@ -114,6 +114,8 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Enhanced medical animations with multiple animation types (float, pulse, bounce, swing, rotate)
 ✓ Added 8 medical elements with varied animations, hover effects, and drop shadows
 ✓ Repositioned elements with fewer on left side (2) and more on right side (6) for better balance
+✓ Made medical elements more subtle with smaller size (1.2rem), lighter color (#ffb3b3), and reduced opacity (0.25)
+✓ Reduced animation intensity with gentler movements and slower timing for less distraction
 
 ## User Preferences
 
