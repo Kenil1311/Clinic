@@ -11,6 +11,14 @@ def index():
 def features():
     return send_file('features.html')
 
+@app.route('/emr')
+def emr():
+    return send_file('emr.html')
+
+@app.route('/prescription')
+def prescription():
+    return send_file('prescription.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):
@@ -36,6 +44,10 @@ def features_css():
 @app.route('/features.js')
 def features_js():
     return send_file('features.js', mimetype='application/javascript')
+
+@app.route('/feature-page.css')
+def feature_page_css():
+    return send_file('feature-page.css', mimetype='text/css')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
