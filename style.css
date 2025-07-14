@@ -503,69 +503,142 @@ html {
 
 /* Clean hero section - no opacity overrides */
 
-/* Medical animated elements */
+/* Enhanced Medical animated elements */
 .medical-element {
     position: absolute;
-    opacity: 0.4;
-    animation: floatMedical 8s ease-in-out infinite;
+    opacity: 0.6;
+    animation: floatMedical 6s ease-in-out infinite;
     pointer-events: none;
     color: #ff4d4d;
-    font-size: 1.5rem;
+    font-size: 2rem;
     z-index: 2;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 8px rgba(255, 77, 77, 0.3));
+}
+
+.medical-element:hover {
+    transform: scale(1.2) !important;
+    opacity: 0.8 !important;
+    animation-play-state: paused;
 }
 
 .medical-element:nth-child(1) {
     top: 15%;
     left: 8%;
     animation-delay: 0s;
+    animation-duration: 5s;
 }
 
 .medical-element:nth-child(2) {
-    top: 25%;
-    right: 12%;
-    animation-delay: -2s;
+    top: 12%;
+    right: 10%;
+    animation-delay: -1.5s;
+    animation-duration: 7s;
 }
 
 .medical-element:nth-child(3) {
     bottom: 30%;
-    left: 15%;
-    animation-delay: -4s;
+    left: 12%;
+    animation-delay: -3s;
+    animation-duration: 6s;
 }
 
 .medical-element:nth-child(4) {
-    bottom: 20%;
+    bottom: 15%;
     right: 8%;
-    animation-delay: -6s;
+    animation-delay: -4.5s;
+    animation-duration: 8s;
 }
 
 .medical-element:nth-child(5) {
-    top: 45%;
-    left: 5%;
-    animation-delay: -1s;
+    top: 25%;
+    right: 18%;
+    animation-delay: -2s;
+    animation-duration: 5.5s;
 }
 
 .medical-element:nth-child(6) {
-    top: 60%;
-    right: 15%;
-    animation-delay: -3s;
+    top: 45%;
+    right: 12%;
+    animation-delay: -3.5s;
+    animation-duration: 6.5s;
+}
+
+.medical-element:nth-child(7) {
+    top: 65%;
+    right: 20%;
+    animation-delay: -5s;
+    animation-duration: 7.5s;
+}
+
+.medical-element:nth-child(8) {
+    bottom: 35%;
+    right: 25%;
+    animation-delay: -2.5s;
+    animation-duration: 5.8s;
 }
 
 @keyframes floatMedical {
     0%, 100% {
-        transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg) scale(1);
+        opacity: 0.6;
+    }
+    20% {
+        transform: translateY(-20px) rotate(5deg) scale(1.1);
         opacity: 0.4;
     }
-    25% {
-        transform: translateY(-15px) rotate(2deg);
-        opacity: 0.3;
+    40% {
+        transform: translateY(-35px) rotate(-3deg) scale(0.9);
+        opacity: 0.7;
     }
-    50% {
-        transform: translateY(-10px) rotate(-1deg);
+    60% {
+        transform: translateY(-25px) rotate(8deg) scale(1.05);
         opacity: 0.5;
     }
+    80% {
+        transform: translateY(-15px) rotate(-5deg) scale(1.08);
+        opacity: 0.6;
+    }
+}
+
+/* Pulsing animation for specific medical elements */
+.medical-element:nth-child(2) {
+    animation-name: pulseMedical;
+}
+
+.medical-element:nth-child(5) {
+    animation-name: bounceMedical;
+}
+
+@keyframes pulseMedical {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.6;
+        filter: drop-shadow(0 2px 8px rgba(255, 77, 77, 0.3));
+    }
+    50% {
+        transform: scale(1.3) rotate(5deg);
+        opacity: 0.8;
+        filter: drop-shadow(0 4px 16px rgba(255, 77, 77, 0.5));
+    }
+}
+
+@keyframes bounceMedical {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.6;
+    }
+    25% {
+        transform: translateY(-30px) rotate(10deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(-45px) rotate(-5deg);
+        opacity: 0.8;
+    }
     75% {
-        transform: translateY(-20px) rotate(1deg);
-        opacity: 0.3;
+        transform: translateY(-20px) rotate(15deg);
+        opacity: 0.5;
     }
 }
 
@@ -592,6 +665,61 @@ html {
     color: #ff4d4d !important;
     border: 1px solid rgba(255, 77, 77, 0.3);
     backdrop-filter: blur(10px);
+}
+
+/* Additional medical element animations */
+.medical-element:nth-child(3) {
+    animation-name: swingMedical;
+}
+
+.medical-element:nth-child(6) {
+    animation-name: rotateMedical;
+}
+
+.medical-element:nth-child(8) {
+    animation-name: pulseMedical;
+}
+
+@keyframes swingMedical {
+    0%, 100% {
+        transform: rotate(0deg) translateY(0px);
+        opacity: 0.6;
+    }
+    25% {
+        transform: rotate(15deg) translateY(-10px);
+        opacity: 0.4;
+    }
+    50% {
+        transform: rotate(-10deg) translateY(-20px);
+        opacity: 0.8;
+    }
+    75% {
+        transform: rotate(20deg) translateY(-15px);
+        opacity: 0.5;
+    }
+}
+
+@keyframes rotateMedical {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 0.6;
+    }
+    25% {
+        transform: rotate(90deg) scale(1.1);
+        opacity: 0.4;
+    }
+    50% {
+        transform: rotate(180deg) scale(0.9);
+        opacity: 0.7;
+    }
+    75% {
+        transform: rotate(270deg) scale(1.05);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 0.6;
+    }
 }
 
 /* Mobile responsiveness for medical elements */
