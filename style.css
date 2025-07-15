@@ -1644,66 +1644,139 @@ html {
     width: 100%;
 }
 
-.browser-frame-enhanced {
+.browser-frame-realistic {
     background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    border: 1px solid #e1e5e9;
+    border: 1px solid #d1d5db;
     position: relative;
 }
 
-.browser-header-enhanced {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 16px 24px;
-    border-bottom: 1px solid #dee2e6;
+.browser-header-realistic {
+    background: linear-gradient(180deg, #f9fafb 0%, #f3f4f6 100%);
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
 
-.browser-controls-enhanced {
+.browser-controls-realistic {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
 }
 
-.browser-controls-enhanced .control {
-    width: 14px;
-    height: 14px;
+.browser-controls-realistic .control {
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
 }
 
-.browser-title-enhanced {
+.control.close {
+    background: linear-gradient(135deg, #ff5f57 0%, #ff4444 100%);
+    border-color: #e53e3e;
+}
+
+.control.minimize {
+    background: linear-gradient(135deg, #ffbd2e 0%, #ffa000 100%);
+    border-color: #ff8f00;
+}
+
+.control.maximize {
+    background: linear-gradient(135deg, #28ca42 0%, #22c55e 100%);
+    border-color: #16a34a;
+}
+
+.browser-title-realistic {
     font-size: 14px;
     font-weight: 600;
-    color: #495057;
+    color: #374151;
     flex-grow: 1;
     text-align: center;
     margin: 0 2rem;
 }
 
-.browser-actions {
+.browser-menu {
     display: flex;
-    gap: 12px;
     align-items: center;
 }
 
-.browser-actions i {
-    font-size: 12px;
-    color: #6c757d;
-    opacity: 0.7;
+.menu-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
-.browser-content-enhanced {
+.menu-dots span {
+    width: 3px;
+    height: 3px;
+    background: #6b7280;
+    border-radius: 50%;
+}
+
+.browser-toolbar {
+    background: #ffffff;
+    padding: 8px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.url-bar {
+    flex-grow: 1;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.url-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.url-content i {
+    font-size: 10px;
+    color: #10b981;
+}
+
+.browser-nav {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.browser-nav i {
+    font-size: 12px;
+    color: #6b7280;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.browser-nav i:hover {
+    background: #f3f4f6;
+}
+
+.browser-content-realistic {
     background: #fff;
     padding: 0;
     position: relative;
 }
 
-.dashboard-image-enhanced {
+.dashboard-image-realistic {
     width: 100%;
     height: auto;
     display: block;
@@ -2047,13 +2120,30 @@ html {
         padding: 3px 8px;
     }
     
-    .browser-header-enhanced {
-        padding: 12px 16px;
+    .browser-header-realistic {
+        padding: 10px 12px;
     }
     
-    .browser-title-enhanced {
+    .browser-title-realistic {
         font-size: 12px;
         margin: 0 1rem;
+    }
+    
+    .browser-toolbar {
+        padding: 6px 12px;
+    }
+    
+    .url-content {
+        font-size: 10px;
+    }
+    
+    .browser-nav i {
+        font-size: 10px;
+    }
+    
+    .browser-controls-realistic .control {
+        width: 10px;
+        height: 10px;
     }
     
     .what-is-content .section-description {
