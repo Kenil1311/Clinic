@@ -84,6 +84,49 @@ body {
     color: white;
 }
 
+/* Breadcrumb Styles */
+.breadcrumb-section {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    border-bottom: 1px solid #e9ecef;
+    position: relative;
+    z-index: 10;
+    margin-top: 76px; /* Account for fixed navbar */
+}
+
+.breadcrumb-custom {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.breadcrumb-custom .breadcrumb-item {
+    color: #6c757d;
+}
+
+.breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #6c757d;
+    margin: 0 8px;
+}
+
+.breadcrumb-custom .breadcrumb-item a {
+    color: #ff4d4d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-custom .breadcrumb-item a:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+.breadcrumb-custom .breadcrumb-item.active {
+    color: #495057;
+    font-weight: 500;
+}
+
 /* Hero Section */
 .features-hero-section {
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
