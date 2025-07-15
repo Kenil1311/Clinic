@@ -92,6 +92,7 @@ body {
     position: relative;
     z-index: 10;
     margin-top: 76px; /* Account for fixed navbar */
+    margin-bottom: 0;
 }
 
 .breadcrumb-custom {
@@ -130,10 +131,11 @@ body {
 /* Hero Section */
 .features-hero-section {
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-    padding: 10px 0 20px;
+    padding: 0px 0 20px;
     position: relative;
     overflow: hidden;
     min-height: auto;
+    margin-top: 0;
 }
 
 .features-hero-section::before {
