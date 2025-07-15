@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
     initTabSwitching();
     initScrollAnimations();
+    initClickDropdowns();
 });
 
 // Navbar scroll effects
@@ -634,6 +635,59 @@ document.addEventListener('DOMContentLoaded', function() {
     initSolutionCards();
     initDropdownEnhancements();
 });
+
+// Click-based dropdown functionality
+function initClickDropdowns() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        
+        if (toggle && menu) {
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Close other open dropdowns
+                dropdowns.forEach(otherDropdown => {
+                    if (otherDropdown !== dropdown) {
+                        const otherMenu = otherDropdown.querySelector('.dropdown-menu');
+                        const otherToggle = otherDropdown.querySelector('.dropdown-toggle');
+                        if (otherMenu && otherToggle) {
+                            otherMenu.classList.remove('show');
+                            otherToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                });
+                
+                // Toggle current dropdown
+                const isOpen = menu.classList.contains('show');
+                if (isOpen) {
+                    menu.classList.remove('show');
+                    toggle.setAttribute('aria-expanded', 'false');
+                } else {
+                    menu.classList.add('show');
+                    toggle.setAttribute('aria-expanded', 'true');
+                }
+            });
+        }
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            dropdowns.forEach(dropdown => {
+                const menu = dropdown.querySelector('.dropdown-menu');
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                if (menu && toggle) {
+                    menu.classList.remove('show');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    });
+}
 
 // Performance monitoring
 console.log('Clinicia Landing Page JavaScript loaded successfully');
