@@ -5539,19 +5539,19 @@ html {
 
 .smart-feature-card-new {
     background: white;
-    border-radius: 20px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 16px;
+    transition: all 0.3s ease;
     height: 100%;
-    border: 1px solid #f3f4f6;
+    border: 1px solid #e5e7eb;
     position: relative;
-    padding: 2.5rem 2rem;
+    padding: 2rem;
     text-align: center;
     overflow: hidden;
-    min-height: 420px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .smart-feature-card-new::before {
@@ -5561,10 +5561,9 @@ html {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
     transform: scaleX(0);
-    transition: transform 0.3s ease;
-    transform-origin: left;
+    transition: var(--transition);
 }
 
 .smart-feature-card-new:hover::before {
@@ -5572,42 +5571,40 @@ html {
 }
 
 .smart-feature-card-new:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-    border-color: #e5e7eb;
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
 }
 
 .feature-icon-large {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255, 77, 77, 0.1) 0%, rgba(255, 77, 77, 0.05) 100%);
-    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 77, 77, 0.1);
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 2rem;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     position: relative;
     flex-shrink: 0;
-    box-shadow: 0 4px 6px -1px rgba(255, 77, 77, 0.1);
 }
 
 .feature-icon-large::after {
     content: '';
     position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
     border: 2px solid transparent;
     border-radius: 50%;
     transition: var(--transition);
 }
 
 .feature-icon-large i {
-    font-size: 2rem;
-    color: #ef4444;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 
 .smart-feature-card-new:nth-child(4n) .feature-icon-large i {
@@ -5615,9 +5612,8 @@ html {
 }
 
 .smart-feature-card-new:hover .feature-icon-large {
-    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 8px 15px -3px rgba(239, 68, 68, 0.3);
+    background: var(--primary-color);
+    transform: scale(1.1);
 }
 
 .smart-feature-card-new:hover .feature-icon-large::after {
@@ -5637,11 +5633,12 @@ html {
 }
 
 .feature-content h4 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: #1f2937;
     line-height: 1.3;
+    flex-shrink: 0;
 }
 
 .feature-content p {
@@ -5664,10 +5661,11 @@ html {
     display: flex;
     align-items: center;
     font-size: 0.85rem;
-    color: #374151;
+    color: #4b5563;
     font-weight: 500;
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    position: relative;
 }
 
 .feature-highlights li i {
@@ -5675,6 +5673,7 @@ html {
     font-size: 0.75rem;
     margin-right: 0.5rem;
     flex-shrink: 0;
+    width: 14px;
 }
 
 @keyframes pulse-ring {
