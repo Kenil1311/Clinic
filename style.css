@@ -5544,9 +5544,10 @@ html {
     height: 100%;
     border: 1px solid var(--border-color);
     position: relative;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 2rem 3rem 2rem;
     text-align: center;
     overflow: hidden;
+    min-height: 420px;
 }
 
 .smart-feature-card-new::before {
@@ -5625,12 +5626,14 @@ html {
     font-weight: 600;
     margin-bottom: 1rem;
     color: var(--text-color);
+    line-height: 1.4;
 }
 
 .feature-content p {
     color: var(--text-light);
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    font-size: 0.95rem;
 }
 
 .feature-highlights {
@@ -5644,9 +5647,10 @@ html {
     display: flex;
     align-items: center;
     margin-bottom: 0.75rem;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--text-color);
     font-weight: 500;
+    line-height: 1.4;
 }
 
 .feature-highlights li i {
