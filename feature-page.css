@@ -102,6 +102,8 @@
     border: 1px solid #e5e7eb;
     transition: all 0.3s ease;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .capability-card:hover {
@@ -136,6 +138,11 @@
     color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 1rem;
+}
+
+.capability-card p:last-child {
+    margin-bottom: 0;
+    margin-top: auto;
 }
 
 .capability-card ul {
