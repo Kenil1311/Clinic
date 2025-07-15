@@ -2629,7 +2629,7 @@ html {
 .desktop-monitor-system {
     position: relative;
     z-index: 1;
-    animation: monitorEntrance 1s ease-out;
+    animation: monitorEntrance 1.5s ease-out, monitorFloat 6s ease-in-out infinite 1.5s;
 }
 
 @keyframes monitorEntrance {
@@ -2641,6 +2641,11 @@ html {
         transform: translateY(0) rotateX(0deg);
         opacity: 1;
     }
+}
+
+@keyframes monitorFloat {
+    0%, 100% { transform: translateY(0) rotateX(0deg); }
+    50% { transform: translateY(-10px) rotateX(1deg); }
 }
 
 .monitor-screen-system {
@@ -2760,18 +2765,24 @@ html {
     right: 60px;
     bottom: 20px;
     z-index: 3;
-    animation: phoneEntrance 1s ease-out 0.3s both;
+    animation: phoneEntrance 1.5s ease-out 0.5s both, phoneBob 4s ease-in-out infinite 2s;
 }
 
 @keyframes phoneEntrance {
     0% {
-        transform: translateY(50px) rotateX(-10deg);
+        transform: translateY(50px) rotateX(-10deg) rotateZ(-5deg);
         opacity: 0;
     }
     100% {
-        transform: translateY(0) rotateX(0deg);
+        transform: translateY(0) rotateX(0deg) rotateZ(0deg);
         opacity: 1;
     }
+}
+
+@keyframes phoneBob {
+    0%, 100% { transform: translateY(0) rotateZ(0deg); }
+    25% { transform: translateY(-5px) rotateZ(1deg); }
+    75% { transform: translateY(5px) rotateZ(-1deg); }
 }
 
 .phone-device-system {
@@ -3015,45 +3026,7 @@ html {
 }
 
 /* Platform Labels System */
-.platform-labels-system {
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 4rem;
-    z-index: 10;
-}
 
-.desktop-label-system,
-.mobile-label-system {
-    background: rgba(255, 255, 255, 0.95);
-    color: #2c3e50;
-    padding: 8px 16px;
-    border-radius: 25px;
-    font-size: 12px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-}
-
-.desktop-label-system:hover,
-.mobile-label-system:hover {
-    background: rgba(74, 144, 226, 0.95);
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(74, 144, 226, 0.3);
-}
-
-.desktop-label-system i,
-.mobile-label-system i {
-    font-size: 11px;
-}
 
 /* Integrated Showcase Container */
 .integrated-showcase-container {
@@ -5064,9 +5037,132 @@ html {
     overflow: hidden;
 }
 
+.what-is-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(74, 144, 226, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 77, 77, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(74, 144, 226, 0.04) 0%, transparent 60%);
+    z-index: 1;
+}
+
+.what-is-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 2px 2px, rgba(74, 144, 226, 0.12) 1px, transparent 1px),
+        radial-gradient(circle at 1px 1px, rgba(255, 77, 77, 0.1) 1px, transparent 1px);
+    background-size: 80px 80px, 60px 60px;
+    background-position: 0 0, 40px 40px;
+    z-index: 1;
+}
+
 .what-is-section .container {
     position: relative;
     z-index: 2;
+}
+
+/* Floating Medical Icons */
+.floating-medical-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.floating-medical-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: rgba(74, 144, 226, 0.4);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: floatMedical 8s ease-in-out infinite;
+}
+
+.floating-medical-icon.icon-1 {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+    color: rgba(255, 77, 77, 0.4);
+}
+
+.floating-medical-icon.icon-2 {
+    top: 25%;
+    right: 15%;
+    animation-delay: 1s;
+    color: rgba(74, 144, 226, 0.4);
+}
+
+.floating-medical-icon.icon-3 {
+    top: 60%;
+    left: 8%;
+    animation-delay: 2s;
+    color: rgba(255, 77, 77, 0.4);
+}
+
+.floating-medical-icon.icon-4 {
+    top: 45%;
+    right: 12%;
+    animation-delay: 3s;
+    color: rgba(74, 144, 226, 0.4);
+}
+
+.floating-medical-icon.icon-5 {
+    top: 75%;
+    left: 25%;
+    animation-delay: 4s;
+    color: rgba(255, 77, 77, 0.4);
+}
+
+.floating-medical-icon.icon-6 {
+    top: 35%;
+    right: 35%;
+    animation-delay: 5s;
+    color: rgba(74, 144, 226, 0.4);
+}
+
+@keyframes floatMedical {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+        opacity: 0.4; 
+    }
+    25% { 
+        transform: translateY(-10px) rotate(90deg); 
+        opacity: 0.6; 
+    }
+    50% { 
+        transform: translateY(0px) rotate(180deg); 
+        opacity: 0.4; 
+    }
+    75% { 
+        transform: translateY(-5px) rotate(270deg); 
+        opacity: 0.6; 
+    }
+}
+
+/* Hide floating medical icons on mobile */
+@media (max-width: 768px) {
+    .floating-medical-icons {
+        display: none;
+    }
 }
 
 /* Add decorative elements */
@@ -5279,6 +5375,42 @@ html {
 /* Why Choose Section */
 .why-choose-section {
     padding: 6rem 0;
+    background: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-choose-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(74, 144, 226, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255, 77, 77, 0.04) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.why-choose-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 2px 2px, rgba(74, 144, 226, 0.08) 1px, transparent 1px),
+        radial-gradient(circle at 1px 1px, rgba(255, 77, 77, 0.06) 1px, transparent 1px);
+    background-size: 100px 100px, 70px 70px;
+    background-position: 0 0, 50px 50px;
+    z-index: 1;
+}
+
+.why-choose-section .container {
+    position: relative;
+    z-index: 2;
 }
 
 .feature-card {
