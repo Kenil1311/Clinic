@@ -167,6 +167,11 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Enhanced "What is Clinicia?" section with dashboard and mobile app visual mockups positioned next to text description
 ✓ Reorganized layout with circular feature visualization on left and content text on right
 ✓ Updated Clinicia logo across entire website (all 16 pages) with new brand design featuring red diamond and white medical cross
+✓ Added breadcrumbs to all sub pages for better navigation (July 15, 2025)
+✓ Implemented breadcrumb navigation with Home > Features > Current Page structure
+✓ Created custom breadcrumb styling with red accent color matching site theme
+✓ Added breadcrumbs to features page and all 13 individual feature pages
+✓ Breadcrumbs positioned between navbar and hero sections with proper styling
 
 ## User Preferences
 
