@@ -2242,6 +2242,63 @@ html {
         margin-bottom: 2rem;
     }
 
+    .system-showcase-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+        min-height: auto;
+    }
+
+    .desktop-monitor-system {
+        order: 1;
+        margin: 0 auto;
+    }
+
+    .monitor-screen-system {
+        width: 250px;
+        height: 180px;
+    }
+
+    .mobile-phone-system {
+        order: 2;
+        margin: 0 auto;
+    }
+
+    .phone-frame-system {
+        width: 160px;
+        height: 320px;
+    }
+
+    .phone-notch-system {
+        width: 80px;
+        height: 16px;
+    }
+
+    .speaker-system {
+        width: 28px;
+        height: 2px;
+    }
+
+    .camera-system {
+        width: 6px;
+        height: 6px;
+    }
+
+    .platform-labels-system {
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .desktop-label-system,
+    .mobile-label-system {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
     .integrated-showcase-container {
         padding: 1rem;
         min-height: auto;
@@ -2556,6 +2613,445 @@ html {
     color: #6c757d;
     font-size: 1rem;
     line-height: 1.4;
+}
+
+/* System Showcase Container */
+.system-showcase-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 500px;
+    gap: 2rem;
+}
+
+/* Desktop Monitor System */
+.desktop-monitor-system {
+    position: relative;
+    z-index: 2;
+    animation: monitorEntrance 1s ease-out;
+}
+
+@keyframes monitorEntrance {
+    0% {
+        transform: translateX(-50px) rotateY(-10deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.monitor-screen-system {
+    position: relative;
+    width: 280px;
+    height: 200px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    border-radius: 15px;
+    padding: 8px;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.2),
+        0 10px 25px rgba(0, 0, 0, 0.15),
+        0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.monitor-screen-system:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.25),
+        0 15px 35px rgba(0, 0, 0, 0.2),
+        0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.screen-frame-system {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.desktop-image-system {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.monitor-screen-system:hover .desktop-image-system {
+    transform: scale(1.02);
+}
+
+.screen-overlay-system {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.screen-glare-system {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.1) 30%, 
+        rgba(255, 255, 255, 0.05) 70%, 
+        transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.monitor-screen-system:hover .screen-glare-system {
+    opacity: 1;
+}
+
+.monitor-stand-system {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.stand-neck-system {
+    width: 8px;
+    height: 25px;
+    background: linear-gradient(135deg, #bdc3c7, #95a5a6);
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.stand-base-system {
+    position: absolute;
+    bottom: -8px;
+    width: 80px;
+    height: 15px;
+    background: linear-gradient(135deg, #bdc3c7, #95a5a6);
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.monitor-reflection-system {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 30px;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Mobile Phone System */
+.mobile-phone-system {
+    position: relative;
+    z-index: 2;
+    animation: phoneEntrance 1s ease-out 0.2s both;
+}
+
+@keyframes phoneEntrance {
+    0% {
+        transform: translateX(50px) rotateY(10deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.phone-device-system {
+    position: relative;
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.2));
+}
+
+.phone-frame-system {
+    width: 180px;
+    height: 360px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+    border-radius: 30px;
+    padding: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.phone-frame-system:hover {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
+}
+
+.phone-notch-system {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(135deg, #1a252f, #2c3e50);
+    border-radius: 12px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.speaker-system {
+    width: 35px;
+    height: 3px;
+    background: linear-gradient(135deg, #4a5568, #718096);
+    border-radius: 2px;
+    position: relative;
+}
+
+.speaker-system::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 1px;
+    background: #2d3748;
+    border-radius: 0.5px;
+}
+
+.camera-system {
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, #4a90e2, #357abd);
+    border-radius: 50%;
+    border: 1px solid #4a5568;
+    position: relative;
+}
+
+.camera-system::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 3px;
+    background: #1a202c;
+    border-radius: 50%;
+}
+
+.phone-screen-system {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.screen-content-system {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.mobile-image-system {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.phone-frame-system:hover .mobile-image-system {
+    transform: scale(1.03);
+}
+
+.mobile-status-system {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    font-size: 10px;
+    color: white;
+    z-index: 5;
+}
+
+.signal-bars-system {
+    display: flex;
+    gap: 2px;
+    align-items: flex-end;
+}
+
+.signal-bars-system span {
+    width: 3px;
+    background: #4a90e2;
+    border-radius: 1px;
+}
+
+.signal-bars-system span:nth-child(1) { height: 4px; }
+.signal-bars-system span:nth-child(2) { height: 6px; }
+.signal-bars-system span:nth-child(3) { height: 8px; }
+.signal-bars-system span:nth-child(4) { height: 10px; }
+
+.battery-system {
+    width: 20px;
+    height: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    position: relative;
+}
+
+.battery-system::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 0 1px 1px 0;
+}
+
+.battery-level-system {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 70%;
+    height: 6px;
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    border-radius: 1px;
+}
+
+.phone-home-system {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    z-index: 10;
+}
+
+.phone-buttons-system {
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.volume-buttons-system {
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+
+.volume-up-system,
+.volume-down-system {
+    position: absolute;
+    background: linear-gradient(135deg, #4a5568, #718096);
+    border-radius: 2px;
+    right: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.volume-up-system {
+    width: 3px;
+    height: 25px;
+    top: 0;
+}
+
+.volume-down-system {
+    width: 3px;
+    height: 25px;
+    top: 28px;
+}
+
+.power-button-system {
+    position: absolute;
+    right: -1px;
+    top: 25px;
+    width: 3px;
+    height: 30px;
+    background: linear-gradient(135deg, #4a5568, #718096);
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.phone-reflection-system {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 30px;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Platform Labels System */
+.platform-labels-system {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 4rem;
+    z-index: 10;
+}
+
+.desktop-label-system,
+.mobile-label-system {
+    background: rgba(255, 255, 255, 0.95);
+    color: #2c3e50;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.desktop-label-system:hover,
+.mobile-label-system:hover {
+    background: rgba(74, 144, 226, 0.95);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(74, 144, 226, 0.3);
+}
+
+.desktop-label-system i,
+.mobile-label-system i {
+    font-size: 11px;
 }
 
 /* Integrated Showcase Container */
