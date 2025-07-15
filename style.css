@@ -5653,35 +5653,26 @@ html {
     margin: 1rem 0 0 0;
     text-align: left;
     flex: 1;
-    display: table;
-    width: 100%;
-    table-layout: fixed;
 }
 
 .feature-highlights li {
-    display: table-row;
+    display: block;
     font-size: 0.75rem;
     color: var(--text-color);
     font-weight: 500;
     line-height: 1.4;
-    height: 1.8rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
 }
 
 .feature-highlights li i {
     color: var(--primary-color);
     font-size: 0.7rem;
-    width: 20px;
-    display: table-cell;
-    vertical-align: top;
-    padding-right: 0.5rem;
-    padding-top: 0.1rem;
-}
-
-.feature-highlights li span {
-    display: table-cell;
-    vertical-align: top;
-    width: auto;
-    padding-bottom: 0.3rem;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    width: 12px;
 }
 
 @keyframes pulse-ring {
