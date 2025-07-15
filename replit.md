@@ -187,6 +187,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Improved feature icons design by removing red backgrounds and adding blue borders with light gray backgrounds (July 15, 2025)
 ✓ Changed feature icon borders and text to red color for better brand consistency (July 15, 2025)
 ✓ Updated feature icons to use white background with subtle shadow for better visual appeal (July 15, 2025)
+✓ Fixed home page hero section stats visibility issues on mobile devices with enhanced CSS (July 15, 2025)
 
 ## User Preferences
 

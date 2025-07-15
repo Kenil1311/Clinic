@@ -6962,22 +6962,25 @@ html {
         height: auto !important;
         max-height: none !important;
         min-height: 120px;
+        position: relative;
+        z-index: 100;
     }
     
     .compact-stat {
         text-align: center;
         padding: 1rem;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.95);
         border-radius: 12px;
-        border: 1px solid rgba(255, 77, 77, 0.2);
+        border: 2px solid rgba(255, 77, 77, 0.3);
         width: 100%;
         box-sizing: border-box;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
         position: relative;
-        z-index: 10;
+        z-index: 100;
+        min-height: 80px;
     }
     
     .compact-stat .stat-number {
@@ -7091,6 +7094,41 @@ html {
     
     .hero-stat-inline-label {
         font-size: 0.6rem;
+    }
+    
+    /* Force stats visibility on mobile */
+    .hero-stats-compact {
+        display: grid !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        z-index: 1000 !important;
+        background: transparent !important;
+        margin: 2rem auto !important;
+        max-width: 100% !important;
+    }
+    
+    .compact-stat {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        z-index: 1000 !important;
+        background: rgba(255, 255, 255, 0.95) !important;
+        border: 2px solid #ff4d4d !important;
+        border-radius: 12px !important;
+        padding: 1rem !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+        min-height: 80px !important;
+    }
+    
+    .compact-stat .stat-number,
+    .compact-stat .stat-label {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        z-index: 1000 !important;
     }
     
     .mobile-mockup {
