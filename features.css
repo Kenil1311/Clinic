@@ -351,7 +351,7 @@ body {
 .features-section .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    background: #ffffff;
     border: 2px solid #ff4d4d;
     border-radius: 20px;
     display: flex;
@@ -359,6 +359,7 @@ body {
     justify-content: center;
     margin-bottom: 1.5rem;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .features-section .feature-icon i {
@@ -446,7 +447,7 @@ body {
 .why-choose-section .feature-card .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    background: #ffffff;
     border: 2px solid #ff4d4d;
     border-radius: 20px;
     display: flex;
@@ -454,6 +455,7 @@ body {
     justify-content: center;
     margin: 0 auto 1.5rem;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .why-choose-section .feature-card .feature-icon i {
