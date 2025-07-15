@@ -695,7 +695,7 @@ html {
 
 /* Hero Section */
 .hero-section {
-    min-height: 100vh;
+    height: 800px;
     background: #fef7f7;
     position: relative;
     overflow: hidden;
@@ -6722,7 +6722,7 @@ html {
     
     /* Hero section mobile improvements */
     .hero-section {
-        min-height: auto;
+        height: 900px;
         padding: 120px 0 100px;
         display: block;
     }
@@ -6870,8 +6870,8 @@ html {
     .hero-image {
         margin-bottom: 1.5rem;
         text-align: center;
-        max-height: 300px;
-        overflow: hidden;
+        max-height: 400px;
+        overflow: visible;
         padding: 0 5px;
         width: 100%;
     }
@@ -6887,7 +6887,7 @@ html {
     }
     
     .dashboard-mockup {
-        transform: none;
+        transform: scale(1.1);
         max-width: 100%;
         width: 100%;
     }
@@ -6897,6 +6897,7 @@ html {
         border-radius: 8px;
         width: 100%;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
     }
     
     .dashboard-screen {
@@ -6951,7 +6952,7 @@ html {
     
     .hero-stats-compact {
         display: grid !important;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -6962,7 +6963,7 @@ html {
         opacity: 1 !important;
         height: auto !important;
         max-height: none !important;
-        min-height: 160px;
+        min-height: 120px;
         position: relative;
         z-index: 100;
     }
@@ -6984,14 +6985,14 @@ html {
         opacity: 1 !important;
         position: relative;
         z-index: 100;
-        min-height: 100px;
+        min-height: 80px;
         height: auto;
         overflow: visible;
     }
     
     .compact-stat .stat-number {
         display: block !important;
-        font-size: 1.5rem !important;
+        font-size: 1.8rem !important;
         font-weight: 700 !important;
         color: #ff4d4d !important;
         margin-bottom: 0.25rem !important;
@@ -7001,7 +7002,7 @@ html {
     
     .compact-stat .stat-label {
         display: block !important;
-        font-size: 0.9rem !important;
+        font-size: 0.95rem !important;
         color: #6c757d !important;
         font-weight: 500 !important;
         opacity: 1 !important;
@@ -7105,8 +7106,8 @@ html {
     /* Force stats visibility on mobile */
     .hero-stats-compact {
         display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 1rem !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 0.5rem !important;
         visibility: visible !important;
         opacity: 1 !important;
         position: relative !important;
@@ -7115,10 +7116,10 @@ html {
         margin: 2rem auto !important;
         margin-bottom: 3rem !important;
         max-width: 100% !important;
-        padding: 0 1rem !important;
+        padding: 0 0.5rem !important;
         overflow: visible !important;
         height: auto !important;
-        min-height: 200px !important;
+        min-height: 120px !important;
     }
     
     .compact-stat {
@@ -7132,10 +7133,10 @@ html {
         z-index: 1000 !important;
         background: rgba(255, 255, 255, 0.95) !important;
         border: 2px solid #ff4d4d !important;
-        border-radius: 12px !important;
-        padding: 1rem !important;
+        border-radius: 8px !important;
+        padding: 0.5rem !important;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-        min-height: 100px !important;
+        min-height: 80px !important;
         height: auto !important;
         overflow: visible !important;
         text-align: center !important;
@@ -7156,15 +7157,15 @@ html {
     }
     
     .compact-stat .stat-number {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
         font-weight: 700 !important;
         color: #ff4d4d !important;
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 0.25rem !important;
         line-height: 1.2 !important;
     }
     
     .compact-stat .stat-label {
-        font-size: 0.9rem !important;
+        font-size: 0.75rem !important;
         color: #6c757d !important;
         font-weight: 500 !important;
         line-height: 1.3 !important;
@@ -7325,6 +7326,7 @@ html {
     }
     
     .hero-section {
+        height: 850px;
         padding: 110px 0 80px;
     }
     
