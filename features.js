@@ -354,7 +354,7 @@ featuresStyle.textContent = `
 `;
 document.head.appendChild(featuresStyle);
 
-// Click-based dropdown functionality for features page
+// Hover-open, click-outside-close dropdown functionality for features page
 function initFeaturesClickDropdowns() {
     const dropdowns = document.querySelectorAll('.dropdown');
     
@@ -363,6 +363,26 @@ function initFeaturesClickDropdowns() {
         const menu = dropdown.querySelector('.dropdown-menu');
         
         if (toggle && menu) {
+            // Open on hover
+            dropdown.addEventListener('mouseenter', () => {
+                // Close other open dropdowns
+                dropdowns.forEach(otherDropdown => {
+                    if (otherDropdown !== dropdown) {
+                        const otherMenu = otherDropdown.querySelector('.dropdown-menu');
+                        const otherToggle = otherDropdown.querySelector('.dropdown-toggle');
+                        if (otherMenu && otherToggle) {
+                            otherMenu.classList.remove('show');
+                            otherToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    }
+                });
+                
+                // Open current dropdown
+                menu.classList.add('show');
+                toggle.setAttribute('aria-expanded', 'true');
+            });
+            
+            // Also open on click for mobile compatibility
             toggle.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
