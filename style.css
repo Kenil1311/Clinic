@@ -155,16 +155,21 @@ html {
 
 .dropdown-item i {
     width: 20px;
-    color: var(--primary-color);
-    opacity: 1;
-    display: inline-block;
+    color: var(--primary-color) !important;
+    opacity: 1 !important;
+    display: inline-block !important;
     text-align: center;
-    font-size: 14px;
+    font-size: 14px !important;
+    margin-right: 8px !important;
+    vertical-align: middle;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
 }
 
 .dropdown-item:hover i {
-    opacity: 1;
+    opacity: 1 !important;
     transform: scale(1.1);
+    color: var(--primary-color) !important;
 }
 
 .dropdown-header {
