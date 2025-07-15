@@ -351,7 +351,8 @@ body {
 .features-section .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border: 2px solid #ff4d4d;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -362,7 +363,7 @@ body {
 
 .features-section .feature-icon i {
     font-size: 2rem;
-    color: white;
+    color: #ff4d4d;
 }
 
 .features-section .feature-card:hover .feature-icon {
@@ -445,7 +446,8 @@ body {
 .why-choose-section .feature-card .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border: 2px solid #ff4d4d;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -456,7 +458,7 @@ body {
 
 .why-choose-section .feature-card .feature-icon i {
     font-size: 2rem;
-    color: white;
+    color: #ff4d4d;
 }
 
 .why-choose-section .feature-card:hover .feature-icon {
