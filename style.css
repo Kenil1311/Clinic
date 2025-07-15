@@ -6722,8 +6722,8 @@ html {
     
     /* Hero section mobile improvements */
     .hero-section {
-        height: 900px;
-        padding: 120px 0 100px;
+        height: 600px;
+        padding: 120px 0 60px;
         display: block;
     }
     
@@ -6951,21 +6951,7 @@ html {
     }
     
     .hero-stats-compact {
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 100%;
-        overflow: visible;
-        padding: 0 1rem;
-        visibility: visible !important;
-        opacity: 1 !important;
-        height: auto !important;
-        max-height: none !important;
-        min-height: 120px;
-        position: relative;
-        z-index: 100;
+        display: none !important;
     }
     
     .compact-stat {
@@ -7103,23 +7089,9 @@ html {
         font-size: 0.6rem;
     }
     
-    /* Force stats visibility on mobile */
+    /* Hide stats on mobile */
     .hero-stats-compact {
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
-        gap: 0.5rem !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        position: relative !important;
-        z-index: 1000 !important;
-        background: transparent !important;
-        margin: 2rem auto !important;
-        margin-bottom: 3rem !important;
-        max-width: 100% !important;
-        padding: 0 0.5rem !important;
-        overflow: visible !important;
-        height: auto !important;
-        min-height: 120px !important;
+        display: none !important;
     }
     
     .compact-stat {
@@ -7326,8 +7298,8 @@ html {
     }
     
     .hero-section {
-        height: 850px;
-        padding: 110px 0 80px;
+        height: 550px;
+        padding: 110px 0 60px;
     }
     
     .hero-section .container {
