@@ -87,7 +87,7 @@ body {
 /* Breadcrumb Styles */
 .breadcrumb-section {
     background-color: #f8f9fa;
-    padding: 15px 0;
+    padding: 8px 0;
     border-bottom: 1px solid #e9ecef;
     position: relative;
     z-index: 10;
@@ -130,7 +130,7 @@ body {
 /* Hero Section */
 .features-hero-section {
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-    padding: 30px 0 20px;
+    padding: 10px 0 20px;
     position: relative;
     overflow: hidden;
     min-height: auto;
