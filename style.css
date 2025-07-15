@@ -6722,8 +6722,8 @@ html {
     
     /* Hero section mobile improvements */
     .hero-section {
-        height: 600px;
-        padding: 120px 0 60px;
+        height: 750px;
+        padding: 120px 0 80px;
         display: block;
     }
     
@@ -6868,9 +6868,9 @@ html {
     }
     
     .hero-image {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
         text-align: center;
-        max-height: 400px;
+        max-height: 500px;
         overflow: visible;
         padding: 0 5px;
         width: 100%;
@@ -7298,8 +7298,8 @@ html {
     }
     
     .hero-section {
-        height: 550px;
-        padding: 110px 0 60px;
+        height: 700px;
+        padding: 110px 0 80px;
     }
     
     .hero-section .container {
