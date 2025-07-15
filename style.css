@@ -6870,7 +6870,6 @@ html {
     .hero-image {
         margin-bottom: 2rem;
         text-align: center;
-        max-height: 500px;
         overflow: visible;
         padding: 0 5px;
         width: 100%;
@@ -7047,8 +7046,7 @@ html {
         gap: 1rem;
         transform: scale(0.7);
         margin: 0 auto;
-        max-height: 350px;
-        overflow: hidden;
+        overflow: visible;
     }
     
     .section-title {
@@ -7378,14 +7376,12 @@ html {
     }
     
     .hero-image {
-        max-height: 250px;
         padding: 0 0;
         width: 100%;
     }
     
     .dashboard-showcase {
         transform: scale(0.75);
-        max-height: 200px;
         margin-top: -5px;
         max-width: 95%;
     }
@@ -7425,7 +7421,6 @@ html {
         gap: 0.5rem;
         transform: scale(0.7);
         flex-direction: column;
-        max-height: 280px;
     }
     
     .mobile-mockup {

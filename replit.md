@@ -191,6 +191,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Set fixed heights for hero section: 800px desktop, 900px mobile, 850px small mobile (July 15, 2025)
 ✓ Hidden stats section on mobile devices and reduced mobile hero section heights (July 15, 2025)
 ✓ Increased mobile hero section heights to 750px (mobile) and 700px (small mobile) for proper content display (July 15, 2025)
+✓ Removed all max-height restrictions from hero section containers and dashboard elements (July 15, 2025)
 
 ## User Preferences
 
