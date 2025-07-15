@@ -5539,18 +5539,19 @@ html {
 
 .smart-feature-card-new {
     background: white;
-    border-radius: var(--border-radius);
-    transition: var(--transition);
+    border-radius: 16px;
+    transition: all 0.3s ease;
     height: 100%;
-    border: 1px solid var(--border-color);
+    border: 1px solid #e5e7eb;
     position: relative;
-    padding: 2rem 1.5rem 2.5rem 1.5rem;
+    padding: 2rem;
     text-align: center;
     overflow: hidden;
-    min-height: 380px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .smart-feature-card-new::before {
@@ -5575,15 +5576,15 @@ html {
 }
 
 .feature-icon-large {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background: rgba(255, 77, 77, 0.1);
-    border-radius: 50%;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem;
-    transition: var(--transition);
+    margin: 0 auto 2rem;
+    transition: all 0.3s ease;
     position: relative;
     flex-shrink: 0;
 }
@@ -5601,9 +5602,9 @@ html {
 }
 
 .feature-icon-large i {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--primary-color);
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
 
 .smart-feature-card-new:nth-child(4n) .feature-icon-large i {
@@ -5632,25 +5633,25 @@ html {
 }
 
 .feature-content h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937;
     line-height: 1.3;
 }
 
 .feature-content p {
-    color: var(--text-light);
-    line-height: 1.4;
-    margin-bottom: 1.2rem;
-    font-size: 0.8rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
     flex-shrink: 0;
 }
 
 .feature-highlights {
     list-style: none;
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: 0;
     text-align: left;
     flex: 1;
 }
@@ -5658,18 +5659,18 @@ html {
 .feature-highlights li {
     display: flex;
     align-items: flex-start;
-    font-size: 0.75rem;
-    color: var(--text-color);
+    font-size: 0.85rem;
+    color: #4b5563;
     font-weight: 500;
-    line-height: 1.4;
-    margin-bottom: 0.6rem;
-    gap: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    gap: 0.6rem;
 }
 
 .feature-highlights li i {
-    color: var(--primary-color);
-    font-size: 0.7rem;
-    width: 12px;
+    color: #ef4444;
+    font-size: 0.75rem;
+    width: 14px;
     flex-shrink: 0;
     margin-top: 0.1rem;
 }
