@@ -2623,34 +2623,33 @@ html {
     justify-content: center;
     padding: 2rem;
     min-height: 500px;
-    gap: 2rem;
 }
 
 /* Desktop Monitor System */
 .desktop-monitor-system {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     animation: monitorEntrance 1s ease-out;
 }
 
 @keyframes monitorEntrance {
     0% {
-        transform: translateX(-50px) rotateY(-10deg);
+        transform: translateY(30px) rotateX(-5deg);
         opacity: 0;
     }
     100% {
-        transform: translateX(0) rotateY(0deg);
+        transform: translateY(0) rotateX(0deg);
         opacity: 1;
     }
 }
 
 .monitor-screen-system {
     position: relative;
-    width: 280px;
-    height: 200px;
+    width: 400px;
+    height: 280px;
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     border-radius: 15px;
-    padding: 8px;
+    padding: 12px;
     box-shadow: 
         0 20px 40px rgba(0, 0, 0, 0.2),
         0 10px 25px rgba(0, 0, 0, 0.15),
@@ -2757,30 +2756,32 @@ html {
 
 /* Mobile Phone System */
 .mobile-phone-system {
-    position: relative;
-    z-index: 2;
-    animation: phoneEntrance 1s ease-out 0.2s both;
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+    z-index: 3;
+    animation: phoneEntrance 1s ease-out 0.3s both;
 }
 
 @keyframes phoneEntrance {
     0% {
-        transform: translateX(50px) rotateY(10deg);
+        transform: translateY(50px) rotateX(-10deg);
         opacity: 0;
     }
     100% {
-        transform: translateX(0) rotateY(0deg);
+        transform: translateY(0) rotateX(0deg);
         opacity: 1;
     }
 }
 
 .phone-device-system {
     position: relative;
-    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.25));
 }
 
 .phone-frame-system {
-    width: 180px;
-    height: 360px;
+    width: 150px;
+    height: 300px;
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
     border-radius: 30px;
     padding: 8px;
@@ -2790,8 +2791,8 @@ html {
 }
 
 .phone-frame-system:hover {
-    transform: translateY(-3px);
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
+    transform: translateY(-5px) scale(1.02);
+    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.3));
 }
 
 .phone-notch-system {
@@ -2799,23 +2800,23 @@ html {
     top: 8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 20px;
+    width: 80px;
+    height: 18px;
     background: linear-gradient(135deg, #1a252f, #2c3e50);
-    border-radius: 12px;
+    border-radius: 10px;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 12px;
+    padding: 0 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .speaker-system {
-    width: 35px;
-    height: 3px;
+    width: 28px;
+    height: 2px;
     background: linear-gradient(135deg, #4a5568, #718096);
-    border-radius: 2px;
+    border-radius: 1px;
     position: relative;
 }
 
@@ -2825,15 +2826,15 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 25px;
+    width: 20px;
     height: 1px;
     background: #2d3748;
     border-radius: 0.5px;
 }
 
 .camera-system {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background: radial-gradient(circle, #4a90e2, #357abd);
     border-radius: 50%;
     border: 1px solid #4a5568;
@@ -2846,8 +2847,8 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 3px;
-    height: 3px;
+    width: 2px;
+    height: 2px;
     background: #1a202c;
     border-radius: 50%;
 }
@@ -2946,13 +2947,13 @@ html {
 
 .phone-home-system {
     position: absolute;
-    bottom: 8px;
+    bottom: 6px;
     left: 50%;
     transform: translateX(-50%);
-    width: 30px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background: rgba(255, 255, 255, 0.9);
-    border-radius: 2px;
+    border-radius: 1.5px;
     z-index: 10;
 }
 
