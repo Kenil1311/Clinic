@@ -189,6 +189,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Updated feature icons to use white background with subtle shadow for better visual appeal (July 15, 2025)
 ✓ Fixed home page hero section stats visibility issues on mobile devices with enhanced CSS (July 15, 2025)
 ✓ Set fixed heights for hero section: 800px desktop, 900px mobile, 850px small mobile (July 15, 2025)
+✓ Hidden stats section on mobile devices and reduced mobile hero section heights (July 15, 2025)
 
 ## User Preferences
 
