@@ -5563,32 +5563,17 @@ html {
 
 .feature-list {
     text-align: left;
+    padding-left: 20px;
+    margin: 0;
 }
 
-.feature-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 6px;
-    padding: 2px 0;
-}
-
-.feature-item i {
-    color: #10b981;
-    font-size: 10px;
-    margin-right: 8px;
-    flex-shrink: 0;
-    width: 12px;
-    height: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.feature-item span {
+.feature-list li {
     font-size: 12px;
     color: #374151;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.4;
+    margin-bottom: 4px;
+    list-style-type: disc;
 }
 
 /* Solutions Section */
