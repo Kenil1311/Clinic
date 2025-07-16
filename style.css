@@ -585,6 +585,18 @@ html {
         font-size: 0.85rem;
         padding: 0.5rem 0.75rem 0.4rem;
     }
+    
+    .dashboard-showcase {
+        display: none;
+    }
+    
+    .hero-stats-compact {
+        display: none;
+    }
+    
+    .hero-image {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -957,6 +969,18 @@ html {
 /* Mobile responsiveness for medical elements */
 @media (max-width: 768px) {
     .medical-element {
+        display: none;
+    }
+    
+    .dashboard-showcase {
+        display: none;
+    }
+    
+    .hero-stats-compact {
+        display: none;
+    }
+    
+    .hero-image {
         display: none;
     }
 }
