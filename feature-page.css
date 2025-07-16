@@ -123,6 +123,8 @@
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .feature-hero-title {
@@ -266,6 +268,7 @@
     padding: 0.3rem 0;
     position: relative;
     padding-left: 1.5rem;
+    text-align: left;
 }
 
 .capability-card ul li::before {
@@ -274,6 +277,14 @@
     left: 0;
     color: var(--primary-color);
     font-weight: bold;
+}
+
+/* Center any bottom elements in capability cards */
+.capability-card .feature-check,
+.capability-card .badge,
+.capability-card .tag {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Security Section */
