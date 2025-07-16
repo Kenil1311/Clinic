@@ -1,6 +1,6 @@
 /* Feature Page Specific Styles */
 
-/* Enhanced Hero Breadcrumb Styles */
+/* Modern Hero Breadcrumb Styles */
 .hero-breadcrumb {
     margin-bottom: 2rem;
     padding: 0;
@@ -11,10 +11,11 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .breadcrumb-hero .breadcrumb-item {
@@ -26,59 +27,65 @@
 }
 
 .breadcrumb-hero .breadcrumb-item + .breadcrumb-item::before {
-    content: "/";
-    color: #adb5bd;
-    margin: 0 15px;
-    font-size: 16px;
+    content: ">";
+    color: #6c757d;
+    margin: 0 12px;
+    font-size: 14px;
     font-weight: 400;
     transition: all 0.3s ease;
-    opacity: 0.6;
+}
+
+.breadcrumb-hero .breadcrumb-item:first-child a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.breadcrumb-hero .breadcrumb-item:first-child a::before {
+    content: "\f015";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
 }
 
 .breadcrumb-hero .breadcrumb-item a {
-    color: var(--primary-color);
+    color: #6c757d;
     text-decoration: none;
     transition: all 0.3s ease;
-    font-weight: 500;
-    padding: 8px 12px;
-    border-radius: 6px;
-    position: relative;
-    overflow: hidden;
+    font-weight: 400;
     font-size: 16px;
+    padding: 2px 0;
 }
 
 .breadcrumb-hero .breadcrumb-item a:hover {
-    color: #fff;
-    background: var(--primary-color);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(255, 77, 77, 0.25);
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 .breadcrumb-hero .breadcrumb-item.active {
     color: #2d3748;
-    font-weight: 600;
-    background: #f7fafc;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: 1px solid #e2e8f0;
+    font-weight: 400;
     font-size: 16px;
 }
 
 /* Responsive Design for Hero Breadcrumbs */
 @media (max-width: 768px) {
     .breadcrumb-hero {
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .breadcrumb-hero .breadcrumb-item + .breadcrumb-item::before {
-        margin: 0 12px;
-        font-size: 15px;
+        margin: 0 8px;
+        font-size: 12px;
     }
     
     .breadcrumb-hero .breadcrumb-item a,
     .breadcrumb-hero .breadcrumb-item.active {
-        padding: 6px 10px;
-        font-size: 15px;
+        font-size: 14px;
+    }
+    
+    .breadcrumb-hero .breadcrumb-item:first-child a::before {
+        font-size: 12px;
     }
 }
 
