@@ -1114,12 +1114,11 @@
     }
     
     .feature-mockup {
-        width: 200px;
-        height: 200px;
+        display: none;
     }
     
-    .feature-mockup i {
-        font-size: 2.5rem;
+    .feature-hero-image {
+        display: none;
     }
     
     /* Solution page hero mobile responsive */
@@ -1256,13 +1255,11 @@
     }
     
     .feature-mockup {
-        width: 250px;
-        height: 250px;
-        margin-top: 2rem;
+        display: none;
     }
     
-    .feature-mockup i {
-        font-size: 3rem;
+    .feature-hero-image {
+        display: none;
     }
     
     .security-features {
