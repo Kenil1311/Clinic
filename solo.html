@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solo Practice Management Software - Clinicia</title>
+    
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="/feature-page.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/attached_assets/clinicia_logo1_1752483203746.png" alt="Clinicia" height="40">
+                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -23,8 +37,8 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     
                     <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
@@ -140,15 +154,15 @@
                         <!-- Breadcrumb in Hero -->
                         <nav aria-label="breadcrumb" class="hero-breadcrumb mb-3">
                             <ol class="breadcrumb breadcrumb-hero">
-                                <li class="breadcrumb-item"><a href="/">🏠 Home</a></li>
-                                <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="/features">Features</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Solo Practice</li>
                             </ol>
                         </nav>
-                        <h1 class="feature-hero-title">Solo Practice Management Software</h1>
-                        <p class="feature-hero-subtitle">Perfect Solution for Independent Practitioners</p>
+                        <h1 class="feature-hero-title">Smart Clinic Management for Solo Doctors</h1>
+                        <p class="feature-hero-subtitle">Run Your Entire Practice—Digitally, Effortlessly, and Professionally</p>
                         <p class="feature-hero-description">
-                            Designed specifically for solo practitioners who want to streamline their practice without complexity. Get all essential features in one affordable, easy-to-use platform that grows with your practice.
+                            If you're a solo practitioner, you wear multiple hats—doctor, manager, and sometimes even front desk. Clinicia helps you streamline every aspect of your clinic, without needing extra staff or expensive systems. Save time, reduce manual work, and focus on what matters most—your patients.
                         </p>
                         <div class="feature-hero-actions">
                             <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
@@ -167,12 +181,12 @@
         </div>
     </section>
 
-    <!-- Key Benefits Section -->
+    <!-- Key Features Section -->
     <section class="feature-capabilities-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">Why Solo Practitioners Choose Clinicia</h2>
+                    <h2 class="section-title">Complete Solution for Solo Practitioners</h2>
                     <p class="section-subtitle">Everything you need to run your independent practice efficiently</p>
                 </div>
             </div>
@@ -180,35 +194,255 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-dollar-sign"></i>
+                            <i class="fas fa-calendar-alt"></i>
                         </div>
-                        <h4>Affordable Pricing</h4>
-                        <p>Cost-effective pricing plans designed for solo practitioners with no hidden fees or complex licensing.</p>
+                        <h4>Effortless Appointment Scheduling</h4>
+                        <p>Book, reschedule, and cancel appointments in seconds. Send automated reminders via WhatsApp & SMS. View your entire day's schedule at a glance, every morning. Add an online booking link to your website, Google Profile, or social media.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-mouse-pointer"></i>
+                            <i class="fas fa-file-medical"></i>
                         </div>
-                        <h4>Easy to Use</h4>
-                        <p>Intuitive interface that requires minimal training - you can start using it right away without technical expertise.</p>
+                        <h4>Comprehensive EMR at Your Fingertips</h4>
+                        <p>Maintain patient records: history, vitals, treatment plans, and clinical notes. Access case papers and prior visits instantly during consultations. Upload diagnostic reports, scans, and documents for future reference.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-clock"></i>
+                            <i class="fas fa-prescription-bottle"></i>
                         </div>
-                        <h4>Time Saving</h4>
-                        <p>Automate routine tasks like appointment scheduling, billing, and patient reminders to focus on patient care.</p>
+                        <h4>Quick, Professional Prescriptions</h4>
+                        <p>Preloaded medicine database and reusable templates. Add your logo and digital signature for a polished, branded look. Share prescription directly via WhatsApp, Email, or print. Deliver prescriptions in less than 30 seconds.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="capability-card">
                         <div class="capability-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4>Smart Billing & Expense Tracking</h4>
+                        <p>Generate invoices in 1 click. Track payments—what's received, what's pending. Record expenses like rent, supplies, lab bills, and vendor payments. Categorize and analyze expenses for better cost control.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Stay Connected with Your Patients</h4>
+                        <p>Send appointment confirmations and payment receipts. Schedule birthday wishes or periodic checkup reminders. Share prescriptions, case papers, and X-ray reports via WhatsApp or Email.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>Reports & Analytics Made Simple</h4>
+                        <p>Daily earnings, patient visits, and treatment trends. Financial summaries in PDF or Excel. No need for accounting knowledge—just insights that matter. Make smarter decisions with real-time visibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="feature-security-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">One Doctor. Zero Compromise on Data Security</h2>
+                    <p class="section-subtitle">Your clinic. Your data. Always protected.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h5>Role-based Access</h5>
+                        <p>For your assistant, if any</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h5>Encrypted Records</h5>
+                        <p>Cloud-based with auto backup</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="security-card">
+                        <div class="security-icon">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
+                        <h5>Multi-device Access</h5>
+                        <p>Computer, tablet, or mobile</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h5>Data Protection</h5>
+                        <p>Always secure and protected</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="feature-benefits-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Why Solo Doctors Love Clinicia</h2>
+                    <p class="section-subtitle">Everything you need to run your independent practice efficiently</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Easy to learn—no training needed</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Everything you need in one platform</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Saves 3–4 hours of admin time every week</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Creates a modern, paperless patient experience</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No more appointment diary or Excel headache</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Run your clinic like a pro—even if you're the only one in it</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="feature-testimonial-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"I used to do everything on paper and WhatsApp. Now, I use Clinicia for scheduling, records, and even my bills. It's like having a full-time assistant who never makes mistakes."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Dr. Anjali Rao</h5>
+                            <p>Skin & Aesthetic Physician</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="feature-cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="cta-title">Take Control of Your Clinic—Today</h2>
+                    <p class="cta-subtitle">
+                        Whether you're just starting out or want to digitize your existing solo practice, Clinicia empowers you to do more—with less effort.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
+                        <a href="#" class="btn btn-outline-primary btn-lg">Book a 1-on-1 Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="mb-3">
+                    <p>Complete practice management solution for healthcare professionals. Streamline operations, enhance patient care, and grow your practice with Clinicia.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Product</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#security">Security</a></li>
+                        <li><a href="#integrations">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Solutions</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/dental">Dental</a></li>
+                        <li><a href="/dermatology">Dermatology</a></li>
+                        <li><a href="/solo">Solo Practice</a></li>
+                        <li><a href="/multiple">Multiple Doctors</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#api">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Clinicia. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
                         <h4>Mobile Access</h4>
                         <p>Access your practice data anytime, anywhere with our mobile-friendly platform and smartphone app.</p>
                     </div>
@@ -287,16 +521,49 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Getting Started CTA Section -->
+    <section id="getting-started" class="cta-section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="cta-title">Ready to Transform Your Solo Practice?</h2>
-                    <p class="cta-subtitle">Join thousands of satisfied solo practitioners who trust Clinicia for their practice management needs.</p>
-                    <div class="cta-actions">
-                        <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
-                        <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="cta-content">
+                        <h2 class="section-title text-white">Ready to Transform Your Solo Practice?</h2>
+                        <p class="section-description text-white">
+                            Join thousands of satisfied solo practitioners who trust Clinicia for their practice management needs
+                        </p>
+                        <div class="cta-features">
+                            <div class="row g-4 text-white">
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-credit-card"></i>
+                                        <h4>No Credit Card Required</h4>
+                                        <p>Start your free trial instantly</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-bolt"></i>
+                                        <h4>Instant Setup</h4>
+                                        <p>Get started in under 5 minutes</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-headset"></i>
+                                        <h4>Dedicated Support</h4>
+                                        <p>24/7 expert assistance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="#trial" class="btn btn-light btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i>Start Free Trial
+                            </a>
+                            <a href="#demo" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-calendar me-2"></i>Schedule a Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,78 +571,80 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer-section">
         <div class="container">
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="footer-brand">
-                        <img src="/attached_assets/clinicia_logo1_1752483203746.png" alt="Clinicia" height="40">
-                        <p class="footer-description">
-                            Comprehensive clinic management software designed to streamline your healthcare practice operations.
-                        </p>
+                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50" class="footer-logo mb-3">
+                        <p>Transforming healthcare delivery with modern clinic management solutions.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h6 class="footer-title">Product</h6>
-                            <ul class="footer-links">
-                                <li><a href="/features">Features</a></li>
-                                <li><a href="#pricing">Pricing</a></li>
-                                <li><a href="#security">Security</a></li>
-                                <li><a href="#integrations">Integrations</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <h6 class="footer-title">Solutions</h6>
-                            <ul class="footer-links">
-                                <li><a href="/dental">Dental</a></li>
-                                <li><a href="/dermatology">Dermatology</a></li>
-                                <li><a href="/gynaecology">Gynaecology</a></li>
-                                <li><a href="/solo">Solo Practice</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <h6 class="footer-title">Support</h6>
-                            <ul class="footer-links">
-                                <li><a href="#help">Help Center</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                <li><a href="#training">Training</a></li>
-                                <li><a href="#api">API Docs</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <h6 class="footer-title">Company</h6>
-                            <ul class="footer-links">
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#careers">Careers</a></li>
-                                <li><a href="#blog">Blog</a></li>
-                                <li><a href="#press">Press</a></li>
-                            </ul>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Book Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-download">
+                        <h5>Download Our App</h5>
+                        <div class="app-buttons">
+                            <a href="#" class="app-button">
+                                <i class="fab fa-google-play"></i>
+                                <div>
+                                    <span>Get it on</span>
+                                    <strong>Google Play</strong>
+                                </div>
+                            </a>
+                            <a href="#" class="app-button">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <span>Download on the</span>
+                                    <strong>App Store</strong>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr class="footer-divider">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="footer-copyright">© 2024 Clinicia. All rights reserved.</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="footer-social">
-                        <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 Clinicia. All rights reserved.</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/script.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
