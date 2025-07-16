@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gynaecology Practice Management Software - Clinicia</title>
+    
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="/feature-page.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/attached_assets/clinicia_logo1_1752483203746.png" alt="Clinicia" height="40">
+                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -23,8 +37,8 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     
                     <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
@@ -140,8 +154,8 @@
                         <!-- Breadcrumb in Hero -->
                         <nav aria-label="breadcrumb" class="hero-breadcrumb mb-3">
                             <ol class="breadcrumb breadcrumb-hero">
-                                <li class="breadcrumb-item"><a href="/">🏠 Home</a></li>
-                                <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="/features">Features</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Gynaecology Practice</li>
                             </ol>
                         </nav>
@@ -287,16 +301,49 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Getting Started CTA Section -->
+    <section id="getting-started" class="cta-section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="cta-title">Ready to Transform Your Gynaecology Practice?</h2>
-                    <p class="cta-subtitle">Join thousands of satisfied gynecologists who trust Clinicia for their practice management needs.</p>
-                    <div class="cta-actions">
-                        <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
-                        <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="cta-content">
+                        <h2 class="section-title text-white">Ready to Transform Your Gynaecology Practice?</h2>
+                        <p class="section-description text-white">
+                            Join thousands of satisfied gynecologists who trust Clinicia for their practice management needs
+                        </p>
+                        <div class="cta-features">
+                            <div class="row g-4 text-white">
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-credit-card"></i>
+                                        <h4>No Credit Card Required</h4>
+                                        <p>Start your free trial instantly</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-bolt"></i>
+                                        <h4>Instant Setup</h4>
+                                        <p>Get started in under 5 minutes</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-headset"></i>
+                                        <h4>Dedicated Support</h4>
+                                        <p>24/7 expert assistance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="#trial" class="btn btn-light btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i>Start Free Trial
+                            </a>
+                            <a href="#demo" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-calendar me-2"></i>Schedule a Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -375,7 +422,13 @@
         </div>
     </footer>
 
+    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/script.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
