@@ -218,6 +218,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Created gynaecology practice solution page with women's health specific features (July 16, 2025)
 ✓ Reverted all capability card styling changes back to original Bootstrap layout per user request (July 16, 2025)
 ✓ Adjusted capability card spacing to move gaps from between content to bottom of cards (July 16, 2025)
+✓ Updated capability icons to use white background with red border and red icon color (July 16, 2025)
 
 ## User Preferences
 
