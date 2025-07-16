@@ -272,6 +272,12 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Added Dr. Arjun M. testimonial about comprehensive clinic management and patient satisfaction (July 16, 2025)
 ✓ Updated benefits section to focus on dermatology-specific workflows and care quality improvements (July 16, 2025)
 ✓ Enhanced CTA section with digital makeover messaging for skin practices (July 16, 2025)
+✓ Completely updated physiotherapy.html page with comprehensive rehabilitation practice content (July 16, 2025)
+✓ Added 8 capability cards covering clinical EMR, appointments, exercise plans, progress tracking, billing, multi-user access, patient engagement, and reporting (July 16, 2025)
+✓ Updated hero section with "Clinicia for Physiotherapists - Streamline Treatment Planning, Patient Tracking & Daily Workflows" messaging (July 16, 2025)
+✓ Added Dr. Tanya S. testimonial about digital progress tracking and patient satisfaction (July 16, 2025)
+✓ Updated benefits section to focus on physiotherapy-specific advantages like session tracking and home exercise compliance (July 16, 2025)
+✓ Enhanced CTA section with practice efficiency messaging for rehabilitation centers (July 16, 2025)
 
 ## User Preferences
 
