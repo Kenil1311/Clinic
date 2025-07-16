@@ -315,65 +315,133 @@
 
 /* Enhanced Security Cards */
 .security-card {
-    background: white;
-    border-radius: 15px;
-    padding: 30px 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    padding: 35px 25px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
     border: 1px solid #e9ecef;
+    position: relative;
+    overflow: hidden;
+}
+
+.security-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff4d4d, #ff6b6b, #4a90e2);
+    border-radius: 20px 20px 0 0;
+}
+
+.security-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 77, 77, 0.02) 0%, rgba(74, 144, 226, 0.02) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
 }
 
 .security-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-color: #ddd;
+}
+
+.security-card:hover::after {
+    opacity: 1;
 }
 
 .security-icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .security-card .security-icon {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
     color: white;
-    font-size: 28px;
-    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
-    transition: transform 0.3s ease;
+    font-size: 32px;
+    box-shadow: 0 8px 25px rgba(255, 77, 77, 0.35);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.security-card .security-icon::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(135deg, #ff4d4d, #ff6b6b, #4a90e2);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .security-card:hover .security-icon {
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 12px 30px rgba(255, 77, 77, 0.45);
+}
+
+.security-card:hover .security-icon::before {
+    opacity: 1;
 }
 
 .security-card .card-title {
-    margin-bottom: 15px;
-    color: #333;
-    font-weight: 600;
+    margin-bottom: 18px;
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 1.3rem;
+    position: relative;
+    z-index: 2;
 }
 
 .security-card .card-text {
-    color: #666;
-    margin-bottom: 15px;
-    line-height: 1.6;
+    color: #6c757d;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    position: relative;
+    z-index: 2;
 }
 
 .security-feature {
-    padding-top: 15px;
-    border-top: 1px solid #e9ecef;
+    padding-top: 20px;
+    border-top: 2px solid #e9ecef;
+    position: relative;
+    z-index: 2;
 }
 
 .security-feature small {
-    font-weight: 500;
+    font-weight: 600;
+    color: #4a90e2;
+    font-size: 0.85rem;
+    background: linear-gradient(135deg, #4a90e2, #6ba3f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .security-assurance {
@@ -395,13 +463,19 @@
 /* Responsive adjustments for security section */
 @media (max-width: 768px) {
     .security-card .security-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 24px;
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+        margin-bottom: 20px;
     }
     
     .security-card {
-        padding: 25px 15px;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .security-card:hover {
+        transform: translateY(-8px) scale(1.01);
     }
     
     .security-assurance .row {
@@ -417,7 +491,23 @@
         padding: 6px 16px;
     }
     
-
+    .security-card .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .security-card .card-text {
+        font-size: 0.9rem;
+        margin-bottom: 18px;
+    }
+    
+    .security-feature {
+        padding-top: 18px;
+    }
+    
+    .security-feature small {
+        font-size: 0.8rem;
+    }
 }
 
 .feature-security-section::before {
