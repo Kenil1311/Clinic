@@ -1274,20 +1274,20 @@
 /* CTA Section */
 .feature-cta-section {
     padding: 5rem 0;
-    background: #f8f9fa;
+    background: #ff4d4d;
     text-align: center;
 }
 
 .feature-cta-section h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--text-dark);
+    color: white;
     margin-bottom: 1rem;
 }
 
 .feature-cta-section p {
     font-size: 1.1rem;
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 1rem;
 }
 
