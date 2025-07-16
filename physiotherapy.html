@@ -28,10 +28,10 @@
     <div class="scroll-progress"></div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light modern-navbar fixed-top" id="mainNavbar">
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="https://clinicia.com/assets/images/clinicia-logo.png" alt="Clinicia" class="logo">
+                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -39,8 +39,8 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     
                     <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
@@ -142,22 +142,20 @@
                     <div class="feature-hero-content">
                         <!-- Breadcrumb in Hero -->
                         <nav aria-label="breadcrumb" class="hero-breadcrumb mb-3">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                            <ol class="breadcrumb breadcrumb-hero">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
                                 <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Physiotherapy</li>
                             </ol>
                         </nav>
-                        
-                        <h1 class="hero-title">Clinicia for Physiotherapists</h1>
-                        <p class="hero-subtitle">Streamline Treatment Planning, Patient Tracking & Daily Workflows</p>
-                        <p class="hero-description">
+                        <h1 class="feature-hero-title">Clinicia for Physiotherapists</h1>
+                        <p class="feature-hero-subtitle">Streamline Treatment Planning, Patient Tracking & Daily Workflows</p>
+                        <p class="feature-hero-description">
                             Physiotherapy is a continuous journey—not just a one-time consultation. You need software that supports session-based treatment, exercise tracking, patient motivation, and progress measurement. Clinicia brings everything you need to one smart platform—whether you're a solo physio, run a rehab center, or offer at-home physiotherapy.
                         </p>
-                        
                         <div class="feature-hero-actions">
-                            <a href="#" class="btn btn-primary me-3">Start Free Trial</a>
-                            <a href="#" class="btn btn-outline-primary">Book a Demo</a>
+                            <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
+                            <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
                         </div>
                     </div>
                 </div>
@@ -258,58 +256,116 @@
         </div>
     </section>
 
-    <!-- Security & Accessibility Section -->
-    <section class="feature-security-section py-5">
+    <!-- Security Section -->
+    <section class="feature-security-section bg-light py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="security-content text-center">
-                        <h2 class="section-title mb-3">Built for Physiotherapy Excellence</h2>
-                        <p class="section-subtitle text-muted mb-5">Advanced features tailored specifically for rehabilitation practices</p>
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <div class="security-badge mb-3">
+                        <i class="fas fa-shield-alt me-2"></i>
+                        <span>Enterprise-Grade Security</span>
+                    </div>
+                    <h2 class="section-title mb-3">Physiotherapy Practice Data Security</h2>
+                    <p class="section-subtitle text-muted">Your therapy practice. Your patient data. Always protected with industry-leading security measures.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Role-based Access</h5>
+                        <p class="card-text text-muted">Granular permissions for your junior therapists, assistants, or receptionists, ensuring only authorized access to patient data.</p>
+                        <div class="security-feature mt-3">
+                            <small>Multi-user control</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Encrypted Records</h5>
+                        <p class="card-text text-muted">End-to-end encryption for all patient session data, exercise plans, and progress records with automatic cloud backup.</p>
+                        <div class="security-feature mt-3">
+                            <small>256-bit encryption</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Multi-device Access</h5>
+                        <p class="card-text text-muted">Secure access from any device - computer, tablet, or mobile - with automatic session management for clinical and home visits.</p>
+                        <div class="security-feature mt-3">
+                            <small>Cross-platform sync</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">HIPAA Compliant</h5>
+                        <p class="card-text text-muted">Healthcare-grade infrastructure with regular security audits and compliance monitoring for patient data protection.</p>
+                        <div class="security-feature mt-3">
+                            <small>Healthcare compliant</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="security-assurance-compact">
+                        <div class="security-header">
+                            <h4 class="security-title">Your Patient Data is Safe With Us</h4>
+                            <p class="security-subtitle">Clinicia uses healthcare-grade security protocols with enterprise-level infrastructure. Your patient therapy data is encrypted, backed up daily, and protected by multi-layer security systems.</p>
+                        </div>
                         
-                        <div class="row g-4 mb-5">
-                            <div class="col-lg-6 col-md-12">
-                                <div class="security-feature-card">
-                                    <div class="security-feature-header">
-                                        <div class="security-feature-icon">
-                                            <i class="fas fa-mobile-alt"></i>
-                                        </div>
-                                        <h4>Patient Exercise App Integration</h4>
-                                    </div>
-                                    <p>Provide patients with mobile access to their exercise routines, progress tracking, and appointment scheduling for enhanced engagement.</p>
+                        <div class="security-features-compact">
+                            <div class="security-feature-compact">
+                                <div class="security-feature-icon-compact">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="security-feature-content">
+                                    <strong>Daily Backups</strong>
+                                    <span>Automatic data protection</span>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="security-feature-card">
-                                    <div class="security-feature-header">
-                                        <div class="security-feature-icon">
-                                            <i class="fas fa-tools"></i>
-                                        </div>
-                                        <h4>Equipment & Resource Management</h4>
-                                    </div>
-                                    <p>Track equipment usage, maintenance schedules, and room availability with comprehensive resource management tools.</p>
+                            <div class="security-feature-compact">
+                                <div class="security-feature-icon-compact">
+                                    <i class="fas fa-eye-slash"></i>
+                                </div>
+                                <div class="security-feature-content">
+                                    <strong>End-to-End Encryption</strong>
+                                    <span>Military-grade security</span>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="security-feature-card">
-                                    <div class="security-feature-header">
-                                        <div class="security-feature-icon">
-                                            <i class="fas fa-heart"></i>
-                                        </div>
-                                        <h4>Outcome Measurement Tools</h4>
-                                    </div>
-                                    <p>Standardized assessment tools and outcome measures to track patient progress and demonstrate treatment effectiveness.</p>
+                            <div class="security-feature-compact">
+                                <div class="security-feature-icon-compact">
+                                    <i class="fas fa-user-shield"></i>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="security-feature-card">
-                                    <div class="security-feature-header">
-                                        <div class="security-feature-icon">
-                                            <i class="fas fa-shield-alt"></i>
-                                        </div>
-                                        <h4>Insurance & Compliance Management</h4>
-                                    </div>
-                                    <p>Streamlined insurance claim processing and compliance tracking with automated documentation and reporting features.</p>
+                                <div class="security-feature-content">
+                                    <strong>HIPAA Compliant</strong>
+                                    <span>Healthcare data protection</span>
                                 </div>
                             </div>
                         </div>
@@ -427,7 +483,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="footer-brand">
-                        <img src="https://clinicia.com/assets/images/clinicia-logo.png" alt="Clinicia" class="footer-logo">
+                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" class="footer-logo">
                         <p>Complete practice management solution for modern healthcare providers.</p>
                     </div>
                 </div>
@@ -476,10 +532,10 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook" style="color: #4a90e2;"></i></a>
+                            <a href="#"><i class="fab fa-twitter" style="color: #4a90e2;"></i></a>
+                            <a href="#"><i class="fab fa-linkedin" style="color: #4a90e2;"></i></a>
+                            <a href="#"><i class="fab fa-instagram" style="color: #4a90e2;"></i></a>
                         </div>
                     </div>
                 </div>
@@ -487,11 +543,22 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JS -->
-    <script src="/script.js"></script>
-    <script src="/features.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 120
+        });
+    </script>
 </body>
 </html>
