@@ -6535,18 +6535,18 @@ html {
 .social-links a {
     width: 40px;
     height: 40px;
-    background: rgba(255, 77, 77, 0.1);
+    background: rgba(74, 144, 226, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-color);
+    color: var(--accent-color);
     transition: var(--transition);
     text-decoration: none;
 }
 
 .social-links a:hover {
-    background: var(--primary-color);
+    background: var(--accent-color);
     color: white;
     transform: translateY(-2px);
 }
