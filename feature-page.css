@@ -295,6 +295,125 @@
     overflow: hidden;
 }
 
+/* Enhanced Security Badge */
+.security-badge {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(255, 77, 77, 0.3);
+    margin-bottom: 1rem;
+}
+
+/* Enhanced Security Cards */
+.security-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #e9ecef;
+}
+
+.security-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.security-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.security-card .security-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #ff4d4d, #ff6b6b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 28px;
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.security-card:hover .security-icon {
+    transform: scale(1.1);
+}
+
+.security-card .card-title {
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.security-card .card-text {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.security-feature {
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+.security-feature small {
+    font-weight: 500;
+}
+
+.security-assurance {
+    border-left: 4px solid #28a745;
+}
+
+.security-seal {
+    text-align: center;
+}
+
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive adjustments for security section */
+@media (max-width: 768px) {
+    .security-card .security-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    .security-card {
+        padding: 25px 15px;
+    }
+    
+    .security-assurance .row {
+        text-align: center;
+    }
+    
+    .security-assurance .col-md-10 {
+        margin-top: 15px;
+    }
+    
+    .security-badge {
+        font-size: 0.8rem;
+        padding: 6px 16px;
+    }
+}
+
 .feature-security-section::before {
     content: '';
     position: absolute;
