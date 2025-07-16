@@ -1081,6 +1081,79 @@
     }
 }
 
+/* Small Mobile Responsive */
+@media (max-width: 576px) {
+    .feature-hero-section {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .feature-hero-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .feature-hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .feature-hero-description {
+        font-size: 0.85rem;
+    }
+    
+    .feature-hero-actions .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        width: 100%;
+        max-width: 180px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .feature-hero-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .feature-mockup {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .feature-mockup i {
+        font-size: 2.5rem;
+    }
+    
+    /* Solution page hero mobile responsive */
+    .solution-hero-section {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .solution-hero-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .solution-hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .solution-hero-description {
+        font-size: 0.85rem;
+    }
+    
+    /* Enhanced mobile hero content ordering */
+    .feature-hero-section .row {
+        flex-direction: column-reverse;
+    }
+    
+    .feature-hero-section .col-lg-6 {
+        margin-bottom: 1.5rem;
+    }
+    
+    .feature-hero-section .col-lg-6:last-child {
+        margin-bottom: 0;
+    }
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     /* General mobile container fixes */
@@ -1118,27 +1191,78 @@
     }
     
     .feature-hero-section {
-        padding: 6rem 0 3rem;
+        padding: 4rem 0 2rem;
         text-align: center;
+    }
+    
+    .feature-hero-content {
+        padding: 0 10px;
+    }
+    
+    .feature-hero-section .row {
+        flex-direction: column-reverse;
+    }
+    
+    .feature-hero-section .col-lg-6 {
+        margin-bottom: 2rem;
+    }
+    
+    .feature-hero-section .col-lg-6:last-child {
+        margin-bottom: 0;
     }
     
     .feature-hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         text-align: center;
+        line-height: 1.3;
+        margin-bottom: 1rem;
     }
     
     .feature-hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-align: center;
+        margin-bottom: 1rem;
     }
     
     .feature-hero-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
         text-align: center;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
     }
     
     .feature-badge {
         margin: 0 auto 1.5rem;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .feature-hero-actions {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .feature-hero-actions .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .feature-hero-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .feature-mockup {
+        width: 250px;
+        height: 250px;
+        margin-top: 2rem;
+    }
+    
+    .feature-mockup i {
+        font-size: 3rem;
     }
     
     .security-features {
