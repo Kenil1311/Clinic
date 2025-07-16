@@ -67,6 +67,23 @@ def dental_lab():
 def images():
     return send_file('images.html')
 
+# Solutions Pages Routes
+@app.route('/dental')
+def dental():
+    return send_file('dental.html')
+
+@app.route('/dermatology')
+def dermatology():
+    return send_file('dermatology.html')
+
+@app.route('/solo')
+def solo():
+    return send_file('solo.html')
+
+@app.route('/gynaecology')
+def gynaecology():
+    return send_file('gynaecology.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):
