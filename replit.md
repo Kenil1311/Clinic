@@ -193,6 +193,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Increased mobile hero section heights to 750px (mobile) and 700px (small mobile) for proper content display (July 15, 2025)
 ✓ Removed all max-height restrictions from hero section containers and dashboard elements (July 15, 2025)
 ✓ Updated "Book a Demo" button to use red border and text with red background fill on hover (July 16, 2025)
+✓ Added "Login" button to navbar with blue accent color next to "Download App" button (July 16, 2025)
 
 ## User Preferences
 
