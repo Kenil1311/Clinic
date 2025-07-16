@@ -1,0 +1,143 @@
+Clinicia for Gynecologists
+Designed for Women’s Health & Maternity Practices
+Gynecological care requires detailed recordkeeping, longitudinal health tracking, and sensitive patient communication. From fertility treatment to prenatal care to postnatal follow-ups, Clinicia helps you deliver personalized care efficiently.
+Whether you’re a solo OB-GYN, part of a fertility clinic, or run a maternity hospital—Clinicia adapts to your workflow.
+
+🩺 Comprehensive Gynecology EMR
+Document Chief Complaints, Menstrual & Sexual History, Clinical Observations, and Diagnosis
+
+
+Record Vitals, LMP, Obstetric History (G, P, A, L), Menopause details
+
+
+Maintain Pregnancy Tracking with EDD calculator and trimester-specific notes
+
+
+Upload and store Ultrasound Reports, Pap Smear, Mammogram & Blood Test Results
+
+
+Use custom forms for antenatal check-ups, pelvic exams, infertility evaluations
+
+
+Structured records for better follow-up, continuity, and compliance.
+
+🗓️ Smart Appointment Management
+Schedule consultations, antenatal checkups, procedures, or scans
+
+
+Send appointment reminders via WhatsApp or Email
+
+
+Doctors receive their daily schedule on mobile every morning
+
+
+Manage waiting area with queue/token system
+
+
+Allow online appointment booking via your website, Instagram, or Google profile
+
+
+
+📝 Personalized Prescriptions & Treatment Plans
+Use preloaded gynecology-specific medicine templates
+
+
+Include dosage, frequency, duration, special instructions
+
+
+Prescriptions branded with your clinic logo and letterhead
+
+
+Share via WhatsApp, Email, or print with digital signature
+
+
+Common treatments like PCOS, UTI, STDs, or hormonal therapy handled quickly.
+
+🤰 Pregnancy & Antenatal Visit Tracker
+Track pregnancy week-by-week with checklists and vitals
+
+
+Document fetal heart rate, fundal height, scan findings, and weight gain
+
+
+Define trimester-specific protocols for screenings, supplements, and warnings
+
+
+Share next appointment dates and visit instructions with expecting mothers
+
+
+Maintain a full Antenatal Case Paper (ANC Card)
+
+
+
+📤 Easy Document Sharing & Patient Communication
+Share prescriptions, reports, invoices, case papers instantly on WhatsApp or Email
+
+
+Welcome messages, appointment confirmations, payment receipts, and checkup recalls
+
+
+Send birthday/anniversary wishes or regular checkup reminders
+
+
+Secure sharing of test results, fetal scans, treatment estimates
+
+
+
+💳 Billing & Payment Made Simple
+Generate invoices for consultation, scans, procedures, deliveries, or packages
+
+
+Offer antenatal or infertility treatment packages with installment tracking
+
+
+Accept payments (full or partial), auto-send receipts via WhatsApp
+
+
+Control who can generate invoices or collect payments
+
+
+
+👩‍⚕️ Multi-User Access for Clinic Staff
+Add junior doctors, nurses, receptionists, lab assistants, billing staff
+
+
+Define role-based access to protect sensitive records
+
+
+Work from mobile, tablet, or desktop—data synced in real time
+
+
+
+📊 Analytics & Reports for Informed Decisions
+View doctor-wise, procedure-wise, branch-wise reports
+
+
+Financial summaries for revenue, outstanding dues
+
+
+Track new vs returning patients, visit trends, or antenatal care follow-through
+
+
+Download reports in Excel or PDF format
+
+
+Limit access to sensitive business or patient data
+
+
+
+🌟 Why Gynecologists Trust Clinicia
+✔ Built for OB-GYN workflows
+ ✔ Tracks antenatal & gynecological care with precision
+ ✔ Seamlessly manages consultations, scans, billing, and follow-ups
+ ✔ Secure, cloud-based, and available on all devices
+ ✔ Helps improve clinical efficiency & patient satisfaction
+
+💬 Gynecologist Testimonial
+“With Clinicia, we’ve been able to standardize antenatal care documentation and streamline communication with patients. It’s a real time-saver!”
+ — Dr. Sneha V., OB-GYN, Ahmedabad
+
+🤝 Ready to Transform Your Gynecology Practice?
+Digitize your practice, delight your patients, and focus more on care—Clinicia takes care of the rest.
+👉 [Book a Free Demo]
+ 👉 [Try Clinicia Now – No Setup Fees]
