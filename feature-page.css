@@ -430,178 +430,133 @@
     display: none;
 }
 
-/* Enhanced Security Assurance Section */
-.security-assurance-enhanced {
+/* Compact Security Assurance Section */
+.security-assurance-compact {
     background: white;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     border: 1px solid #e9ecef;
     position: relative;
-    overflow: hidden;
+    text-align: center;
 }
 
-.security-assurance-enhanced::before {
+.security-assurance-compact::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 3px;
     background: #ff4d4d;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
-.security-seal-enhanced {
-    text-align: center;
+.security-header {
+    margin-bottom: 2rem;
 }
 
-.security-icon-large {
-    width: 100px;
-    height: 100px;
-    background: #ff4d4d;
-    border-radius: 50%;
+.security-title {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.security-subtitle {
+    color: #6c757d;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.security-features-compact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.security-feature-compact {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    color: white;
-    font-size: 40px;
-    box-shadow: 0 8px 25px rgba(255, 77, 77, 0.3);
-}
-
-.security-badges {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.security-badge-small {
+    gap: 1rem;
+    padding: 1rem;
     background: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 20px;
-    padding: 6px 12px;
-    font-size: 0.75rem;
-    color: #495057;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-}
-
-.security-badge-small i {
-    color: #4a90e2;
-}
-
-.security-content-enhanced {
+    border-radius: 10px;
+    transition: all 0.3s ease;
     text-align: left;
 }
 
-.security-main-title {
-    color: #2c3e50;
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-}
-
-.security-main-desc {
-    color: #6c757d;
-    margin-bottom: 25px;
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
-.security-features-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-}
-
-.security-feature-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    border-left: 4px solid #4a90e2;
-    transition: all 0.3s ease;
-}
-
-.security-feature-item:hover {
+.security-feature-compact:hover {
     background: #e9ecef;
-    transform: translateX(5px);
+    transform: translateY(-2px);
 }
 
-.security-feature-icon {
-    width: 40px;
-    height: 40px;
-    background: #4a90e2;
+.security-feature-icon-compact {
+    width: 45px;
+    height: 45px;
+    background: #ff4d4d;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     flex-shrink: 0;
 }
 
-.security-feature-text {
+.security-feature-content {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
 }
 
-.security-feature-text strong {
+.security-feature-content strong {
     color: #2c3e50;
     font-size: 0.9rem;
+    font-weight: 600;
 }
 
-.security-feature-text span {
+.security-feature-content span {
     color: #6c757d;
     font-size: 0.8rem;
 }
 
 /* Mobile responsiveness for security assurance */
 @media (max-width: 768px) {
-    .security-assurance-enhanced {
-        padding: 25px;
+    .security-assurance-compact {
+        padding: 2rem 1.5rem;
     }
     
-    .security-icon-large {
-        width: 80px;
-        height: 80px;
-        font-size: 32px;
+    .security-title {
+        font-size: 1.2rem;
     }
     
-    .security-badges {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
+    .security-subtitle {
+        font-size: 0.9rem;
     }
     
-    .security-main-title {
-        font-size: 1.3rem;
-        text-align: center;
-        margin-top: 20px;
+    .security-features-compact {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
-    .security-main-desc {
-        text-align: center;
+    .security-feature-compact {
+        padding: 0.8rem;
     }
     
-    .security-features-grid {
-        margin-top: 20px;
+    .security-feature-icon-compact {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
     
-    .security-feature-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+    .security-feature-content strong {
+        font-size: 0.85rem;
     }
     
-    .security-feature-item:hover {
-        transform: translateY(-3px);
+    .security-feature-content span {
+        font-size: 0.75rem;
     }
 }
 
