@@ -213,9 +213,14 @@ html {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background: rgba(255, 77, 77, 0.08);
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: white;
     transform: translateX(5px);
+}
+
+.dropdown-item:hover i,
+.dropdown-item:focus i {
+    color: white !important;
 }
 
 .dropdown-item i {
