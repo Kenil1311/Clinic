@@ -239,7 +239,7 @@ html {
 .dropdown-item:hover i {
     opacity: 1 !important;
     transform: scale(1.1);
-    color: var(--primary-color) !important;
+    color: white !important;
 }
 
 .dropdown-header {
