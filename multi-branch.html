@@ -6,28 +6,31 @@
     <title>Multi-Branch Clinic Management Software | Clinicia</title>
     <meta name="description" content="Centralized control with local execution. Scale your multi-branch clinics with Clinicia's unified platform for seamless operations across all locations.">
     
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/style.css">
+    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="/feature-page.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40">
+                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -35,244 +38,302 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    
+                    <!-- Features Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false">
                             Features
                         </a>
-                        <ul class="dropdown-menu mega-menu">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mega-menu-section">
-                                        <h6>Core Features</h6>
-                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt"></i> EMR</a>
-                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills"></i> Prescription</a>
-                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar"></i> Appointment</a>
-                                        <a class="dropdown-item" href="/financial"><i class="fas fa-file-invoice-dollar"></i> Financial</a>
-                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature"></i> Digital Consent</a>
-                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt"></i> Expense</a>
-                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes"></i> Inventory</a>
+                        <div class="dropdown-menu mega-menu features-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Core Features</h6>
+                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR & Clinical Notes</a>
+                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mega-menu-section">
-                                        <h6>Advanced Features</h6>
-                                        <a class="dropdown-item" href="/images"><i class="fas fa-image"></i> Images</a>
-                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments"></i> Communication</a>
-                                        <a class="dropdown-item" href="/users"><i class="fas fa-users"></i> Multi Users</a>
-                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card"></i> Membership</a>
-                                        <a class="dropdown-item" href="/social"><i class="fas fa-share"></i> Social Media Integration</a>
-                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar"></i> Analytics</a>
-                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth"></i> Dental Lab</a>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Advanced Features</h6>
+                                        <a class="dropdown-item" href="/images"><i class="fas fa-image me-2"></i>Images</a>
+                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
                                     </div>
                                 </div>
                             </div>
-                        </ul>
+                        </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown">
+                    
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
                             Solutions
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><h6 class="dropdown-header">By Specialty</h6></li>
-                            <li><a class="dropdown-item" href="/dental">Dental</a></li>
-                            <li><a class="dropdown-item" href="/dermatology">Dermatology</a></li>
-                            <li><a class="dropdown-item" href="/gynaecology">Gynaecology</a></li>
-                            <li><a class="dropdown-item" href="/physiotherapy">Physiotherapy</a></li>
-                            <li><a class="dropdown-item" href="/ophthalmology">Ophthalmology</a></li>
-                            <li><a class="dropdown-item" href="/ent">ENT</a></li>
-                            <li><a class="dropdown-item" href="/cardiology">Cardiology</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><h6 class="dropdown-header">By Practice Size</h6></li>
-                            <li><a class="dropdown-item" href="/solo">Solo Practice</a></li>
-                            <li><a class="dropdown-item" href="/multiple">Multiple Doctors</a></li>
-                            <li><a class="dropdown-item" href="/multi-speciality">Multi-Speciality</a></li>
-                            <li><a class="dropdown-item" href="/multi-branch">Multi-Branch</a></li>
-                            <li><a class="dropdown-item" href="/hospitals">Hospitals</a></li>
-                        </ul>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Specialties</h6>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="/gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Practice Size</h6>
+                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
+                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    
+                    <!-- Support/Resources Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="supportDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#support" data-bs-toggle="dropdown" aria-expanded="false">
                             Support
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Help Center</a></li>
-                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                            <li><a class="dropdown-item" href="#">Book Demo</a></li>
+                        <ul class="dropdown-menu modern-dropdown">
+                            <li><a class="dropdown-item" href="#faq"><i class="fas fa-question-circle me-2"></i>FAQ</a></li>
+                            <li><a class="dropdown-item" href="#knowledge"><i class="fas fa-book me-2"></i>Knowledge Base</a></li>
+                            <li><a class="dropdown-item" href="#tutorials"><i class="fas fa-play-circle me-2"></i>Tutorials & Video Demo</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-primary me-2" href="#login">Login</a>
-                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
+                
+                <div class="navbar-nav">
+                    <a href="#login" class="btn btn-outline-primary">Login</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="feature-hero-section">
         <div class="container">
-            <!-- Breadcrumb -->
-            <nav aria-label="breadcrumb" class="breadcrumb-nav">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i> Home</a></li>
-                    <li class="breadcrumb-item"><a href="/#solutions">Solutions</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Multi-Branch Clinics</li>
-                </ol>
-            </nav>
-            
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="hero-title">Designed for Multi-Branch Clinics</h1>
-                    <h2 class="hero-subtitle">Centralized Control. Local Execution. Scalable Growth.</h2>
-                    <p class="hero-description">
-                        Running multiple clinic branches? Whether expanding from one location to three or managing a national chain - Clinicia lets you centrally manage each branch without compromising individual control. Empower your front desk, doctors, and back office—across all locations—with real-time coordination and full visibility.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
-                        <a href="#" class="btn btn-outline-danger btn-lg">Book a Demo</a>
+                    <div class="feature-hero-content">
+                        <!-- Breadcrumb in Hero -->
+                        <nav aria-label="breadcrumb" class="hero-breadcrumb mb-3">
+                            <ol class="breadcrumb breadcrumb-hero">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="/features">Features</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Multi-Branch</li>
+                            </ol>
+                        </nav>
+                        <h1 class="feature-hero-title">Designed for Multi-Branch Clinics</h1>
+                        <p class="feature-hero-subtitle">Centralized Control. Local Execution. Scalable Growth.</p>
+                        <p class="feature-hero-description">
+                            Running multiple clinic branches? Whether expanding from one location to three or managing a national chain - Clinicia lets you centrally manage each branch without compromising individual control. Empower your front desk, doctors, and back office—across all locations—with real-time coordination and full visibility.
+                        </p>
+                        <div class="feature-hero-actions">
+                            <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
+                            <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="hero-image">
-                        <img src="/attached_assets/Dashboard - Web_1752476091855.png" alt="Multi-Branch Clinic Management Dashboard" class="img-fluid">
+                    <div class="feature-hero-image">
+                        <div class="feature-mockup">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Capabilities Section -->
-    <section class="capabilities-section">
+    <!-- Key Features Section -->
+    <section class="feature-capabilities-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">Complete Multi-Branch Management Capabilities</h2>
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Complete Multi-Branch Management Solution</h2>
                     <p class="section-subtitle">Everything you need to seamlessly manage multiple clinic locations</p>
                 </div>
             </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="capability-card" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <h4>Branch-Wise Operations</h4>
+                        <h4>Branch-Wise Operations, One Unified Platform</h4>
                         <p>Assign separate teams, schedules, services, and pricing per branch. Customize workflows for each clinic while maintaining central oversight. Seamless coordination of appointments, EMRs, billing, and stock at each location.</p>
-                        <div class="feature-check">
-                            <i class="fas fa-check-circle"></i>
-                            <span>One Unified Platform</span>
-                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="capability-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-sync-alt"></i>
                         </div>
-                        <h4>Real-Time Data Sync</h4>
+                        <h4>Real-Time Data Sync Across All Branches</h4>
                         <p>Patient data, appointments, billing, and communications sync instantly. Doctors and admin teams can access the latest data, whether they're at HQ or a satellite branch. Easily transfer patient records when they visit another branch.</p>
-                        <div class="feature-check">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Instant Synchronization</span>
-                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="capability-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-file-medical"></i>
                         </div>
-                        <h4>Centralized EMR</h4>
+                        <h4>Centralized EMR with Branch-Level Access</h4>
                         <p>Shared patient profiles with branch-specific visit history. Track treatments, diagnostics, prescriptions, and documents from any location. Role-based access control ensures data privacy and confidentiality.</p>
-                        <div class="feature-check">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Branch-Level Access</span>
-                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="capability-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-calendar-check"></i>
                         </div>
-                        <h4>Branch-Wise Scheduling</h4>
+                        <h4>Branch-Wise Appointment Scheduling</h4>
                         <p>Maintain independent calendars for each clinic. Online booking links can be customized per location. Manage token systems, queue flow, reschedules, and no-shows branch-wise with WhatsApp reminders.</p>
-                        <div class="feature-check">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Location-Specific Booking</span>
-                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="capability-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-credit-card"></i>
                         </div>
-                        <h4>Financial Management</h4>
+                        <h4>Billing & Financial Management Per Branch</h4>
                         <p>Generate bills, estimates, and receipts per branch. Monitor collections, dues, discounts, and tax details individually. Track branch-wise performance and doctor-wise revenue with segregated expense management.</p>
-                        <div class="feature-check">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Per Branch Billing</span>
-                        </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="capability-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <h4>Multi-Branch Analytics</h4>
+                        <h4>Multi-Branch MIS & Reports</h4>
                         <p>Access branch-wise, doctor-wise, and department-wise reports. Financial and non-financial metrics: revenue, appointments, patient trends, and more. Download reports in Excel or PDF with controlled access.</p>
-                        <div class="feature-check">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Advanced MIS Reports</span>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Additional Features Section -->
-    <section class="features-section bg-light">
+    <!-- Security Section -->
+    <section class="feature-security-section bg-light py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">Advanced Multi-Branch Features</h2>
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <div class="security-badge mb-3">
+                        <i class="fas fa-shield-alt me-2"></i>
+                        <span>Enterprise-Grade Security</span>
+                    </div>
+                    <h2 class="section-title mb-3">Multiple Branches. Zero Compromise on Data Security</h2>
+                    <p class="section-subtitle text-muted">Your multi-branch data is always protected with industry-leading security measures across all locations.</p>
                 </div>
             </div>
             
             <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="feature-item" data-aos="fade-right">
-                        <div class="feature-icon">
-                            <i class="fas fa-boxes"></i>
+                <div class="col-lg-3 col-md-6">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
                         </div>
-                        <div class="feature-content">
-                            <h4>Branch-Level Inventory Management</h4>
-                            <p>Manage stock movement between the central store and individual branches. Trigger low stock alerts per clinic. Track purchase orders and inward stock deliveries per location.</p>
-                        </div>
+                        <h5 class="card-title mb-2">Role-based Access</h5>
+                        <p class="card-text text-muted">Granular permissions across all branches, ensuring only authorized access to sensitive data per location.</p>
                     </div>
                 </div>
-                
-                <div class="col-lg-6">
-                    <div class="feature-item" data-aos="fade-left">
-                        <div class="feature-icon">
-                            <i class="fas fa-comments"></i>
+                <div class="col-lg-3 col-md-6">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
                         </div>
-                        <div class="feature-content">
-                            <h4>Unified Patient Communication</h4>
-                            <p>Branch-specific branding, messages, and templates. Share prescriptions, invoices, reminders, reports via WhatsApp or Email. Welcome new patients, send birthday wishes, follow-up reminders—customized by branch.</p>
+                        <h5 class="card-title mb-2">End-to-End Encryption</h5>
+                        <p class="card-text text-muted">All data transmission between branches is encrypted with 256-bit AES encryption for maximum security.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">HIPAA Compliant</h5>
+                        <p class="card-text text-muted">Fully compliant with healthcare data protection regulations across all branch locations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Automated Backups</h5>
+                        <p class="card-text text-muted">Daily automated backups ensure your multi-branch data is always secure and recoverable.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="security-assurance-compact">
+                        <div class="security-header">
+                            <h4 class="security-title">Your Multi-Branch Data is Safe With Us</h4>
+                            <p class="security-subtitle">Clinicia uses bank-level security protocols with enterprise-grade infrastructure. Your patient data across all branches is encrypted, backed up daily, and protected by multi-layer security systems.</p>
+                        </div>
+                        
+                        <div class="security-features-compact">
+                            <div class="security-feature-compact">
+                                <div class="security-feature-icon-compact">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="security-feature-content">
+                                    <strong>Daily Backups</strong>
+                                    <span>Automatic data protection</span>
+                                </div>
+                            </div>
+                            <div class="security-feature-compact">
+                                <div class="security-feature-icon-compact">
+                                    <i class="fas fa-eye-slash"></i>
+                                </div>
+                                <div class="security-feature-content">
+                                    <strong>End-to-End Encryption</strong>
+                                    <span>Military-grade security</span>
+                                </div>
+                            </div>
+                            <div class="security-feature-compact">
+                                <div class="security-feature-icon-compact">
+                                    <i class="fas fa-user-shield"></i>
+                                </div>
+                                <div class="security-feature-content">
+                                    <strong>HIPAA Compliant</strong>
+                                    <span>Healthcare data protection</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,36 +342,96 @@
     </section>
 
     <!-- Benefits Section -->
-    <section class="benefits-section">
+    <section class="feature-benefits-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">Why Growing Clinics Choose Clinicia for Multi-Branch Operations</h2>
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-sitemap me-2"></i>
+                            <span>Multi-Branch Benefits</span>
+                        </div>
+                        <h2 class="section-title">Why Growing Clinics Choose Clinicia for Multi-Branch Operations</h2>
+                        <p class="section-subtitle">Everything you need to scale your practice efficiently across multiple locations</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="benefits-list">
-                        <div class="benefit-item" data-aos="fade-up">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Central visibility with local control</span>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-eye"></i>
                         </div>
-                        <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Scales with your expansion—no limit on branches or users</span>
+                        <h4 class="benefit-title">Central Visibility with Local Control</h4>
+                        <p class="benefit-description">Monitor all branches from one dashboard while giving each location autonomy to operate independently.</p>
+                        <div class="benefit-highlight">
+                            <i class="fas fa-chart-line me-2"></i>
+                            <span>Real-time oversight</span>
                         </div>
-                        <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Saves time with automation & remote access</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
                         </div>
-                        <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Compatible across platforms—Web, Android, iOS</span>
+                        <h4 class="benefit-title">Unlimited Scalability</h4>
+                        <p class="benefit-description">Add new branches seamlessly—no limits on locations or users as your practice grows.</p>
+                        <div class="benefit-highlight">
+                            <i class="fas fa-infinity me-2"></i>
+                            <span>No branch limits</span>
                         </div>
-                        <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Role-based access for multi-layered teams</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 class="benefit-title">Time-Saving Automation</h4>
+                        <p class="benefit-description">Automate routine tasks across all branches and access everything remotely from anywhere.</p>
+                        <div class="benefit-highlight">
+                            <i class="fas fa-robot me-2"></i>
+                            <span>Smart automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 class="benefit-title">Multi-Platform Access</h4>
+                        <p class="benefit-description">Access your multi-branch system from Web, Android, iOS—work from anywhere, anytime.</p>
+                        <div class="benefit-highlight">
+                            <i class="fas fa-globe me-2"></i>
+                            <span>Cross-platform support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h4 class="benefit-title">Role-Based Team Management</h4>
+                        <p class="benefit-description">Create multi-layered teams with specific permissions for different branches and departments.</p>
+                        <div class="benefit-highlight">
+                            <i class="fas fa-shield-alt me-2"></i>
+                            <span>Secure access control</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4 class="benefit-title">Advanced Analytics & Insights</h4>
+                        <p class="benefit-description">Get detailed reports and analytics across all branches to make data-driven decisions.</p>
+                        <div class="benefit-highlight">
+                            <i class="fas fa-analytics me-2"></i>
+                            <span>Business intelligence</span>
                         </div>
                     </div>
                 </div>
@@ -319,13 +440,14 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="testimonial-section bg-light">
+    <section class="testimonials-section">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="testimonial-card text-center" data-aos="fade-up">
-                        <div class="testimonial-icon">
-                            <i class="fas fa-quote-left"></i>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title mb-4">What Our Multi-Branch Doctor Says?</h2>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-md"></i>
                         </div>
                         <p class="testimonial-text">
                             "We grew from 1 to 5 branches in 3 years. Clinicia scaled with us perfectly. I can monitor each clinic, track performance, and even access patient records on my phone."
