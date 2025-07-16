@@ -197,6 +197,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Removed "Download App" button from navbar across all pages (July 16, 2025)
 ✓ Changed Login button to outline style (blue border and text) instead of filled background (July 16, 2025)
 ✓ Removed breadcrumb navigation from all feature pages (July 16, 2025)
+✓ Updated navbar structure in advanced feature pages to match home page with Solutions and Support dropdowns (July 16, 2025)
 
 ## User Preferences
 
