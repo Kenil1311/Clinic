@@ -396,6 +396,8 @@ body {
     background: rgba(255, 77, 77, 0.1);
     border-radius: 25px;
     width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Why Choose Section */
