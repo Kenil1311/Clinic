@@ -1,15 +1,11 @@
 /* Feature Page Specific Styles */
 
-/* Compact Breadcrumb Styles */
-.breadcrumb-section {
-    background: #f8f9fa;
-    padding: 12px 0;
-    border-bottom: 1px solid #e9ecef;
-    position: relative;
-    z-index: 10;
+/* Hero Breadcrumb Styles */
+.hero-breadcrumb {
+    margin-bottom: 1rem;
 }
 
-.breadcrumb-custom {
+.breadcrumb-hero {
     background: transparent;
     padding: 0;
     margin: 0;
@@ -17,47 +13,43 @@
     font-weight: 500;
 }
 
-.breadcrumb-custom .breadcrumb-item {
+.breadcrumb-hero .breadcrumb-item {
     color: #6c757d;
     display: flex;
     align-items: center;
 }
 
-.breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-hero .breadcrumb-item + .breadcrumb-item::before {
     content: "/";
     color: #6c757d;
     margin: 0 10px;
     font-size: 14px;
 }
 
-.breadcrumb-custom .breadcrumb-item a {
+.breadcrumb-hero .breadcrumb-item a {
     color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: 500;
 }
 
-.breadcrumb-custom .breadcrumb-item a:hover {
+.breadcrumb-hero .breadcrumb-item a:hover {
     color: var(--primary-dark);
     text-decoration: underline;
 }
 
-.breadcrumb-custom .breadcrumb-item.active {
+.breadcrumb-hero .breadcrumb-item.active {
     color: #495057;
     font-weight: 600;
 }
 
-/* Responsive Design for Breadcrumbs */
+/* Responsive Design for Hero Breadcrumbs */
 @media (max-width: 768px) {
-    .breadcrumb-section {
-        padding: 10px 0;
-    }
-    
-    .breadcrumb-custom {
+    .breadcrumb-hero {
         font-size: 13px;
     }
     
-    .breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
+    .breadcrumb-hero .breadcrumb-item + .breadcrumb-item::before {
         margin: 0 8px;
         font-size: 13px;
     }
