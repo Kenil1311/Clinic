@@ -201,6 +201,16 @@
     background: #ffffff;
 }
 
+.feature-capabilities-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-capabilities-section .col-md-6 {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
 .capability-card {
     background: #ffffff;
     border-radius: 12px;
@@ -211,6 +221,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    min-height: 280px;
 }
 
 .capability-card:hover {
@@ -245,6 +257,7 @@
     color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 1rem;
+    flex-grow: 1;
 }
 
 .capability-card p:last-child {
