@@ -219,6 +219,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Reverted all capability card styling changes back to original Bootstrap layout per user request (July 16, 2025)
 ✓ Adjusted capability card spacing to move gaps from between content to bottom of cards (July 16, 2025)
 ✓ Updated capability icons to use white background with red border and red icon color (July 16, 2025)
+✓ Added horizontal centering to capability cards with align-items: center and text-align: center (July 16, 2025)
 
 ## User Preferences
 
