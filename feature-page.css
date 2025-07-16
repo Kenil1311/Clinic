@@ -635,22 +635,9 @@
     position: relative;
 }
 
-.benefit-icon::before {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background: linear-gradient(135deg, #ff4d4d, #4a90e2);
-    border-radius: 50%;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.benefit-card:hover .benefit-icon::before {
-    opacity: 1;
+.benefit-card:hover .benefit-icon {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(255, 77, 77, 0.4);
 }
 
 .benefit-title {
