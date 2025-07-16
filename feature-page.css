@@ -307,6 +307,58 @@
     font-weight: 500;
     box-shadow: 0 3px 10px rgba(255, 77, 77, 0.3);
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Security Header with Lines */
+.security-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.security-line-left,
+.security-line-right {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff4d4d, transparent);
+    max-width: 150px;
+}
+
+.security-line-left {
+    background: linear-gradient(90deg, transparent, #ff4d4d);
+}
+
+.security-line-right {
+    background: linear-gradient(90deg, #ff4d4d, transparent);
+}
+
+/* Security Title with Lines */
+.security-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 1rem;
+}
+
+.title-line-left,
+.title-line-right {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ddd, transparent);
+    max-width: 100px;
+}
+
+.title-line-left {
+    background: linear-gradient(90deg, transparent, #ddd);
+}
+
+.title-line-right {
+    background: linear-gradient(90deg, #ddd, transparent);
 }
 
 /* Enhanced Security Cards */
@@ -411,6 +463,29 @@
     .security-badge {
         font-size: 0.8rem;
         padding: 6px 16px;
+    }
+    
+    .security-header-wrapper {
+        gap: 15px;
+    }
+    
+    .security-line-left,
+    .security-line-right {
+        max-width: 80px;
+    }
+    
+    .security-title-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .title-line-left,
+    .title-line-right {
+        display: none;
+    }
+    
+    .security-title-wrapper .section-title {
+        text-align: center;
     }
 }
 
