@@ -209,6 +209,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Updated breadcrumb design to be larger and more prominent with cleaner styling (July 16, 2025)
 ✓ Updated breadcrumb design to match user's preferred style with home icon and simple arrow separators (July 16, 2025)
 ✓ Updated dropdown menu hover state to make icons white when hovering over dropdown items (July 16, 2025)
+✓ Updated "Book a Demo" button to use red border and red text on all feature pages (July 16, 2025)
 
 ## User Preferences
 
