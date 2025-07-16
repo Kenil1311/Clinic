@@ -216,12 +216,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Created dermatology practice solution page with skin care specific tools (July 16, 2025)
 ✓ Developed solo practice solution page targeting independent practitioners (July 16, 2025)
 ✓ Created gynaecology practice solution page with women's health specific features (July 16, 2025)
-✓ Fixed capability card icon spacing by reducing margin-bottom from 1.5rem to 1rem (July 16, 2025)
-✓ Reduced spacing between capability card headings and descriptions from 1rem to 0.5rem (July 16, 2025)
-✓ Fixed capability cards to have equal height with min-height: 280px and proper flex layout (July 16, 2025)
-✓ Implemented CSS Grid layout for truly equal card heights with 350px minimum height (July 16, 2025)
-✓ Updated grid layout to use full width with repeat(2, 1fr) for better card spacing (July 16, 2025)
-✓ Improved section layout with proper container constraints, centered titles, and enhanced card styling (July 16, 2025)
+✓ Reverted all capability card styling changes back to original Bootstrap layout per user request (July 16, 2025)
 
 ## User Preferences
 
