@@ -84,6 +84,34 @@ def solo():
 def gynaecology():
     return send_file('gynaecology.html')
 
+@app.route('/physiotherapy')
+def physiotherapy():
+    return send_file('physiotherapy.html')
+
+@app.route('/multiple')
+def multiple():
+    return send_file('multiple.html')
+
+@app.route('/ophthalmology')
+def ophthalmology():
+    return send_file('ophthalmology.html')
+
+@app.route('/multi-speciality')
+def multi_speciality():
+    return send_file('multi-speciality.html')
+
+@app.route('/ent')
+def ent():
+    return send_file('ent.html')
+
+@app.route('/cardiology')
+def cardiology():
+    return send_file('cardiology.html')
+
+@app.route('/hospitals')
+def hospitals():
+    return send_file('hospitals.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):
