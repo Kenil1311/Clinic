@@ -217,6 +217,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Developed solo practice solution page targeting independent practitioners (July 16, 2025)
 ✓ Created gynaecology practice solution page with women's health specific features (July 16, 2025)
 ✓ Fixed capability card icon spacing by reducing margin-bottom from 1.5rem to 1rem (July 16, 2025)
+✓ Reduced spacing between capability card headings and descriptions from 1rem to 0.5rem (July 16, 2025)
 
 ## User Preferences
 
