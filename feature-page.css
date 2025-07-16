@@ -201,6 +201,30 @@
     background: #ffffff;
 }
 
+.feature-capabilities-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.feature-capabilities-section .section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-capabilities-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 .feature-capabilities-section .row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -218,6 +242,10 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+    
+    .feature-capabilities-section .container {
+        padding: 0 1rem;
+    }
 }
 
 .capability-card {
@@ -230,8 +258,9 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 350px;
+    justify-content: flex-start;
+    min-height: 380px;
+    width: 100%;
 }
 
 .capability-card:hover {
@@ -265,8 +294,14 @@
 .capability-card p {
     color: var(--text-muted);
     line-height: 1.6;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     flex-grow: 1;
+}
+
+.capability-card .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .capability-card p:last-child {
