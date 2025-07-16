@@ -1105,12 +1105,17 @@
         font-size: 0.85rem;
         width: 100%;
         max-width: 180px;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .feature-hero-actions .btn:first-child {
+        margin-top: 0.5rem;
     }
     
     .feature-hero-actions {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.8rem;
+        margin-top: 1rem;
     }
     
     .feature-mockup {
@@ -1246,12 +1251,17 @@
         font-size: 0.9rem;
         width: 100%;
         max-width: 200px;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .feature-hero-actions .btn:first-child {
+        margin-top: 0.5rem;
     }
     
     .feature-hero-actions {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.8rem;
+        margin-top: 1rem;
     }
     
     .feature-mockup {
