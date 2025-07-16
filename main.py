@@ -108,6 +108,10 @@ def ent():
 def cardiology():
     return send_file('cardiology.html')
 
+@app.route('/multi-branch')
+def multi_branch():
+    return send_file('multi-branch.html')
+
 @app.route('/hospitals')
 def hospitals():
     return send_file('hospitals.html')
