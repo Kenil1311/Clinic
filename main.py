@@ -141,6 +141,10 @@ def ayurveda():
 def veterinary():
     return send_file('veterinary.html')
 
+@app.route('/psychology')
+def psychology():
+    return send_file('psychology.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):

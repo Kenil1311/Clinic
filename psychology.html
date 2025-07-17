@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Clinic Software | Mental Health EMR & Therapy Scheduling | Clinicia</title>
+    <meta name="description" content="Clinicia helps psychologists and mental health clinics manage patient notes, therapy plans, appointments, billing, and secure communication—on web and mobile.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feature-page.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    
+                    <!-- Features Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='/features'; return false;">
+                            Features
+                        </a>
+                        <div class="dropdown-menu mega-menu features-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Core Features</h6>
+                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Advanced Features</h6>
+                                        <a class="dropdown-item" href="/images"><i class="fas fa-image me-2"></i>Images</a>
+                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Specialties</h6>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="/gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="/diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="/ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="/oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="/nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="/paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="/veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="/psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="/nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="/orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="/urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Practice Size</h6>
+                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
+                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    
+                    <!-- Support/Resources Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#support" data-bs-toggle="dropdown" aria-expanded="false">
+                            Support / Resources
+                        </a>
+                        <ul class="dropdown-menu modern-dropdown">
+                            <li><a class="dropdown-item" href="#faq"><i class="fas fa-question-circle me-2"></i>FAQ</a></li>
+                            <li><a class="dropdown-item" href="#knowledge"><i class="fas fa-book me-2"></i>Knowledge Base</a></li>
+                            <li><a class="dropdown-item" href="#tutorials"><i class="fas fa-play-circle me-2"></i>Tutorials & Video Demo</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="navbar-nav">
+                    <a href="#login" class="btn btn-outline-primary">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Feature Hero Section -->
+    <section class="feature-hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="feature-hero-content">
+                        <!-- Breadcrumb in Hero -->
+                        <nav aria-label="breadcrumb" class="hero-breadcrumb mb-3">
+                            <ol class="breadcrumb breadcrumb-hero">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Psychology</li>
+                            </ol>
+                        </nav>
+                        
+                        <h1 class="feature-hero-title">Clinicia for Psychologists & Mental Health Clinics</h1>
+                        <p class="feature-hero-subtitle">Confidential, Organized & Streamlined Mental Healthcare Management</p>
+                        <p class="feature-hero-description">
+                            Clinicia empowers psychologists, psychiatrists, counselors, and mental health professionals to deliver compassionate care while maintaining meticulous clinical records, managing appointments, sharing treatment plans, and automating client communication—securely and efficiently.
+                        </p>
+                        
+                        <div class="feature-hero-buttons">
+                            <a href="#trial" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
+                            <a href="#demo" class="btn btn-outline-danger btn-lg">Book a Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="feature-hero-image text-center">
+                        <div class="feature-mockup">
+                            <img src="/attached_assets/Dashboard - Web_1752476091855.png" alt="Psychology Management Dashboard" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Capabilities Section -->
+    <section class="feature-capabilities-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Everything You Need for Mental Health Practice Management</h2>
+                    <p class="section-subtitle">Comprehensive tools designed specifically for psychologists and mental health professionals</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h4>Detailed EMR for Mental Health</h4>
+                        <ul class="capability-features">
+                            <li>Rich client EMRs with presenting concerns, personal history, and family background</li>
+                            <li>Session-wise clinical notes with assessments and observations</li>
+                            <li>Treatment plans, therapy goals, and progress tracking</li>
+                            <li>Secure storage with role-based access controls</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Session Scheduling & Automated Reminders</h4>
+                        <ul class="capability-features">
+                            <li>Individual, couples, or family therapy sessions</li>
+                            <li>Automated reminders via WhatsApp or email</li>
+                            <li>Cancellation and rescheduling management</li>
+                            <li>Online appointment booking widget</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Secure Client Communication</h4>
+                        <ul class="capability-features">
+                            <li>Treatment summaries and session notes sharing</li>
+                            <li>Automated appointment confirmations and reminders</li>
+                            <li>Personalized messages and wellness check-ins</li>
+                            <li>Complete confidentiality and privacy protection</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h4>Digital Consent & Assessments</h4>
+                        <ul class="capability-features">
+                            <li>Custom digital forms for therapy consent</li>
+                            <li>Intake questionnaires and psychometric assessments</li>
+                            <li>Digital signatures and secure form completion</li>
+                            <li>Secure document storage in client EMR</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4>Billing & Payment Tracking</h4>
+                        <ul class="capability-features">
+                            <li>Personalized invoices for sessions and assessments</li>
+                            <li>Payment tracking and automated receipts</li>
+                            <li>Outstanding payment reminders</li>
+                            <li>Controlled access to billing management</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Reports & Clinical Analysis</h4>
+                        <ul class="capability-features">
+                            <li>Financial reports and payment tracking</li>
+                            <li>Clinical statistics and case load analysis</li>
+                            <li>Session outcomes and client progress</li>
+                            <li>Secure data access with controlled permissions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Features Section -->
+    <section class="security-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Privacy & Security First</h2>
+                    <p class="section-subtitle">Built with mental health confidentiality requirements in mind</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4>HIPAA Compliant</h4>
+                        <p>Full compliance with healthcare data protection regulations and mental health privacy standards.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h4>Role-Based Access</h4>
+                        <p>Control who sees what with granular permissions for psychologists, counselors, and admin staff.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h4>Secure Cloud Storage</h4>
+                        <p>All sensitive patient data encrypted and stored with enterprise-grade security measures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Benefits at a Glance</h2>
+                    <p class="section-subtitle">Why mental health professionals choose Clinicia</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="benefits-grid">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <ul class="benefits-list">
+                                    <li><i class="fas fa-check-circle"></i> Focus on therapy instead of paperwork</li>
+                                    <li><i class="fas fa-check-circle"></i> Secure storage of sensitive mental health data</li>
+                                    <li><i class="fas fa-check-circle"></i> Automated appointment reminders reduce no-shows</li>
+                                    <li><i class="fas fa-check-circle"></i> Digital consent forms streamline intake process</li>
+                                    <li><i class="fas fa-check-circle"></i> Progress tracking across multiple sessions</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="benefits-list">
+                                    <li><i class="fas fa-check-circle"></i> Multi-user access for group practices</li>
+                                    <li><i class="fas fa-check-circle"></i> Mobile app for on-the-go access</li>
+                                    <li><i class="fas fa-check-circle"></i> Comprehensive billing and payment tracking</li>
+                                    <li><i class="fas fa-check-circle"></i> Clinical reports for better practice management</li>
+                                    <li><i class="fas fa-check-circle"></i> HIPAA-compliant security standards</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                "Clinicia lets me focus on therapy instead of paperwork. The reminders, EMRs, and session tracking are built perfectly for a mental health setting."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <strong>Dr. Nidhi R.</strong>
+                                <span>Clinical Psychologist, Pune</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="cta-title">Start Managing Your Mental Health Practice Smarter</h2>
+                    <p class="cta-subtitle">Automate admin tasks, protect sensitive data, and give your clients the seamless experience they deserve with Clinicia.</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#trial" class="btn btn-primary btn-lg me-3">Start Your Free Trial</a>
+                        <a href="#demo" class="btn btn-outline-primary btn-lg">Request a Free Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-brand">
+                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="mb-3">
+                        <p>Transforming healthcare with intelligent practice management solutions.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-6 mb-4">
+                    <h5>Product</h5>
+                    <ul class="footer-links">
+                        <li><a href="/features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#security">Security</a></li>
+                        <li><a href="#integrations">Integrations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-3 col-6 mb-4">
+                    <h5>Solutions</h5>
+                    <ul class="footer-links">
+                        <li><a href="/solo">Solo Practice</a></li>
+                        <li><a href="/multiple">Multiple Doctors</a></li>
+                        <li><a href="/dental">Dental</a></li>
+                        <li><a href="/cardiology">Cardiology</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 col-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#api">API Docs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 col-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2024 Clinicia. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-app-download">
+                            <a href="#" class="app-download-btn">
+                                <i class="fab fa-apple"></i>
+                                <span>Download for iOS</span>
+                            </a>
+                            <a href="#" class="app-download-btn">
+                                <i class="fab fa-google-play"></i>
+                                <span>Download for Android</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
