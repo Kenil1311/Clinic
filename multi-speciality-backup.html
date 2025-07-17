@@ -3,103 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dental Practice Management Software - Clinicia</title>
+    <title>Multi-Speciality Setup - Practice Management Software - Clinicia</title>
+    <meta name="description" content="One platform for every specialty in your clinic. Unified patient experience with seamless inter-department coordination for multi-speciality clinics.">
     
-    <!-- Bootstrap 5 CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Google Fonts - Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/features.css">
     <link rel="stylesheet" href="/feature-page.css">
 </head>
 <body>
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress"></div>
-
     <!-- HEADER_CONTENT -->
-
-    <!-- BREADCRUMB_CONTENT -->
-
-    <!-- Hero Section -->
-    <section class="hero-section feature-hero">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="feature-hero-content">
-                        <h1 class="feature-hero-title">Clinicia for Dentists - Smart Software for Smart Dental Practice</h1>
-                        <p class="feature-hero-subtitle">Comprehensive Practice Management for Modern Dental Clinics</p>
-                        <p class="feature-hero-description">As a dentist, you don't just manage patients—you manage appointments, lab work, prescriptions, billing, and more. Our integrated platform consolidates all your practice needs into one powerful system.</p>
-                        
-                        <div class="hero-buttons">
-                            <a href="#demo" class="btn btn-primary btn-lg">Start Free Trial</a>
-                            <a href="#contact" class="btn btn-outline-danger btn-lg">Book a Demo</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6">
-                    <div class="hero-mockup">
-                        <img src="/attached_assets/Dashboard - Web_1752476091855.png" alt="Clinicia Dashboard" class="img-fluid dashboard-frame">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Capabilities Section -->
-    <section class="capabilities-section py-5" style="background-color: #f8f9fa;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">Complete Dental Practice Management Capabilities</h2>
-                    <p class="section-subtitle">Everything you need to run a successful dental practice, all in one place</p>
-                </div>
-            </div>
             
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="capability-card h-100">
-                        <div class="capability-icon">
-                            <i class="fas fa-file-medical"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    
+                    <!-- Features Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Core Features</h6>
+                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Advanced Features</h6>
+                                        <a class="dropdown-item" href="/images"><i class="fas fa-image me-2"></i>Images</a>
+                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4>Comprehensive EMR</h4>
-                        <p>Dental-specific electronic medical records with treatment history, images, and notes tailored for oral health management.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="capability-card h-100">
-                        <div class="capability-icon">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                        <h4>Smart Appointments</h4>
-                        <p>Automated scheduling with treatment-specific time slots, recall reminders, and waitlist management for optimal chair utilization.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="capability-card h-100">
-                        <div class="capability-icon">
-                            <i class="fas fa-prescription"></i>
-                        </div>
-                        <h4>Digital Prescriptions</h4>
-                        <p>Dental medication templates, dosage calculators, and integrated pharmacy connections for seamless prescription management.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Continue with more content -->
+                    </li>
+                    
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
                         <div class="dropdown-menu mega-menu">
                             <div class="container">
                                 <div class="row">
@@ -136,7 +108,6 @@
                                         <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
                                         <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
                                         <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
-                                        <a class="dropdown-item" href="/colleges"><i class="fas fa-graduation-cap me-2"></i>Dental Colleges</a>
                                     </div>
                                 </div>
                             </div>
@@ -178,13 +149,13 @@
                             <ol class="breadcrumb breadcrumb-hero">
                                 <li class="breadcrumb-item"><a href="/">Home</a></li>
                                 <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Dental Practice</li>
+                                <li class="breadcrumb-item active" aria-current="page">Multi-Speciality Setup</li>
                             </ol>
                         </nav>
-                        <h1 class="feature-hero-title">Clinicia for Dentists</h1>
-                        <p class="feature-hero-subtitle">Smart Software for Smart Dental Practice</p>
+                        <h1 class="feature-hero-title">One Platform for Every Speciality in Your Clinic</h1>
+                        <p class="feature-hero-subtitle">Unified Patient Experience. Seamless Inter-Department Coordination.</p>
                         <p class="feature-hero-description">
-                            As a dentist, you don't just manage patients—you manage treatments, lab orders, payments, follow-ups, and more. Clinicia is designed to make your practice paperless, organized, and patient-friendly, no matter your size. One tool to run your entire dental practice—from chairside charting to billing and lab tracking.
+                            Managing a multi-speciality clinic means balancing patient flow across departments like dental, dermatology, ENT, orthopedics, and more. Clinicia helps you synchronize all specialties, giving your clinic a single digital platform that's powerful, flexible, and easy to use. Say goodbye to silos. Say hello to integrated care.
                         </p>
                         <div class="feature-hero-actions">
                             <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
@@ -195,103 +166,8 @@
                 <div class="col-lg-6">
                     <div class="feature-hero-image">
                         <div class="feature-mockup">
-                            <i class="fas fa-tooth"></i>
+                            <i class="fas fa-clinic-medical"></i>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Benefits Section -->
-    <section class="feature-capabilities-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">Complete Dental Practice Management Solution</h2>
-                    <p class="section-subtitle">Everything you need to run a modern dental practice efficiently</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <h4>Dental-Specific Electronic Medical Records (EMR)</h4>
-                        <p>Document Clinical Notes: Chief Complaints, Intraoral Findings, Radiograph Observations, Diagnoses. Maintain complete Treatment Plans, with stage-wise procedures. Record Vitals, Medical History, Allergies, and Consent. Attach X-rays, Intraoral Photos, Custom Diagrams, Case Sheets. View chronological Treatment History for every patient.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i class="fas fa-calendar-check"></i>
-                        </div>
-                        <h4>Smart Appointment Scheduling</h4>
-                        <p>WhatsApp appointment confirmations & reminders to patients. Daily schedule sent to your phone each morning. Token & queue system to manage walk-ins. Easy rebooking & rescheduling. Online booking widget for Google Profile, Instagram, or Website.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i class="fas fa-pills"></i>
-                        </div>
-                        <h4>Digital Prescription & Templates</h4>
-                        <p>Preloaded dental medicines & dosage templates. Digitally signed, branded prescriptions with logo and letterhead. Share instantly via WhatsApp or Email. Save time with reusable prescription patterns.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i class="fas fa-share-alt"></i>
-                        </div>
-                        <h4>Share Clinical Documents Instantly</h4>
-                        <p>Share Prescription, Invoice, Payment Receipts, Case Papers, X-rays, and Treatment Plans. Send via WhatsApp or Email—no printing required. Print anytime on your clinic's own branded paper.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i class="fas fa-tooth"></i>
-                        </div>
-                        <h4>Dental Lab Order Management</h4>
-                        <p>Create and manage lab orders for crowns, bridges, implants, aligners, and prosthetics. Include details like shade, surface cluster, pontic design, trial dates, and implant specifics. Track lab order progress and communicate easily with lab technicians.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i class="fas fa-file-invoice-dollar"></i>
-                        </div>
-                        <h4>Billing, Invoicing & Receipts</h4>
-                        <p>Generate legally compliant invoices with clinic branding. Accept partial or full payments—track dues and send reminders. Share receipts instantly on WhatsApp or Email. Control who can bill, who can collect, and who can view financial data.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i class="fas fa-id-card"></i>
-                        </div>
-                        <h4>Membership Plans for Loyal Patients</h4>
-                        <p>Offer annual plans with discounted procedures or free checkups. Configure discounts at treatment-level or overall bill level. Encourage patient retention and long-term value. Build loyalty, boost retention, and grow your revenue base.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <h4>Reports & Analytics That Matter</h4>
-                        <p>Daily, weekly, and monthly billing summaries. Procedure-wise treatment reports. New vs Returning Patient trends. Outstanding payments and collection reports. Export reports in Excel or PDF. Know your clinic's pulse at a glance.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4>Multi-User, Multi-Device with Role-Based Access</h4>
-                        <p>Add your Receptionist, Associate Dentist, Assistant, Accountant, Store Keeper etc. Role-based access keeps sensitive data protected. Access on Desktop, Laptop, Android & iOS Devices with real-time sync.</p>
                     </div>
                 </div>
             </div>
@@ -299,30 +175,151 @@
     </section>
 
     <!-- Key Features Section -->
+    <section class="feature-capabilities-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Complete Multi-Speciality Solution</h2>
+                    <p class="section-subtitle">Everything you need to manage multiple departments and specialties under one platform</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Multiple Doctors, Seamless Collaboration</h4>
+                        <p>Create department-wise profiles with dedicated schedules, services, and billing. Share a common EMR while allowing speciality-specific notes and observations. Effortlessly refer patients between departments and track their full journey.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Centralized & Department-Wise Scheduling</h4>
+                        <p>Multi-doctor, multi-department appointment calendar. Online bookings routed to specific departments via Booking Widget. Rescheduling, queue management & token system for efficient patient flow.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h4>Smart EMR Adapted for Every Speciality</h4>
+                        <p>Unified EMR with speciality-specific sections (Dental, ENT, Skin, etc.). Attach clinical notes, treatment plans, images, X-rays, prescriptions, and documents. Upload reports and files department-wise, yet accessible by authorized specialists.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4>Billing, Revenue Tracking & Departmental Insights</h4>
+                        <p>Generate bills, receipts, and estimates department-wise. Assign procedures to the right doctor and track doctor-wise revenue. Combine bills from multiple departments into one final invoice for patients.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>MIS & Analytics Across the Whole Clinic</h4>
+                        <p>Doctor-wise, department-wise, and branch-wise reporting. Analyze trends in new vs returning patients, most performed procedures, and earnings. Export reports in Excel or PDF. Access restricted to authorized users only.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Consistent Patient Communication from All Departments</h4>
+                        <p>Send WhatsApp/Email messages for appointments, payments, prescriptions, and follow-ups. Auto-reminders for regular check-ups, procedure reviews, and missed appointments. Welcome and thank-you messages personalized for each patient.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Accessibility Section -->
+    <section class="feature-security-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="security-content text-center">
+                        <h2 class="section-title mb-3">Built for Multi-Speciality Excellence</h2>
+                        <p class="section-subtitle text-muted mb-5">Advanced features designed to enhance integrated healthcare delivery</p>
+                        
+                        <div class="row g-4 mb-5">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="security-feature-card">
+                                    <div class="security-feature-header">
+                                        <div class="security-feature-icon">
+                                            <i class="fas fa-clipboard-check"></i>
+                                        </div>
+                                        <h4>Care Coordination Dashboard</h4>
+                                    </div>
+                                    <p>Unified dashboard for tracking patient journey across specialties with real-time updates and collaborative care planning tools.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="security-feature-card">
+                                    <div class="security-feature-header">
+                                        <div class="security-feature-icon">
+                                            <i class="fas fa-money-bill-wave"></i>
+                                        </div>
+                                        <h4>Integrated Billing System</h4>
+                                    </div>
+                                    <p>Comprehensive billing management with specialty-specific pricing, insurance handling, and revenue distribution across departments.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="security-feature-card">
+                                    <div class="security-feature-header">
+                                        <div class="security-feature-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <h4>Centralized Patient Records</h4>
+                                    </div>
+                                    <p>Unified patient database accessible across all specialties with comprehensive medical history and treatment tracking.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="security-feature-card">
+                                    <div class="security-feature-header">
+                                        <div class="security-feature-icon">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <h4>Enterprise Security & Compliance</h4>
+                                    </div>
+                                    <p>Enterprise-grade security with multi-level access controls, audit trails, and compliance management for healthcare regulations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
     <section class="feature-benefits-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">Why Dentists Choose Clinicia</h2>
-                    <p class="section-subtitle">Built specifically for dental practices with features that matter</p>
+                    <h2 class="section-title">Benefits at a Glance</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-12 mb-4">
                     <div class="benefits-list">
                         <ul class="benefits-grid">
-                            <li><i class="fas fa-check-circle"></i> Built specifically for Dental Practices</li>
-                            <li><i class="fas fa-check-circle"></i> Streamlines clinical + administrative workflows</li>
-                            <li><i class="fas fa-check-circle"></i> Helps deliver consistent, branded experience</li>
-                            <li><i class="fas fa-check-circle"></i> Saves time & reduces human errors</li>
-                            <li><i class="fas fa-check-circle"></i> Easy to use for both solo dentists and dental teams</li>
-                            <li><i class="fas fa-check-circle"></i> Complete treatment planning with stage-wise procedures</li>
-                            <li><i class="fas fa-check-circle"></i> Paperless practice management</li>
-                            <li><i class="fas fa-check-circle"></i> WhatsApp & Email integration for patient communication</li>
-                            <li><i class="fas fa-check-circle"></i> Comprehensive lab order tracking</li>
-                            <li><i class="fas fa-check-circle"></i> Multi-device access with real-time sync</li>
-                            <li><i class="fas fa-check-circle"></i> Role-based access control</li>
-                            <li><i class="fas fa-check-circle"></i> Detailed reporting and analytics</li>
+                            <li><i class="fas fa-check-circle"></i> Customizable for every speciality and department</li>
+                            <li><i class="fas fa-check-circle"></i> Multi-user platform with real-time data sync across devices</li>
+                            <li><i class="fas fa-check-circle"></i> Scalable as you expand services or locations</li>
+                            <li><i class="fas fa-check-circle"></i> No complex training—simple, powerful, and intuitive</li>
+                            <li><i class="fas fa-check-circle"></i> Works on desktops, tablets, and mobile apps (Android & iOS)</li>
                         </ul>
                     </div>
                 </div>
@@ -331,18 +328,25 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="testimonial-section">
+    <section class="testimonials-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">What Dental Professionals Say</h2>
+                    <h2 class="section-title mb-4">What Our Doctor Says?</h2>
                     <div class="testimonial-card">
-                        <div class="testimonial-text">
-                            "From EMR to lab tracking, Clinicia has replaced 3 different tools we were using earlier. My team is more efficient, and my patients love the WhatsApp document sharing!"
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
+                        <p class="testimonial-text">
+                            "We run a multi-speciality dental and skin center. Clinicia gave us a single system that works for every department—appointments, billing, EMRs, everything just works together."
+                        </p>
                         <div class="testimonial-author">
-                            <div class="author-name">Dr. Sneha K.</div>
-                            <div class="author-position">Cosmetic Dentist, Pune</div>
+                            <strong>Dr. Vishal & Dr. Smita Kapoor</strong>
+                            <span>Precision Care Clinics, Mumbai</span>
                         </div>
                     </div>
                 </div>
@@ -350,37 +354,37 @@
         </div>
     </section>
 
-    <!-- Getting Started CTA Section -->
+    <!-- Ready to Transform Your Practice CTA Section -->
     <section id="getting-started" class="cta-section py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
                     <div class="cta-content">
-                        <h2 class="section-title text-white">Digitize Your Dental Practice with Clinicia</h2>
+                        <h2 class="section-title text-white">Centralize Your Multi-Speciality Clinic with Clinicia</h2>
                         <p class="section-description text-white">
-                            Whether you run a solo dental clinic or a multi-chair practice, Clinicia is your complete solution. Power your practice. Impress your patients. Grow your revenue.
+                            Bring all departments under one secure, synchronized system—for better collaboration, patient satisfaction, and clinic performance.
                         </p>
                         <div class="cta-features">
                             <div class="row g-4 text-white">
                                 <div class="col-md-4">
                                     <div class="cta-feature">
-                                        <i class="fas fa-credit-card"></i>
-                                        <h4>No Credit Card Required</h4>
-                                        <p>Start your free trial instantly</p>
+                                        <i class="fas fa-clinic-medical"></i>
+                                        <h4>Multi-Department Support</h4>
+                                        <p>Unified system for all specialties</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="cta-feature">
-                                        <i class="fas fa-bolt"></i>
-                                        <h4>Instant Setup</h4>
-                                        <p>Get started in under 5 minutes</p>
+                                        <i class="fas fa-users-cog"></i>
+                                        <h4>Role-Based Access</h4>
+                                        <p>Secure permissions per department</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="cta-feature">
-                                        <i class="fas fa-headset"></i>
-                                        <h4>Dedicated Support</h4>
-                                        <p>24/7 expert assistance</p>
+                                        <i class="fas fa-chart-line"></i>
+                                        <h4>Unified Analytics</h4>
+                                        <p>Cross-department insights</p>
                                     </div>
                                 </div>
                             </div>
@@ -390,7 +394,7 @@
                                 <i class="fas fa-rocket me-2"></i>Start Free Trial
                             </a>
                             <a href="#demo" class="btn btn-outline-light btn-lg">
-                                <i class="fas fa-calendar me-2"></i>Schedule a Demo
+                                <i class="fas fa-calendar me-2"></i>Request a Demo
                             </a>
                         </div>
                     </div>
@@ -459,21 +463,25 @@
             </div>
             <div class="footer-bottom">
                 <div class="row">
-                    <div class="col-12 text-center">
+                    <div class="col-lg-6">
                         <p>&copy; 2024 Clinicia. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <p>Made with ❤️ for healthcare professionals</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JS -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+    <!-- Custom JS -->
+    <script src="/script.js"></script>
+    <script src="/features.js"></script>
 </body>
 </html>
