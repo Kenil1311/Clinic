@@ -117,6 +117,10 @@ def oncology():
 def nephrology():
     return send_file('nephrology.html')
 
+@app.route('/paediatrician')
+def paediatrician():
+    return send_file('paediatrician.html')
+
 @app.route('/multi-branch')
 def multi_branch():
     return send_file('multi-branch.html')
