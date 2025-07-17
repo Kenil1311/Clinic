@@ -2117,6 +2117,31 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.benefit-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.benefit-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.benefit-item i {
+    margin-right: 15px;
+    font-size: 16px;
+    min-width: 20px;
+}
+
 .benefits-grid {
     list-style: none;
     padding: 0;
