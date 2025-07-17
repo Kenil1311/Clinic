@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENT Practice Management Software - Clinicia</title>
-    <meta name="description" content="Specialized practice management software for ENT specialists with comprehensive tools for ear, nose, and throat care management.">
+    <title>Diabetology Practice Management Software - Clinicia</title>
+    <meta name="description" content="Specialized practice management software for diabetologists with comprehensive diabetes care management tools.">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/features.css">
+    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="/feature-page.css">
 </head>
 <body>
@@ -134,153 +136,216 @@
         </div>
     </nav>
 
-    <!-- Feature Hero Section -->
+    <!-- Hero Section -->
     <section class="feature-hero-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="feature-hero-content">
-                        <!-- Breadcrumb in Hero -->
-                        <nav aria-label="breadcrumb" class="hero-breadcrumb mb-3">
+                        <nav aria-label="breadcrumb" class="breadcrumb-nav">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i> Home</a></li>
                                 <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">ENT</li>
+                                <li class="breadcrumb-item active" aria-current="page">Diabetology</li>
                             </ol>
                         </nav>
-                        
-                        <h1 class="hero-title">Clinicia for ENT Specialists</h1>
-                        <p class="hero-subtitle">Purpose-Built EMR & Clinic Management for Otolaryngology Practices</p>
-                        <p class="hero-description">ENT practice involves a wide range of conditions—from acute infections to chronic ENT disorders—requiring precise documentation, imaging, and multidisciplinary treatment planning. Clinicia delivers a speciality-specific, user-friendly platform for ENT specialists and clinics to manage patient care, streamline operations, and ensure compliance.</p>
-                        
-                        <div class="feature-hero-actions">
-                            <a href="#" class="btn btn-primary me-3">Start Free Trial</a>
-                            <a href="#" class="btn btn-outline-primary">Book a Demo</a>
+                        <h1 class="feature-hero-title">Clinicia for Diabetologists</h1>
+                        <p class="feature-hero-subtitle">Simplify Diabetes Care with Smart EMR & Clinic Management</p>
+                        <p class="feature-hero-description">
+                            Managing diabetes involves continuous monitoring, lifestyle guidance, regular follow-ups, and lab investigations. Clinicia is designed to help Diabetologists streamline their clinic operations while providing highly personalized, efficient, and long-term care for chronic patients.
+                        </p>
+                        <div class="feature-hero-buttons">
+                            <a href="#trial" class="btn btn-primary btn-lg">
+                                <i class="fas fa-rocket me-2"></i>Start Free Trial
+                            </a>
+                            <a href="#demo" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-calendar me-2"></i>Book a Demo
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="feature-hero-image">
-                        <div class="feature-mockup">
-                            <i class="fas fa-head-side-cough"></i>
-                        </div>
+                    <div class="feature-hero-mockup">
+                        <img src="/attached_assets/Cropped  Dashboard - Web_1752476091855.png" alt="Diabetology Practice Dashboard" class="img-fluid dashboard-mockup">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Feature Capabilities Section -->
+    <!-- Capabilities Section -->
     <section class="feature-capabilities-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">Comprehensive ENT Practice Features</h2>
-                    <p class="section-subtitle">Everything you need for exceptional otolaryngology care</p>
+                    <h2 class="section-title">Comprehensive Diabetology Practice Features</h2>
+                    <p class="section-subtitle">Everything you need to deliver exceptional diabetes care</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 mb-4">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-stethoscope"></i>
+                            <i class="fas fa-notes-medical"></i>
                         </div>
-                        <h4>Specialized Examination Tools</h4>
-                        <p>Comprehensive ENT examination templates for ear, nose, and throat assessments with detailed documentation and diagnostic support tools.</p>
+                        <h4>Diabetes-Specific Clinical Documentation</h4>
+                        <p>Capture Chief Complaints, Vitals, Blood Sugar, BMI, BP, HbA1c and other key metrics with structured templates for new and follow-up visits.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check"></i>
+                            <span>HbA1c & glucose tracking</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-microphone-alt"></i>
+                            <i class="fas fa-calendar-check"></i>
                         </div>
-                        <h4>Hearing Assessment & Audiometry</h4>
-                        <p>Integrated hearing tests and audiometry results management with comprehensive tracking of hearing loss progression and treatment outcomes.</p>
+                        <h4>Follow-Up Scheduling & Reminders</h4>
+                        <p>Schedule routine diabetic checkups (monthly, quarterly) in advance with automated reminders via WhatsApp or Email.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check"></i>
+                            <span>Automated follow-up reminders</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-procedures"></i>
+                            <i class="fas fa-pills"></i>
                         </div>
-                        <h4>Surgical Planning & Documentation</h4>
-                        <p>Complete surgical workflow management for ENT procedures including pre-operative planning, surgical notes, and post-operative care tracking.</p>
+                        <h4>Smart Prescription Management</h4>
+                        <p>Preloaded diabetic drug templates (Metformin, Insulin, Gliptins) with personalized dosage instructions and lifestyle advice.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check"></i>
+                            <span>Insulin regimen templates</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-allergies"></i>
+                            <i class="fas fa-comments"></i>
                         </div>
-                        <h4>Allergy Management</h4>
-                        <p>Comprehensive allergy testing documentation, treatment planning, and patient education tools with detailed tracking of allergic reactions and treatments.</p>
+                        <h4>Patient Communication Made Easy</h4>
+                        <p>Share prescriptions, lab test requests, receipts, and progress summaries instantly with automated medication refill reminders.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check"></i>
+                            <span>WhatsApp integration</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-video"></i>
+                            <i class="fas fa-calculator"></i>
                         </div>
-                        <h4>Endoscopic Image Management</h4>
-                        <p>Advanced image and video management for endoscopic procedures with comparison tools and patient education materials integration.</p>
+                        <h4>Billing & Payment Tracking</h4>
+                        <p>Bill for consultations, insulin training, dietary counseling, and investigations with instant receipt generation.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check"></i>
+                            <span>Automated billing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Powerful Reports & Analytics</h4>
+                        <p>Monitor trends in HbA1c levels, glucose readings, patient visit frequency with comprehensive financial and operational reports.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check"></i>
+                            <span>HbA1c trend analysis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Multi-User, Multi-Device Access</h4>
+                        <p>Add users: Diabetologist, Dietitian, Diabetes Educator, Receptionist with real-time access across Web, Android, and iOS.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check"></i>
+                            <span>Role-based permissions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>Lab Integration & Tracking</h4>
+                        <p>Add lab test results: Fasting/PP glucose, HbA1c, Lipid Profile, Renal function with external report uploads and trend annotation.</p>
+                        <div class="feature-check">
+                            <i class="fas fa-check"></i>
+                            <span>Lab result trends</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Security & Accessibility Section -->
-    <section class="feature-security-section py-5">
+    <!-- Security & Compliance Section -->
+    <section class="feature-security-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="security-content text-center">
-                        <h2 class="section-title mb-3">Built for ENT Excellence</h2>
-                        <p class="section-subtitle text-muted mb-5">Advanced features tailored specifically for ENT practices</p>
-                        
-                        <div class="row g-4 mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Built for Diabetes Care Excellence</h2>
+                    <p class="section-subtitle">Advanced features designed specifically for diabetology practices</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="security-features-grid">
+                        <div class="row g-4">
                             <div class="col-lg-6 col-md-12">
                                 <div class="security-feature-card">
                                     <div class="security-feature-header">
                                         <div class="security-feature-icon">
-                                            <i class="fas fa-headphones"></i>
+                                            <i class="fas fa-chart-line"></i>
                                         </div>
-                                        <h4>Audiometry Integration</h4>
+                                        <h4>Chronic Disease Management</h4>
                                     </div>
-                                    <p>Direct integration with audiometry equipment for seamless test result import and comprehensive hearing health tracking.</p>
+                                    <p>Longitudinal patient history tracking perfect for chronic diabetes case monitoring with detailed diagnosis notes and ongoing treatment plans.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
                                 <div class="security-feature-card">
                                     <div class="security-feature-header">
                                         <div class="security-feature-icon">
-                                            <i class="fas fa-temperature-high"></i>
+                                            <i class="fas fa-clock"></i>
                                         </div>
-                                        <h4>Infection Control Protocols</h4>
+                                        <h4>Customizable Follow-up Timelines</h4>
                                     </div>
-                                    <p>Specialized infection control and sterilization tracking for ENT equipment and procedures with compliance monitoring.</p>
+                                    <p>Customize follow-up timelines based on patient condition (Type 1, Type 2, gestational diabetes) with compliance tracking and appointment trends.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
                                 <div class="security-feature-card">
                                     <div class="security-feature-header">
                                         <div class="security-feature-icon">
-                                            <i class="fas fa-calendar-alt"></i>
+                                            <i class="fas fa-heartbeat"></i>
                                         </div>
-                                        <h4>Specialized Scheduling</h4>
+                                        <h4>Comprehensive Vitals Tracking</h4>
                                     </div>
-                                    <p>Advanced scheduling for ENT procedures, hearing tests, and follow-up appointments with automated patient preparation instructions.</p>
+                                    <p>Track all diabetes-related metrics including blood sugar levels, BMI, blood pressure, and HbA1c with trend analysis and alerts.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
                                 <div class="security-feature-card">
                                     <div class="security-feature-header">
                                         <div class="security-feature-icon">
-                                            <i class="fas fa-shield-alt"></i>
+                                            <i class="fas fa-graduation-cap"></i>
                                         </div>
-                                        <h4>Medical Compliance & Documentation</h4>
+                                        <h4>Patient Education Tools</h4>
                                     </div>
-                                    <p>Comprehensive documentation and compliance tools specific to ENT practice requirements and medical regulations.</p>
+                                    <p>Include diet chart links, lifestyle advice, and educational materials in prescriptions to improve patient compliance and outcomes.</p>
                                 </div>
                             </div>
                         </div>
@@ -302,12 +367,14 @@
                 <div class="col-lg-12 mb-4">
                     <div class="benefits-list">
                         <ul class="benefits-grid">
-                            <li><i class="fas fa-check-circle"></i> ENT-Specific EMR with Customizable Templates</li>
-                            <li><i class="fas fa-check-circle"></i> Integrated Appointment, Billing & Communication Tools</li>
-                            <li><i class="fas fa-check-circle"></i> Designed for Solo Practices, Multi-Doctor ENT Clinics & Hospitals</li>
-                            <li><i class="fas fa-check-circle"></i> Full Patient Journey – From Registration to Reports – In One Place</li>
-                            <li><i class="fas fa-check-circle"></i> Audiometry and endoscopy integration</li>
-                            <li><i class="fas fa-check-circle"></i> Automated follow-up and recall system</li>
+                            <li><i class="fas fa-check-circle"></i> Solo Diabetology Clinics</li>
+                            <li><i class="fas fa-check-circle"></i> Multi-Speciality Diabetes Centers</li>
+                            <li><i class="fas fa-check-circle"></i> Hospital OPD Diabetology Departments</li>
+                            <li><i class="fas fa-check-circle"></i> Institutions & Preventive Health Clinics</li>
+                            <li><i class="fas fa-check-circle"></i> Streamlined diabetes care workflows</li>
+                            <li><i class="fas fa-check-circle"></i> Improved patient compliance tracking</li>
+                            <li><i class="fas fa-check-circle"></i> Enhanced chronic disease management</li>
+                            <li><i class="fas fa-check-circle"></i> Comprehensive lab integration</li>
                         </ul>
                     </div>
                 </div>
@@ -327,10 +394,10 @@
                 <div class="col-lg-8">
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <p class="testimonial-text">"With Clinicia, I've eliminated paper records. The ability to send audiometry reports, prescriptions, and receipts on WhatsApp has significantly improved patient satisfaction."</p>
+                            <p class="testimonial-text">"Clinicia has completely digitized my practice. I now track HbA1c trends, share prescriptions instantly, and keep follow-ups organized—all without paperwork."</p>
                             <div class="testimonial-author">
-                                <strong>Dr. Neha Deshmukh</strong>
-                                <span>ENT Consultant, Pune</span>
+                                <strong>Dr. Rakesh Sharma</strong>
+                                <span>Diabetologist, Ahmedabad</span>
                             </div>
                         </div>
                     </div>
@@ -345,31 +412,31 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
                     <div class="cta-content">
-                        <h2 class="section-title text-white">Upgrade Your ENT Practice with Clinicia</h2>
+                        <h2 class="section-title text-white">Ready to Modernize Your Diabetes Clinic?</h2>
                         <p class="section-description text-white">
-                            Digitize your ENT care—from consultation to communication—seamlessly and securely
+                            Deliver personalized, consistent, and tech-powered diabetic care
                         </p>
                         <div class="cta-features">
                             <div class="row g-4 text-white">
                                 <div class="col-md-4">
                                     <div class="cta-feature">
-                                        <i class="fas fa-ear-listen"></i>
-                                        <h4>ENT Specialized Tools</h4>
-                                        <p>Built for ENT examination workflows</p>
+                                        <i class="fas fa-chart-line"></i>
+                                        <h4>HbA1c Tracking</h4>
+                                        <p>Comprehensive diabetes monitoring</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="cta-feature">
-                                        <i class="fas fa-wave-square"></i>
-                                        <h4>Audiometry Integration</h4>
-                                        <p>Seamless hearing assessment tools</p>
+                                        <i class="fas fa-calendar-check"></i>
+                                        <h4>Follow-up Management</h4>
+                                        <p>Automated chronic care scheduling</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="cta-feature">
-                                        <i class="fas fa-stethoscope"></i>
-                                        <h4>Surgical Planning</h4>
-                                        <p>Comprehensive procedure management</p>
+                                        <i class="fas fa-pills"></i>
+                                        <h4>Smart Prescriptions</h4>
+                                        <p>Diabetes-specific drug templates</p>
                                     </div>
                                 </div>
                             </div>
@@ -379,7 +446,7 @@
                                 <i class="fas fa-rocket me-2"></i>Start Free Trial
                             </a>
                             <a href="#demo" class="btn btn-outline-light btn-lg">
-                                <i class="fas fa-calendar me-2"></i>Schedule a Demo
+                                <i class="fas fa-calendar me-2"></i>Book a Demo
                             </a>
                         </div>
                     </div>
@@ -459,8 +526,18 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <!-- Custom JS -->
     <script src="/script.js"></script>
-    <script src="/features.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,128 @@
+ Clinicia for Diabetologists
+Simplify Diabetes Care with Smart EMR & Clinic Management
+Managing diabetes involves continuous monitoring, lifestyle guidance, regular follow-ups, and lab investigations. Clinicia is designed to help Diabetologists streamline their clinic operations while providing highly personalized, efficient, and long-term care for chronic patients.
+
+📋 Diabetes-Specific Clinical Documentation
+Capture Chief Complaints, Vitals, Blood Sugar, BMI, BP, HbA1c and other key metrics
+
+
+Maintain detailed Diagnosis Notes and Ongoing Treatment Plans
+
+
+Add lab test results: Fasting/PP glucose, HbA1c, Lipid Profile, Renal function
+
+
+Upload external reports and annotate test trends
+
+
+Use structured templates for new and follow-up visits
+
+
+Maintain longitudinal patient history, perfect for chronic case monitoring
+
+
+
+📆 Follow-Up Scheduling & Reminders
+Schedule routine diabetic checkups (monthly, quarterly) in advance
+
+
+Send appointment reminders and confirmations via WhatsApp or Email
+
+
+Auto-remind patients about missed follow-ups or overdue tests
+
+
+Customize follow-up timelines based on patient condition (e.g., Type 1, Type 2, gestational diabetes)
+
+
+Track patient compliance with follow-ups and monitor appointment trends
+
+
+
+💊 Smart Prescription Management
+Preloaded diabetic drug templates (e.g., Metformin, Insulin, Gliptins)
+
+
+Save combinations for common treatment plans (e.g., OADs, Insulin Regimens)
+
+
+Prescriptions printed or shared via WhatsApp with clinic branding
+
+
+Include personalized dosage instructions, lifestyle advice, and diet chart links
+
+
+Digital signatures and custom headers for professional documentation
+
+
+
+📲 Patient Communication Made Easy
+Share prescriptions, lab test requests, receipts, and progress summaries instantly
+
+
+Send automated WhatsApp reminders for medication refills, test appointments
+
+
+Welcome/thank-you messages and birthday greetings to patients
+
+
+Maintain long-term communication for chronic diabetes management
+
+
+
+💵 Billing & Payment Tracking
+Bill for consultations, insulin training, dietary counseling, and investigations
+
+
+Collect partial/full payments and send instant WhatsApp/email receipts
+
+
+Role-based access for billing and collection activities
+
+
+Financial reports: revenue, dues, trends in new vs returning patients
+
+
+Export reports in Excel or PDF for accounting and review
+
+
+
+📊 Powerful Reports & Analytics
+Monitor trends in HbA1c levels, glucose readings, patient visit frequency
+
+
+Financial and operational reports by doctor, date range, or patient segment
+
+
+Non-financial reports to assess new vs repeat patients, checkup compliance
+
+
+Data export with privacy-controlled access
+
+
+
+🧑‍🤝‍🧑 Multi-User, Multi-Device Access
+Add users: Diabetologist, Dietitian, Diabetes Educator, Receptionist
+
+
+Real-time access across Web, Android, and iOS
+
+
+Fully secure, role-based data visibility and permissions
+
+
+
+🏥 Clinicia for Every Diabetes Care Setup
+✔ Solo Diabetology Clinics
+ ✔ Multi-Speciality Diabetes Centers
+ ✔ Hospital OPD Diabetology Departments
+ ✔ Institutions & Preventive Health Clinics
+
+👩‍⚕️ Doctor’s Experience
+“Clinicia has completely digitized my practice. I now track HbA1c trends, share prescriptions instantly, and keep follow-ups organized—all without paperwork.”
+ — Dr. Rakesh Sharma, Diabetologist, Ahmedabad
+
+🎯 Ready to Modernize Your Diabetes Clinic?
+Deliver personalized, consistent, and tech-powered diabetic care.
+👉 [Book a Free Demo]
+ 👉 [Start Free – No Credit Card Required]
