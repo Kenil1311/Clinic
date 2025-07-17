@@ -7812,3 +7812,30 @@ html {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
+/* Benefits Grid Styling */
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.benefit-item i {
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* Responsive adjustments for benefits grid */
+@media (max-width: 768px) {
+    .benefits-list .row .col-md-6 {
+        margin-bottom: 1rem;
+    }
+    
+    .benefit-item {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+}
