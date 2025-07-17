@@ -209,6 +209,8 @@ html {
     border-radius: 0;
     display: flex;
     align-items: center;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
 }
 
 .dropdown-item:hover,
@@ -230,10 +232,11 @@ html {
     display: inline-block !important;
     text-align: center;
     font-size: 14px !important;
-    margin-right: 8px !important;
+    margin-right: 12px !important;
     vertical-align: middle;
     font-family: "Font Awesome 6 Free" !important;
     font-weight: 900 !important;
+    flex-shrink: 0;
 }
 
 .dropdown-item:hover i {
@@ -243,14 +246,15 @@ html {
 }
 
 .dropdown-header {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 700;
-    color: var(--text-color);
-    padding: 0.75rem 1.5rem 0.5rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem 0.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    background: rgba(255, 77, 77, 0.03);
 }
 
 /* Mega Menu Styles */
@@ -261,16 +265,30 @@ html {
 .mega-menu {
     min-width: 700px;
     max-width: 900px;
-    padding: 1.5rem;
+    padding: 2rem;
     left: 50%;
     transform: translateX(-50%);
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .mega-menu .container {
     max-width: 100%;
     padding: 0;
+}
+
+.mega-menu .col-md-6 {
+    padding: 0 1rem;
+}
+
+.mega-menu .col-md-6:first-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mega-menu .col-6 {
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .mega-menu .dropdown-item {
