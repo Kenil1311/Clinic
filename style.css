@@ -57,51 +57,80 @@ html {
     transition: width 0.3s ease;
 }
 
-/* Compact Breadcrumb Styles */
+/* Enhanced Breadcrumb Styles */
 .breadcrumb-section {
-    background: #f8f9fa;
-    padding: 12px 0;
-    border-bottom: 1px solid #e9ecef;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 16px 0;
+    border-bottom: 2px solid rgba(255, 77, 77, 0.1);
     position: relative;
     z-index: 10;
     margin-top: 76px; /* Account for fixed navbar */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .breadcrumb-custom {
     background: transparent;
     padding: 0;
     margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.breadcrumb-custom .breadcrumb-item {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: var(--transition);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 77, 77, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 14px;
     font-weight: 500;
 }
 
-.breadcrumb-custom .breadcrumb-item {
-    color: #6c757d;
-    display: flex;
-    align-items: center;
-}
-
 .breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
-    content: "/";
-    color: #6c757d;
-    margin: 0 10px;
-    font-size: 14px;
+    content: "→";
+    color: var(--primary-color);
+    margin: 0 0.5rem;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .breadcrumb-custom .breadcrumb-item a {
-    color: var(--primary-color);
+    color: var(--text-light);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: var(--transition);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 77, 77, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
     font-weight: 500;
 }
 
 .breadcrumb-custom .breadcrumb-item a:hover {
-    color: var(--primary-dark);
-    text-decoration: underline;
+    color: var(--primary-color);
+    background: rgba(255, 77, 77, 0.1);
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 77, 77, 0.2);
 }
 
 .breadcrumb-custom .breadcrumb-item.active {
-    color: #495057;
+    color: white;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
     font-weight: 600;
 }
 
