@@ -87,9 +87,15 @@
     .breadcrumb-custom {
         font-size: 13px;
         gap: 0.25rem;
+        justify-content: flex-start;
     }
     
     .breadcrumb-custom .breadcrumb-item {
+        padding: 0.4rem 0.8rem;
+        font-size: 13px;
+    }
+    
+    .breadcrumb-custom .breadcrumb-item a {
         padding: 0.4rem 0.8rem;
         font-size: 13px;
     }
