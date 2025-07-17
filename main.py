@@ -1,5 +1,6 @@
-from flask import Flask, send_from_directory, send_file
+from flask import Flask, send_from_directory, send_file, Response
 import os
+from template_handler import process_page_template, load_template_file
 
 app = Flask(__name__)
 
@@ -70,55 +71,107 @@ def images():
 # Solutions Pages Routes
 @app.route('/dental')
 def dental():
-    return send_file('dental.html')
+    with open('dental.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Dental Practice")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/dermatology')
 def dermatology():
-    return send_file('dermatology.html')
+    with open('dermatology.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Dermatology Practice")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/solo')
 def solo():
-    return send_file('solo.html')
+    with open('solo.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Solo Practice")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/gynaecology')
 def gynaecology():
-    return send_file('gynaecology.html')
+    with open('gynaecology.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Gynaecology Practice")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/physiotherapy')
 def physiotherapy():
-    return send_file('physiotherapy.html')
+    with open('physiotherapy.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Physiotherapy Practice")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/multiple')
 def multiple():
-    return send_file('multiple.html')
+    with open('multiple.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Multiple Doctors")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/ophthalmology')
 def ophthalmology():
-    return send_file('ophthalmology.html')
+    with open('ophthalmology.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Ophthalmology Practice")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/multi-speciality')
 def multi_speciality():
-    return send_file('multi-speciality.html')
+    with open('multi-speciality.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Multi-Speciality Clinic")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/ent')
 def ent():
-    return send_file('ent.html')
+    with open('ent.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "ENT Practice")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/cardiology')
 def cardiology():
-    return send_file('cardiology.html')
+    with open('cardiology.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Cardiology Practice")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/multi-branch')
 def multi_branch():
-    return send_file('multi-branch.html')
+    with open('multi-branch.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Multi-Branch Setup")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/hospitals')
 def hospitals():
-    return send_file('hospitals.html')
+    with open('hospitals.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Dental Colleges")
+    return Response(processed_content, mimetype='text/html')
 
 @app.route('/diabetology')
 def diabetology():
-    return send_file('diabetology.html')
+    with open('diabetology.html', 'r', encoding='utf-8') as f:
+        page_content = f.read()
+    processed_content = process_page_template(page_content, "Diabetology Practice")
+    return Response(processed_content, mimetype='text/html')
+
+# Template file routes
+@app.route('/header.html')
+def header():
+    return send_file('header.html')
+
+@app.route('/footer.html')
+def footer():
+    return send_file('footer.html')
+
+@app.route('/breadcrumbs.html')
+def breadcrumbs():
+    return send_file('breadcrumbs.html')
 
 @app.route('/<path:path>')
 def static_files(path):
