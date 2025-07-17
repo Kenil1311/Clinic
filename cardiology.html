@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardiology Practice Management Software - Clinicia</title>
-    <meta name="description" content="Specialized practice management software for cardiologists with comprehensive cardiac care tools, monitoring, and patient management solutions.">
+    <title>Cardiology EMR & Clinic Management Software | Clinicia</title>
+    <meta name="description" content="Clinicia helps Cardiologists manage patient history, ECG/Echo reports, prescriptions, follow-ups, and billing. Perfect for solo or multi-doctor cardiac care clinics.">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/features.css">
-    <link rel="stylesheet" href="/feature-page.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feature-page.css">
 </head>
 <body>
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress"></div>
-
-    <!-- Header (Sticky & Responsive) -->
-    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg modern-navbar fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+                <img src="https://clinicia.com/images/logo.png" alt="Clinicia" class="logo">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -36,12 +35,12 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                     
                     <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#features" data-bs-toggle="dropdown" aria-expanded="false">
                             Features
                         </a>
                         <div class="dropdown-menu mega-menu">
@@ -49,23 +48,23 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Core Features</h6>
-                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
-                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
-                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
-                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
-                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
-                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
-                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                        <a class="dropdown-item" href="/emr" onclick="location.href='/emr'"><i class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="/prescription" onclick="location.href='/prescription'"><i class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="/appointment" onclick="location.href='/appointment'"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="/financial" onclick="location.href='/financial'"><i class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="/consent" onclick="location.href='/consent'"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="/expense" onclick="location.href='/expense'"><i class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="/inventory" onclick="location.href='/inventory'"><i class="fas fa-boxes me-2"></i>Inventory</a>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Advanced Features</h6>
-                                        <a class="dropdown-item" href="/images"><i class="fas fa-image me-2"></i>Images</a>
-                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
-                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
-                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
-                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
-                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
-                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                        <a class="dropdown-item" href="/images" onclick="location.href='/images'"><i class="fas fa-image me-2"></i>Images</a>
+                                        <a class="dropdown-item" href="/communication" onclick="location.href='/communication'"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="/users" onclick="location.href='/users'"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="/membership" onclick="location.href='/membership'"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="/social" onclick="location.href='/social'"><i class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="/analytics" onclick="location.href='/analytics'"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="/dental-lab" onclick="location.href='/dental-lab'"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
                                     </div>
                                 </div>
                             </div>
@@ -120,166 +119,214 @@
                     </li>
                     
                     <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+                    
+                    <!-- Support/Resources Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#support" data-bs-toggle="dropdown" aria-expanded="false">
+                            Support / Resources
+                        </a>
+                        <ul class="dropdown-menu modern-dropdown">
+                            <li><a class="dropdown-item" href="#faq"><i class="fas fa-question-circle me-2"></i>FAQ</a></li>
+                            <li><a class="dropdown-item" href="#knowledge"><i class="fas fa-book me-2"></i>Knowledge Base</a></li>
+                            <li><a class="dropdown-item" href="#tutorials"><i class="fas fa-play-circle me-2"></i>Tutorials & Video Demo</a></li>
+                        </ul>
+                    </li>
+                    
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
                 
-                <div class="navbar-actions">
-                    <a href="#" class="btn btn-outline-primary">Login</a>
+                <div class="navbar-nav">
+                    <a href="#login" class="btn btn-outline-primary">Login</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Feature Hero Section -->
+    <!-- Hero Section -->
     <section class="feature-hero-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="feature-hero-content">
-                        <!-- Breadcrumb in Hero -->
-                        <nav aria-label="breadcrumb" class="hero-breadcrumb mb-3">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
-                                <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Cardiology</li>
-                            </ol>
-                        </nav>
-                        
-                        <h1 class="hero-title">Cardiology Practice Management Software</h1>
-                        <p class="hero-subtitle">Advanced cardiac care management tools with comprehensive monitoring, diagnostics, and patient management for cardiologists</p>
-                        
-                        <div class="feature-hero-actions">
-                            <a href="#" class="btn btn-primary me-3">Start Free Trial</a>
-                            <a href="#" class="btn btn-outline-primary">Book a Demo</a>
-                        </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Cardiology</li>
+                        </ol>
+                    </nav>
+                    <h1 class="feature-hero-title">Clinicia for Cardiologists</h1>
+                    <p class="feature-hero-subtitle">Streamline Cardiac Care with Intelligent EMR & Clinic Management</p>
+                    <p class="feature-hero-description">
+                        Cardiology practices demand precision, structured case documentation, multi-visit tracking, and seamless communication with patients and referring physicians. Clinicia empowers cardiologists with a smart EMR and clinic management solution to deliver consistent, high-quality cardiac care.
+                    </p>
+                    <div class="feature-hero-buttons">
+                        <a href="#trial" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-rocket me-2"></i>Start Free Trial
+                        </a>
+                        <a href="#demo" class="btn btn-outline-danger btn-lg">
+                            <i class="fas fa-calendar me-2"></i>Book a Demo
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="feature-hero-image">
-                        <div class="feature-mockup">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
+                    <div class="feature-mockup">
+                        <img src="/attached_assets/Dashboard - Web_1752476091855.png" alt="Cardiology Dashboard" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Feature Capabilities Section -->
+    <!-- Capabilities Section -->
     <section class="feature-capabilities-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">Key Capabilities for Cardiology Practice</h2>
-                    <p class="section-subtitle">Comprehensive tools designed to enhance cardiac care delivery and patient outcomes</p>
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Comprehensive Cardiology Practice Management</h2>
+                    <p class="section-subtitle">Everything you need to manage cardiac care efficiently</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 mb-4">
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heartbeat"></i>
                         </div>
-                        <h4>Cardiac Assessment & Monitoring</h4>
-                        <p>Comprehensive cardiac evaluation tools including ECG interpretation, stress test management, and continuous monitoring with real-time alerts and notifications.</p>
+                        <h4>Tailored EMR for Cardiac Cases</h4>
+                        <p>Record Chief Complaints, detailed cardiac history, and Risk Factors. Structured documentation for Hypertension, Arrhythmias, CAD, CHF, etc.</p>
+                        <ul class="feature-list">
+                            <li>Capture vital parameters: BP, Pulse, ECG, SpO2, Weight, BMI</li>
+                            <li>Upload and annotate reports from ECG, Echo, TMT, Angiography, Holter</li>
+                            <li>Longitudinal view of medical history across visits</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-4">
+                
+                <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-prescription-bottle-alt"></i>
                         </div>
-                        <h4>Risk Stratification & Prevention</h4>
-                        <p>Advanced risk assessment tools for cardiovascular disease prevention with personalized treatment plans and lifestyle modification tracking.</p>
+                        <h4>Smart Prescription Writing</h4>
+                        <p>Create and reuse cardiology-specific prescription templates (e.g., Beta-blockers, Statins, Antiplatelets, ACE inhibitors)</p>
+                        <ul class="feature-list">
+                            <li>Include dosage, timing, special alerts for high-risk meds</li>
+                            <li>Print or share digitally signed prescriptions on custom letterhead</li>
+                            <li>Add emergency management protocol (e.g., nitroglycerin, aspirin use)</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-4">
+                
+                <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
-                            <i class="fas fa-procedures"></i>
+                            <i class="fas fa-calendar-check"></i>
                         </div>
-                        <h4>Cardiac Procedure Management</h4>
-                        <p>Complete workflow management for cardiac procedures including catheterization, angioplasty, and surgical interventions with detailed documentation.</p>
+                        <h4>Appointment Scheduling & Patient Reminders</h4>
+                        <p>Book initial consults, reviews, test discussions in one calendar</p>
+                        <ul class="feature-list">
+                            <li>Send automatic WhatsApp/Email reminders for appointments and test results</li>
+                            <li>Maintain clear view of daily, weekly, monthly schedules</li>
+                            <li>Track missed appointments and auto-send follow-up messages</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-4">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <i class="fas fa-pills"></i>
-                        </div>
-                        <h4>Medication Management</h4>
-                        <p>Specialized cardiac medication tracking with drug interaction alerts, dosage optimization, and patient compliance monitoring tools.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 mb-4">
+                
+                <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <h4>Remote Monitoring Integration</h4>
-                        <p>Seamless integration with cardiac monitoring devices and wearable technology for continuous patient health tracking and early intervention.</p>
+                        <h4>Patient Communication & Follow-Ups</h4>
+                        <p>Share prescriptions, reports, bills, and receipts via WhatsApp or Email</p>
+                        <ul class="feature-list">
+                            <li>Send educational content: diet charts, lifestyle modification PDFs</li>
+                            <li>Engage patients with thank-you notes, birthday wishes, and checkup alerts</li>
+                            <li>3/6/12-month recall and risk re-evaluation reminders</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h4>Billing & Payment Tracking</h4>
+                        <p>Bill for consultations, procedures (e.g., ECG, Echo), and follow-ups</p>
+                        <ul class="feature-list">
+                            <li>Partial/full payment options, instant receipt sharing on WhatsApp</li>
+                            <li>Download or email legal invoices with clinic branding</li>
+                            <li>Reports on revenue, unpaid balances, doctor-wise billing trends</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Cardiology-Focused Analytics & MIS</h4>
+                        <p>Doctor-wise, procedure-wise, and test-wise revenue tracking</p>
+                        <ul class="feature-list">
+                            <li>Track recall compliance, improvement trends, and revisit frequency</li>
+                            <li>Export reports to Excel or PDF for reviews and audits</li>
+                            <li>Access control to secure clinical and financial information</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Security & Accessibility Section -->
-    <section class="feature-security-section py-5">
+    <!-- Security Section -->
+    <section class="feature-security-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="security-content text-center">
-                        <h2 class="section-title mb-3">Built for Cardiac Care Excellence</h2>
-                        <p class="section-subtitle text-muted mb-5">Advanced features tailored specifically for cardiology practices</p>
-                        
-                        <div class="row g-4 mb-5">
-                            <div class="col-lg-6 col-md-12">
-                                <div class="security-feature-card">
-                                    <div class="security-feature-header">
-                                        <div class="security-feature-icon">
-                                            <i class="fas fa-hospital-alt"></i>
-                                        </div>
-                                        <h4>Emergency Care Protocols</h4>
-                                    </div>
-                                    <p>Advanced emergency response systems with cardiac event protocols, critical care pathways, and immediate intervention guidelines.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="security-feature-card">
-                                    <div class="security-feature-header">
-                                        <div class="security-feature-icon">
-                                            <i class="fas fa-microscope"></i>
-                                        </div>
-                                        <h4>Diagnostic Integration</h4>
-                                    </div>
-                                    <p>Seamless integration with cardiac diagnostic equipment including ECG machines, echo systems, and cardiac catheterization labs.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="security-feature-card">
-                                    <div class="security-feature-header">
-                                        <div class="security-feature-icon">
-                                            <i class="fas fa-user-friends"></i>
-                                        </div>
-                                        <h4>Patient Education Tools</h4>
-                                    </div>
-                                    <p>Comprehensive patient education resources for cardiac health, lifestyle modifications, and treatment plan understanding.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="security-feature-card">
-                                    <div class="security-feature-header">
-                                        <div class="security-feature-icon">
-                                            <i class="fas fa-shield-alt"></i>
-                                        </div>
-                                        <h4>Cardiology Compliance & Documentation</h4>
-                                    </div>
-                                    <p>Specialized documentation and compliance tools for cardiology practice requirements with automated reporting features.</p>
-                                </div>
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <div class="security-badge mb-3">
+                        <i class="fas fa-shield-alt me-2"></i>
+                        <span>Multi-User Access Across Devices</span>
+                    </div>
+                    <h2 class="section-title mb-3">Built for Cardiac Care Teams</h2>
+                    <p class="section-subtitle text-muted">Secure, collaborative platform for comprehensive cardiology practice management</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-users-cog"></i>
                             </div>
                         </div>
+                        <h5 class="card-title mb-2">Team Collaboration</h5>
+                        <p class="card-text text-muted">Add team members: Cardiologists, Technicians, Reception Staff with role-based access control.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Real-Time Sync</h5>
+                        <p class="card-text text-muted">Real-time synchronization across Web, Android & iOS devices for seamless workflow.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Secure Access Control</h5>
+                        <p class="card-text text-muted">Define roles: who can access/edit/view clinical or financial modules with complete security.</p>
                     </div>
                 </div>
             </div>
@@ -298,11 +345,14 @@
                 <div class="col-lg-12 mb-4">
                     <div class="benefits-list">
                         <ul class="benefits-grid">
-                            <li><i class="fas fa-check-circle"></i> Enhance cardiac care delivery and patient outcomes</li>
-                            <li><i class="fas fa-check-circle"></i> Improve diagnostic accuracy with integrated monitoring</li>
-                            <li><i class="fas fa-check-circle"></i> Streamline cardiac procedure workflows and documentation</li>
-                            <li><i class="fas fa-check-circle"></i> Optimize medication management and patient compliance</li>
-                            <li><i class="fas fa-check-circle"></i> Reduce administrative burden with automated systems</li>
+                            <li><i class="fas fa-check-circle"></i> Structured EMR for cardiac cases with vital parameter tracking</li>
+                            <li><i class="fas fa-check-circle"></i> Smart prescription templates for cardiology medications</li>
+                            <li><i class="fas fa-check-circle"></i> Comprehensive appointment scheduling with automated reminders</li>
+                            <li><i class="fas fa-check-circle"></i> Patient communication and educational content sharing</li>
+                            <li><i class="fas fa-check-circle"></i> Billing for consultations and cardiac procedures</li>
+                            <li><i class="fas fa-check-circle"></i> Analytics and MIS for cardiology practice insights</li>
+                            <li><i class="fas fa-check-circle"></i> Multi-user access for cardiac care teams</li>
+                            <li><i class="fas fa-check-circle"></i> Perfect for solo to multi-doctor heart clinics</li>
                         </ul>
                     </div>
                 </div>
@@ -321,12 +371,19 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <p class="testimonial-text">"The cardiac monitoring integration and comprehensive patient tracking have revolutionized our practice. We can now provide better preventive care and early intervention for our patients."</p>
-                            <div class="testimonial-author">
-                                <strong>Dr. Ravi Patel</strong>
-                                <span>Cardiologist</span>
-                            </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            "Clinicia brings my cardiology clinic into the digital age. ECG tracking, repeat visit summaries, billing—all from one place. My follow-up rates have improved significantly."
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Dr. Anirudh Iyer</h5>
+                            <span>Senior Cardiologist, Mumbai</span>
                         </div>
                     </div>
                 </div>
@@ -340,36 +397,36 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
                     <div class="cta-content">
-                        <h2 class="section-title text-white">Ready to Transform Your Cardiology Practice?</h2>
+                        <h2 class="section-title text-white">Transform Your Cardiology Practice with Clinicia</h2>
                         <p class="section-description text-white">
-                            Join thousands of cardiologists who trust Clinicia for their practice management needs
+                            Let technology support your mission to save hearts. Clinicia offers a holistic platform for clinical excellence and operational efficiency.
                         </p>
                         <div class="cta-features">
                             <div class="row g-4 text-white">
                                 <div class="col-md-4">
                                     <div class="cta-feature">
-                                        <i class="fas fa-heartbeat"></i>
-                                        <h4>Cardiac Monitoring</h4>
-                                        <p>Advanced monitoring integration</p>
+                                        <i class="fas fa-heart"></i>
+                                        <h4>Cardiac Care Focused</h4>
+                                        <p>Specialized EMR for cardiology practices</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="cta-feature">
-                                        <i class="fas fa-pills"></i>
-                                        <h4>Medication Management</h4>
-                                        <p>Comprehensive drug tracking</p>
+                                        <i class="fas fa-bolt"></i>
+                                        <h4>Instant Setup</h4>
+                                        <p>Get started in under 5 minutes</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="cta-feature">
-                                        <i class="fas fa-chart-line"></i>
-                                        <h4>Patient Analytics</h4>
-                                        <p>Cardiac health insights</p>
+                                        <i class="fas fa-headset"></i>
+                                        <h4>Dedicated Support</h4>
+                                        <p>24/7 support from cardiac care experts</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="cta-buttons">
+                        <div class="cta-buttons mt-4">
                             <a href="#trial" class="btn btn-light btn-lg me-3">
                                 <i class="fas fa-rocket me-2"></i>Start Free Trial
                             </a>
@@ -384,64 +441,65 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="footer-brand">
-                        <img src="https://clinicia.com/assets/images/clinicia-logo.png" alt="Clinicia" class="footer-logo">
-                        <p>Complete practice management solution for modern healthcare providers.</p>
+                        <img src="https://clinicia.com/images/logo.png" alt="Clinicia" class="footer-logo mb-3">
+                        <p class="footer-description">
+                            Complete clinic management software for modern healthcare practices. Trusted by 25,000+ healthcare professionals.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-2">
-                    <h5>Product</h5>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Legal</h5>
                     <ul class="footer-links">
-                        <li><a href="/features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#integrations">Integrations</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#security">Security</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
-                    <h5>Support</h5>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Support</h5>
                     <ul class="footer-links">
                         <li><a href="#help">Help Center</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#status">Status</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#status">System Status</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
-                    <h5>Company</h5>
-                    <ul class="footer-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#careers">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2">
-                    <h5>Download</h5>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title">Download App</h5>
                     <div class="app-buttons">
                         <a href="#" class="app-button">
                             <i class="fab fa-apple"></i>
-                            <span>App Store</span>
+                            <div>
+                                <span>Download on the</span>
+                                <strong>App Store</strong>
+                            </div>
                         </a>
                         <a href="#" class="app-button">
                             <i class="fab fa-google-play"></i>
-                            <span>Play Store</span>
+                            <div>
+                                <span>Get it on</span>
+                                <strong>Google Play</strong>
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
+            <hr class="footer-divider">
             <div class="footer-bottom">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p>&copy; 2024 Clinicia. All rights reserved.</p>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer-copyright">© 2024 Clinicia. All rights reserved.</p>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="col-md-6">
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -452,8 +510,28 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JS -->
-    <script src="/script.js"></script>
-    <script src="/features.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        console.log('Clinicia Cardiology Page JavaScript loaded successfully');
+    </script>
 </body>
 </html>
