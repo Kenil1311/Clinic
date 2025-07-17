@@ -137,6 +137,10 @@ def diabetology():
 def ayurveda():
     return send_file('ayurveda.html')
 
+@app.route('/veterinary')
+def veterinary():
+    return send_file('veterinary.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):
