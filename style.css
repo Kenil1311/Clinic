@@ -257,6 +257,7 @@ html {
     border-bottom: 1px solid var(--border-color);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    background: transparent !important;
 }
 
 /* Mega Menu Styles */
@@ -298,6 +299,7 @@ html {
     padding-bottom: 0.5rem;
     margin-bottom: 0.75rem;
     font-size: 0.9rem;
+    background: transparent !important;
 }
 
 /* Features Menu Specific Styling */
