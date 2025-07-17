@@ -122,6 +122,18 @@ html {
     }
 }
 
+/* Font Awesome Icon Fix */
+.fas, .far, .fab, .fal, .fad, .fass, .fasr, .fasl, .fasq, .fask {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 5 Free", "Font Awesome 5 Pro", "FontAwesome" !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    text-rendering: auto !important;
+    line-height: 1 !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
 /* Modern Navigation */
 .modern-navbar {
     background: rgba(255, 255, 255, 0.95);
@@ -234,12 +246,15 @@ html {
     font-size: 14px !important;
     margin-right: 8px !important;
     vertical-align: middle;
-    font-family: "Font Awesome 6 Free" !important;
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 5 Free", "Font Awesome 5 Pro", "FontAwesome" !important;
     font-weight: 900 !important;
     background-color: transparent !important;
     background: none !important;
     border: none !important;
     box-shadow: none !important;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .dropdown-item:hover i {
