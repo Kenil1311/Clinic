@@ -116,6 +116,10 @@ def multi_branch():
 def hospitals():
     return send_file('hospitals.html')
 
+@app.route('/diabetology')
+def diabetology():
+    return send_file('diabetology.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):
