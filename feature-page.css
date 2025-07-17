@@ -291,6 +291,17 @@
     color: white;
 }
 
+/* Hide feature mockup images on mobile */
+@media (max-width: 768px) {
+    .feature-hero-image {
+        display: none;
+    }
+    
+    .feature-mockup {
+        display: none;
+    }
+}
+
 /* Feature Capabilities Section */
 .feature-capabilities-section {
     padding: 5rem 0;
