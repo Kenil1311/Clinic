@@ -432,6 +432,7 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Removed "Ideal For" section from Ayurveda page to simplify layout (July 17, 2025)
 ✓ Removed "Ideal For" section from cardiology page to simplify layout (July 17, 2025)
 ✓ Removed "Ideal For" section from oncology page to simplify layout (July 17, 2025)
+✓ Removed gray "Benefits Section" with 5 feature cards from oncology page to clean up duplicate content (July 17, 2025)
 
 
 
