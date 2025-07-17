@@ -113,6 +113,10 @@ def cardiology():
 def oncology():
     return send_file('oncology.html')
 
+@app.route('/nephrology')
+def nephrology():
+    return send_file('nephrology.html')
+
 @app.route('/multi-branch')
 def multi_branch():
     return send_file('multi-branch.html')

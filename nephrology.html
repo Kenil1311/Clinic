@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nephrology EMR & Dialysis Clinic Management Software | Clinicia</title>
+    <meta name="description" content="Clinicia offers EMR and clinic management software for nephrologists. Monitor kidney function, track dialysis schedules, manage prescriptions, and streamline patient care.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feature-page.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    
+                    <!-- Features Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='/features'; return false;">
+                            Features
+                        </a>
+                        <div class="dropdown-menu mega-menu features-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Core Features</h6>
+                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Advanced Features</h6>
+                                        <a class="dropdown-item" href="/images"><i class="fas fa-image me-2"></i>Images</a>
+                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Specialties</h6>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="/gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="/diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="/ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="/oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="/nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="/paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="/veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="/psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="/nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="/orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="/urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Practice Size</h6>
+                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
+                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    
+                    <!-- Support/Resources Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#support" data-bs-toggle="dropdown" aria-expanded="false">
+                            Support / Resources
+                        </a>
+                        <ul class="dropdown-menu modern-dropdown">
+                            <li><a class="dropdown-item" href="#faq"><i class="fas fa-question-circle me-2"></i>FAQ</a></li>
+                            <li><a class="dropdown-item" href="#knowledge"><i class="fas fa-book me-2"></i>Knowledge Base</a></li>
+                            <li><a class="dropdown-item" href="#tutorials"><i class="fas fa-play-circle me-2"></i>Tutorials & Video Demo</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="navbar-nav">
+                    <a href="#login" class="btn btn-outline-primary">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Feature Hero Section -->
+    <section class="feature-hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="feature-hero-content">
+                        <!-- Breadcrumb in Hero -->
+                        <nav aria-label="breadcrumb" class="hero-breadcrumb mb-3">
+                            <ol class="breadcrumb breadcrumb-hero">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Nephrology</li>
+                            </ol>
+                        </nav>
+                        
+                        <h1 class="feature-hero-title">Clinicia for Nephrologists</h1>
+                        <p class="feature-hero-subtitle">Digitally Manage Chronic Kidney Care with Precision & Continuity</p>
+                        <p class="feature-hero-description">
+                            Nephrology requires ongoing patient monitoring, multi-parameter diagnostics, and structured treatment planning. With Clinicia, nephrologists can streamline EMRs, manage dialysis schedules, track comorbidities, and engage patients with ease—ensuring both clinical accuracy and operational efficiency.
+                        </p>
+                        
+                        <div class="feature-hero-actions">
+                            <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
+                            <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-hero-image">
+                        <div class="feature-mockup">
+                            <i class="fas fa-procedures"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="feature-capabilities-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Comprehensive Nephrology Practice Management</h2>
+                    <p class="section-subtitle">Everything you need to manage chronic kidney care with precision and continuity</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-kidneys"></i>
+                        </div>
+                        <h4>Kidney-Centric EMR Tailored for Nephrologists</h4>
+                        <p>Record detailed clinical notes, track chronic kidney disease (CKD) stages, and maintain comprehensive patient documentation.</p>
+                        <ul class="feature-list">
+                            <li>Track CKD stages, GFR, Creatinine, Urea, Electrolytes</li>
+                            <li>Document investigations like USG Abdomen, KUB, Renal Doppler, Renal Biopsy</li>
+                            <li>Upload lab reports, images, and historical data for longitudinal care</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h4>Dialysis Management</h4>
+                        <p>Schedule Hemodialysis or Peritoneal Dialysis sessions with automatic reminders and comprehensive session tracking.</p>
+                        <ul class="feature-list">
+                            <li>Record session details: date, duration, dry weight, UF goal, BP, complications</li>
+                            <li>Track vascular access (AV fistula, catheter), maintenance, and follow-up</li>
+                            <li>Generate and share dialysis summaries and invoices</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h4>Follow-Up & Chronic Disease Monitoring</h4>
+                        <p>Schedule routine reviews, lab tests, and monitor CKD progression with automated reminders.</p>
+                        <ul class="feature-list">
+                            <li>Monitor CKD progression using custom forms or pre-loaded templates</li>
+                            <li>Send automated follow-up and test reminders via WhatsApp, Email, or SMS</li>
+                            <li>Monitor adherence to fluid, diet, medication, and lifestyle protocols</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Patient Communication & Engagement</h4>
+                        <p>Send prescriptions, diet charts, and educational materials to patients for better care compliance.</p>
+                        <ul class="feature-list">
+                            <li>Send diet charts, payment receipts, reports via WhatsApp or Email</li>
+                            <li>Remind patients about upcoming dialysis sessions or missed appointments</li>
+                            <li>Share educational material on kidney care, diet management, and CKD awareness</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h4>Billing, Packages & Payments</h4>
+                        <p>Generate invoices for consultations, dialysis sessions, investigations, and procedures with flexible payment options.</p>
+                        <ul class="feature-list">
+                            <li>Accept full or partial payments with auto-confirmation on WhatsApp</li>
+                            <li>Apply discounts or insurance-based billing based on membership or plan</li>
+                            <li>Download or share compliant invoices and receipts instantly</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4>MIS & Reports for Nephrology Practices</h4>
+                        <p>Analyze patient volume by CKD stage, dialysis type, and track comprehensive practice metrics.</p>
+                        <ul class="feature-list">
+                            <li>Track missed appointments, repeat visits, test frequency trends</li>
+                            <li>Financial reports for revenue, outstanding payments, and insurance claims</li>
+                            <li>Export MIS data in Excel or PDF for internal review or external audits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="feature-security-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <div class="security-badge mb-3">
+                        <i class="fas fa-shield-alt me-2"></i>
+                        <span>Multi-User Role-Based System</span>
+                    </div>
+                    <h2 class="section-title mb-3">Built for Nephrology Care Teams</h2>
+                    <p class="section-subtitle text-muted">Secure, collaborative platform for comprehensive kidney care management</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Team Collaboration</h5>
+                        <p class="card-text text-muted">Designed for Nephrologists, Nurses, Dialysis Technicians, Dietitians, and Billing Staff.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Real-Time Sync</h5>
+                        <p class="card-text text-muted">Works seamlessly on Web, Android, and iOS devices with real-time synchronization.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-user-lock"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Role-Based Access</h5>
+                        <p class="card-text text-muted">Role-based access ensures clinical data privacy and operational control.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="feature-benefits-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Benefits at a Glance</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <div class="benefits-list">
+                        <ul class="benefits-grid">
+                            <li><i class="fas fa-check-circle"></i> Kidney-centric EMR with CKD staging and comprehensive diagnostics tracking</li>
+                            <li><i class="fas fa-check-circle"></i> Dialysis management with session scheduling and vascular access monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Follow-up scheduling and chronic disease monitoring with automated reminders</li>
+                            <li><i class="fas fa-check-circle"></i> Patient communication with diet charts and educational materials</li>
+                            <li><i class="fas fa-check-circle"></i> Billing for consultations, dialysis sessions, and procedures</li>
+                            <li><i class="fas fa-check-circle"></i> Comprehensive MIS and reports for nephrology practice analytics</li>
+                            <li><i class="fas fa-check-circle"></i> Multi-user system for collaborative nephrology care teams</li>
+                            <li><i class="fas fa-check-circle"></i> Perfect for Nephrology Clinics to Dialysis Centers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials-section py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">What Our Doctor Says?</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            "Clinicia simplifies how we manage dialysis schedules, track CKD stages, and communicate with our patients. The WhatsApp features alone save us hours every week."
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Dr. K. Sharma</h5>
+                            <span>Senior Nephrologist, Mumbai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="getting-started" class="cta-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="cta-content">
+                        <h2 class="section-title text-white">Manage Kidney Care with Accuracy & Ease</h2>
+                        <p class="section-description text-white">
+                            Clinicia empowers you to manage complex nephrology workflows with precision—freeing you to focus on what matters most: patient outcomes.
+                        </p>
+                        <div class="cta-features">
+                            <div class="row g-4 text-white">
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-procedures"></i>
+                                        <h4>Kidney Care Focused</h4>
+                                        <p>Specialized EMR for nephrology practices</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-bolt"></i>
+                                        <h4>No Setup Fee</h4>
+                                        <p>Get started instantly with zero setup costs</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-headset"></i>
+                                        <h4>Expert Support</h4>
+                                        <p>24/7 support from nephrology specialists</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cta-buttons mt-4">
+                            <a href="#trial" class="btn btn-light btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i>Try Clinicia Now
+                            </a>
+                            <a href="#demo" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-calendar me-2"></i>Book a Free Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50" class="footer-logo mb-3">
+                        <p>Transforming healthcare delivery with modern clinic management solutions.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Book Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-download">
+                        <h5>Download Our App</h5>
+                        <div class="app-buttons">
+                            <a href="#" class="app-button">
+                                <i class="fab fa-google-play"></i>
+                                <div>
+                                    <span>Get it on</span>
+                                    <strong>Google Play</strong>
+                                </div>
+                            </a>
+                            <a href="#" class="app-button">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <span>Download on the</span>
+                                    <strong>App Store</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 Clinicia. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
