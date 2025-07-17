@@ -170,6 +170,87 @@
     align-items: center;
 }
 
+/* Mobile responsiveness for hero content */
+@media (max-width: 768px) {
+    .feature-hero-title {
+        font-size: 2.2rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .feature-hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .feature-hero-description {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .feature-hero-actions {
+        justify-content: center;
+        gap: 0.8rem;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .feature-hero-actions .btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 0.8rem 1.2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .feature-hero-content {
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .hero-breadcrumb {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-hero-title {
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin-bottom: 0.8rem;
+    }
+    
+    .feature-hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .feature-hero-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 1.2rem;
+    }
+    
+    .feature-hero-actions .btn {
+        width: 100%;
+        max-width: 250px;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .feature-hero-content {
+        padding: 0 0.5rem;
+    }
+    
+    .hero-breadcrumb {
+        margin-bottom: 1rem;
+    }
+}
+
 /* Red "Book a Demo" button styling for feature pages */
 .feature-hero-actions .btn-outline-primary {
     border-color: var(--primary-color);
