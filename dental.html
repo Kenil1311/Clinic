@@ -25,9 +25,120 @@
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
 
-    <!-- HEADER_CONTENT -->
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    
+                    <!-- Features Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu mega-menu features-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Core Features</h6>
+                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR & Clinical Notes</a>
+                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial Management</a>
+                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory Management</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Advanced Features</h6>
+                                        <a class="dropdown-item" href="/images"><i class="fas fa-image me-2"></i>Images & Documents</a>
+                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Patient Communication</a>
+                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users</a>
+                                        <a class="dropdown-item" href="/membership"><i class="fas fa-crown me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics & Reports</a>
+                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h6 class="dropdown-header">By Medical Specialty</h6>
+                                        <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dentists</a>
+                                        <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatologists</a>
+                                        <a class="dropdown-item" href="/gynaecology"><i class="fas fa-female me-2"></i>Gynecologists</a>
+                                        <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapists</a>
+                                        <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmologists</a>
+                                        <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT Specialists</a>
+                                        <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiologists</a>
+                                        <a class="dropdown-item" href="/diabetology"><i class="fas fa-syringe me-2"></i>Diabetologists</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <h6 class="dropdown-header">By Practice Size</h6>
+                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user-md me-2"></i>Solo Practitioners</a>
+                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Small Practices (2-3 Doctors)</a>
+                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-hospital me-2"></i>Multi-Speciality Clinics</a>
+                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    
+                    <!-- Support/Resources Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#support" data-bs-toggle="dropdown" aria-expanded="false">
+                            Support
+                        </a>
+                        <ul class="dropdown-menu modern-dropdown">
+                            <li><a class="dropdown-item" href="#faq"><i class="fas fa-question-circle me-2"></i>FAQ</a></li>
+                            <li><a class="dropdown-item" href="#knowledge"><i class="fas fa-book me-2"></i>Knowledge Base</a></li>
+                            <li><a class="dropdown-item" href="#tutorials"><i class="fas fa-play-circle me-2"></i>Tutorials & Video Demo</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="navbar-nav">
+                    <a href="#login" class="btn btn-outline-primary">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <!-- BREADCRUMB_CONTENT -->
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dental Practice</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero-section feature-hero">
@@ -475,5 +586,11 @@
     
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 </html>
