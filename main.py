@@ -121,6 +121,10 @@ def hospitals():
 def diabetology():
     return send_file('diabetology.html')
 
+@app.route('/ayurveda')
+def ayurveda():
+    return send_file('ayurveda.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):
