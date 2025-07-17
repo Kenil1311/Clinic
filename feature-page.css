@@ -165,7 +165,7 @@
     color: var(--primary-color);
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 0.75rem;
-    background: rgba(255, 77, 77, 0.05);
+    background: transparent;
 }
 
 /* Mobile Responsive Styling */
