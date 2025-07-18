@@ -1085,8 +1085,8 @@ html {
     
     .hero-stats-compact {
         display: grid !important;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.3rem;
         margin-top: 1rem;
         padding: 1rem 0;
     }
@@ -1121,20 +1121,20 @@ html {
 /* Extra small mobile devices */
 @media (max-width: 576px) {
     .hero-stats-compact {
-        grid-template-columns: 1fr 1fr;
-        gap: 0.4rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0.2rem;
     }
     
     .compact-stat {
-        padding: 0.6rem 0.3rem;
+        padding: 0.5rem 0.2rem;
     }
     
     .compact-stat .stat-number {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .compact-stat .stat-label {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 }
 
