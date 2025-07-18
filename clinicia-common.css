@@ -11345,7 +11345,7 @@ body {
 .features-section .feature-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #ff4d4d;
+    
 }
 
 .features-section .feature-icon {
@@ -11443,7 +11443,7 @@ body {
 .why-choose-section .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #ff4d4d;
+    
 }
 
 .why-choose-section .feature-card .feature-icon {
@@ -12019,7 +12019,7 @@ body {
 .features-section .feature-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #ff4d4d;
+    
 }
 
 .features-section .feature-icon {
@@ -12117,7 +12117,7 @@ body {
 .why-choose-section .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #ff4d4d;
+    
 }
 
 .why-choose-section .feature-card .feature-icon {
