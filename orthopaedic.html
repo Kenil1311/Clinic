@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orthopedic Clinic Management Software | EMR for Bone & Joint Doctors | Clinicia</title>
+    <meta name="description" content="Clinicia helps orthopedic doctors manage case papers, X-rays, prescriptions, appointments, and follow-up care with a smart, mobile-first practice management system.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feature-page.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    
+                    <!-- Features Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='/features'; return false;">
+                            Features
+                        </a>
+                        <div class="dropdown-menu mega-menu features-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Core Features</h6>
+                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">Advanced Features</h6>
+                                        <a class="dropdown-item" href="/images"><i class="fas fa-image me-2"></i>Images</a>
+                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Solutions Dropdown -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Specialties</h6>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="/gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="/diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="/ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="/oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="/nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="/paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="/veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="/psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="/nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="/orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="/urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="dropdown-header">By Practice Size</h6>
+                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
+                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    
+                    <!-- Support/Resources Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#support" data-bs-toggle="dropdown" aria-expanded="false">
+                            Support / Resources
+                        </a>
+                        <ul class="dropdown-menu modern-dropdown">
+                            <li><a class="dropdown-item" href="#faq"><i class="fas fa-question-circle me-2"></i>FAQ</a></li>
+                            <li><a class="dropdown-item" href="#knowledge"><i class="fas fa-book me-2"></i>Knowledge Base</a></li>
+                            <li><a class="dropdown-item" href="#tutorials"><i class="fas fa-play-circle me-2"></i>Tutorials & Video Demo</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="navbar-nav">
+                    <a href="#login" class="btn btn-outline-primary">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Feature Hero Section -->
+    <section class="feature-hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="feature-hero-content">
+                        <!-- Breadcrumb in Hero -->
+                        <nav aria-label="breadcrumb" class="hero-breadcrumb mb-3">
+                            <ol class="breadcrumb breadcrumb-hero">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#solutions">Solutions</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Orthopaedic</li>
+                            </ol>
+                        </nav>
+                        
+                        <h1 class="feature-hero-title">Clinicia for Orthopedic Doctors</h1>
+                        <p class="feature-hero-subtitle">Digitize Case Papers, Imaging, Prescriptions & Patient Follow-ups with Ease</p>
+                        <p class="feature-hero-description">
+                            Clinicia simplifies clinic operations for orthopedic specialists—from capturing detailed patient assessments and managing imaging reports to scheduling procedures, generating bills, and improving long-term follow-ups—all in one platform.
+                        </p>
+                        
+                        <div class="feature-hero-actions">
+                            <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
+                            <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-hero-image">
+                        <div class="feature-mockup">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="feature-capabilities-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Comprehensive Orthopedic Practice Management</h2>
+                    <p class="section-subtitle">Everything you need to manage bone and joint care efficiently</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h4>Specialized EMR for Orthopedic Practice</h4>
+                        <p>Capture orthopedic-specific case details: pain scale, mobility score, injury type, range of motion, past trauma/surgeries</p>
+                        <ul class="feature-list">
+                            <li>Maintain detailed clinical notes: chief complaints, examination findings, diagnosis, treatment plan</li>
+                            <li>Record vitals, joint-specific assessments, and attach X-rays, MRI, or scan reports</li>
+                            <li>Maintain surgical history, implant records, and treatment outcomes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-prescription"></i>
+                        </div>
+                        <h4>Prescription with Preloaded Templates</h4>
+                        <p>Create personalized, letterhead-based prescriptions with preloaded medicines, dosages, physiotherapy instructions, and rehab protocols</p>
+                        <ul class="feature-list">
+                            <li>Apply templates for common conditions: fracture care, arthritis, sprains, post-op care</li>
+                            <li>Include digital signature and share prescriptions via WhatsApp, Email, or print</li>
+                            <li>Add physiotherapy exercises and rehabilitation protocols</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Appointments & Scheduling</h4>
+                        <p>Manage OPD and surgical appointments with automated WhatsApp reminders</p>
+                        <ul class="feature-list">
+                            <li>Daily appointment schedule shared with doctor on WhatsApp every morning</li>
+                            <li>Handle rescheduling and cancellations easily</li>
+                            <li>Token-based queue management for efficient waiting area control</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <h4>Imaging & Reports</h4>
+                        <p>Upload and store X-rays, MRI scans, CT images, or surgical documents under each patient profile</p>
+                        <ul class="feature-list">
+                            <li>View complete treatment history and compare past vs current clinical progress</li>
+                            <li>Share images securely with patients via WhatsApp or Email</li>
+                            <li>Maintain digital repository for medico-legal compliance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Follow-up & Patient Communication</h4>
+                        <p>Send automatic reminders for stitch removal, cast change, follow-ups, or rehab sessions</p>
+                        <ul class="feature-list">
+                            <li>Welcome new patients, thank them for visiting, and send birthday wishes</li>
+                            <li>Share prescriptions, bills, test reports instantly via WhatsApp or Email</li>
+                            <li>Set periodic reviews for post-operative patients (e.g., after 15 days, 3 months)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <h4>Billing & Payment Receipts</h4>
+                        <p>Generate professional invoices for consultations, injections, surgeries, implants, physiotherapy, etc.</p>
+                        <ul class="feature-list">
+                            <li>Accept partial or full payments; track outstanding balances</li>
+                            <li>Share receipts instantly and analyze financial trends</li>
+                            <li>Restrict billing access based on user roles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="feature-security-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <div class="security-badge mb-3">
+                        <i class="fas fa-shield-alt me-2"></i>
+                        <span>Multi-User Access with Role Management</span>
+                    </div>
+                    <h2 class="section-title mb-3">Built for Orthopedic Care Teams</h2>
+                    <p class="section-subtitle text-muted">Secure, collaborative platform for comprehensive orthopedic practice management</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Team Roles</h5>
+                        <p class="card-text text-muted">Assign roles for doctors, residents, front-desk staff, physiotherapists, cashiers, and storekeepers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Multi-Device Access</h5>
+                        <p class="card-text text-muted">Use Clinicia across multiple devices—web, Android, iOS with real-time data sync.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
+                        <div class="security-icon-wrapper mb-3">
+                            <div class="security-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title mb-2">Reports & Analytics</h5>
+                        <p class="card-text text-muted">View doctor-wise, procedure-wise, or department-wise reports with data export capabilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="feature-benefits-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Benefits at a Glance</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="benefits-list">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Specialized EMR for orthopedic case documentation</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Prescription templates for fracture care and rehabilitation</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Automated appointment scheduling and reminders</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Digital imaging and X-ray management</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Patient follow-up and communication tools</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Billing for surgeries, consultations, and physiotherapy</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Multi-user access for orthopedic teams</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Perfect for bone and joint specialists</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials-section py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">What Our Doctor Says?</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            "From fracture management to surgery billing, Clinicia helps me run everything smoothly from one app."
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Dr. Nishant Rathi</h5>
+                            <span>Orthopedic Consultant, Ahmedabad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="getting-started" class="cta-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="cta-content">
+                        <h2 class="section-title text-white">Transform Your Orthopedic Practice with Clinicia</h2>
+                        <p class="section-description text-white">
+                            Stay organized, save time, and deliver consistent orthopedic care with Clinicia's powerful practice management platform.
+                        </p>
+                        <div class="cta-features">
+                            <div class="row g-4 text-white">
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-bone"></i>
+                                        <h4>Orthopedic Focused</h4>
+                                        <p>Specialized EMR for bone and joint care</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-bolt"></i>
+                                        <h4>Instant Setup</h4>
+                                        <p>Get started in under 5 minutes</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="cta-feature">
+                                        <i class="fas fa-headset"></i>
+                                        <h4>Dedicated Support</h4>
+                                        <p>24/7 support from orthopedic care experts</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cta-buttons mt-4">
+                            <a href="#trial" class="btn btn-light btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i>Start Free Trial
+                            </a>
+                            <a href="#demo" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-calendar me-2"></i>Schedule a Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50" class="footer-logo mb-3">
+                        <p>Transforming healthcare delivery with modern clinic management solutions.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Book Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-download">
+                        <h5>Download Our App</h5>
+                        <div class="app-buttons">
+                            <a href="#" class="app-button">
+                                <i class="fab fa-google-play"></i>
+                                <div>
+                                    <span>Get it on</span>
+                                    <strong>Google Play</strong>
+                                </div>
+                            </a>
+                            <a href="#" class="app-button">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <span>Download on the</span>
+                                    <strong>App Store</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 Clinicia. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll progress bar
+        window.addEventListener('scroll', function() {
+            const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            document.querySelector('.scroll-progress').style.width = scrolled + '%';
+        });
+
+        console.log('Clinicia Orthopaedic Page JavaScript loaded successfully');
+    </script>
+</body>
+</html>
