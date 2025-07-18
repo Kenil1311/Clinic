@@ -153,6 +153,10 @@ def nutrition():
 def orthopaedic():
     return send_file('orthopaedic.html')
 
+@app.route('/urology')
+def urology():
+    return send_file('urology.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):
