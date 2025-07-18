@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ophthalmology Practice Management Software - Clinicia</title>
-    <meta name="description" content="Specialized practice management software for ophthalmologists with vision testing, eye health tracking, and comprehensive patient care tools.">
-    
+    <meta name="description"
+        content="Specialized practice management software for ophthalmologists with vision testing, eye health tracking, and comprehensive patient care tools.">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link href="clinicia-common.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
@@ -28,21 +32,22 @@
     <!-- Header (Sticky & Responsive) -->
     <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+
                     <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='/features'; return false;">
+                        <a class="nav-link dropdown-toggle" href="./features.html" data-bs-toggle="dropdown"
+                            aria-expanded="false" onclick="window.location.href='./features.html'; return false;">
                             Features
                         </a>
                         <div class="dropdown-menu mega-menu features-menu">
@@ -50,32 +55,46 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Core Features</h6>
-                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
-                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
-                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
-                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
-                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
-                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
-                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                        <a class="dropdown-item" href="./emr.html"><i
+                                                class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="./prescription.html"><i
+                                                class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="./appointment.html"><i
+                                                class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="./financial.html"><i
+                                                class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="./consent.html"><i
+                                                class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="./expense.html"><i
+                                                class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="./inventory.html"><i
+                                                class="fas fa-boxes me-2"></i>Inventory</a>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Advanced Features</h6>
 
-                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
-                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
-                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
-                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
-                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
-                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                        <a class="dropdown-item" href="./communication.html"><i
+                                                class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="./users.html"><i
+                                                class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="./membership."><i
+                                                class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="./social.html"><i
+                                                class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="./analytics.html"><i
+                                                class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="./dental-lab.html"><i
+                                                class="fas fa-tooth me-2"></i>Dental Lab Module</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
+
                     <!-- Solutions Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Solutions
                         </a>
                         <div class="dropdown-menu mega-menu">
@@ -85,55 +104,75 @@
                                         <h6 class="dropdown-header">By Specialties</h6>
                                         <div class="row">
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
-                                                <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
-                                                <a class="dropdown-item" href="/gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
-                                                <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
-                                                <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
-                                                <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
-                                                <a class="dropdown-item" href="/diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
-                                                <a class="dropdown-item" href="/ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
-                                                <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                                <a class="dropdown-item" href="./dental.html"><i
+                                                        class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="./dermatology.html"><i
+                                                        class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="./gynaecology.html"><i
+                                                        class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="./physiotherapy.html"><i
+                                                        class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="./ophthalmology.html"><i
+                                                        class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="./ent.html"><i
+                                                        class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="./diabetology.html"><i
+                                                        class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="./ayurveda.html"><i
+                                                        class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="./cardiology.html"><i
+                                                        class="fas fa-heartbeat me-2"></i>Cardiology</a>
                                             </div>
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="/oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
-                                                <a class="dropdown-item" href="/nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
-                                                <a class="dropdown-item" href="/paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
-                                                <a class="dropdown-item" href="/veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
-                                                <a class="dropdown-item" href="/psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
-                                                <a class="dropdown-item" href="/nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
-                                                <a class="dropdown-item" href="/orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
-                                                <a class="dropdown-item" href="/urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                                <a class="dropdown-item" href="./oncology.html"><i
+                                                        class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="./nephrology.html"><i
+                                                        class="fas fa-procedures me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="./paediatrician.html"><i
+                                                        class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="./veterinary.html"><i
+                                                        class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="./psychology.html"><i
+                                                        class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="./nutrition.html"><i
+                                                        class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="./orthopaedic.html"><i
+                                                        class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="./urology.html"><i
+                                                        class="fas fa-user-md me-2"></i>Urology</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">By Practice Size</h6>
-                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
-                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
-                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
-                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
-                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                        <a class="dropdown-item" href="./solo.html"><i class="fas fa-user me-2"></i>Solo
+                                            Practice</a>
+                                        <a class="dropdown-item" href="./multiple.html"><i
+                                                class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="./multi-speciality.html"><i
+                                                class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="./multi-branch.html"><i
+                                                class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="./hospitals.html"><i
+                                                class="fas fa-hospital me-2"></i>Hospitals</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
-                    
-                    
-                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
-                
+
                 <div class="navbar-nav">
                     <a href="#login" class="btn btn-outline-primary">Login</a>
                 </div>
             </div>
         </div>
     </nav>
-
     <!-- Feature Hero Section -->
     <section class="feature-hero-section">
         <div class="container">
@@ -148,13 +187,16 @@
                                 <li class="breadcrumb-item active" aria-current="page">Ophthalmology Practice</li>
                             </ol>
                         </nav>
-                        
+
                         <h1 class="feature-hero-title">Clinicia for Ophthalmologists</h1>
                         <p class="feature-hero-subtitle">Smart EMR & Clinic Management for Eye Care Practices</p>
                         <p class="feature-hero-description">
-                            Ophthalmology demands detailed clinical records, image-based diagnostics, and a high volume of patient flow. Clinicia is tailor-made for eye specialists, offering a modern digital platform for end-to-end management—from routine eye exams to complex surgical planning. Perfect for solo ophthalmologists, eye hospitals, or multi-location eye care chains.
+                            Ophthalmology demands detailed clinical records, image-based diagnostics, and a high volume
+                            of patient flow. Clinicia is tailor-made for eye specialists, offering a modern digital
+                            platform for end-to-end management—from routine eye exams to complex surgical planning.
+                            Perfect for solo ophthalmologists, eye hospitals, or multi-location eye care chains.
                         </p>
-                        
+
                         <div class="feature-hero-actions">
                             <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
                             <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
@@ -188,7 +230,8 @@
                             <i class="fas fa-eye"></i>
                         </div>
                         <h4>Ophthalmology-Specific EMR</h4>
-                        <p>Record Chief Complaints, Visual Acuity, Refraction, Intraocular Pressure (IOP). Document findings from Slit Lamp, Fundus Exam, OCT, Keratometry with customizable templates.</p>
+                        <p>Record Chief Complaints, Visual Acuity, Refraction, Intraocular Pressure (IOP). Document
+                            findings from Slit Lamp, Fundus Exam, OCT, Keratometry with customizable templates.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -197,7 +240,8 @@
                             <i class="fas fa-calendar-alt"></i>
                         </div>
                         <h4>Appointment Scheduling & Queue Management</h4>
-                        <p>Book appointments by speciality (Retina, Cornea, Pediatric, General OPD). Auto-reminders to patients via WhatsApp & Email with queue/token system management.</p>
+                        <p>Book appointments by speciality (Retina, Cornea, Pediatric, General OPD). Auto-reminders to
+                            patients via WhatsApp & Email with queue/token system management.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -206,7 +250,8 @@
                             <i class="fas fa-glasses"></i>
                         </div>
                         <h4>Personalized Eye Prescriptions</h4>
-                        <p>Print or share spectacle prescriptions, contact lens prescriptions, and medication slips. Use pre-saved templates with common drugs & dosage for faster workflow.</p>
+                        <p>Print or share spectacle prescriptions, contact lens prescriptions, and medication slips. Use
+                            pre-saved templates with common drugs & dosage for faster workflow.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -215,7 +260,8 @@
                             <i class="fas fa-receipt"></i>
                         </div>
                         <h4>Billing, Packages & Payment Management</h4>
-                        <p>Generate bills for consultations, scans, laser procedures, surgeries. Define packages for Cataract, Lasik, Retina Surgery with instant payment processing.</p>
+                        <p>Generate bills for consultations, scans, laser procedures, surgeries. Define packages for
+                            Cataract, Lasik, Retina Surgery with instant payment processing.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -224,7 +270,8 @@
                             <i class="fas fa-share-alt"></i>
                         </div>
                         <h4>Share Reports & Documents Instantly</h4>
-                        <p>Share scanned test reports, fundus images, OCTs, IOL Master outputs directly. Send case summaries, surgical consents, or post-op instructions via WhatsApp.</p>
+                        <p>Share scanned test reports, fundus images, OCTs, IOL Master outputs directly. Send case
+                            summaries, surgical consents, or post-op instructions via WhatsApp.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -233,7 +280,8 @@
                             <i class="fas fa-users"></i>
                         </div>
                         <h4>Multi-User Access with Security</h4>
-                        <p>Enable secure access for optometrists, assistants, receptionists, and billing staff. Assign role-based access with real-time sync across all platforms.</p>
+                        <p>Enable secure access for optometrists, assistants, receptionists, and billing staff. Assign
+                            role-based access with real-time sync across all platforms.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -242,7 +290,8 @@
                             <i class="fas fa-chart-bar"></i>
                         </div>
                         <h4>Powerful MIS & Analytics</h4>
-                        <p>Analyze patient inflow trends, surgical success rates, follow-up compliance. Monitor doctor performance and revenue breakdowns with exportable reports.</p>
+                        <p>Analyze patient inflow trends, surgical success rates, follow-up compliance. Monitor doctor
+                            performance and revenue breakdowns with exportable reports.</p>
                     </div>
                 </div>
             </div>
@@ -256,8 +305,9 @@
                 <div class="col-lg-10 mx-auto">
                     <div class="security-content text-center">
                         <h2 class="section-title mb-3">Built for Eye Care Excellence</h2>
-                        <p class="section-subtitle text-muted mb-5">Advanced features tailored specifically for ophthalmology practices</p>
-                        
+                        <p class="section-subtitle text-muted mb-5">Advanced features tailored specifically for
+                            ophthalmology practices</p>
+
                         <div class="row g-4 mb-5">
                             <div class="col-lg-6 col-md-12">
                                 <div class="security-feature-card">
@@ -267,7 +317,8 @@
                                         </div>
                                         <h4>Advanced Diagnostic Integration</h4>
                                     </div>
-                                    <p>Seamless integration with diagnostic equipment including auto-refractors, tonometers, and OCT machines for streamlined workflow.</p>
+                                    <p>Seamless integration with diagnostic equipment including auto-refractors,
+                                        tonometers, and OCT machines for streamlined workflow.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
@@ -278,7 +329,8 @@
                                         </div>
                                         <h4>Surgical Planning Tools</h4>
                                     </div>
-                                    <p>Comprehensive surgical planning and documentation tools for cataract, glaucoma, and refractive surgeries with post-operative care tracking.</p>
+                                    <p>Comprehensive surgical planning and documentation tools for cataract, glaucoma,
+                                        and refractive surgeries with post-operative care tracking.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
@@ -289,7 +341,8 @@
                                         </div>
                                         <h4>Automated Recall System</h4>
                                     </div>
-                                    <p>Intelligent patient recall system for routine eye exams, diabetic screenings, and follow-up appointments with customizable intervals.</p>
+                                    <p>Intelligent patient recall system for routine eye exams, diabetic screenings, and
+                                        follow-up appointments with customizable intervals.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
@@ -300,7 +353,8 @@
                                         </div>
                                         <h4>Medical Compliance & Documentation</h4>
                                     </div>
-                                    <p>HIPAA-compliant documentation and reporting tools with specialized templates for ophthalmology practice requirements.</p>
+                                    <p>HIPAA-compliant documentation and reporting tools with specialized templates for
+                                        ophthalmology practice requirements.</p>
                                 </div>
                             </div>
                         </div>
@@ -323,14 +377,20 @@
                     <div class="benefits-list">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Streamline eye examination and diagnostic workflows</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Improve patient outcomes with comprehensive tracking</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Enhance surgical planning and post-operative care</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i>
+                                    Streamline eye examination and diagnostic workflows</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Improve
+                                    patient outcomes with comprehensive tracking</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Enhance
+                                    surgical planning and post-operative care</div>
                             </div>
                             <div class="col-md-6">
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Optimize equipment utilization and clinic efficiency</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Reduce administrative burden with automated recalls</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Comprehensive ophthalmology care management</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Optimize
+                                    equipment utilization and clinic efficiency</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Reduce
+                                    administrative burden with automated recalls</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i>
+                                    Comprehensive ophthalmology care management</div>
                             </div>
                         </div>
                     </div>
@@ -345,13 +405,15 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title mb-2">What Our Ophthalmologists Say</h2>
-                    <p class="section-subtitle mb-5">Trusted by eye care specialists for exceptional patient outcomes</p>
+                    <p class="section-subtitle mb-5">Trusted by eye care specialists for exceptional patient outcomes
+                    </p>
                     <div class="testimonial-card">
                         <div class="testimonial-quote">
                             <i class="fas fa-quote-left text-primary"></i>
                         </div>
                         <p class="testimonial-text">
-                            "Clinicia allows us to run a high-efficiency OPD and surgical schedule. Our patient communication, billing, and clinical documentation are all now streamlined."
+                            "Clinicia allows us to run a high-efficiency OPD and surgical schedule. Our patient
+                            communication, billing, and clinical documentation are all now streamlined."
                         </p>
                         <div class="testimonial-author">
                             <div class="author-info">
@@ -376,7 +438,8 @@
                     <div class="cta-content">
                         <h2 class="section-title text-white">Ready to Transform Your Ophthalmology Practice?</h2>
                         <p class="section-description text-white">
-                            Join thousands of eye care professionals who trust Clinicia for their practice management needs
+                            Join thousands of eye care professionals who trust Clinicia for their practice management
+                            needs
                         </p>
                         <div class="cta-features">
                             <div class="row g-4 text-white">
@@ -487,13 +550,13 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <!-- Custom JS -->
     <script src="clinicia-common.js"></script>
-    
+
     <script>
         // Initialize AOS
         AOS.init({
@@ -502,4 +565,5 @@
         });
     </script>
 </body>
+
 </html>

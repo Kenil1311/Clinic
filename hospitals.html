@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental College Management Software - Clinicia</title>
-    <meta name="description" content="Comprehensive dental college management software with multi-department coordination, student supervision, and academic oversight features for dental institutions.">
-    
+    <meta name="description"
+        content="Comprehensive dental college management software with multi-department coordination, student supervision, and academic oversight features for dental institutions.">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- Google Fonts - Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link href="clinicia-common.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
@@ -28,21 +32,22 @@
     <!-- Header (Sticky & Responsive) -->
     <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+
                     <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="./features.html" data-bs-toggle="dropdown"
+                            aria-expanded="false" onclick="window.location.href='./features.html'; return false;">
                             Features
                         </a>
                         <div class="dropdown-menu mega-menu features-menu">
@@ -50,32 +55,46 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Core Features</h6>
-                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR & Clinical Notes</a>
-                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
-                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
-                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
-                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
-                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
-                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                        <a class="dropdown-item" href="./emr.html"><i
+                                                class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="./prescription.html"><i
+                                                class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="./appointment.html"><i
+                                                class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="./financial.html"><i
+                                                class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="./consent.html"><i
+                                                class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="./expense.html"><i
+                                                class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="./inventory.html"><i
+                                                class="fas fa-boxes me-2"></i>Inventory</a>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Advanced Features</h6>
 
-                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
-                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
-                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
-                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
-                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
-                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                        <a class="dropdown-item" href="./communication.html"><i
+                                                class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="./users.html"><i
+                                                class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="./membership."><i
+                                                class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="./social.html"><i
+                                                class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="./analytics.html"><i
+                                                class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="./dental-lab.html"><i
+                                                class="fas fa-tooth me-2"></i>Dental Lab Module</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
+
                     <!-- Solutions Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Solutions
                         </a>
                         <div class="dropdown-menu mega-menu">
@@ -85,55 +104,75 @@
                                         <h6 class="dropdown-header">By Specialties</h6>
                                         <div class="row">
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
-                                                <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
-                                                <a class="dropdown-item" href="/gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
-                                                <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
-                                                <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
-                                                <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
-                                                <a class="dropdown-item" href="/diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
-                                                <a class="dropdown-item" href="/ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
-                                                <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                                <a class="dropdown-item" href="./dental.html"><i
+                                                        class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="./dermatology.html"><i
+                                                        class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="./gynaecology.html"><i
+                                                        class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="./physiotherapy.html"><i
+                                                        class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="./ophthalmology.html"><i
+                                                        class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="./ent.html"><i
+                                                        class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="./diabetology.html"><i
+                                                        class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="./ayurveda.html"><i
+                                                        class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="./cardiology.html"><i
+                                                        class="fas fa-heartbeat me-2"></i>Cardiology</a>
                                             </div>
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="/oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
-                                                <a class="dropdown-item" href="/nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
-                                                <a class="dropdown-item" href="/paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
-                                                <a class="dropdown-item" href="/veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
-                                                <a class="dropdown-item" href="/psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
-                                                <a class="dropdown-item" href="/nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
-                                                <a class="dropdown-item" href="/orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
-                                                <a class="dropdown-item" href="/urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                                <a class="dropdown-item" href="./oncology.html"><i
+                                                        class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="./nephrology.html"><i
+                                                        class="fas fa-procedures me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="./paediatrician.html"><i
+                                                        class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="./veterinary.html"><i
+                                                        class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="./psychology.html"><i
+                                                        class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="./nutrition.html"><i
+                                                        class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="./orthopaedic.html"><i
+                                                        class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="./urology.html"><i
+                                                        class="fas fa-user-md me-2"></i>Urology</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">By Practice Size</h6>
-                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
-                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
-                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
-                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
-                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                        <a class="dropdown-item" href="./solo.html"><i class="fas fa-user me-2"></i>Solo
+                                            Practice</a>
+                                        <a class="dropdown-item" href="./multiple.html"><i
+                                                class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="./multi-speciality.html"><i
+                                                class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="./multi-branch.html"><i
+                                                class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="./hospitals.html"><i
+                                                class="fas fa-hospital me-2"></i>Hospitals</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
-                    
-                    
-                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
-                
+
                 <div class="navbar-nav">
                     <a href="#login" class="btn btn-outline-primary">Login</a>
                 </div>
             </div>
         </div>
     </nav>
-
     <!-- Feature Hero Section -->
     <section class="feature-hero-section">
         <div class="container">
@@ -148,11 +187,14 @@
                                 <li class="breadcrumb-item active" aria-current="page">Hospitals</li>
                             </ol>
                         </nav>
-                        
+
                         <h1 class="feature-hero-title">Clinicia for Dental Colleges</h1>
-                        <p class="feature-hero-subtitle">Streamlined Patient Flow, Academic Oversight & Multi-Department Coordination</p>
+                        <p class="feature-hero-subtitle">Streamlined Patient Flow, Academic Oversight & Multi-Department
+                            Coordination</p>
                         <p class="feature-hero-description">
-                            Designed specifically for dental colleges managing thousands of patient records across multiple departments. Support undergraduate students, postgraduate supervision, and faculty oversight with unified platform for seamless care and record continuity.
+                            Designed specifically for dental colleges managing thousands of patient records across
+                            multiple departments. Support undergraduate students, postgraduate supervision, and faculty
+                            oversight with unified platform for seamless care and record continuity.
                         </p>
                         <div class="feature-hero-actions">
                             <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
@@ -177,7 +219,8 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title">Department-Wise Treatment Coordination Made Easy</h2>
-                    <p class="section-subtitle">Clinicia supports all standard dental college departments with unified platform for seamless care and record continuity</p>
+                    <p class="section-subtitle">Clinicia supports all standard dental college departments with unified
+                        platform for seamless care and record continuity</p>
                 </div>
             </div>
             <div class="row">
@@ -187,7 +230,8 @@
                             <i class="fas fa-clipboard-check"></i>
                         </div>
                         <h4>Registration & General OPD</h4>
-                        <p>Register new patients, assign unique IDs, capture demographics, record initial screening notes, and create referrals to specialized departments.</p>
+                        <p>Register new patients, assign unique IDs, capture demographics, record initial screening
+                            notes, and create referrals to specialized departments.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -196,7 +240,8 @@
                             <i class="fas fa-tooth"></i>
                         </div>
                         <h4>Endodontics & Prosthodontics</h4>
-                        <p>Specialized workflows for root canal treatments, crown and bridge work with department-specific clinical notes and treatment planning.</p>
+                        <p>Specialized workflows for root canal treatments, crown and bridge work with
+                            department-specific clinical notes and treatment planning.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -205,7 +250,8 @@
                             <i class="fas fa-user-md"></i>
                         </div>
                         <h4>Periodontics & Orthodontics</h4>
-                        <p>Comprehensive gum treatment protocols and teeth alignment tracking with progress monitoring and treatment outcome documentation.</p>
+                        <p>Comprehensive gum treatment protocols and teeth alignment tracking with progress monitoring
+                            and treatment outcome documentation.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -214,7 +260,8 @@
                             <i class="fas fa-cut"></i>
                         </div>
                         <h4>Oral & Maxillofacial Surgery</h4>
-                        <p>Surgical procedure management with pre-operative planning, surgical documentation, and post-operative care coordination.</p>
+                        <p>Surgical procedure management with pre-operative planning, surgical documentation, and
+                            post-operative care coordination.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -223,7 +270,8 @@
                             <i class="fas fa-baby"></i>
                         </div>
                         <h4>Pedodontics</h4>
-                        <p>Specialized pediatric dental care with child-friendly interfaces, parental consent management, and age-appropriate treatment protocols.</p>
+                        <p>Specialized pediatric dental care with child-friendly interfaces, parental consent
+                            management, and age-appropriate treatment protocols.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -232,7 +280,8 @@
                             <i class="fas fa-x-ray"></i>
                         </div>
                         <h4>Oral Medicine & Radiology</h4>
-                        <p>Digital imaging integration, X-ray management, diagnostic imaging workflows, and radiology report generation with case documentation.</p>
+                        <p>Digital imaging integration, X-ray management, diagnostic imaging workflows, and radiology
+                            report generation with case documentation.</p>
                     </div>
                 </div>
             </div>
@@ -246,8 +295,9 @@
                 <div class="col-lg-10 mx-auto">
                     <div class="security-content text-center">
                         <h2 class="section-title mb-3">Student-Supervised Treatment Workflow</h2>
-                        <p class="section-subtitle text-muted mb-5">Built to support academic rigor and real-world clinical learning with proper supervision</p>
-                        
+                        <p class="section-subtitle text-muted mb-5">Built to support academic rigor and real-world
+                            clinical learning with proper supervision</p>
+
                         <div class="row g-4 mb-5">
                             <div class="col-lg-6 col-md-12">
                                 <div class="security-feature-card">
@@ -257,7 +307,8 @@
                                         </div>
                                         <h4>Undergraduate Student Records</h4>
                                     </div>
-                                    <p>Undergraduates record findings under faculty supervision with structured documentation and learning assessment tools.</p>
+                                    <p>Undergraduates record findings under faculty supervision with structured
+                                        documentation and learning assessment tools.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
@@ -268,7 +319,8 @@
                                         </div>
                                         <h4>Faculty Review & Verification</h4>
                                     </div>
-                                    <p>Postgraduates and faculty review, verify, and update treatment plans with comprehensive oversight and quality control.</p>
+                                    <p>Postgraduates and faculty review, verify, and update treatment plans with
+                                        comprehensive oversight and quality control.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
@@ -279,7 +331,8 @@
                                         </div>
                                         <h4>Department-Specific Clinical Notes</h4>
                                     </div>
-                                    <p>Maintain department-specific clinical notes while preserving shared access across all departments and faculties.</p>
+                                    <p>Maintain department-specific clinical notes while preserving shared access across
+                                        all departments and faculties.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
@@ -290,7 +343,8 @@
                                         </div>
                                         <h4>Clinical Documentation & Imaging</h4>
                                     </div>
-                                    <p>Upload X-rays, intraoral images, treatment plans, and consent forms with complete audit trails for academic oversight.</p>
+                                    <p>Upload X-rays, intraoral images, treatment plans, and consent forms with complete
+                                        audit trails for academic oversight.</p>
                                 </div>
                             </div>
                         </div>
@@ -312,10 +366,14 @@
                 <div class="col-lg-12 mb-4">
                     <div class="benefits-list">
                         <ul class="benefits-grid">
-                            <li><i class="fas fa-check-circle"></i> Designed specifically for academic dental institutions</li>
-                            <li><i class="fas fa-check-circle"></i> Handles high-volume patient inflow with department-level control</li>
-                            <li><i class="fas fa-check-circle"></i> Facilitates both treatment delivery and student learning</li>
-                            <li><i class="fas fa-check-circle"></i> Enables data-driven monitoring of academic and clinical performance</li>
+                            <li><i class="fas fa-check-circle"></i> Designed specifically for academic dental
+                                institutions</li>
+                            <li><i class="fas fa-check-circle"></i> Handles high-volume patient inflow with
+                                department-level control</li>
+                            <li><i class="fas fa-check-circle"></i> Facilitates both treatment delivery and student
+                                learning</li>
+                            <li><i class="fas fa-check-circle"></i> Enables data-driven monitoring of academic and
+                                clinical performance</li>
                             <li><i class="fas fa-check-circle"></i> Cloud-based and accessible from any device</li>
                         </ul>
                     </div>
@@ -334,10 +392,11 @@
                         <span>Dental Colleges. Zero Compromise on Data Security</span>
                     </div>
                     <h2 class="section-title mb-3">Why Dental Colleges Love Clinicia</h2>
-                    <p class="section-subtitle text-muted">All the features you need to run your dental college professionally and securely</p>
+                    <p class="section-subtitle text-muted">All the features you need to run your dental college
+                        professionally and securely</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
@@ -347,7 +406,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Easy to Learn</h5>
-                        <p class="card-text text-muted">No training needed—intuitive interface designed for dental college staff.</p>
+                        <p class="card-text text-muted">No training needed—intuitive interface designed for dental
+                            college staff.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -358,7 +418,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Everything in One Platform</h5>
-                        <p class="card-text text-muted">EMR, scheduling, billing, and communication—all integrated seamlessly.</p>
+                        <p class="card-text text-muted">EMR, scheduling, billing, and communication—all integrated
+                            seamlessly.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -380,7 +441,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Modern Patient Experience</h5>
-                        <p class="card-text text-muted">Creates a professional, paperless experience that patients love.</p>
+                        <p class="card-text text-muted">Creates a professional, paperless experience that patients love.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -391,7 +453,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Secure & Compliant</h5>
-                        <p class="card-text text-muted">Encrypted, cloud-based records with auto backup and role-based access.</p>
+                        <p class="card-text text-muted">Encrypted, cloud-based records with auto backup and role-based
+                            access.</p>
                     </div>
                 </div>
             </div>
@@ -404,13 +467,16 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title mb-2">What Our Doctors Say</h2>
-                    <p class="section-subtitle mb-5">Trusted by healthcare professionals for exceptional patient care</p>
+                    <p class="section-subtitle mb-5">Trusted by healthcare professionals for exceptional patient care
+                    </p>
                     <div class="testimonial-card">
                         <div class="testimonial-quote">
                             <i class="fas fa-quote-left text-primary"></i>
                         </div>
                         <p class="testimonial-text">
-                            "We digitized all patient records and departmental workflows with Clinicia. It has revolutionized how our students learn and how our patients are cared for. Seamless referrals and record-keeping are a game changer."
+                            "We digitized all patient records and departmental workflows with Clinicia. It has
+                            revolutionized how our students learn and how our patients are cared for. Seamless referrals
+                            and record-keeping are a game changer."
                         </p>
                         <div class="testimonial-author">
                             <div class="author-info">
@@ -433,9 +499,11 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
                     <div class="cta-content">
-                        <h2 class="section-title text-white">Transform Patient Record Management in Your Dental College</h2>
+                        <h2 class="section-title text-white">Transform Patient Record Management in Your Dental College
+                        </h2>
                         <p class="section-description text-white">
-                            Join leading institutions using Clinicia to simplify student-driven, multi-departmental care. Enhance learning. Improve patient care. Streamline coordination.
+                            Join leading institutions using Clinicia to simplify student-driven, multi-departmental
+                            care. Enhance learning. Improve patient care. Streamline coordination.
                         </p>
                         <div class="cta-features">
                             <div class="row g-4 text-white">
@@ -482,7 +550,8 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="footer-brand">
-                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50" class="footer-logo mb-3">
+                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50"
+                            class="footer-logo mb-3">
                         <p>Transforming healthcare delivery with modern clinic management solutions.</p>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -546,11 +615,12 @@
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <!-- Custom JavaScript -->
     <script src="clinicia-common.js"></script>
 </body>
+
 </html>

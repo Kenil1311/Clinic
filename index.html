@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinicia - All-in-One Clinic Management Software</title>
-    
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    
+
     <!-- Google Fonts - Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link href="clinicia-common.css" rel="stylesheet">
 </head>
-<body>
 
+<body>
 
     <!-- Header (Sticky & Responsive) -->
     <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+
                     <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='/features'; return false;">
+                        <a class="nav-link dropdown-toggle" href="./features.html" data-bs-toggle="dropdown"
+                            aria-expanded="false" onclick="window.location.href='./features.html'; return false;">
                             Features
                         </a>
                         <div class="dropdown-menu mega-menu features-menu">
@@ -50,32 +54,46 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Core Features</h6>
-                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
-                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
-                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
-                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
-                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
-                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
-                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                        <a class="dropdown-item" href="./emr.html"><i
+                                                class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="./prescription.html"><i
+                                                class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="./appointment.html"><i
+                                                class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="./financial.html"><i
+                                                class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="./consent.html"><i
+                                                class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="./expense.html"><i
+                                                class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="./inventory.html"><i
+                                                class="fas fa-boxes me-2"></i>Inventory</a>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Advanced Features</h6>
 
-                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
-                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
-                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
-                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
-                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
-                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                        <a class="dropdown-item" href="./communication.html"><i
+                                                class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="./users.html"><i
+                                                class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="./membership."><i
+                                                class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="./social.html"><i
+                                                class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="./analytics.html"><i
+                                                class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="./dental-lab.html"><i
+                                                class="fas fa-tooth me-2"></i>Dental Lab Module</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
+
                     <!-- Solutions Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Solutions
                         </a>
                         <div class="dropdown-menu mega-menu">
@@ -85,47 +103,69 @@
                                         <h6 class="dropdown-header">By Specialties</h6>
                                         <div class="row">
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
-                                                <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
-                                                <a class="dropdown-item" href="/gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
-                                                <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
-                                                <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
-                                                <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
-                                                <a class="dropdown-item" href="/diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
-                                                <a class="dropdown-item" href="/ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
-                                                <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                                <a class="dropdown-item" href="./dental.html"><i
+                                                        class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="./dermatology.html"><i
+                                                        class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="./gynaecology.html"><i
+                                                        class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="./physiotherapy.html"><i
+                                                        class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="./ophthalmology.html"><i
+                                                        class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="./ent.html"><i
+                                                        class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="./diabetology.html"><i
+                                                        class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="./ayurveda.html"><i
+                                                        class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="./cardiology.html"><i
+                                                        class="fas fa-heartbeat me-2"></i>Cardiology</a>
                                             </div>
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="/oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
-                                                <a class="dropdown-item" href="/nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
-                                                <a class="dropdown-item" href="/paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
-                                                <a class="dropdown-item" href="/veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
-                                                <a class="dropdown-item" href="/psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
-                                                <a class="dropdown-item" href="/nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
-                                                <a class="dropdown-item" href="/orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
-                                                <a class="dropdown-item" href="/urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                                <a class="dropdown-item" href="./oncology.html"><i
+                                                        class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="./nephrology.html"><i
+                                                        class="fas fa-procedures me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="./paediatrician.html"><i
+                                                        class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="./veterinary.html"><i
+                                                        class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="./psychology.html"><i
+                                                        class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="./nutrition.html"><i
+                                                        class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="./orthopaedic.html"><i
+                                                        class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="./urology.html"><i
+                                                        class="fas fa-user-md me-2"></i>Urology</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">By Practice Size</h6>
-                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
-                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
-                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
-                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
-                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                        <a class="dropdown-item" href="./solo.html"><i class="fas fa-user me-2"></i>Solo
+                                            Practice</a>
+                                        <a class="dropdown-item" href="./multiple.html"><i
+                                                class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="./multi-speciality.html"><i
+                                                class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="./multi-branch.html"><i
+                                                class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="./hospitals.html"><i
+                                                class="fas fa-hospital me-2"></i>Hospitals</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
-                
+
                 <div class="navbar-nav">
                     <a href="#login" class="btn btn-outline-primary">Login</a>
                 </div>
@@ -150,9 +190,10 @@
                             Built for Modern Clinics. Powered by Automation.
                         </p>
                         <p class="hero-description">
-                            Streamline Your Practice, Enhance Patient Care, and Grow with Confidence — Anytime, Anywhere.
+                            Streamline Your Practice, Enhance Patient Care, and Grow with Confidence — Anytime,
+                            Anywhere.
                         </p>
-                        
+
                         <div class="hero-buttons">
                             <a href="#trial" class="btn btn-primary btn-lg me-3">
                                 <i class="fas fa-rocket me-2"></i>Start Free Trial
@@ -161,7 +202,7 @@
                                 <i class="fas fa-calendar me-2"></i>Book a Demo
                             </a>
                         </div>
-                        
+
 
                     </div>
                 </div>
@@ -178,11 +219,12 @@
                                         </div>
                                         <div class="dashboard-title">Clinicia Dashboard</div>
                                     </div>
-                                    <img src="attached_assets/Dashboard - Web_1752476091855.png" alt="Clinicia Dashboard" class="dashboard-screen">
+                                    <img src="attached_assets/Dashboard - Web_1752476091855.png"
+                                        alt="Clinicia Dashboard" class="dashboard-screen">
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Compact Statistics -->
                         <div class="hero-stats-compact">
                             <div class="compact-stat">
@@ -206,7 +248,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Enhanced Medical animated elements -->
         <div class="medical-element" title="Stethoscope"><i class="fas fa-stethoscope"></i></div>
         <div class="medical-element" title="Heartbeat"><i class="fas fa-heartbeat"></i></div>
@@ -216,7 +258,7 @@
         <div class="medical-element" title="Medical Notes"><i class="fas fa-notes-medical"></i></div>
         <div class="medical-element" title="Thermometer"><i class="fas fa-thermometer-half"></i></div>
         <div class="medical-element" title="Microscope"><i class="fas fa-microscope"></i></div>
-        
+
 
     </section>
 
@@ -227,7 +269,7 @@
             <div class="floating-shape shape-2"></div>
             <div class="floating-shape shape-3"></div>
         </div>
-        
+
         <!-- Floating Medical Icons -->
         <div class="floating-medical-icons">
             <div class="floating-medical-icon icon-1">
@@ -267,14 +309,17 @@
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="content-section-clean">
                         <p class="section-description-clean">
-                            Clinicia is a powerful yet intuitive cloud-based practice management platform built specifically for doctors, 
-                            clinics, and healthcare institutions. Whether you're a solo practitioner or managing a multi-speciality, 
-                            multi-branch clinic, Clinicia simplifies your operations — from appointments and EMR to billing, inventory, 
+                            Clinicia is a powerful yet intuitive cloud-based practice management platform built
+                            specifically for doctors,
+                            clinics, and healthcare institutions. Whether you're a solo practitioner or managing a
+                            multi-speciality,
+                            multi-branch clinic, Clinicia simplifies your operations — from appointments and EMR to
+                            billing, inventory,
                             and patient communication.
                         </p>
                     </div>
                 </div>
-                
+
                 <!-- Right Side: Desktop & Mobile System View -->
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="system-showcase-container">
@@ -283,12 +328,13 @@
                             <div class="floating-orb orb-2"></div>
                             <div class="floating-orb orb-3"></div>
                         </div>
-                        
+
                         <!-- Desktop Monitor -->
                         <div class="desktop-monitor-system">
                             <div class="monitor-screen-system">
                                 <div class="screen-frame-system">
-                                    <img src="/attached_assets/Cropped  Dashboard - Web_1752476091855.png" alt="Clinicia Dashboard" class="desktop-image-system">
+                                    <img src="/attached_assets/Cropped  Dashboard - Web_1752476091855.png"
+                                        alt="Clinicia Dashboard" class="desktop-image-system">
                                     <div class="screen-overlay-system">
                                         <div class="screen-glare-system"></div>
                                     </div>
@@ -300,7 +346,7 @@
                             </div>
                             <div class="monitor-reflection-system"></div>
                         </div>
-                        
+
                         <!-- Mobile Phone -->
                         <div class="mobile-phone-system">
                             <div class="phone-device-system">
@@ -311,7 +357,8 @@
                                     </div>
                                     <div class="phone-screen-system">
                                         <div class="screen-content-system">
-                                            <img src="/attached_assets/Home Page - App_1752476091856.jpg" alt="Clinicia Mobile App" class="mobile-image-system">
+                                            <img src="/attached_assets/Home Page - App_1752476091856.jpg"
+                                                alt="Clinicia Mobile App" class="mobile-image-system">
                                             <div class="mobile-status-system">
                                                 <div class="signal-bars-system">
                                                     <span></span><span></span><span></span><span></span>
@@ -378,7 +425,8 @@
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="core-features-content">
                         <h3>All-in-One Healthcare Solution</h3>
-                        <p>Clinicia brings together all essential clinic management tools in one integrated platform, eliminating the need for multiple systems and reducing complexity.</p>
+                        <p>Clinicia brings together all essential clinic management tools in one integrated platform,
+                            eliminating the need for multiple systems and reducing complexity.</p>
                         <ul class="feature-list">
                             <li><i class="fas fa-check-circle"></i> Streamlined patient management workflow</li>
                             <li><i class="fas fa-check-circle"></i> Automated billing and insurance processing</li>
@@ -408,7 +456,8 @@
                             <i class="fas fa-award"></i>
                         </div>
                         <h4>Trusted by 20,000+ Clinics & Doctors</h4>
-                        <p>Join the largest network of healthcare professionals using modern clinic management solutions.</p>
+                        <p>Join the largest network of healthcare professionals using modern clinic management
+                            solutions.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
@@ -417,7 +466,8 @@
                             <i class="fas fa-cloud"></i>
                         </div>
                         <h4>Cloud Access Anytime, Anywhere</h4>
-                        <p>Access your clinic data securely from any device, anywhere in the world with 99.9% uptime guarantee.</p>
+                        <p>Access your clinic data securely from any device, anywhere in the world with 99.9% uptime
+                            guarantee.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
@@ -426,7 +476,8 @@
                             <i class="fab fa-whatsapp"></i>
                         </div>
                         <h4>WhatsApp-Integrated Communication</h4>
-                        <p>Send appointment reminders, reports, and communicate with patients directly through WhatsApp.</p>
+                        <p>Send appointment reminders, reports, and communicate with patients directly through WhatsApp.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
@@ -476,7 +527,8 @@
                             <i class="fas fa-file-medical"></i>
                         </div>
                         <h4>EMR & Clinical Notes</h4>
-                        <p>Digital patient records with smart templates, voice dictation, and secure data management.</p>
+                        <p>Digital patient records with smart templates, voice dictation, and secure data management.
+                        </p>
                         <ul class="feature-list">
                             <li>Smart Templates</li>
                             <li>Voice Dictation</li>
@@ -565,10 +617,11 @@
                 <div class="col-12 text-center mb-5" data-aos="fade-up">
                     <span class="section-badge">Solutions</span>
                     <h2 class="section-title">Perfect Fit for Every Practice</h2>
-                    <p class="section-subtitle">From solo practitioners to multi-branch networks - we have the right solution for your healthcare practice</p>
+                    <p class="section-subtitle">From solo practitioners to multi-branch networks - we have the right
+                        solution for your healthcare practice</p>
                 </div>
             </div>
-            
+
             <!-- Practice Size Cards -->
             <div class="row mb-5">
                 <div class="col-12">
@@ -584,7 +637,8 @@
                                 <span class="stat">Basic Features</span>
                             </div>
                         </div>
-                        <div class="solution-card" data-target="multi-specialty" data-aos="fade-up" data-aos-delay="200">
+                        <div class="solution-card" data-target="multi-specialty" data-aos="fade-up"
+                            data-aos-delay="200">
                             <div class="solution-icon">
                                 <i class="fas fa-hospital"></i>
                             </div>
@@ -609,210 +663,211 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="solution-details-container">
-                        <div class="solution-detail active" id="solo">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-lg-6" data-aos="fade-right">
-                                    <div class="solution-content">
-                                        <div class="solution-badge">Solo Practice</div>
-                                        <h3>Perfect for Solo Practitioners</h3>
-                                        <p>Streamlined features designed for individual healthcare providers who want to digitize their practice without complexity.</p>
-                                        <div class="solution-features-grid">
-                                            <div class="feature-item">
-                                                <i class="fas fa-user-patients"></i>
-                                                <div>
-                                                    <h5>Patient Management</h5>
-                                                    <p>Complete patient records and history</p>
-                                                </div>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-calendar-alt"></i>
-                                                <div>
-                                                    <h5>Appointment Booking</h5>
-                                                    <p>Simple scheduling and reminders</p>
-                                                </div>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-prescription-bottle"></i>
-                                                <div>
-                                                    <h5>Digital Prescriptions</h5>
-                                                    <p>Quick and secure prescribing</p>
-                                                </div>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-receipt"></i>
-                                                <div>
-                                                    <h5>Basic Billing</h5>
-                                                    <p>Simple invoicing and payments</p>
-                                                </div>
-                                            </div>
+                <div class="solution-detail active" id="solo">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="solution-content">
+                                <div class="solution-badge">Solo Practice</div>
+                                <h3>Perfect for Solo Practitioners</h3>
+                                <p>Streamlined features designed for individual healthcare providers who want to
+                                    digitize their practice without complexity.</p>
+                                <div class="solution-features-grid">
+                                    <div class="feature-item">
+                                        <i class="fas fa-user-patients"></i>
+                                        <div>
+                                            <h5>Patient Management</h5>
+                                            <p>Complete patient records and history</p>
                                         </div>
-                                        <div class="solution-cta">
-                                            <a href="#" class="btn btn-primary">Start Free Trial</a>
-                                            <span class="pricing-info">Starting at ₹999/month</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <div>
+                                            <h5>Appointment Booking</h5>
+                                            <p>Simple scheduling and reminders</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-prescription-bottle"></i>
+                                        <div>
+                                            <h5>Digital Prescriptions</h5>
+                                            <p>Quick and secure prescribing</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-receipt"></i>
+                                        <div>
+                                            <h5>Basic Billing</h5>
+                                            <p>Simple invoicing and payments</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6" data-aos="fade-left">
-                                    <div class="solution-visual">
-                                        <div class="feature-grid">
-                                            <div class="feature-box active">
-                                                <i class="fas fa-user-md"></i>
-                                                <span>Patient Records</span>
-                                            </div>
-                                            <div class="feature-box">
-                                                <i class="fas fa-calendar"></i>
-                                                <span>Appointments</span>
-                                            </div>
-                                            <div class="feature-box">
-                                                <i class="fas fa-prescription"></i>
-                                                <span>Prescriptions</span>
-                                            </div>
-                                            <div class="feature-box">
-                                                <i class="fas fa-file-invoice"></i>
-                                                <span>Billing</span>
-                                            </div>
-                                        </div>
+                                <div class="solution-cta">
+                                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                                    <span class="pricing-info">Starting at ₹999/month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <div class="solution-visual">
+                                <div class="feature-grid">
+                                    <div class="feature-box active">
+                                        <i class="fas fa-user-md"></i>
+                                        <span>Patient Records</span>
+                                    </div>
+                                    <div class="feature-box">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>Appointments</span>
+                                    </div>
+                                    <div class="feature-box">
+                                        <i class="fas fa-prescription"></i>
+                                        <span>Prescriptions</span>
+                                    </div>
+                                    <div class="feature-box">
+                                        <i class="fas fa-file-invoice"></i>
+                                        <span>Billing</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="solution-detail" id="multi-specialty">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-lg-6" data-aos="fade-right">
-                                    <div class="solution-content">
-                                        <div class="solution-badge">Multi-Specialty</div>
-                                        <h3>Multi-Specialty Clinic Management</h3>
-                                        <p>Comprehensive solutions for clinics with multiple departments and specialties under one roof.</p>
-                                        <div class="solution-features-grid">
-                                            <div class="feature-item">
-                                                <i class="fas fa-sitemap"></i>
-                                                <div>
-                                                    <h5>Department Management</h5>
-                                                    <p>Organize by specialties and departments</p>
-                                                </div>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-user-nurse"></i>
-                                                <div>
-                                                    <h5>Specialist Scheduling</h5>
-                                                    <p>Complex scheduling for multiple doctors</p>
-                                                </div>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-exchange-alt"></i>
-                                                <div>
-                                                    <h5>Inter-department Referrals</h5>
-                                                    <p>Seamless patient referrals between departments</p>
-                                                </div>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-chart-pie"></i>
-                                                <div>
-                                                    <h5>Consolidated Reporting</h5>
-                                                    <p>Unified reports across all departments</p>
-                                                </div>
-                                            </div>
+                    </div>
+                </div>
+                <div class="solution-detail" id="multi-specialty">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="solution-content">
+                                <div class="solution-badge">Multi-Specialty</div>
+                                <h3>Multi-Specialty Clinic Management</h3>
+                                <p>Comprehensive solutions for clinics with multiple departments and specialties under
+                                    one roof.</p>
+                                <div class="solution-features-grid">
+                                    <div class="feature-item">
+                                        <i class="fas fa-sitemap"></i>
+                                        <div>
+                                            <h5>Department Management</h5>
+                                            <p>Organize by specialties and departments</p>
                                         </div>
-                                        <div class="solution-cta">
-                                            <a href="#" class="btn btn-primary">Start Free Trial</a>
-                                            <span class="pricing-info">Starting at ₹2,999/month</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-user-nurse"></i>
+                                        <div>
+                                            <h5>Specialist Scheduling</h5>
+                                            <p>Complex scheduling for multiple doctors</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-exchange-alt"></i>
+                                        <div>
+                                            <h5>Inter-department Referrals</h5>
+                                            <p>Seamless patient referrals between departments</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-chart-pie"></i>
+                                        <div>
+                                            <h5>Consolidated Reporting</h5>
+                                            <p>Unified reports across all departments</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6" data-aos="fade-left">
-                                    <div class="solution-visual">
-                                        <div class="department-workflow">
-                                            <div class="workflow-item">
-                                                <div class="workflow-icon cardiology">
-                                                    <i class="fas fa-heartbeat"></i>
-                                                </div>
-                                                <span>Cardiology</span>
-                                            </div>
-                                            <div class="workflow-arrow">→</div>
-                                            <div class="workflow-item">
-                                                <div class="workflow-icon orthopedics">
-                                                    <i class="fas fa-bone"></i>
-                                                </div>
-                                                <span>Orthopedics</span>
-                                            </div>
-                                            <div class="workflow-arrow">→</div>
-                                            <div class="workflow-item">
-                                                <div class="workflow-icon neurology">
-                                                    <i class="fas fa-brain"></i>
-                                                </div>
-                                                <span>Neurology</span>
-                                            </div>
+                                <div class="solution-cta">
+                                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                                    <span class="pricing-info">Starting at ₹2,999/month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <div class="solution-visual">
+                                <div class="department-workflow">
+                                    <div class="workflow-item">
+                                        <div class="workflow-icon cardiology">
+                                            <i class="fas fa-heartbeat"></i>
                                         </div>
+                                        <span>Cardiology</span>
+                                    </div>
+                                    <div class="workflow-arrow">→</div>
+                                    <div class="workflow-item">
+                                        <div class="workflow-icon orthopedics">
+                                            <i class="fas fa-bone"></i>
+                                        </div>
+                                        <span>Orthopedics</span>
+                                    </div>
+                                    <div class="workflow-arrow">→</div>
+                                    <div class="workflow-item">
+                                        <div class="workflow-icon neurology">
+                                            <i class="fas fa-brain"></i>
+                                        </div>
+                                        <span>Neurology</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="solution-detail" id="multi-branch">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-lg-6" data-aos="fade-right">
-                                    <div class="solution-content">
-                                        <div class="solution-badge">Multi-Branch</div>
-                                        <h3>Multi-Branch Healthcare Networks</h3>
-                                        <p>Enterprise-grade solutions for healthcare networks with multiple locations and centralized management.</p>
-                                        <div class="solution-features-grid">
-                                            <div class="feature-item">
-                                                <i class="fas fa-cogs"></i>
-                                                <div>
-                                                    <h5>Centralized Administration</h5>
-                                                    <p>Manage all branches from single dashboard</p>
-                                                </div>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-analytics"></i>
-                                                <div>
-                                                    <h5>Branch-wise Analytics</h5>
-                                                    <p>Performance insights for each location</p>
-                                                </div>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-share-alt"></i>
-                                                <div>
-                                                    <h5>Resource Sharing</h5>
-                                                    <p>Share staff and resources across branches</p>
-                                                </div>
-                                            </div>
-                                            <div class="feature-item">
-                                                <i class="fas fa-database"></i>
-                                                <div>
-                                                    <h5>Unified Patient Records</h5>
-                                                    <p>Access patient data across all locations</p>
-                                                </div>
-                                            </div>
+                    </div>
+                </div>
+                <div class="solution-detail" id="multi-branch">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="solution-content">
+                                <div class="solution-badge">Multi-Branch</div>
+                                <h3>Multi-Branch Healthcare Networks</h3>
+                                <p>Enterprise-grade solutions for healthcare networks with multiple locations and
+                                    centralized management.</p>
+                                <div class="solution-features-grid">
+                                    <div class="feature-item">
+                                        <i class="fas fa-cogs"></i>
+                                        <div>
+                                            <h5>Centralized Administration</h5>
+                                            <p>Manage all branches from single dashboard</p>
                                         </div>
-                                        <div class="solution-cta">
-                                            <a href="#" class="btn btn-primary">Contact Sales</a>
-                                            <span class="pricing-info">Custom Enterprise Pricing</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-analytics"></i>
+                                        <div>
+                                            <h5>Branch-wise Analytics</h5>
+                                            <p>Performance insights for each location</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-share-alt"></i>
+                                        <div>
+                                            <h5>Resource Sharing</h5>
+                                            <p>Share staff and resources across branches</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-database"></i>
+                                        <div>
+                                            <h5>Unified Patient Records</h5>
+                                            <p>Access patient data across all locations</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6" data-aos="fade-left">
-                                    <div class="solution-visual">
-                                        <div class="network-diagram">
-                                            <div class="central-hub">
-                                                <i class="fas fa-server"></i>
-                                                <span>Central Hub</span>
-                                            </div>
-                                            <div class="branch-network">
-                                                <div class="branch-node">
-                                                    <i class="fas fa-hospital"></i>
-                                                    <span>Branch A</span>
-                                                </div>
-                                                <div class="branch-node">
-                                                    <i class="fas fa-clinic-medical"></i>
-                                                    <span>Branch B</span>
-                                                </div>
-                                                <div class="branch-node">
-                                                    <i class="fas fa-hospital-alt"></i>
-                                                    <span>Branch C</span>
-                                                </div>
-                                            </div>
+                                <div class="solution-cta">
+                                    <a href="#" class="btn btn-primary">Contact Sales</a>
+                                    <span class="pricing-info">Custom Enterprise Pricing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <div class="solution-visual">
+                                <div class="network-diagram">
+                                    <div class="central-hub">
+                                        <i class="fas fa-server"></i>
+                                        <span>Central Hub</span>
+                                    </div>
+                                    <div class="branch-network">
+                                        <div class="branch-node">
+                                            <i class="fas fa-hospital"></i>
+                                            <span>Branch A</span>
+                                        </div>
+                                        <div class="branch-node">
+                                            <i class="fas fa-clinic-medical"></i>
+                                            <span>Branch B</span>
+                                        </div>
+                                        <div class="branch-node">
+                                            <i class="fas fa-hospital-alt"></i>
+                                            <span>Branch C</span>
                                         </div>
                                     </div>
                                 </div>
@@ -821,52 +876,54 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Specialties Grid -->
-            <div class="row mt-5">
-                <div class="col-12 text-center mb-4">
-                    <h3>Specialized Solutions</h3>
-                    <p>Tailored features for different medical specialties</p>
+        </div>
+        </div>
+
+        <!-- Specialties Grid -->
+        <div class="row mt-5">
+            <div class="col-12 text-center mb-4">
+                <h3>Specialized Solutions</h3>
+                <p>Tailored features for different medical specialties</p>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="specialty-card">
+                    <i class="fas fa-tooth"></i>
+                    <span>Dental</span>
                 </div>
             </div>
-            <div class="row g-3">
-                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="specialty-card">
-                        <i class="fas fa-tooth"></i>
-                        <span>Dental</span>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="specialty-card">
-                        <i class="fas fa-eye"></i>
-                        <span>Ophthalmology</span>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="specialty-card">
-                        <i class="fas fa-venus"></i>
-                        <span>Gynecology</span>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="specialty-card">
-                        <i class="fas fa-deaf"></i>
-                        <span>ENT</span>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="specialty-card">
-                        <i class="fas fa-heartbeat"></i>
-                        <span>Cardiology</span>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
-                    <div class="specialty-card">
-                        <i class="fas fa-plus"></i>
-                        <span>More</span>
-                    </div>
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="specialty-card">
+                    <i class="fas fa-eye"></i>
+                    <span>Ophthalmology</span>
                 </div>
             </div>
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="specialty-card">
+                    <i class="fas fa-venus"></i>
+                    <span>Gynecology</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="specialty-card">
+                    <i class="fas fa-deaf"></i>
+                    <span>ENT</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
+                <div class="specialty-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Cardiology</span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
+                <div class="specialty-card">
+                    <i class="fas fa-plus"></i>
+                    <span>More</span>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -887,7 +944,8 @@
                                 </div>
                                 <div class="feature-content">
                                     <h4>WhatsApp Integration</h4>
-                                    <p>Send appointment reminders, lab reports, and health tips directly to patients' WhatsApp.</p>
+                                    <p>Send appointment reminders, lab reports, and health tips directly to patients'
+                                        WhatsApp.</p>
                                 </div>
                             </div>
                             <div class="engagement-feature">
@@ -896,7 +954,8 @@
                                 </div>
                                 <div class="feature-content">
                                     <h4>Online Booking via Google</h4>
-                                    <p>Patients can book appointments directly through Google search and Google My Business.</p>
+                                    <p>Patients can book appointments directly through Google search and Google My
+                                        Business.</p>
                                 </div>
                             </div>
                             <div class="engagement-feature">
@@ -919,7 +978,8 @@
                                     <div class="phone-notch"></div>
                                     <div class="phone-speaker"></div>
                                 </div>
-                                <img src="attached_assets/targeted_element_1752479784382.png" alt="Patient Engagement" class="phone-screen">
+                                <img src="attached_assets/targeted_element_1752479784382.png" alt="Patient Engagement"
+                                    class="phone-screen">
                                 <div class="phone-home-indicator"></div>
                                 <div class="whatsapp-notifications">
                                     <div class="notification notification-1">
@@ -950,7 +1010,7 @@
                         </div>
                         <h2 class="section-title">Privacy & Compliance First</h2>
                         <p class="section-description">
-                            Your data security is our top priority. Clinicia is built with enterprise-grade security 
+                            Your data security is our top priority. Clinicia is built with enterprise-grade security
                             measures and complies with all healthcare data protection regulations.
                         </p>
                         <div class="row g-4 mt-4">
@@ -990,7 +1050,8 @@
             <div class="row">
                 <div class="col-12 text-center mb-5" data-aos="fade-up">
                     <h2 class="section-title">What Our Doctors Say</h2>
-                    <p class="section-subtitle">Hear from healthcare professionals who transformed their practice with Clinicia</p>
+                    <p class="section-subtitle">Hear from healthcare professionals who transformed their practice with
+                        Clinicia</p>
                 </div>
             </div>
             <div class="row">
@@ -1009,8 +1070,10 @@
                                                 <i class="fas fa-star"></i>
                                             </div>
                                             <p class="testimonial-text">
-                                                "Clinicia has completely transformed how I manage my practice. The WhatsApp integration 
-                                                alone has improved patient communication by 300%. I can now focus more on patient care 
+                                                "Clinicia has completely transformed how I manage my practice. The
+                                                WhatsApp integration
+                                                alone has improved patient communication by 300%. I can now focus more
+                                                on patient care
                                                 rather than administrative tasks."
                                             </p>
                                             <div class="testimonial-author">
@@ -1035,8 +1098,10 @@
                                                 <i class="fas fa-star"></i>
                                             </div>
                                             <p class="testimonial-text">
-                                                "As a multi-specialty clinic owner, managing different departments was a nightmare. 
-                                                Clinicia's unified platform has streamlined everything from appointments to billing. 
+                                                "As a multi-specialty clinic owner, managing different departments was a
+                                                nightmare.
+                                                Clinicia's unified platform has streamlined everything from appointments
+                                                to billing.
                                                 Our efficiency has increased by 40%."
                                             </p>
                                             <div class="testimonial-author">
@@ -1050,10 +1115,12 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="prev">
                             <i class="fas fa-chevron-left"></i>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                            data-bs-slide="next">
                             <i class="fas fa-chevron-right"></i>
                         </button>
                     </div>
@@ -1070,7 +1137,8 @@
                     <div class="cta-content">
                         <h2 class="section-title text-white">Ready to Transform Your Practice?</h2>
                         <p class="section-description text-white">
-                            Join thousands of healthcare professionals who have revolutionized their practice with Clinicia
+                            Join thousands of healthcare professionals who have revolutionized their practice with
+                            Clinicia
                         </p>
                         <div class="cta-features">
                             <div class="row g-4 text-white">
@@ -1134,7 +1202,8 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="footer-brand">
-                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50" class="footer-logo mb-3">
+                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50"
+                            class="footer-logo mb-3">
                         <p>Transforming healthcare delivery with modern clinic management solutions.</p>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -1198,11 +1267,12 @@
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <!-- Custom JavaScript -->
     <script src="clinicia-common.js"></script>
 </body>
+
 </html>

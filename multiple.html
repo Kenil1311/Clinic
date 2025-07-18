@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple Doctors Setup - Practice Management Software - Clinicia</title>
-    <meta name="description" content="Comprehensive practice management solution for clinics with multiple doctors. Streamline scheduling, billing, and patient management across multiple practitioners.">
-    
+    <meta name="description"
+        content="Comprehensive practice management solution for clinics with multiple doctors. Streamline scheduling, billing, and patient management across multiple practitioners.">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts - Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link href="clinicia-common.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
@@ -28,21 +32,22 @@
     <!-- Header (Sticky & Responsive) -->
     <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+
                     <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='/features'; return false;">
+                        <a class="nav-link dropdown-toggle" href="./features.html" data-bs-toggle="dropdown"
+                            aria-expanded="false" onclick="window.location.href='./features.html'; return false;">
                             Features
                         </a>
                         <div class="dropdown-menu mega-menu features-menu">
@@ -50,32 +55,46 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Core Features</h6>
-                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
-                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
-                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
-                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
-                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
-                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
-                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                        <a class="dropdown-item" href="./emr.html"><i
+                                                class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="./prescription.html"><i
+                                                class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="./appointment.html"><i
+                                                class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="./financial.html"><i
+                                                class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="./consent.html"><i
+                                                class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="./expense.html"><i
+                                                class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="./inventory.html"><i
+                                                class="fas fa-boxes me-2"></i>Inventory</a>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Advanced Features</h6>
 
-                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
-                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
-                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
-                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
-                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
-                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                        <a class="dropdown-item" href="./communication.html"><i
+                                                class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="./users.html"><i
+                                                class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="./membership."><i
+                                                class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="./social.html"><i
+                                                class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="./analytics.html"><i
+                                                class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="./dental-lab.html"><i
+                                                class="fas fa-tooth me-2"></i>Dental Lab Module</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
+
                     <!-- Solutions Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Solutions
                         </a>
                         <div class="dropdown-menu mega-menu">
@@ -85,49 +104,69 @@
                                         <h6 class="dropdown-header">By Specialties</h6>
                                         <div class="row">
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
-                                                <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
-                                                <a class="dropdown-item" href="/gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
-                                                <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
-                                                <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
-                                                <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
-                                                <a class="dropdown-item" href="/diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
-                                                <a class="dropdown-item" href="/ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
-                                                <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                                <a class="dropdown-item" href="./dental.html"><i
+                                                        class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="./dermatology.html"><i
+                                                        class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="./gynaecology.html"><i
+                                                        class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="./physiotherapy.html"><i
+                                                        class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="./ophthalmology.html"><i
+                                                        class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="./ent.html"><i
+                                                        class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="./diabetology.html"><i
+                                                        class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="./ayurveda.html"><i
+                                                        class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="./cardiology.html"><i
+                                                        class="fas fa-heartbeat me-2"></i>Cardiology</a>
                                             </div>
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="/oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
-                                                <a class="dropdown-item" href="/nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
-                                                <a class="dropdown-item" href="/paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
-                                                <a class="dropdown-item" href="/veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
-                                                <a class="dropdown-item" href="/psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
-                                                <a class="dropdown-item" href="/nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
-                                                <a class="dropdown-item" href="/orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
-                                                <a class="dropdown-item" href="/urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                                <a class="dropdown-item" href="./oncology.html"><i
+                                                        class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="./nephrology.html"><i
+                                                        class="fas fa-procedures me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="./paediatrician.html"><i
+                                                        class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="./veterinary.html"><i
+                                                        class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="./psychology.html"><i
+                                                        class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="./nutrition.html"><i
+                                                        class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="./orthopaedic.html"><i
+                                                        class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="./urology.html"><i
+                                                        class="fas fa-user-md me-2"></i>Urology</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">By Practice Size</h6>
-                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
-                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
-                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
-                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
-                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
-
+                                        <a class="dropdown-item" href="./solo.html"><i class="fas fa-user me-2"></i>Solo
+                                            Practice</a>
+                                        <a class="dropdown-item" href="./multiple.html"><i
+                                                class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="./multi-speciality.html"><i
+                                                class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="./multi-branch.html"><i
+                                                class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="./hospitals.html"><i
+                                                class="fas fa-hospital me-2"></i>Hospitals</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
-                    
-                    
-                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
-                
+
                 <div class="navbar-nav">
                     <a href="#login" class="btn btn-outline-primary">Login</a>
                 </div>
@@ -149,13 +188,15 @@
                                 <li class="breadcrumb-item active" aria-current="page">Multiple Doctors Setup</li>
                             </ol>
                         </nav>
-                        
+
                         <h1 class="feature-hero-title">Clinic Software Built for Small Practices</h1>
                         <p class="feature-hero-subtitle">Empower Your Team of 2–3 Doctors to Work in Sync</p>
                         <p class="feature-hero-description">
-                            Running a small clinic comes with unique challenges—coordinating appointments, sharing patient history, and ensuring smooth collaboration among doctors and staff. Clinicia gives you the tools to streamline, grow, and scale without the chaos.
+                            Running a small clinic comes with unique challenges—coordinating appointments, sharing
+                            patient history, and ensuring smooth collaboration among doctors and staff. Clinicia gives
+                            you the tools to streamline, grow, and scale without the chaos.
                         </p>
-                        
+
                         <div class="feature-hero-actions">
                             <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
                             <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
@@ -179,7 +220,8 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title">Complete Small Practice Solution</h2>
-                    <p class="section-subtitle">Everything you need to manage a team of 2-3 doctors working together seamlessly</p>
+                    <p class="section-subtitle">Everything you need to manage a team of 2-3 doctors working together
+                        seamlessly</p>
                 </div>
             </div>
             <div class="row">
@@ -189,7 +231,8 @@
                             <i class="fas fa-sync-alt"></i>
                         </div>
                         <h4>Real-Time Sync Across Devices & Users</h4>
-                        <p>Multiple doctors can access the same patient record—with complete history and notes. Sync schedules and treatment plans between doctors, nurses, and front desk.</p>
+                        <p>Multiple doctors can access the same patient record—with complete history and notes. Sync
+                            schedules and treatment plans between doctors, nurses, and front desk.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -198,7 +241,8 @@
                             <i class="fas fa-users-cog"></i>
                         </div>
                         <h4>Role-Based Access for Doctors & Staff</h4>
-                        <p>Customize permissions for doctors, assistants, receptionists, and managers. Protect sensitive data with controlled access and track who accessed what, and when.</p>
+                        <p>Customize permissions for doctors, assistants, receptionists, and managers. Protect sensitive
+                            data with controlled access and track who accessed what, and when.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -207,7 +251,8 @@
                             <i class="fas fa-calendar-alt"></i>
                         </div>
                         <h4>Centralized Appointment Scheduling</h4>
-                        <p>A shared appointment calendar for all doctors. Track walk-ins, online bookings, reschedules, and no-shows with WhatsApp reminders for patients.</p>
+                        <p>A shared appointment calendar for all doctors. Track walk-ins, online bookings, reschedules,
+                            and no-shows with WhatsApp reminders for patients.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -216,7 +261,8 @@
                             <i class="fas fa-file-medical-alt"></i>
                         </div>
                         <h4>Integrated EMR for Multi-Doctor Access</h4>
-                        <p>Clinical notes, treatment history, vitals, investigations—all in one digital record. Doctors can easily handover or refer patients internally.</p>
+                        <p>Clinical notes, treatment history, vitals, investigations—all in one digital record. Doctors
+                            can easily handover or refer patients internally.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -225,7 +271,8 @@
                             <i class="fas fa-calculator"></i>
                         </div>
                         <h4>Billing, Payments & Expense Management</h4>
-                        <p>Each doctor's invoices, collections, and performance tracking. Expense categorization—per service, per vendor, per department.</p>
+                        <p>Each doctor's invoices, collections, and performance tracking. Expense categorization—per
+                            service, per vendor, per department.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -234,7 +281,8 @@
                             <i class="fas fa-chart-bar"></i>
                         </div>
                         <h4>Reports That Track Clinic Performance</h4>
-                        <p>Doctor-wise revenue and appointment trends. Department-wise and service-wise treatment statistics. Download reports in Excel or PDF anytime.</p>
+                        <p>Doctor-wise revenue and appointment trends. Department-wise and service-wise treatment
+                            statistics. Download reports in Excel or PDF anytime.</p>
                     </div>
                 </div>
             </div>
@@ -251,10 +299,11 @@
                         <span>Small Practice Excellence</span>
                     </div>
                     <h2 class="section-title mb-3">Why Small Practices Trust Clinicia</h2>
-                    <p class="section-subtitle text-muted">All the features your multi-doctor team needs in one integrated platform</p>
+                    <p class="section-subtitle text-muted">All the features your multi-doctor team needs in one
+                        integrated platform</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
@@ -264,7 +313,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Supports Growing Teams</h5>
-                        <p class="card-text text-muted">Perfect for teams of 2–3 doctors working across multiple devices—PCs, tablets, mobiles.</p>
+                        <p class="card-text text-muted">Perfect for teams of 2–3 doctors working across multiple
+                            devices—PCs, tablets, mobiles.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -275,7 +325,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Real-Time Synchronization</h5>
-                        <p class="card-text text-muted">Share patient records, schedules, and treatment plans instantly across all doctors and staff.</p>
+                        <p class="card-text text-muted">Share patient records, schedules, and treatment plans instantly
+                            across all doctors and staff.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -286,7 +337,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Easy to Scale</h5>
-                        <p class="card-text text-muted">Seamlessly expand to more rooms or branches as your practice grows.</p>
+                        <p class="card-text text-muted">Seamlessly expand to more rooms or branches as your practice
+                            grows.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -297,7 +349,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Role-Based Access</h5>
-                        <p class="card-text text-muted">Customize permissions for doctors, assistants, receptionists, and managers with secure data protection.</p>
+                        <p class="card-text text-muted">Customize permissions for doctors, assistants, receptionists,
+                            and managers with secure data protection.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -308,7 +361,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Saves Admin Time</h5>
-                        <p class="card-text text-muted">Reduces clinic downtime with no IT team required—cloud-based and user-friendly.</p>
+                        <p class="card-text text-muted">Reduces clinic downtime with no IT team required—cloud-based and
+                            user-friendly.</p>
                     </div>
                 </div>
             </div>
@@ -328,14 +382,20 @@
                     <div class="benefits-list">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Supports growing teams with real-time synchronization</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Role-based access control for secure data protection</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Easy to scale as your practice grows</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Supports
+                                    growing teams with real-time synchronization</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i>
+                                    Role-based access control for secure data protection</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Easy to
+                                    scale as your practice grows</div>
                             </div>
                             <div class="col-md-6">
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Saves admin time with cloud-based simplicity</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Personal patient communication and engagement</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Seamless multi-doctor collaboration</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Saves
+                                    admin time with cloud-based simplicity</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Personal
+                                    patient communication and engagement</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Seamless
+                                    multi-doctor collaboration</div>
                             </div>
                         </div>
                     </div>
@@ -356,7 +416,8 @@
                             <i class="fas fa-quote-left text-primary"></i>
                         </div>
                         <p class="testimonial-text">
-                            "Clinicia helps our two-doctor skin clinic feel like a much bigger setup. We share records, manage appointments, and even track individual earnings—all in one place."
+                            "Clinicia helps our two-doctor skin clinic feel like a much bigger setup. We share records,
+                            manage appointments, and even track individual earnings—all in one place."
                         </p>
                         <div class="testimonial-author">
                             <div class="author-info">
@@ -381,7 +442,8 @@
                     <div class="cta-content">
                         <h2 class="section-title text-white">Ready to Transform Your Small Practice?</h2>
                         <p class="section-description text-white">
-                            Join thousands of doctors who've streamlined their clinic operations with Clinicia. Start your journey to better patient care and improved practice efficiency.
+                            Join thousands of doctors who've streamlined their clinic operations with Clinicia. Start
+                            your journey to better patient care and improved practice efficiency.
                         </p>
                         <div class="cta-features">
                             <div class="row g-4 text-white">
@@ -428,7 +490,8 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="footer-brand">
-                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50" class="footer-logo mb-3">
+                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50"
+                            class="footer-logo mb-3">
                         <p>Transforming healthcare delivery with modern clinic management solutions.</p>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -495,11 +558,12 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <!-- Custom JS -->
     <script src="clinicia-common.js"></script>
 </body>
+
 </html>

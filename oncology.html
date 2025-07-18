@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oncology EMR & Cancer Clinic Management Software | Clinicia</title>
-    <meta name="description" content="Clinicia provides EMR and clinic management software for oncologists. Record staging, chemotherapy plans, lab reports, follow-ups, and billing in one secure platform.">
-    
+    <meta name="description"
+        content="Clinicia provides EMR and clinic management software for oncologists. Record staging, chemotherapy plans, lab reports, follow-ups, and billing in one secure platform.">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link href="clinicia-common.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
@@ -28,21 +31,22 @@
     <!-- Header (Sticky & Responsive) -->
     <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+
                     <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='/features'; return false;">
+                        <a class="nav-link dropdown-toggle" href="./features.html" data-bs-toggle="dropdown"
+                            aria-expanded="false" onclick="window.location.href='./features.html'; return false;">
                             Features
                         </a>
                         <div class="dropdown-menu mega-menu features-menu">
@@ -50,32 +54,46 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Core Features</h6>
-                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
-                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
-                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
-                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
-                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
-                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
-                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                        <a class="dropdown-item" href="./emr.html"><i
+                                                class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="./prescription.html"><i
+                                                class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="./appointment.html"><i
+                                                class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="./financial.html"><i
+                                                class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="./consent.html"><i
+                                                class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="./expense.html"><i
+                                                class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="./inventory.html"><i
+                                                class="fas fa-boxes me-2"></i>Inventory</a>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Advanced Features</h6>
 
-                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
-                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
-                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
-                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
-                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
-                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                        <a class="dropdown-item" href="./communication.html"><i
+                                                class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="./users.html"><i
+                                                class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="./membership."><i
+                                                class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="./social.html"><i
+                                                class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="./analytics.html"><i
+                                                class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="./dental-lab.html"><i
+                                                class="fas fa-tooth me-2"></i>Dental Lab Module</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
+
                     <!-- Solutions Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Solutions
                         </a>
                         <div class="dropdown-menu mega-menu">
@@ -85,47 +103,69 @@
                                         <h6 class="dropdown-header">By Specialties</h6>
                                         <div class="row">
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
-                                                <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
-                                                <a class="dropdown-item" href="/gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
-                                                <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
-                                                <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
-                                                <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
-                                                <a class="dropdown-item" href="/diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
-                                                <a class="dropdown-item" href="/ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
-                                                <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                                <a class="dropdown-item" href="./dental.html"><i
+                                                        class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="./dermatology.html"><i
+                                                        class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="./gynaecology.html"><i
+                                                        class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="./physiotherapy.html"><i
+                                                        class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="./ophthalmology.html"><i
+                                                        class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="./ent.html"><i
+                                                        class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="./diabetology.html"><i
+                                                        class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="./ayurveda.html"><i
+                                                        class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="./cardiology.html"><i
+                                                        class="fas fa-heartbeat me-2"></i>Cardiology</a>
                                             </div>
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="/oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
-                                                <a class="dropdown-item" href="/nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
-                                                <a class="dropdown-item" href="/paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
-                                                <a class="dropdown-item" href="/veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
-                                                <a class="dropdown-item" href="/psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
-                                                <a class="dropdown-item" href="/nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
-                                                <a class="dropdown-item" href="/orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
-                                                <a class="dropdown-item" href="/urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                                <a class="dropdown-item" href="./oncology.html"><i
+                                                        class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="./nephrology.html"><i
+                                                        class="fas fa-procedures me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="./paediatrician.html"><i
+                                                        class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="./veterinary.html"><i
+                                                        class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="./psychology.html"><i
+                                                        class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="./nutrition.html"><i
+                                                        class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="./orthopaedic.html"><i
+                                                        class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="./urology.html"><i
+                                                        class="fas fa-user-md me-2"></i>Urology</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">By Practice Size</h6>
-                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
-                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
-                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
-                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
-                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                        <a class="dropdown-item" href="./solo.html"><i class="fas fa-user me-2"></i>Solo
+                                            Practice</a>
+                                        <a class="dropdown-item" href="./multiple.html"><i
+                                                class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="./multi-speciality.html"><i
+                                                class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="./multi-branch.html"><i
+                                                class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="./hospitals.html"><i
+                                                class="fas fa-hospital me-2"></i>Hospitals</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
-                
+
                 <div class="navbar-nav">
                     <a href="#login" class="btn btn-outline-primary">Login</a>
                 </div>
@@ -147,13 +187,16 @@
                                 <li class="breadcrumb-item active" aria-current="page">Oncology</li>
                             </ol>
                         </nav>
-                        
+
                         <h1 class="feature-hero-title">Clinicia for Oncologists</h1>
                         <p class="feature-hero-subtitle">Organize, Monitor & Personalize Cancer Care Digitally</p>
                         <p class="feature-hero-description">
-                            Oncology requires deep documentation, multi-stage treatment planning, long-term follow-ups, and collaborative care. Clinicia helps oncologists and cancer centers streamline EMRs, coordinate care across departments, and engage with patients compassionately and efficiently—all while maintaining data privacy and regulatory compliance.
+                            Oncology requires deep documentation, multi-stage treatment planning, long-term follow-ups,
+                            and collaborative care. Clinicia helps oncologists and cancer centers streamline EMRs,
+                            coordinate care across departments, and engage with patients compassionately and
+                            efficiently—all while maintaining data privacy and regulatory compliance.
                         </p>
-                        
+
                         <div class="feature-hero-actions">
                             <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
                             <a href="#" class="btn btn-outline-primary btn-lg">Book a Demo</a>
@@ -177,10 +220,11 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5">
                     <h2 class="section-title">Comprehensive Oncology Practice Management</h2>
-                    <p class="section-subtitle">Everything you need to manage cancer care efficiently and compassionately</p>
+                    <p class="section-subtitle">Everything you need to manage cancer care efficiently and
+                        compassionately</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
@@ -188,7 +232,8 @@
                             <i class="fas fa-microscope"></i>
                         </div>
                         <h4>Oncology-Specific EMR for Accurate Case Management</h4>
-                        <p>Maintain detailed cancer history: presenting complaints, onset, stage, and comprehensive treatment documentation.</p>
+                        <p>Maintain detailed cancer history: presenting complaints, onset, stage, and comprehensive
+                            treatment documentation.</p>
                         <ul class="feature-list">
                             <li>Document TNM classification, tumor grade, pathology reports</li>
                             <li>Record histopathology, biopsy, IHC, PET CT, MRI, Bone Scan reports</li>
@@ -196,14 +241,15 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-flask"></i>
                         </div>
                         <h4>Chemotherapy & Treatment Planning</h4>
-                        <p>Create structured treatment cycles with medication doses, regimens, and scheduling for optimal patient care.</p>
+                        <p>Create structured treatment cycles with medication doses, regimens, and scheduling for
+                            optimal patient care.</p>
                         <ul class="feature-list">
                             <li>Build reusable templates for chemo protocols (FOLFOX, CHOP, AC-T)</li>
                             <li>Schedule future chemo dates & send reminders to patients</li>
@@ -211,14 +257,15 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-calendar-plus"></i>
                         </div>
                         <h4>Long-Term Follow-Up Scheduling & Recalls</h4>
-                        <p>Set periodic review reminders for comprehensive survivorship care and treatment monitoring.</p>
+                        <p>Set periodic review reminders for comprehensive survivorship care and treatment monitoring.
+                        </p>
                         <ul class="feature-list">
                             <li>Track patients through ongoing treatment to survivorship</li>
                             <li>Send automated WhatsApp or Email reminders for visits and test dates</li>
@@ -226,14 +273,15 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-heart"></i>
                         </div>
                         <h4>Patient Engagement & Communication</h4>
-                        <p>Share prescriptions, lab reports, and treatment summaries with compassionate patient support.</p>
+                        <p>Share prescriptions, lab reports, and treatment summaries with compassionate patient support.
+                        </p>
                         <ul class="feature-list">
                             <li>Share educational resources on managing side-effects, nutrition, mental health</li>
                             <li>Send Thank You, Welcome, Birthday messages, and follow-up reminders</li>
@@ -241,14 +289,15 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-file-invoice-dollar"></i>
                         </div>
                         <h4>Billing, Packages & Receipts</h4>
-                        <p>Generate invoices for consultations, chemo cycles, day-care charges, and diagnostic procedures.</p>
+                        <p>Generate invoices for consultations, chemo cycles, day-care charges, and diagnostic
+                            procedures.</p>
                         <ul class="feature-list">
                             <li>Record partial or full payments with instant acknowledgment via WhatsApp</li>
                             <li>Track usage of treatment packages or bundled services</li>
@@ -256,14 +305,15 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6">
                     <div class="capability-card">
                         <div class="capability-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <h4>Oncology MIS & Data Insights</h4>
-                        <p>Analyze patient load by cancer type, treatment plan, or stage with comprehensive reporting.</p>
+                        <p>Analyze patient load by cancer type, treatment plan, or stage with comprehensive reporting.
+                        </p>
                         <ul class="feature-list">
                             <li>Reports on treatment outcomes, dropouts, compliance</li>
                             <li>Financial reports on revenue, unpaid bills, department-wise earnings</li>
@@ -285,10 +335,11 @@
                         <span>Multi-User Platform for Collaborative Care</span>
                     </div>
                     <h2 class="section-title mb-3" data-bg-text="SECURITY">Security & Team Collaboration</h2>
-                    <p class="section-subtitle text-muted">Secure, collaborative platform for comprehensive cancer care management</p>
+                    <p class="section-subtitle text-muted">Secure, collaborative platform for comprehensive cancer care
+                        management</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="security-card h-100 text-center p-4 bg-white rounded-3 shadow-sm border-0 hover-lift">
@@ -298,7 +349,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Collaborative Care</h5>
-                        <p class="card-text text-muted">Oncologists, Radiation Specialists, Nurses, Lab Technicians, Coordinators—all on one platform.</p>
+                        <p class="card-text text-muted">Oncologists, Radiation Specialists, Nurses, Lab Technicians,
+                            Coordinators—all on one platform.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -309,7 +361,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Multi-Device Access</h5>
-                        <p class="card-text text-muted">Real-time access across multiple devices: Web, Android, iOS for seamless care coordination.</p>
+                        <p class="card-text text-muted">Real-time access across multiple devices: Web, Android, iOS for
+                            seamless care coordination.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -320,7 +373,8 @@
                             </div>
                         </div>
                         <h5 class="card-title mb-2">Privacy & Compliance</h5>
-                        <p class="card-text text-muted">Role-based access ensures clinical, administrative, and billing privacy with regulatory compliance.</p>
+                        <p class="card-text text-muted">Role-based access ensures clinical, administrative, and billing
+                            privacy with regulatory compliance.</p>
                     </div>
                 </div>
             </div>
@@ -342,16 +396,24 @@
                     <div class="benefits-list">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Oncology-specific EMR with TNM staging and pathology documentation</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Chemotherapy treatment planning with reusable protocol templates</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Long-term follow-up scheduling and survivorship care tracking</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Patient engagement with educational resources and compassionate communication</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i>
+                                    Oncology-specific EMR with TNM staging and pathology documentation</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i>
+                                    Chemotherapy treatment planning with reusable protocol templates</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Long-term
+                                    follow-up scheduling and survivorship care tracking</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Patient
+                                    engagement with educational resources and compassionate communication</div>
                             </div>
                             <div class="col-md-6">
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Billing for consultations, chemo cycles, and day-care charges</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Comprehensive MIS and data insights for cancer care analytics</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Multi-user platform for collaborative oncology care teams</div>
-                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Perfect for Solo Oncologists to Multi-Speciality Cancer Centers</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Billing
+                                    for consultations, chemo cycles, and day-care charges</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i>
+                                    Comprehensive MIS and data insights for cancer care analytics</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i>
+                                    Multi-user platform for collaborative oncology care teams</div>
+                                <div class="benefit-item"><i class="fas fa-check-circle text-danger me-2"></i> Perfect
+                                    for Solo Oncologists to Multi-Speciality Cancer Centers</div>
                             </div>
                         </div>
                     </div>
@@ -368,13 +430,15 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title mb-2">What Our Doctors Say</h2>
-                    <p class="section-subtitle mb-5">Trusted by healthcare professionals for exceptional patient care</p>
+                    <p class="section-subtitle mb-5">Trusted by healthcare professionals for exceptional patient care
+                    </p>
                     <div class="testimonial-card">
                         <div class="testimonial-quote">
                             <i class="fas fa-quote-left text-primary"></i>
                         </div>
                         <p class="testimonial-text">
-                            "Clinicia helps me track every chemo cycle, lab result, and follow-up detail precisely. The patient engagement tools make communication smoother for our entire team."
+                            "Clinicia helps me track every chemo cycle, lab result, and follow-up detail precisely. The
+                            patient engagement tools make communication smoother for our entire team."
                         </p>
                         <div class="testimonial-author">
                             <div class="author-info">
@@ -399,7 +463,8 @@
                     <div class="cta-content">
                         <h2 class="section-title text-white">Digitize Cancer Care with Clinicia</h2>
                         <p class="section-description text-white">
-                            Let Clinicia simplify the complex landscape of oncology so that you can focus on saving lives and supporting patients through every step of their journey.
+                            Let Clinicia simplify the complex landscape of oncology so that you can focus on saving
+                            lives and supporting patients through every step of their journey.
                         </p>
                         <div class="cta-features">
                             <div class="row g-4 text-white">
@@ -446,7 +511,8 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="footer-brand">
-                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50" class="footer-logo mb-3">
+                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50"
+                            class="footer-logo mb-3">
                         <p>Transforming healthcare delivery with modern clinic management solutions.</p>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -519,4 +585,5 @@
         });
     </script>
 </body>
+
 </html>

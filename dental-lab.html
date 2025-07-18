@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Lab Module for Dental Practices | Clinicia</title>
-    <meta name="description" content="Streamline dental lab operations with Clinicia's specialized module. Lab order management, tracking, quality control, and seamless integration with dental practice workflow.">
-    
+    <meta name="description"
+        content="Streamline dental lab operations with Clinicia's specialized module. Lab order management, tracking, quality control, and seamless integration with dental practice workflow.">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
     <link href="clinicia-common.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
@@ -29,21 +34,22 @@
     <!-- Header (Sticky & Responsive) -->
     <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+
                     <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='/features'; return false;">
+                        <a class="nav-link dropdown-toggle" href="./features.html" data-bs-toggle="dropdown"
+                            aria-expanded="false" onclick="window.location.href='./features.html'; return false;">
                             Features
                         </a>
                         <div class="dropdown-menu mega-menu features-menu">
@@ -51,32 +57,46 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Core Features</h6>
-                                        <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
-                                        <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
-                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
-                                        <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
-                                        <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
-                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
-                                        <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
+                                        <a class="dropdown-item" href="./emr.html"><i
+                                                class="fas fa-file-alt me-2"></i>EMR</a>
+                                        <a class="dropdown-item" href="./prescription.html"><i
+                                                class="fas fa-pills me-2"></i>Prescription</a>
+                                        <a class="dropdown-item" href="./appointment.html"><i
+                                                class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
+                                        <a class="dropdown-item" href="./financial.html"><i
+                                                class="fas fa-calculator me-2"></i>Financial</a>
+                                        <a class="dropdown-item" href="./consent.html"><i
+                                                class="fas fa-file-signature me-2"></i>Digital Consent</a>
+                                        <a class="dropdown-item" href="./expense.html"><i
+                                                class="fas fa-receipt me-2"></i>Expense Management</a>
+                                        <a class="dropdown-item" href="./inventory.html"><i
+                                                class="fas fa-boxes me-2"></i>Inventory</a>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Advanced Features</h6>
 
-                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
-                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
-                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
-                                        <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
-                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
-                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
+                                        <a class="dropdown-item" href="./communication.html"><i
+                                                class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="./users.html"><i
+                                                class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="./membership."><i
+                                                class="fas fa-id-card me-2"></i>Membership Plans</a>
+                                        <a class="dropdown-item" href="./social.html"><i
+                                                class="fas fa-share me-2"></i>Social Media Integration</a>
+                                        <a class="dropdown-item" href="./analytics.html"><i
+                                                class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="./dental-lab.html"><i
+                                                class="fas fa-tooth me-2"></i>Dental Lab Module</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
+
                     <!-- Solutions Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Solutions
                         </a>
                         <div class="dropdown-menu mega-menu">
@@ -86,48 +106,69 @@
                                         <h6 class="dropdown-header">By Specialties</h6>
                                         <div class="row">
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="#dental"><i class="fas fa-tooth me-2"></i>Dental</a>
-                                                <a class="dropdown-item" href="#dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
-                                                <a class="dropdown-item" href="#gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
-                                                <a class="dropdown-item" href="#physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
-                                                <a class="dropdown-item" href="#ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
-                                                <a class="dropdown-item" href="#ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
-                                                <a class="dropdown-item" href="#diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
-                                                <a class="dropdown-item" href="#ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
-                                                <a class="dropdown-item" href="#cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                                <a class="dropdown-item" href="./dental.html"><i
+                                                        class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="./dermatology.html"><i
+                                                        class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="./gynaecology.html"><i
+                                                        class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="./physiotherapy.html"><i
+                                                        class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="./ophthalmology.html"><i
+                                                        class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="./ent.html"><i
+                                                        class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="./diabetology.html"><i
+                                                        class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="./ayurveda.html"><i
+                                                        class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="./cardiology.html"><i
+                                                        class="fas fa-heartbeat me-2"></i>Cardiology</a>
                                             </div>
                                             <div class="col-6">
-                                                <a class="dropdown-item" href="#oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
-                                                <a class="dropdown-item" href="#nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
-                                                <a class="dropdown-item" href="#paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
-                                                <a class="dropdown-item" href="#veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
-                                                <a class="dropdown-item" href="#psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
-                                                <a class="dropdown-item" href="#nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
-                                                <a class="dropdown-item" href="#orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
-                                                <a class="dropdown-item" href="#urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                                <a class="dropdown-item" href="./oncology.html"><i
+                                                        class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="./nephrology.html"><i
+                                                        class="fas fa-procedures me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="./paediatrician.html"><i
+                                                        class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="./veterinary.html"><i
+                                                        class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="./psychology.html"><i
+                                                        class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="./nutrition.html"><i
+                                                        class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="./orthopaedic.html"><i
+                                                        class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="./urology.html"><i
+                                                        class="fas fa-user-md me-2"></i>Urology</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">By Practice Size</h6>
-                                        <a class="dropdown-item" href="#solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
-                                        <a class="dropdown-item" href="#multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
-                                        <a class="dropdown-item" href="#multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
-                                        <a class="dropdown-item" href="#multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
-                                        <a class="dropdown-item" href="#hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
+                                        <a class="dropdown-item" href="./solo.html"><i class="fas fa-user me-2"></i>Solo
+                                            Practice</a>
+                                        <a class="dropdown-item" href="./multiple.html"><i
+                                                class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="./multi-speciality.html"><i
+                                                class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="./multi-branch.html"><i
+                                                class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="./hospitals.html"><i
+                                                class="fas fa-hospital me-2"></i>Hospitals</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
-                    
-                    
-                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
-                
+
                 <div class="navbar-nav">
                     <a href="#login" class="btn btn-outline-primary">Login</a>
                 </div>
@@ -149,10 +190,15 @@
                                 <li class="breadcrumb-item active" aria-current="page">Dental Lab Module</li>
                             </ol>
                         </nav>
-                        <h1 class="feature-hero-title">Dental Lab Module – Streamline Crown & Bridge Work with Precision</h1>
+                        <h1 class="feature-hero-title">Dental Lab Module – Streamline Crown & Bridge Work with Precision
+                        </h1>
                         <p class="feature-hero-subtitle">Effortless lab management for dental professionals</p>
                         <p class="feature-hero-description">
-                            Dental prosthetics require accuracy, communication, and follow-up. That's why Clinicia built a dedicated Dental Lab Module to help dental professionals effortlessly manage lab orders, track trials, and coordinate with lab technicians—all in one place. Perfect for crowns, bridges, veneers, inlays, and implants, this module ensures that nothing gets missed in your lab communication workflow.
+                            Dental prosthetics require accuracy, communication, and follow-up. That's why Clinicia built
+                            a dedicated Dental Lab Module to help dental professionals effortlessly manage lab orders,
+                            track trials, and coordinate with lab technicians—all in one place. Perfect for crowns,
+                            bridges, veneers, inlays, and implants, this module ensures that nothing gets missed in your
+                            lab communication workflow.
                         </p>
                         <div class="feature-hero-actions">
                             <a href="#" class="btn btn-primary btn-lg me-3">Start Free Trial</a>
@@ -187,7 +233,11 @@
                             <i class="fas fa-file-alt"></i>
                         </div>
                         <h4>Create Complete, Detailed Lab Orders</h4>
-                        <p>Clinicia allows you to generate comprehensive lab orders that cover all critical specifications: Type of prosthesis (Crown, Bridge, Implant, Veneer, etc.), surface clusters and arch details, pontic design selection, shade numbering for crowns, implant system specifications, attach clinical notes, images, and intraoral scan references. Send clear, actionable instructions to your lab—minimizing revisions and errors.</p>
+                        <p>Clinicia allows you to generate comprehensive lab orders that cover all critical
+                            specifications: Type of prosthesis (Crown, Bridge, Implant, Veneer, etc.), surface clusters
+                            and arch details, pontic design selection, shade numbering for crowns, implant system
+                            specifications, attach clinical notes, images, and intraoral scan references. Send clear,
+                            actionable instructions to your lab—minimizing revisions and errors.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
@@ -196,7 +246,9 @@
                             <i class="fas fa-calendar-alt"></i>
                         </div>
                         <h4>Schedule Metal & Bisque Trials with Alerts</h4>
-                        <p>Stay ahead of every case milestone: Define expected Metal Trial and Bisque Trial dates, track turnaround timelines for each step, get reminders for upcoming trial stages. No more missed follow-ups or delays in prosthetic delivery.</p>
+                        <p>Stay ahead of every case milestone: Define expected Metal Trial and Bisque Trial dates, track
+                            turnaround timelines for each step, get reminders for upcoming trial stages. No more missed
+                            follow-ups or delays in prosthetic delivery.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
@@ -205,7 +257,10 @@
                             <i class="fas fa-search"></i>
                         </div>
                         <h4>Track Every Lab Order with Ease</h4>
-                        <p>Never lose track of what's at the lab: View order status at a glance (Pending, In Progress, Completed), communicate with lab technicians via WhatsApp, Email, or in-app messages, maintain a full history of lab interactions for every case. Keep your clinical workflow organized and predictable.</p>
+                        <p>Never lose track of what's at the lab: View order status at a glance (Pending, In Progress,
+                            Completed), communicate with lab technicians via WhatsApp, Email, or in-app messages,
+                            maintain a full history of lab interactions for every case. Keep your clinical workflow
+                            organized and predictable.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
@@ -214,7 +269,9 @@
                             <i class="fas fa-chart-bar"></i>
                         </div>
                         <h4>Generate Lab-Related Reports</h4>
-                        <p>Monitor and analyze your lab work with: Lab-wise order tracking reports, doctor-wise order requests, status reports (In-progress, Completed, Delayed), turnaround time reports. Optimize lab relationships and ensure timely patient care.</p>
+                        <p>Monitor and analyze your lab work with: Lab-wise order tracking reports, doctor-wise order
+                            requests, status reports (In-progress, Completed, Delayed), turnaround time reports.
+                            Optimize lab relationships and ensure timely patient care.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
@@ -223,7 +280,9 @@
                             <i class="fas fa-tooth"></i>
                         </div>
                         <h4>Designed Exclusively for Dental Clinics</h4>
-                        <p>Clinicia's Dental Lab Module is tailored for: Solo dental practices, multi-chair or multi-speciality clinics, clinics working with multiple external labs, clinics with in-house dental technicians. From crown prep to cementation—you're covered end to end.</p>
+                        <p>Clinicia's Dental Lab Module is tailored for: Solo dental practices, multi-chair or
+                            multi-speciality clinics, clinics working with multiple external labs, clinics with in-house
+                            dental technicians. From crown prep to cementation—you're covered end to end.</p>
                     </div>
                 </div>
             </div>
@@ -243,10 +302,14 @@
                     <div class="benefits-list">
                         <ul class="benefits-grid">
                             <li><i class="fas fa-check-circle"></i> Reduce miscommunication with labs</li>
-                            <li><i class="fas fa-check-circle"></i> Ensure timely follow-ups with scheduled trial reminders</li>
-                            <li><i class="fas fa-check-circle"></i> Maintain a centralized database of all lab orders</li>
-                            <li><i class="fas fa-check-circle"></i> Communicate specifications clearly with images and notes</li>
-                            <li><i class="fas fa-check-circle"></i> Improve patient satisfaction with on-time prosthetic delivery</li>
+                            <li><i class="fas fa-check-circle"></i> Ensure timely follow-ups with scheduled trial
+                                reminders</li>
+                            <li><i class="fas fa-check-circle"></i> Maintain a centralized database of all lab orders
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Communicate specifications clearly with images and
+                                notes</li>
+                            <li><i class="fas fa-check-circle"></i> Improve patient satisfaction with on-time prosthetic
+                                delivery</li>
                         </ul>
                     </div>
                 </div>
@@ -266,7 +329,9 @@
                             <i class="fas fa-quote-left text-primary"></i>
                         </div>
                         <p class="testimonial-text">
-                            "Earlier, managing lab work was chaos. Clinicia's Lab Module gives us a structure—every order is detailed, trackable, and the lab knows exactly what to deliver. Patient confidence has grown tremendously."
+                            "Earlier, managing lab work was chaos. Clinicia's Lab Module gives us a structure—every
+                            order is detailed, trackable, and the lab knows exactly what to deliver. Patient confidence
+                            has grown tremendously."
                         </p>
                         <div class="testimonial-author">
                             <div class="author-info">
@@ -291,7 +356,8 @@
                     <div class="cta-content">
                         <h2 class="section-title text-white">Bring Precision & Predictability to Your Lab Workflow</h2>
                         <p class="section-description text-white">
-                            Clinicia's Dental Lab Module helps you manage prosthetic work with clinical accuracy and administrative ease.
+                            Clinicia's Dental Lab Module helps you manage prosthetic work with clinical accuracy and
+                            administrative ease.
                         </p>
                         <div class="cta-features">
                             <div class="row g-4 text-white">
@@ -338,7 +404,8 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="footer-brand">
-                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50" class="footer-logo mb-3">
+                        <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50"
+                            class="footer-logo mb-3">
                         <p>Transforming healthcare delivery with modern clinic management solutions.</p>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -412,11 +479,12 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <!-- Custom JavaScript -->
     <script src="clinicia-common.js"></script>
 </body>
+
 </html>
