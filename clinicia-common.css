@@ -134,7 +134,7 @@ html {
     .breadcrumb-custom {
         font-size: 13px;
         gap: 0.25rem;
-        justify-content: flex-start;
+        justify-content: flex-start !important;
     }
     
     .breadcrumb-custom .breadcrumb-item {
@@ -704,7 +704,7 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     text-align: center;
     box-shadow: 0 4px 20px rgba(74, 144, 226, 0.12);
 }
@@ -729,7 +729,7 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     text-align: center;
 }
 
@@ -753,7 +753,7 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     text-align: center;
     box-shadow: var(--shadow-md);
 }
@@ -777,7 +777,7 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     text-align: center;
 }
 
@@ -801,7 +801,7 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     text-align: center;
     box-shadow: var(--shadow-md);
 }
@@ -1205,7 +1205,7 @@ html {
     background: var(--primary-color);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1rem;
     color: white;
     font-size: 1.5rem;
@@ -1246,7 +1246,7 @@ html {
     background: var(--primary-color);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1rem;
     color: white;
     font-size: 1.2rem;
@@ -1277,7 +1277,7 @@ html {
     background: var(--primary-color);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin-right: 1rem;
     color: white;
     font-size: 1rem;
@@ -1343,7 +1343,7 @@ html {
     display: flex !important;
     flex-direction: row !important;
     gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start !important;
     align-items: center;
     flex-wrap: nowrap !important;
     margin: 0 auto;
@@ -1396,7 +1396,7 @@ html {
     .cta-buttons {
         flex-direction: row !important;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start !important;
         flex-wrap: nowrap !important;
         gap: 0.5rem;
     }
@@ -1449,7 +1449,7 @@ html {
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 3rem;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     align-items: center;
 }
 
@@ -1471,6 +1471,15 @@ html {
 /* Red text color for specific phrases */
 .text-red {
     color: #ff4d4d;
+}
+
+/* Desktop-specific button alignment override */
+@media (min-width: 769px) {
+    .hero-buttons,
+    .feature-hero-actions {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
 }
 
 /* Hero Features List */
@@ -1581,7 +1590,7 @@ html {
     z-index: 4;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
 }
 
 .mobile-notch {
@@ -1850,7 +1859,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1.5rem;
     font-size: 2rem;
     color: white;
@@ -1907,7 +1916,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1rem;
     font-size: 1.5rem;
     color: white;
@@ -1961,7 +1970,7 @@ html {
 .dashboard-showcase {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     align-items: flex-start;
     height: 100%;
     z-index: 2;
@@ -2059,7 +2068,7 @@ html {
     gap: 2rem;
     margin-top: 2rem;
     padding: 1.5rem 0;
-    justify-content: center;
+    justify-content: flex-start !important;
     flex-wrap: wrap;
 }
 
@@ -2128,7 +2137,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin-right: 0.75rem;
     flex-shrink: 0;
     transition: var(--transition);
@@ -2181,7 +2190,7 @@ html {
     animation: advancedFloatShape 10s ease-in-out infinite;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     border: 1px solid rgba(255, 77, 77, 0.08);
     backdrop-filter: blur(10px);
     opacity: 0;
@@ -2356,14 +2365,14 @@ html {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     min-height: 500px;
 }
 
 /* Advanced Product Showcase */
 .product-showcase-advanced {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     align-items: center;
     height: 100%;
     padding: 2rem 0;
@@ -2768,7 +2777,7 @@ html {
 /* Mobile Mockup Inline for Row Layout */
 .mobile-mockup-inline {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     align-items: center;
     height: 100%;
 }
@@ -3026,7 +3035,7 @@ html {
         position: static;
         transform: none;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start !important;
         gap: 2rem;
         margin-top: 1rem;
     }
@@ -3208,7 +3217,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 2rem;
 }
 
@@ -3286,7 +3295,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1.5rem;
     box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
     animation: subtlePulse 3s infinite ease-in-out;
@@ -3358,7 +3367,7 @@ html {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     padding: 2rem;
     min-height: 500px;
 }
@@ -3462,7 +3471,7 @@ html {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin-top: 5px;
 }
 
@@ -3771,7 +3780,7 @@ html {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     padding: 2rem;
     min-height: 500px;
 }
@@ -3889,7 +3898,7 @@ html {
     font-weight: 600;
     color: #2c3e50;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-start !important;
 }
 
 .browser-title-integrated i {
@@ -4291,7 +4300,7 @@ html {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     gap: 3rem;
     padding: 2rem;
     min-height: 500px;
@@ -4458,7 +4467,7 @@ html {
     font-weight: 600;
     color: #2c3e50;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-start !important;
 }
 
 .browser-title-modern i {
@@ -4628,7 +4637,7 @@ html {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     gap: 2rem;
     padding: 1rem;
 }
@@ -5191,7 +5200,7 @@ html {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     gap: 4rem;
     padding: 2rem;
     margin-top: 2rem;
@@ -5531,7 +5540,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border: 2px solid rgba(74, 144, 226, 0.2);
     animation: floatSlow 15s infinite ease-in-out;
@@ -5579,7 +5588,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     box-shadow: 0 8px 16px rgba(74, 144, 226, 0.3);
     position: relative;
     z-index: 2;
@@ -5723,7 +5732,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     flex-shrink: 0;
 }
 
@@ -5827,7 +5836,7 @@ html {
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     font-size: 18px;
     color: rgba(74, 144, 226, 0.4);
     backdrop-filter: blur(5px);
@@ -5924,7 +5933,7 @@ html {
     height: 400px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
 }
 
 .feature-circle {
@@ -5937,7 +5946,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     font-size: 1.2rem;
     color: var(--primary-color);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -6178,7 +6187,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1.5rem;
     transition: var(--transition);
 }
@@ -6270,7 +6279,7 @@ html {
     border-radius: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 20px;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
@@ -6385,7 +6394,7 @@ html {
 
 .solution-cards-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -6436,7 +6445,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1.5rem;
     transition: var(--transition);
 }
@@ -6639,7 +6648,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
 }
 
 .specialty-card:hover {
@@ -6668,7 +6677,7 @@ html {
 .solution-visual {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     min-height: 400px;
 }
 
@@ -6711,7 +6720,7 @@ html {
 .department-workflow {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
@@ -6726,7 +6735,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1rem;
     color: white;
     font-size: 2rem;
@@ -6816,7 +6825,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     flex-shrink: 0;
 }
 
@@ -6888,7 +6897,7 @@ html {
     z-index: 4;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
 }
 
 .phone-notch {
@@ -7147,7 +7156,7 @@ html {
     margin-top: 3rem;
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start !important;
     flex-wrap: wrap;
 }
 
@@ -7194,7 +7203,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     color: var(--accent-color);
     transition: var(--transition);
     text-decoration: none;
@@ -7470,7 +7479,7 @@ html {
     .hero-buttons {
         flex-direction: column;
         align-items: stretch;
-        justify-content: flex-start;
+        justify-content: flex-start !important;
         margin-bottom: 1.5rem;
         gap: 0.75rem;
         padding: 0 5px;
@@ -7497,7 +7506,7 @@ html {
     }
     
     .trust-item {
-        justify-content: center;
+        justify-content: flex-start !important;
         padding: 0.6rem 0.8rem;
         background: rgba(255, 255, 255, 0.6);
         border-radius: 8px;
@@ -7533,7 +7542,7 @@ html {
     .feature-item {
         font-size: 0.85rem;
         margin-bottom: 0.6rem;
-        justify-content: flex-start;
+        justify-content: flex-start !important;
         text-align: left;
         padding: 0.6rem 0.8rem;
         background: rgba(255, 255, 255, 0.6);
@@ -7560,7 +7569,7 @@ html {
     .dashboard-showcase {
         max-width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start !important;
         align-items: center;
         margin: 1rem auto;
         padding: 0 1rem;
@@ -7684,7 +7693,7 @@ html {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start !important;
         gap: 1rem;
         transform: scale(0.7);
         margin: 0 auto;
@@ -8065,7 +8074,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1rem;
     transition: var(--transition);
 }
@@ -8096,7 +8105,7 @@ html {
     padding: 1rem 1.5rem;
     display: flex;
     gap: 0.5rem;
-    justify-content: center;
+    justify-content: flex-start !important;
     flex-wrap: wrap;
     background: var(--surface);
 }
@@ -8261,7 +8270,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     text-align: center;
 }
 
@@ -8278,7 +8287,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin-bottom: 16px;
     transition: all 0.3s ease;
 }
@@ -8415,7 +8424,7 @@ html {
     .breadcrumb-custom {
         font-size: 13px;
         gap: 0.25rem;
-        justify-content: flex-start;
+        justify-content: flex-start !important;
     }
     
     .breadcrumb-custom .breadcrumb-item {
@@ -9090,7 +9099,7 @@ html {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     align-items: center;
 }
 
@@ -9127,7 +9136,7 @@ html {
     }
     
     .feature-hero-actions {
-        justify-content: center !important;
+        justify-content: flex-start !important;
         gap: 0.8rem !important;
         flex-direction: column !important;
         width: 100% !important;
@@ -9154,7 +9163,7 @@ html {
     }
     
     .breadcrumb-hero {
-        justify-content: center !important;
+        justify-content: flex-start !important;
         flex-wrap: wrap !important;
     }
     
@@ -9214,7 +9223,7 @@ html {
     }
     
     .breadcrumb-hero {
-        justify-content: center !important;
+        justify-content: flex-start !important;
         flex-wrap: wrap !important;
         font-size: 13px !important;
     }
@@ -9255,7 +9264,7 @@ html {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto;
     box-shadow: 0 20px 40px rgba(255, 77, 77, 0.2);
 }
@@ -9309,7 +9318,7 @@ html {
     border-radius: 12px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin-bottom: 0.5rem;
 }
 
@@ -9425,7 +9434,7 @@ html {
 
 .security-icon-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     align-items: center;
     position: relative;
     z-index: 2;
@@ -9438,7 +9447,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 25px;
     color: white;
     font-size: 32px;
@@ -9578,7 +9587,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     color: white;
     font-size: 18px;
     flex-shrink: 0;
@@ -9697,7 +9706,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1.5rem;
     color: white;
     font-size: 1.8rem;
@@ -9938,7 +9947,7 @@ html {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     color: white;
     font-size: 1.8rem;
     box-shadow: 0 8px 20px rgba(74, 144, 226, 0.25);
@@ -9974,7 +9983,7 @@ html {
 
 .security-stats {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     gap: 2rem;
     margin-top: 4rem;
     flex-wrap: wrap;
@@ -10321,7 +10330,7 @@ html {
     }
     
     .feature-hero-actions {
-        justify-content: center;
+        justify-content: flex-start !important;
         gap: 0.8rem;
     }
     
@@ -10416,7 +10425,7 @@ html {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1.5rem;
 }
 
@@ -10616,7 +10625,7 @@ html {
 
 .cta-actions {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     gap: 1rem;
     flex-wrap: wrap;
     margin-top: 2rem;
@@ -10764,7 +10773,7 @@ html {
     border-radius: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin-bottom: 16px;
     font-size: 24px;
     box-shadow: 0 4px 16px rgba(74, 144, 226, 0.25);
@@ -11189,7 +11198,7 @@ body {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
-    justify-content: center;
+    justify-content: flex-start !important;
     align-items: center;
 }
 
@@ -11211,7 +11220,7 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     animation: float 12s ease-in-out infinite;
     border: 1px solid rgba(74, 144, 226, 0.1);
     backdrop-filter: blur(10px);
@@ -11309,7 +11318,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin-bottom: 1.5rem;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -11407,7 +11416,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1.5rem;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -11528,7 +11537,7 @@ body {
 .social-links a {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     width: 40px;
     height: 40px;
     background: rgba(74, 144, 226, 0.1);
@@ -11863,7 +11872,7 @@ body {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
-    justify-content: center;
+    justify-content: flex-start !important;
     align-items: center;
 }
 
@@ -11885,7 +11894,7 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     animation: float 12s ease-in-out infinite;
     border: 1px solid rgba(74, 144, 226, 0.1);
     backdrop-filter: blur(10px);
@@ -11983,7 +11992,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin-bottom: 1.5rem;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -12081,7 +12090,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1.5rem;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -12202,7 +12211,7 @@ body {
 .social-links a {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     width: 40px;
     height: 40px;
     background: rgba(74, 144, 226, 0.1);
@@ -12388,7 +12397,7 @@ body {
     .breadcrumb-custom {
         font-size: 13px;
         gap: 0.25rem;
-        justify-content: flex-start;
+        justify-content: flex-start !important;
     }
     
     .breadcrumb-custom .breadcrumb-item {
@@ -13063,7 +13072,7 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     align-items: center;
 }
 
@@ -13100,7 +13109,7 @@ body {
     }
     
     .feature-hero-actions {
-        justify-content: center !important;
+        justify-content: flex-start !important;
         gap: 0.8rem !important;
         flex-direction: column !important;
         width: 100% !important;
@@ -13127,7 +13136,7 @@ body {
     }
     
     .breadcrumb-hero {
-        justify-content: center !important;
+        justify-content: flex-start !important;
         flex-wrap: wrap !important;
     }
     
@@ -13187,7 +13196,7 @@ body {
     }
     
     .breadcrumb-hero {
-        justify-content: center !important;
+        justify-content: flex-start !important;
         flex-wrap: wrap !important;
         font-size: 13px !important;
     }
@@ -13228,7 +13237,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto;
     box-shadow: 0 20px 40px rgba(255, 77, 77, 0.2);
 }
@@ -13282,7 +13291,7 @@ body {
     border-radius: 12px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin-bottom: 0.5rem;
 }
 
@@ -13398,7 +13407,7 @@ body {
 
 .security-icon-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     align-items: center;
     position: relative;
     z-index: 2;
@@ -13411,7 +13420,7 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 25px;
     color: white;
     font-size: 32px;
@@ -13551,7 +13560,7 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     color: white;
     font-size: 18px;
     flex-shrink: 0;
@@ -13670,7 +13679,7 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1.5rem;
     color: white;
     font-size: 1.8rem;
@@ -13911,7 +13920,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     color: white;
     font-size: 1.8rem;
     box-shadow: 0 8px 20px rgba(74, 144, 226, 0.25);
@@ -13947,7 +13956,7 @@ body {
 
 .security-stats {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     gap: 2rem;
     margin-top: 4rem;
     flex-wrap: wrap;
@@ -14294,7 +14303,7 @@ body {
     }
     
     .feature-hero-actions {
-        justify-content: center;
+        justify-content: flex-start !important;
         gap: 0.8rem;
     }
     
@@ -14389,7 +14398,7 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin: 0 auto 1.5rem;
 }
 
@@ -14589,7 +14598,7 @@ body {
 
 .cta-actions {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start !important;
     gap: 1rem;
     flex-wrap: wrap;
     margin-top: 2rem;
@@ -14737,7 +14746,7 @@ body {
     border-radius: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     margin-bottom: 16px;
     font-size: 24px;
     box-shadow: 0 4px 16px rgba(74, 144, 226, 0.25);
@@ -14991,7 +15000,7 @@ body {
 .testimonial-author {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     gap: 1rem;
     margin-top: 1.5rem;
 }
@@ -15015,7 +15024,7 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
     color: white;
     font-size: 1.2rem;
 }
