@@ -1331,15 +1331,19 @@ html {
 
 .cta-buttons {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .cta-buttons .btn {
-    padding: 0.75rem 2rem;
+    padding: 1rem 2rem;
     font-weight: 600;
     border-radius: 8px;
+    min-width: 280px;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 .cta-buttons .btn-outline-primary {
@@ -1378,6 +1382,12 @@ html {
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 0.5rem;
     }
 }
 
