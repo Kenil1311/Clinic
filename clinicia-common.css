@@ -6163,21 +6163,8 @@ html {
     overflow: hidden;
 }
 
-.feature-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
-    transform: scaleX(0);
-    transition: var(--transition);
-}
 
-.feature-card:hover::before {
-    transform: scaleX(1);
-}
+
 
 .feature-card:hover {
     transform: translateY(-10px);
