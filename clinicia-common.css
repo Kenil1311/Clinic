@@ -14745,45 +14745,101 @@ body {
 
 /* About Us Hero Section Styles */
 .about-hero-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    min-height: 60vh;
+    background: linear-gradient(135deg, #fef7f7 0%, #f8f9fa 100%);
+    min-height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="25" cy="25" r="2" fill="%23ff4d4d" opacity="0.1"/><circle cx="75" cy="75" r="2" fill="%234a90e2" opacity="0.1"/><circle cx="50" cy="10" r="1.5" fill="%23ff4d4d" opacity="0.1"/><circle cx="90" cy="40" r="1.5" fill="%234a90e2" opacity="0.1"/></svg>');
+    background-size: 100px 100px;
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 77, 77, 0.1);
+    color: #ff4d4d;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 77, 77, 0.2);
 }
 
 .about-hero-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .about-hero-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #6c757d;
     margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 .about-hero-description {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #495057;
     line-height: 1.8;
-    max-width: 600px;
-    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.about-hero-features {
+    margin-bottom: 2rem;
+}
+
+.about-hero-features .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.about-hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.about-hero-visual {
+    position: relative;
+    z-index: 2;
 }
 
 .about-hero-values {
-    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .value-item {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     border-radius: 12px;
     background: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
+    border: 1px solid #e9ecef;
 }
 
 .value-item:hover {
@@ -14792,12 +14848,12 @@ body {
 }
 
 .value-icon {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .value-item h4 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
     color: #2c3e50;
@@ -14807,6 +14863,42 @@ body {
     color: #6c757d;
     line-height: 1.6;
     margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.about-stats-grid {
+    background: linear-gradient(135deg, #ff4d4d 0%, #e74c3c 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    color: white;
+    box-shadow: 0 10px 30px rgba(255, 77, 77, 0.3);
+}
+
+.stat-card {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Responsive adjustments */
@@ -14819,7 +14911,28 @@ body {
         font-size: 1.2rem;
     }
     
+    .about-hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .about-hero-features .feature-item {
+        font-size: 1rem;
+    }
+    
+    .about-hero-buttons {
+        flex-direction: column;
+    }
+    
+    .about-hero-buttons .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
     .value-item {
-        padding: 1.5rem 1rem;
+        padding: 1rem;
+    }
+    
+    .about-stats-grid {
+        margin-top: 2rem;
     }
 }
