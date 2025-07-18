@@ -149,6 +149,10 @@ def psychology():
 def nutrition():
     return send_file('nutrition.html')
 
+@app.route('/orthopaedic')
+def orthopaedic():
+    return send_file('orthopaedic.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):
