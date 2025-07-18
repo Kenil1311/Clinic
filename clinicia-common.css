@@ -704,6 +704,8 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     box-shadow: 0 4px 20px rgba(74, 144, 226, 0.12);
 }
 
@@ -727,6 +729,8 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .btn-outline-primary:hover,
@@ -749,6 +753,8 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     box-shadow: var(--shadow-md);
 }
 
@@ -771,6 +777,8 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .btn-outline-light:hover,
@@ -793,6 +801,8 @@ html {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     box-shadow: var(--shadow-md);
 }
 
