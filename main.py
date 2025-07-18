@@ -161,6 +161,14 @@ def urology():
 def about():
     return send_file('about.html')
 
+@app.route('/pricing')
+def pricing():
+    return send_file('pricing.html')
+
+@app.route('/contact')
+def contact():
+    return send_file('contact.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):

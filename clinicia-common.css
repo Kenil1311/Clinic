@@ -1723,6 +1723,223 @@ html {
         0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
+/* Pricing Styles */
+.pricing-section {
+    background: white;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    height: 100%;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.pricing-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-header p {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    margin-bottom: 2rem;
+}
+
+.price .currency {
+    font-size: 1.2rem;
+    font-weight: 600;
+    vertical-align: top;
+}
+
+.price .amount {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.price .period {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.pricing-features li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-footer {
+    margin-top: 2rem;
+}
+
+/* Contact Styles */
+.contact-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), #ff6b6b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-card p {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form-wrapper {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+}
+
+.contact-form .form-label {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 77, 77, 0.25);
+}
+
+.contact-info-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-info-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.contact-info-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info-card p {
+    color: #6c757d;
+    margin: 0;
+}
+
+/* FAQ Styles */
+.faq-section .accordion-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.faq-section .accordion-button {
+    background: white;
+    border: none;
+    padding: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    background: #f8f9fa;
+    color: var(--primary-color);
+    box-shadow: none;
+}
+
+.faq-section .accordion-body {
+    padding: 1.5rem;
+    color: #6c757d;
+}
+
 .devices-showcase:hover .mobile-frame {
     transform: scale(0.85) rotateY(8deg) translateY(-10px);
     box-shadow: 
