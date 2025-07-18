@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="clinicia-common.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top modern-navbar">
+
+    <!-- Header (Sticky & Responsive) -->
+    <nav class="navbar navbar-expand-lg navbar-light modern-navbar" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40">
+                <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="40" class="clinicia-logo">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -31,108 +32,100 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    
+                    <!-- Features Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="/features" data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location.href='/features'; return false;">
                             Features
                         </a>
-                        <div class="dropdown-menu mega-menu" aria-labelledby="featuresDropdown">
+                        <div class="dropdown-menu mega-menu features-menu">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Core Features</h6>
                                         <a class="dropdown-item" href="/emr"><i class="fas fa-file-alt me-2"></i>EMR</a>
                                         <a class="dropdown-item" href="/prescription"><i class="fas fa-pills me-2"></i>Prescription</a>
-                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment</a>
+                                        <a class="dropdown-item" href="/appointment"><i class="fas fa-calendar me-2"></i>Appointment Scheduling</a>
                                         <a class="dropdown-item" href="/financial"><i class="fas fa-calculator me-2"></i>Financial</a>
                                         <a class="dropdown-item" href="/consent"><i class="fas fa-file-signature me-2"></i>Digital Consent</a>
-                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense</a>
+                                        <a class="dropdown-item" href="/expense"><i class="fas fa-receipt me-2"></i>Expense Management</a>
                                         <a class="dropdown-item" href="/inventory"><i class="fas fa-boxes me-2"></i>Inventory</a>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">Advanced Features</h6>
                                         <a class="dropdown-item" href="/images"><i class="fas fa-image me-2"></i>Images</a>
-                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication</a>
-                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users</a>
-                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership</a>
+                                        <a class="dropdown-item" href="/communication"><i class="fas fa-comments me-2"></i>Communication with Patients</a>
+                                        <a class="dropdown-item" href="/users"><i class="fas fa-users me-2"></i>Multi Users Role Based Access</a>
+                                        <a class="dropdown-item" href="/membership"><i class="fas fa-id-card me-2"></i>Membership Plans</a>
                                         <a class="dropdown-item" href="/social"><i class="fas fa-share me-2"></i>Social Media Integration</a>
-                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics</a>
-                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab</a>
+                                        <a class="dropdown-item" href="/analytics"><i class="fas fa-chart-bar me-2"></i>Analytics, MIS & Reports</a>
+                                        <a class="dropdown-item" href="/dental-lab"><i class="fas fa-tooth me-2"></i>Dental Lab Module</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
+                    
+                    <!-- Solutions Dropdown -->
                     <li class="nav-item dropdown mega-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#solutions" data-bs-toggle="dropdown" aria-expanded="false">
                             Solutions
                         </a>
-                        <div class="dropdown-menu mega-menu" aria-labelledby="solutionsDropdown">
+                        <div class="dropdown-menu mega-menu">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">By Specialties</h6>
-                                        <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
-                                        <a class="dropdown-item" href="/dermatology"><i class="fas fa-user-md me-2"></i>Dermatology</a>
-                                        <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
-                                        <a class="dropdown-item" href="/gynaecology"><i class="fas fa-female me-2"></i>Gynaecology</a>
-                                        <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
-                                        <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-mask me-2"></i>ENT</a>
-                                        <a class="dropdown-item" href="/diabetology"><i class="fas fa-syringe me-2"></i>Diabetology</a>
-                                        <a class="dropdown-item" href="/ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
-                                        <a class="dropdown-item" href="/oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
-                                        <a class="dropdown-item" href="/nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
-                                        <a class="dropdown-item" href="/paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
-                                        <a class="dropdown-item" href="/veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
-                                        <a class="dropdown-item" href="/psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
-                                        <a class="dropdown-item" href="/nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition</a>
-                                        <a class="dropdown-item" href="/orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
-                                        <a class="dropdown-item" href="/urology"><i class="fas fa-clinic-medical me-2"></i>Urology</a>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="/dental"><i class="fas fa-tooth me-2"></i>Dental</a>
+                                                <a class="dropdown-item" href="/dermatology"><i class="fas fa-hand-sparkles me-2"></i>Dermatology</a>
+                                                <a class="dropdown-item" href="/gynaecology"><i class="fas fa-venus me-2"></i>Gynaecology</a>
+                                                <a class="dropdown-item" href="/physiotherapy"><i class="fas fa-dumbbell me-2"></i>Physiotherapy</a>
+                                                <a class="dropdown-item" href="/ophthalmology"><i class="fas fa-eye me-2"></i>Ophthalmology</a>
+                                                <a class="dropdown-item" href="/ent"><i class="fas fa-head-side-cough me-2"></i>ENT</a>
+                                                <a class="dropdown-item" href="/diabetology"><i class="fas fa-tint me-2"></i>Diabetology</a>
+                                                <a class="dropdown-item" href="/ayurveda"><i class="fas fa-leaf me-2"></i>Ayurveda</a>
+                                                <a class="dropdown-item" href="/cardiology"><i class="fas fa-heartbeat me-2"></i>Cardiology</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="dropdown-item" href="/oncology"><i class="fas fa-ribbon me-2"></i>Oncology</a>
+                                                <a class="dropdown-item" href="/nephrology"><i class="fas fa-procedures me-2"></i>Nephrology</a>
+                                                <a class="dropdown-item" href="/paediatrician"><i class="fas fa-baby me-2"></i>Paediatrician</a>
+                                                <a class="dropdown-item" href="/veterinary"><i class="fas fa-paw me-2"></i>Veterinary</a>
+                                                <a class="dropdown-item" href="/psychology"><i class="fas fa-brain me-2"></i>Psychology</a>
+                                                <a class="dropdown-item" href="/nutrition"><i class="fas fa-apple-alt me-2"></i>Nutrition / Dietitian</a>
+                                                <a class="dropdown-item" href="/orthopaedic"><i class="fas fa-bone me-2"></i>Orthopaedic</a>
+                                                <a class="dropdown-item" href="/urology"><i class="fas fa-user-md me-2"></i>Urology</a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
                                         <h6 class="dropdown-header">By Practice Size</h6>
-                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user-md me-2"></i>Solo Practice</a>
-                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors</a>
-                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-hospital me-2"></i>Multi-Speciality</a>
-                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-building me-2"></i>Multi-Branch</a>
-                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital-alt me-2"></i>Hospitals</a>
+                                        <a class="dropdown-item" href="/solo"><i class="fas fa-user me-2"></i>Solo Practice</a>
+                                        <a class="dropdown-item" href="/multiple"><i class="fas fa-users me-2"></i>Multiple Doctors Setup</a>
+                                        <a class="dropdown-item" href="/multi-speciality"><i class="fas fa-clinic-medical me-2"></i>Multi-Speciality Setup</a>
+                                        <a class="dropdown-item" href="/multi-branch"><i class="fas fa-sitemap me-2"></i>Multi-Branch Setup</a>
+                                        <a class="dropdown-item" href="/hospitals"><i class="fas fa-hospital me-2"></i>Hospitals</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="supportDropdown" role="button" data-bs-toggle="dropdown">
-                            Support
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#help">Help Center</a></li>
-                            <li><a class="dropdown-item" href="#training">Training</a></li>
-                            <li><a class="dropdown-item" href="#resources">Resources</a></li>
-                            <li><a class="dropdown-item" href="#api">API Documentation</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-outline-primary ms-2" href="#login">Login</a>
-                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/contact">Contact</a></li>
                 </ul>
+                
+                <div class="navbar-nav">
+                    <a href="#login" class="btn btn-outline-primary">Login</a>
+                </div>
             </div>
         </div>
-        
-        <!-- Scroll Progress Bar -->
-        <div class="scroll-progress-bar"></div>
     </nav>
 
     <!-- Hero Section -->
@@ -384,73 +377,39 @@
                         <img src="/attached_assets/Group 1_1752569196096.png" alt="Clinicia" height="50" class="footer-logo mb-3">
                         <p>Transforming healthcare delivery with modern clinic management solutions.</p>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f text-primary"></i></a>
-                            <a href="#"><i class="fab fa-twitter text-primary"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in text-primary"></i></a>
-                            <a href="#"><i class="fab fa-instagram text-primary"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <h5>Features</h5>
-                            <ul class="footer-links">
-                                <li><a href="/emr">EMR</a></li>
-                                <li><a href="/prescription">Prescription</a></li>
-                                <li><a href="/appointment">Appointments</a></li>
-                                <li><a href="/financial">Financial</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6">
-                            <h5>Solutions</h5>
-                            <ul class="footer-links">
-                                <li><a href="/dental">Dental</a></li>
-                                <li><a href="/dermatology">Dermatology</a></li>
-                                <li><a href="/cardiology">Cardiology</a></li>
-                                <li><a href="/solo">Solo Practice</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6">
-                            <h5>Support</h5>
-                            <ul class="footer-links">
-                                <li><a href="#help">Help Center</a></li>
-                                <li><a href="/contact">Contact</a></li>
-                                <li><a href="#training">Training</a></li>
-                                <li><a href="#resources">Resources</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6">
-                            <h5>Company</h5>
-                            <ul class="footer-links">
-                                <li><a href="/about">About</a></li>
-                                <li><a href="#careers">Careers</a></li>
-                                <li><a href="#privacy">Privacy</a></li>
-                                <li><a href="#terms">Terms</a></li>
-                            </ul>
-                        </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Features</h5>
+                        <ul>
+                            <li><a href="/emr">EMR</a></li>
+                            <li><a href="/prescription">Prescription</a></li>
+                            <li><a href="/appointment">Appointments</a></li>
+                            <li><a href="/financial">Financial</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            
-            <hr class="footer-divider">
-            
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="footer-apps">
-                        <h6>Download Our App</h6>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Solutions</h5>
+                        <ul>
+                            <li><a href="/dental">Dental</a></li>
+                            <li><a href="/dermatology">Dermatology</a></li>
+                            <li><a href="/cardiology">Cardiology</a></li>
+                            <li><a href="/solo">Solo Practice</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-download">
+                        <h5>Download Our App</h5>
                         <div class="app-buttons">
-                            <a href="#" class="app-button">
-                                <i class="fab fa-apple"></i>
-                                <div>
-                                    <span>Download on the</span>
-                                    <strong>App Store</strong>
-                                </div>
-                            </a>
                             <a href="#" class="app-button">
                                 <i class="fab fa-google-play"></i>
                                 <div>
@@ -458,13 +417,21 @@
                                     <strong>Google Play</strong>
                                 </div>
                             </a>
+                            <a href="#" class="app-button">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <span>Download on the</span>
+                                    <strong>App Store</strong>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-6">
-                    <div class="footer-copy text-md-end">
-                        <p>&copy; 2025 Clinicia. All rights reserved.</p>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 Clinicia. All rights reserved.</p>
                     </div>
                 </div>
             </div>
@@ -473,6 +440,9 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!-- Custom JS -->
     <script src="clinicia-common.js"></script>
