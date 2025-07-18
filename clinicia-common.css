@@ -1343,7 +1343,7 @@ html {
     padding: 1rem 2rem;
     font-weight: 600;
     border-radius: 8px;
-    min-width: 280px;
+    min-width: 200px;
     text-align: center;
     font-size: 1.1rem;
 }
@@ -1382,14 +1382,19 @@ html {
     }
     
     .cta-buttons {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
     
     .cta-buttons .btn {
-        width: 100%;
-        max-width: 300px;
+        width: auto;
+        min-width: 140px;
         margin-bottom: 0.5rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
 }
 
