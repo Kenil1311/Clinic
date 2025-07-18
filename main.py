@@ -187,5 +187,13 @@ def features_js():
 def feature_page_css():
     return send_file('feature-page.css', mimetype='text/css')
 
+@app.route('/clinicia-common.css')
+def clinicia_common_css():
+    return send_file('clinicia-common.css', mimetype='text/css')
+
+@app.route('/clinicia-common.js')
+def clinicia_common_js():
+    return send_file('clinicia-common.js', mimetype='application/javascript')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
