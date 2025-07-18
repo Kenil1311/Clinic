@@ -484,6 +484,8 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Added consistent "Security & Team Collaboration" headers with background text effect across all specialty pages (July 18, 2025)
 ✓ Implemented CSS background text effect using data-bg-text attribute for enhanced visual design (July 18, 2025)
 ✓ Ensured uniform header structure across all specialty pages for better user experience and design consistency (July 18, 2025)
+✓ Fixed navbar navigation consistency by updating "Home" links on all specialty pages to properly redirect to home page (July 18, 2025)
+✓ Corrected navigation links from "#home" to "/" on all specialty pages (nephrology, cardiology, orthopaedic, urology, oncology, paediatrician, veterinary, psychology, nutrition) (July 18, 2025)
 
 
 
