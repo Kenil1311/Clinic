@@ -1331,11 +1331,11 @@ html {
 
 .cta-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
