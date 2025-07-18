@@ -11468,14 +11468,15 @@ body {
 }
 
 .cta-section .btn-outline-primary {
-    border-color: white;
-    color: white;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: white;
 }
 
 .cta-section .btn-outline-primary:hover {
-    background: white;
-    border-color: white;
-    color: var(--accent-color);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
 }
 
 /* Footer */
@@ -12141,6 +12142,7 @@ body {
 }
 
 .cta-section .btn-outline-primary {
+    background: white;
     border-color: white;
     color: white;
 }
