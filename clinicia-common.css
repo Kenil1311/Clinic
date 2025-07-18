@@ -1512,29 +1512,18 @@ html {
     line-height: 1;
 }
 
-/* Global icon alignment fixes */
+/* Specific icon alignment fixes for dropdown and navigation only */
 .dropdown-item i,
-.nav-link i,
-.btn i,
-.feature-icon i,
-.section-icon i,
-.capability-icon i,
-.benefit-icon i,
-.security-feature-icon i,
-.contact-icon i,
-.social-links i,
-.fas,
-.fab,
-.far {
+.nav-link i {
     display: inline-flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     vertical-align: middle;
     text-align: center;
     line-height: 1;
 }
 
-/* Ensure all circular icon containers are properly centered */
+/* Ensure circular icon containers remain centered */
 .feature-icon,
 .section-icon,
 .capability-icon,
@@ -1548,7 +1537,7 @@ html {
 .icon-wrapper {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: center;
 }
 
