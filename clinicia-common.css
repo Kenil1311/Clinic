@@ -1044,7 +1044,11 @@ html {
     }
     
     .hero-stats-compact {
-        display: none;
+        display: flex !important;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding: 1.5rem 0;
     }
     
     .hero-image {
@@ -7068,7 +7072,11 @@ html {
     }
     
     .hero-stats-compact {
-        display: none !important;
+        display: flex !important;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding: 1.5rem 0;
     }
     
     .compact-stat {
@@ -7205,9 +7213,13 @@ html {
         font-size: 0.6rem;
     }
     
-    /* Hide stats on mobile */
+    /* Show stats on mobile */
     .hero-stats-compact {
-        display: none !important;
+        display: flex !important;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding: 1.5rem 0;
     }
     
     .compact-stat {
