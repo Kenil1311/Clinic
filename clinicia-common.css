@@ -7837,11 +7837,11 @@ html {
         gap: 1rem;
     }
     
-    .solution-cards-container {
+    /* .solution-cards-container {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
-    }
+    } */
     
     .solution-card {
         max-width: 100%;
