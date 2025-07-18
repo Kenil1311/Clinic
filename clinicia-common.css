@@ -15024,4 +15024,43 @@ body {
     font-weight: 400;
 }
 
+/* Background Text Effect for Security Section */
+.feature-security-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-security-section .section-title {
+    position: relative;
+    z-index: 2;
+}
+
+.feature-security-section .section-title::before {
+    content: attr(data-bg-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.03);
+    z-index: -1;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .feature-security-section .section-title::before {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-security-section .section-title::before {
+        font-size: 3rem;
+    }
+}
+
 
