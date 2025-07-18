@@ -7153,51 +7153,7 @@ html {
         width: 100% !important;
     }
     
-    .hero-stats-compact {
-        display: flex !important;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 2rem;
-        padding: 1.5rem 0;
-    }
-    
-    .compact-stat {
-        text-align: center;
-        padding: 1rem;
-        background: rgba(255, 255, 255, 0.95);
-        border-radius: 12px;
-        border: 2px solid rgba(255, 77, 77, 0.3);
-        width: 100%;
-        box-sizing: border-box;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        display: flex !important;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        visibility: visible !important;
-        opacity: 1 !important;
-        position: relative;
-        z-index: 100;
-        min-height: 80px;
-        height: auto;
-        overflow: visible;
-    }
-    
-    .compact-stat .stat-number {
-        display: block !important;
-        font-size: 1.8rem !important;
-        font-weight: 700 !important;
-        color: #ff4d4d !important;
-        margin-bottom: 0.25rem !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
-    
-    .compact-stat .stat-label {
-        display: block !important;
-        font-size: 0.95rem !important;
-        color: #6c757d !important;
-        font-weight: 500 !important;
+
         opacity: 1 !important;
         visibility: visible !important;
     }
@@ -7295,48 +7251,7 @@ html {
         font-size: 0.6rem;
     }
     
-    /* Show stats on mobile */
-    .hero-stats-compact {
-        display: flex !important;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 2rem;
-        padding: 1.5rem 0;
-    }
-    
-    .compact-stat {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        position: relative !important;
-        z-index: 1000 !important;
-        background: rgba(255, 255, 255, 0.95) !important;
-        border: 2px solid #ff4d4d !important;
-        border-radius: 8px !important;
-        padding: 0.5rem !important;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-        min-height: 80px !important;
-        height: auto !important;
-        overflow: visible !important;
-        text-align: center !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
-    
-    .compact-stat .stat-number,
-    .compact-stat .stat-label {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        position: relative !important;
-        z-index: 1000 !important;
-        text-align: center !important;
-        width: 100% !important;
-        word-wrap: break-word !important;
-    }
+
     
     .compact-stat .stat-number {
         font-size: 1.2rem !important;
