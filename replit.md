@@ -496,6 +496,9 @@ This project is a responsive landing page for Clinicia, a SaaS clinic management
 ✓ Added global icon alignment fixes for dropdown menus, navigation links, buttons, and feature icons (July 18, 2025)
 ✓ Ensured all circular icon containers are properly centered with flexbox display and alignment (July 18, 2025)
 ✓ Applied vertical-align: middle and text-align: center to all FontAwesome icons for consistent positioning (July 18, 2025)
+✓ Fixed hero section button alignment to properly start from left side on desktop view (July 18, 2025)
+✓ Reverted overly broad icon alignment changes to preserve centered icons in circular containers (July 18, 2025)
+✓ Applied targeted CSS fixes only to dropdown and navigation icons while maintaining centered positioning for feature icons (July 18, 2025)
 
 
 
