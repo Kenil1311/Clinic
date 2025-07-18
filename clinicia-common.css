@@ -14991,4 +14991,50 @@ body {
     color: #4a90e2 !important;
 }
 
+/* Enhanced Testimonial Styling */
+.testimonial-quote {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.author-info h4 {
+    font-weight: 700;
+    color: #495057;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.author-info span {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    background: #4a90e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    font-weight: 400;
+}
+
 
