@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize all components
     initNavbarEffects();
-    initScrollProgress();
+
     initSmoothScrolling();
     initParallaxEffects();
     initFormAnimations();
@@ -1129,7 +1129,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize all components
     initNavbarEffects();
-    initScrollProgress();
+
     initSmoothScrolling();
     initParallaxEffects();
     initFormAnimations();

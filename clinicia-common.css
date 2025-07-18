@@ -45,17 +45,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Scroll Progress Bar */
-.scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
-    z-index: 9999;
-    transition: width 0.3s ease;
-}
+
 
 /* Enhanced Breadcrumb Styles */
 .breadcrumb-section {
