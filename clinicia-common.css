@@ -800,7 +800,8 @@ html {
 
 /* Hero Section */
 .hero-section {
-    height: 800px;
+    min-height: 600px;
+    padding: 100px 0 50px 0;
     background: #fef7f7;
     position: relative;
     overflow: hidden;
@@ -6839,7 +6840,7 @@ html {
     
     /* Hero section mobile improvements */
     .hero-section {
-        height: 750px;
+        min-height: 600px;
         padding: 120px 0 80px;
         display: block;
     }
@@ -7413,7 +7414,7 @@ html {
     }
     
     .hero-section {
-        height: 700px;
+        min-height: 500px;
         padding: 110px 0 80px;
     }
     
