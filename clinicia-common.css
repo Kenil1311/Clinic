@@ -14699,12 +14699,12 @@ body {
 
 .feature-card:hover .feature-icon {
     transform: scale(1.1) rotate(5deg) !important;
-    background: rgba(255, 77, 77, 0.1) !important;
-    border-color: rgba(255, 77, 77, 0.3) !important;
+    background: rgba(74, 144, 226, 0.1) !important;
+    border-color: rgba(74, 144, 226, 0.3) !important;
 }
 
 .feature-card:hover .feature-icon i {
-    color: #ff4d4d !important;
+    color: #4a90e2 !important;
     transform: scale(1.1) !important;
 }
 
@@ -14717,17 +14717,17 @@ body {
 }
 
 .testimonial-card:hover .quote-icon i {
-    color: #ff4d4d !important;
+    color: #4a90e2 !important;
     transform: scale(1.2) !important;
 }
 
 .modern-card:hover .feature-icon {
     transform: scale(1.1) rotate(5deg) !important;
-    background: rgba(255, 77, 77, 0.1) !important;
-    border-color: rgba(255, 77, 77, 0.3) !important;
+    background: rgba(74, 144, 226, 0.1) !important;
+    border-color: rgba(74, 144, 226, 0.3) !important;
 }
 
 .modern-card:hover .feature-icon i {
-    color: #ff4d4d !important;
+    color: #4a90e2 !important;
     transform: scale(1.1) !important;
 }
