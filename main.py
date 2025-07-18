@@ -157,6 +157,10 @@ def orthopaedic():
 def urology():
     return send_file('urology.html')
 
+@app.route('/about')
+def about():
+    return send_file('about.html')
+
 @app.route('/<path:path>')
 def static_files(path):
     if os.path.exists(path):
