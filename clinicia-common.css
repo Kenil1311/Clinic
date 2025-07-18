@@ -1074,6 +1074,10 @@ html {
     }
     
     .hero-image {
+        display: block !important;
+    }
+    
+    .hero-image .dashboard-showcase {
         display: none;
     }
 }
