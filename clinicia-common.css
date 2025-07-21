@@ -1495,8 +1495,8 @@ html {
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 3rem;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 /* Hero Badge */
@@ -1522,9 +1522,8 @@ html {
 /* Desktop-specific button alignment override */
 @media (min-width: 769px) {
 
-    .hero-buttons,
     .feature-hero-actions {
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
     }
 }
@@ -9353,7 +9352,7 @@ html {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -9390,7 +9389,7 @@ html {
     }
 
     .feature-hero-actions {
-        justify-content: center;
+        /* justify-content: center; */
         gap: 0.8rem !important;
         flex-direction: column !important;
         width: 100% !important;
@@ -11480,8 +11479,8 @@ body {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .hero-floating-elements {
@@ -11860,8 +11859,8 @@ body {
     }
 
     .hero-buttons {
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction: column;
+        align-items: center; */
     }
 
     .hero-buttons .btn {
@@ -12167,8 +12166,8 @@ body {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .hero-floating-elements {
@@ -12548,7 +12547,7 @@ body {
 
     .hero-buttons {
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .hero-buttons .btn {
@@ -13383,7 +13382,7 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -13420,7 +13419,7 @@ body {
     }
 
     .feature-hero-actions {
-        justify-content: center;
+        /* justify-content: center; */
         gap: 0.8rem !important;
         flex-direction: column !important;
         width: 100% !important;
